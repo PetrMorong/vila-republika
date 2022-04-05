@@ -32,7 +32,7 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle }) => {
               {navLinks.map(({ id, text, path }) => {
                 return (
                   <Link key={id} to={path}>
-                    <NavItem>{text}</NavItem>
+                    <NavItem as="li">{text}</NavItem>
                   </Link>
                 );
               })}

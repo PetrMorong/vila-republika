@@ -17,13 +17,34 @@ const HistorieVelkych: React.FC = () => {
       padding={`176px 0px 60px`}
     >
       <Container>
-        <SectionTitle mdMb={`40px`} xlMb={`60px`} mb={`100px`}>
+        <SectionTitle
+          xlMb={`60px`}
+          color={``}
+          lgMb={``}
+          mdMb={`40px`}
+          smMb={``}
+          mb={`100px`}
+        >
           Staletá lázeňská historie <br /> Velkých Losin
         </SectionTitle>
 
         <GridRow sm={1} cols={2} gap={`32px`}>
           <FlexRow>
-            <Desc width={`509px`} margin={`auto`}>
+            <Desc
+              color={``}
+              fontWeight={``}
+              mb={``}
+              margin={`auto`}
+              width={`509px`}
+              xlMargin={``}
+              xlFontsize={``}
+              lgMargin={``}
+              mdMargin={``}
+              lgFontsize={``}
+              mdFontsize={``}
+              smMargin={``}
+              smFontsize={``}
+            >
               Velké Losiny se řadí k nejstarším moravským lázním. Usazené pod
               majestátnými vrcholky hor jsou vstupní branou Hrubého Jeseníku.
               Příznivé klimatické podmínky a čerstvý horský vzduch prospějí

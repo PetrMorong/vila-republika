@@ -10,8 +10,7 @@ import {
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
 import img from "../../../images/img1.png";
 
-const IntimniAtmosfera: React.FC<any> = () => {
-
+const IntimniAtmosfera: React.FC = () => {
   return (
     <Wrapper
       mdPadding={`80px 0px 40px`}
@@ -19,7 +18,14 @@ const IntimniAtmosfera: React.FC<any> = () => {
       padding={`176px 0px 0px`}
     >
       <Container>
-        <SectionTitle mdMb={`40px`} xlMb={`60px`} mb={`100px`}>
+        <SectionTitle
+          xlMb={`60px`}
+          color={``}
+          lgMb={``}
+          mdMb={`40px`}
+          smMb={``}
+          mb={`100px`}
+        >
           Intimni atmosfera
           <br />
           prvorepublikove vily
@@ -31,7 +37,21 @@ const IntimniAtmosfera: React.FC<any> = () => {
           </ImgWrapper>
 
           <FlexRow>
-            <Desc width={`509px`} margin={`auto`}>
+            <Desc
+              color={``}
+              fontWeight={``}
+              mb={``}
+              margin={`auto`}
+              width={`509px`}
+              xlMargin={``}
+              xlFontsize={``}
+              lgMargin={``}
+              mdMargin={``}
+              lgFontsize={``}
+              mdFontsize={``}
+              smMargin={``}
+              smFontsize={``}
+            >
               Vila Republika na vás dýchne lázeňskou historií. Luxusní ubytování
               předčí všechna vaše očekávání. Moderní interiéry jednotlivých
               apartmánů mají společný jednotící prvek – prvorepublikové

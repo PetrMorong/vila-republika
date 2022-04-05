@@ -17,14 +17,14 @@ import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
 const Header: React.FC = () => {
   return (
     <HeaderWrapper padding={`80px 0px 60px`}>
-      <Container margin="auto">
+      <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
           <HeaderTitle>Wellness apartmány v podhůří Jeseníků</HeaderTitle>
         </FlexRow>
       </Container>
 
       <Container>
-        <GridRow lg={2} gap={`16px`} between cols={4}>
+        <GridRow lg={"2"} gap={"16px"} between cols={"4"}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
               <FlexRow
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                 <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
                   <StyledImg w={`100%`} src={icon} alt="img" />
                 </ImgWrapper>
-                <IconTitle>{text}</IconTitle>
+                <IconTitle color={`#FFFFFF`}>{text}</IconTitle>
               </FlexRow>
             );
           })}

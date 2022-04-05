@@ -1,31 +1,62 @@
 import styled from "styled-components";
-
-interface styleProps {
-  mb?: string;
-  m?: string;
-  xlMb?: string;
-  lgMb?: string;
-  mdMb?: string;
-  smMb?: string;
-  fontWeight?: string;
-  margin?: string;
-  width?: string;
-  xlMargin?: string;
-  xlFontsize?: string;
-  lgMargin?: string;
-  lgFontsize?: string;
-  mdMargin?: string;
-  mdFontsize?: string;
-  smMargin?: string;
-  smFontsize?: string;
-  mdAlign?: string;
-  textAlign?: string;
+interface HeaderTitle {
+  mb: string;
+  m: string;
+}
+interface IconTitleTypes {
+  color: string;
+}
+interface DescTypes {
+  color: string;
+  fontWeight: string;
+  mb: string;
+  margin: string;
+  width: string;
+  xlMargin: string;
+  xlFontsize: string;
+  lgMargin: string;
+  mdMargin: string;
+  lgFontsize: string;
+  mdFontsize: string;
+  smMargin: string;
+  smFontsize: string;
+}
+interface SectionTitleTypes {
+  xlMb: string;
+  color: string;
+  lgMb: string;
+  mdMb: string;
+  smMb: string;
+  mb: string;
+}
+interface VileSlideTitleTypes {
+  color: string;
+  mb: string;
+  smMb: string;
+}
+interface VileSlideDescTypes {
+  color: string;
+  mb: string;
+  width: string;
+}
+interface FooterTitleType {
+  color: string;
+}
+interface FooterDescType {
+  color: string;
+  mdAlign: string;
+}
+interface FooterCategoryTitleType {
+  color: string;
+  mb: string;
+  xlMb: string;
+  lgMb: string;
+  smMb: string;
+  mdMb: string;
 }
 
-export const HeaderTitle = styled.h1<styleProps>`
+export const HeaderTitle = styled.h1`
   font-size: 73px;
-  margin-bottom: ${(props) => (props.mb ? props.mb : "0px")};
-  margin: ${(props) => (props.m ? props.m : "0px")};
   color: white;
   max-width: 934px;
   @media screen and (max-width: 1536px) {
@@ -47,71 +78,76 @@ export const HeaderTitle = styled.h1<styleProps>`
   }
 `;
 
-export const SectionTitle = styled.h3<styleProps>`
+export const SectionTitle = styled.h3`
   font-size: 60px;
   line-height: 68px;
   text-align: center;
-  color: ${(props) => (props.color ? props.color : "#262b3b")};
-  margin-bottom: ${(props) => (props.mb ? props.mb : "0px")};
+  color: ${(props: SectionTitleTypes) =>
+    props.color ? props.color : "#262b3b"};
+  margin-bottom: ${(props: SectionTitleTypes) => (props.mb ? props.mb : "0px")};
   font-weight: bold;
   @media screen and (max-width: 1536px) {
     font-size: 48px;
     line-height: 56px;
-    margin-bottom: ${(props) => props.xlMb && props.xlMb};
+    margin-bottom: ${(props: SectionTitleTypes) => props.xlMb && props.xlMb};
   }
   @media screen and (max-width: 1024px) {
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: ${(props) => props.lgMb && props.lgMb};
+    margin-bottom: ${(props: SectionTitleTypes) => props.lgMb && props.lgMb};
   }
   @media screen and (max-width: 768px) {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: ${(props) => props.mdMb && props.mdMb};
+    margin-bottom: ${(props: SectionTitleTypes) => props.mdMb && props.mdMb};
   }
   @media screen and (max-width: 640px) {
-    margin-bottom: ${(props) => props.smMb && props.smMb};
+    margin-bottom: ${(props: SectionTitleTypes) => props.smMb && props.smMb};
     font-size: 26px;
     line-height: 34px;
   }
 `;
 
-export const Desc = styled.p<styleProps>`
+export const Desc = styled.p`
   font-size: 18px;
   line-height: 26px;
-  color: ${(props) => (props.color ? props.color : "#262b3b")};
-  font-weight: ${(props) => props.fontWeight && props.fontWeight};
-  text-align: ${(props) => props.textAlign || "center"};
+  color: ${(props: DescTypes) => (props.color ? props.color : "#262b3b")};
+  font-weight: ${(props: DescTypes) => props.fontWeight && props.fontWeight};
 
-  margin-bottom: ${(props) => (props.mb ? props.mb : "0px")};
-  margin: ${(props) => props.margin && props.margin};
-  max-width: ${(props) => (props.width ? props.width : "none")};
+  text-align: center;
+  margin-bottom: ${(props: DescTypes) => (props.mb ? props.mb : "0px")};
+  margin: ${(props: DescTypes) => props.margin && props.margin};
+  max-width: ${(props: DescTypes) => (props.width ? props.width : "none")};
   @media screen and (max-width: 1536px) {
-    margin: ${(props) => props.xlMargin && props.xlMargin};
-    font-size: ${(props) => (props.xlFontsize ? props.xlFontsize : "16px")};
+    margin: ${(props: DescTypes) => props.xlMargin && props.xlMargin};
+    font-size: ${(props: DescTypes) =>
+      props.xlFontsize ? props.xlFontsize : "16px"};
     line-height: 24px;
   }
   @media screen and (max-width: 1024px) {
-    margin: ${(props) => props.lgMargin && props.lgMargin};
-    font-size: ${(props) => (props.lgFontsize ? props.lgFontsize : "16px")};
+    margin: ${(props: DescTypes) => props.lgMargin && props.lgMargin};
+    font-size: ${(props: DescTypes) =>
+      props.lgFontsize ? props.lgFontsize : "16px"};
   }
   @media screen and (max-width: 768px) {
-    margin: ${(props) => props.mdMargin && props.mdMargin};
-    font-size: ${(props) => (props.mdFontsize ? props.mdFontsize : "14px")};
+    margin: ${(props: DescTypes) => props.mdMargin && props.mdMargin};
+    font-size: ${(props: DescTypes) =>
+      props.mdFontsize ? props.mdFontsize : "14px"};
     line-height: 22px;
   }
   @media screen and (max-width: 640px) {
-    margin: ${(props) => props.smMargin && props.smMargin};
-    font-size: ${(props) => (props.smFontsize ? props.smFontsize : "12px")};
+    margin: ${(props: DescTypes) => props.smMargin && props.smMargin};
+    font-size: ${(props: DescTypes) =>
+      props.smFontsize ? props.smFontsize : "12px"};
     line-height: 20px;
   }
 `;
 
-export const IconTitle = styled.p<styleProps>`
+export const IconTitle = styled.p`
   font-size: 15px;
   line-height: 23px;
   font-weight: bold;
-  color: ${(props) => (props.color ? props.color : "white")};
+  color: ${(props: IconTitleTypes) => (props.color ? props.color : "white")};
 
   @media screen and (max-width: 1536px) {
     font-weight: 600;
@@ -131,8 +167,8 @@ export const IconTitle = styled.p<styleProps>`
   }
 `;
 
-export const FooterTitle = styled.h3<styleProps>`
-  color: ${(props) => (props.color ? props.color : "white")};
+export const FooterTitle = styled.h3`
+  color: ${(props: FooterTitleType) => (props.color ? props.color : "white")};
   font-size: 34px;
   line-height: 42px;
   font-weight: bold;
@@ -154,10 +190,10 @@ export const FooterTitle = styled.h3<styleProps>`
   }
 `;
 
-export const FooterDesc = styled.p<styleProps>`
+export const FooterDesc = styled.p`
   font-size: 18px;
   line-height: 26px;
-  color: ${(props) => (props.color ? props.color : "white")};
+  color: ${(props: FooterDescType) => (props.color ? props.color : "white")};
   text-align: left;
   @media screen and (max-width: 1536px) {
     font-size: 16px;
@@ -166,42 +202,52 @@ export const FooterDesc = styled.p<styleProps>`
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 22px;
-    text-align: ${(props) => (props.mdAlign ? props.mdAlign : "left")};
+    text-align: ${(props: FooterDescType) =>
+      props.mdAlign ? props.mdAlign : "left"};
   }
   @media screen and (max-width: 640px) {
     font-size: 12px;
     line-height: 20px;
 
-    text-align: ${(props) => (props.mdAlign ? props.mdAlign : "left")};
+    text-align: ${(props: FooterDescType) =>
+      props.mdAlign ? props.mdAlign : "left"};
   }
 `;
-export const FooterCategoryTitle = styled.h3<styleProps>`
+export const FooterCategoryTitle = styled.h3`
   font-size: 18px;
   line-height: 26px;
-  color: ${(props) => (props.color ? props.color : "white")};
+  color: ${(props: FooterCategoryTitleType) =>
+    props.color ? props.color : "white"};
   text-transform: capitalize;
   font-weight: bold;
-  margin-bottom: ${(props) => (props.mb ? props.mb : "16px")};
+  margin-bottom: ${(props: FooterCategoryTitleType) =>
+    props.mb ? props.mb : "16px"};
   @media screen and (max-width: 1536px) {
-    margin-bottom: ${(props) => props.xlMb && props.xlMb};
+    margin-bottom: ${(props: FooterCategoryTitleType) =>
+      props.xlMb && props.xlMb};
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: ${(props) => props.lgMb && props.lgMb};
+    margin-bottom: ${(props: FooterCategoryTitleType) =>
+      props.lgMb && props.lgMb};
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: ${(props) => props.mdMb && props.mdMb};
+    margin-bottom: ${(props: FooterCategoryTitleType) =>
+      props.mdMb && props.mdMb};
   }
   @media screen and (max-width: 640px) {
-    margin-bottom: ${(props) => props.smMb && props.smMb};
+    margin-bottom: ${(props: FooterCategoryTitleType) =>
+      props.smMb && props.smMb};
   }
 `;
-export const VileSlideTitle = styled.h4<styleProps>`
+export const VileSlideTitle = styled.h4`
   font-size: 33px;
   line-height: 41px;
-  color: ${(props) => (props.color ? props.color : "white")};
+  color: ${(props: VileSlideTitleTypes) =>
+    props.color ? props.color : "white"};
   text-transform: capitalize;
   font-weight: bold;
-  margin-bottom: ${(props) => (props.mb ? props.mb : "16px")};
+  margin-bottom: ${(props: VileSlideTitleTypes) =>
+    props.mb ? props.mb : "16px"};
   @media screen and (max-width: 1024px) {
     font-size: 24px;
     line-height: 32px;
@@ -209,14 +255,18 @@ export const VileSlideTitle = styled.h4<styleProps>`
   @media screen and (max-width: 640px) {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: ${(props) => (props.smMb ? props.smMb : "8px")};
+    margin-bottom: ${(props: VileSlideTitleTypes) =>
+      props.smMb ? props.smMb : "8px"};
   }
 `;
-export const VileSlideDesc = styled.p<styleProps>`
-  color: ${(props) => (props.color ? props.color : "white")};
+export const VileSlideDesc = styled.p`
+  color: ${(props: VileSlideDescTypes) =>
+    props.color ? props.color : "white"};
   text-transform: capitalize;
-  margin-bottom: ${(props) => (props.mb ? props.mb : "0px")};
-  max-width: ${(props) => (props.width ? props.width : "none")};
+  margin-bottom: ${(props: VileSlideDescTypes) =>
+    props.mb ? props.mb : "0px"};
+  max-width: ${(props: VileSlideDescTypes) =>
+    props.width ? props.width : "none"};
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 22px;

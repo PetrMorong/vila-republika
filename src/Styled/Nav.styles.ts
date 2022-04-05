@@ -20,6 +20,7 @@ export const NavItem = styled.a`
   color: white;
   font-weight: 700;
   text-decoration: none;
+  list-style:none;
   @media screen and (max-width: 1536px) {
     font-weight: 600;
   }

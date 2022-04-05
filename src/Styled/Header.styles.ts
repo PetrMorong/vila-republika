@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import header from "../images/header-bg.png";
-
+interface Props {
+  padding?: string;
+  height?: string;
+}
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,8 +12,9 @@ export const HeaderWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: ${({ padding }) => (padding ? padding : "0px")};
-  min-height: ${({ height }) => (height ? `calc(100vh - ${height})` : "100vh")};
+  padding: ${(props: Props) => (props.padding ? props.padding : "0px")};
+  min-height: ${(props: Props) =>
+    props.height ? `calc(100vh - ${props.height})` : "100vh"};
   position: relative;
   z-index: 0;
   &::before {

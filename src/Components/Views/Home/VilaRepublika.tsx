@@ -41,14 +41,30 @@ const VilaRepublika: React.FC = () => {
       padding={`138px 0px 172px`}
     >
       <Container>
-        <SectionTitle mdMb={`22px`} xlMb={`30px`} mb={`51px`}>
+        <SectionTitle
+          xlMb={`30px`}
+          color={``}
+          lgMb={``}
+          mdMb={`22px`}
+          smMb={``}
+          mb={`51px`}
+        >
           Vila Republika
         </SectionTitle>
         <Desc
-          lgMargin={`0px auto 32px`}
-          xlMargin={`0px auto 40px`}
-          margin={`0px auto 138px`}
           width={`908px`}
+          color={``}
+          fontWeight={``}
+          mb={``}
+          margin={`0px auto 138px`}
+          xlMargin={`0px auto 40px`}
+          xlFontsize={``}
+          lgMargin={`0px auto 32px`}
+          mdMargin={``}
+          lgFontsize={``}
+          mdFontsize={``}
+          smMargin={``}
+          smFontsize={``}
         >
           Apartmánový dům Vila Republika leží pod svahy Hrubého Jeseníku v
           lázeňské obci Velké Losiny. Původní stavba z 30. let minulého století
@@ -86,9 +102,15 @@ const VilaRepublika: React.FC = () => {
                           </ImgWrapper>
                           <SlideContent>
                             <div style={{ marginTop: "auto" }}>
-                              <VileSlideTitle>{title}</VileSlideTitle>
+                              <VileSlideTitle color={``} mb={``} smMb={``}>
+                                {title}
+                              </VileSlideTitle>
                               <FlexRow gap={`16px`} between>
-                                <VileSlideDesc width={`450px`}>
+                                <VileSlideDesc
+                                  width={`450px`}
+                                  color={``}
+                                  mb={``}
+                                >
                                   {desc}
                                 </VileSlideDesc>
                                 <IconWrapper size={`38px`} color={`white`}>

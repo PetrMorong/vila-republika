@@ -8,13 +8,13 @@ import {
   Wrapper,
 } from "../../../Styled/Theme.styles";
 import { IconTitle, SectionTitle } from "../../../Styled/Typography.styles";
+
 import dalsi1 from "../../../images/dalsi1.png";
 import union1 from "../../../images/union1.png";
 import parkov1 from "../../../images/parkov1.png";
 import chytra1 from "../../../images/chytra1.png";
 
-
-const Dalsi: React.FC<CarProps> = (props) => {
+const Dalsi: React.FC = () => {
   return (
     <Wrapper
       bgColor={`#f0e8d9`}
@@ -23,10 +23,17 @@ const Dalsi: React.FC<CarProps> = (props) => {
       mdPadding={`60px 0px 50px`}
     >
       <Container>
-        <SectionTitle xlMb={`40px`} mb={`94px`}>
+        <SectionTitle
+          xlMb={`40px`}
+          color={``}
+          lgMb={``}
+          mdMb={``}
+          smMb={``}
+          mb={`94px`}
+        >
           Dalsi vybaveni
         </SectionTitle>
-        <GridRow lg={2} gap={`32px`} max around cols={4}>
+        <GridRow lg={2} gap={`32px`} max="true" around cols={4}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
               <FlexRow

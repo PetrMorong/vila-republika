@@ -13,9 +13,13 @@ import logo from "../../images/logo.svg";
 export interface INavigation {
   open: any;
   toggle: any;
-  navLinks:any;
+  navLinks: any;
 }
-const MobileDrawer: FunctionComponent<INavigation> = ({ open, toggle, navLinks }) => {
+const MobileDrawer: FunctionComponent<INavigation> = ({
+  open,
+  toggle,
+  navLinks,
+}) => {
   return (
     <>
       <Drawer open={open} onClose={toggle} direction="left" zIndex={99999}>
@@ -34,7 +38,7 @@ const MobileDrawer: FunctionComponent<INavigation> = ({ open, toggle, navLinks }
             {navLinks.map(({ id, text, path }) => {
               return (
                 <Link key={id} to={path}>
-                  <NavItem>{text}</NavItem>
+                  <NavItem as="li">{text}</NavItem>
                 </Link>
               );
             })}

@@ -1,16 +1,17 @@
 import React, { FunctionComponent, useState } from "react";
+import { GlobalStyle } from "../../Styled/GlobStyles";
 import Footer from "./Footer";
 import MobileDrawer from "./MobileDrawer";
 import Nav from "./Nav";
-import "./layout.css";
 
-const Layout: FunctionComponent = ({ children }) => {
+const Layout: FunctionComponent = ({children}) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (
     <>
+      <GlobalStyle />
       <Nav toggle={toggleDrawer} navLinks={navLinks} />
       <MobileDrawer navLinks={navLinks} toggle={toggleDrawer} open={isOpen} />
       {children}

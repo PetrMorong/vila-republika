@@ -35,12 +35,12 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
           mdMargin={`0px 0px 26px`}
         >
           <GridCol>
-            <FooterTitle margin={`0px`}>
+            <FooterTitle color={``}>
               Rezervujte si apartmán v Jeseníkách
             </FooterTitle>
           </GridCol>
           <GridCol lg={1} colSpan={2}>
-            <FooterDesc>
+            <FooterDesc color={``} mdAlign={``}>
               Apartmány nabízíme v různých velikostech. Pro jednotlivce, páry i
               rozvětvenou rodinu. Zarezervovat si můžete také celou vilu – na
               oslavu narozenin či dovolenou s přáteli. V okolí budete mít
@@ -65,21 +65,40 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
           mdMargin={`26px 0px 0px`}
         >
           <GridCol>
-            <FooterCategoryTitle smMb={`20px`} xlMb={`36px`} mb={`59px`}>
+            <FooterCategoryTitle
+              smMb={`20px`}
+              xlMb={`36px`}
+              mb={`59px`}
+              color={``}
+              lgMb={``}
+              mdMb={``}
+            >
               Vila Republik
             </FooterCategoryTitle>
-            <FlexRow gap={`10px`} column>
-              {navLinks.map(({ id, text, path }) => {
+            <FlexRow
+              gap={`10px`}
+              style={{
+                flexDirection: "column",
+              }}
+            >
+              {navLinks.map((item, index) => {
                 return (
-                  <Link key={id} to={path}>
-                    <FooterItem>{text}</FooterItem>
+                  <Link key={index} to={item.path}>
+                    <FooterItem as="li">{item.text}</FooterItem>
                   </Link>
                 );
               })}
             </FlexRow>
           </GridCol>
           <GridCol>
-            <FooterCategoryTitle smMb={`20px`} mb={`27px`}>
+            <FooterCategoryTitle
+              smMb={`20px`}
+              mb={`27px`}
+              xlMb={``}
+              color={``}
+              lgMb={``}
+              mdMb={``}
+            >
               KONTAKT
             </FooterCategoryTitle>
 
@@ -92,19 +111,37 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
-                  textAlign="left"
+                  margin={``}
+                  width={``}
+                  xlMargin={``}
+                  xlFontsize={``}
+                  lgMargin={``}
+                  mdMargin={``}
+                  lgFontsize={``}
+                  mdFontsize={``}
+                  smMargin={``}
+                  smFontsize={``}
                 >
                   Petr Morong
                 </Desc>
                 <FooterItem>
                   <p style={{ marginBottom: 8 }}>+420 123 456 789</p>
-                  <p>info@yilarpublika.cz</p>
+                  <p style={{ textDecoration: "underline" }}>
+                    info@yilarpublika.cz
+                  </p>
                 </FooterItem>
               </FlexRow>
             </FlexRow>
           </GridCol>
           <GridCol>
-            <FooterCategoryTitle smMb={`20px`} xlMb={`32px`} mb={`57px`}>
+            <FooterCategoryTitle
+              smMb={`20px`}
+              xlMb={`32px`}
+              mb={`57px`}
+              color={``}
+              lgMb={``}
+              mdMb={``}
+            >
               Kde nas najdete
             </FooterCategoryTitle>
 
@@ -113,11 +150,18 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 Osvobození 354,
                 <br /> Velké Losiny, 788 15
               </p>
-              <p>zpbrazit na mape.cz</p>
+              <p style={{ textDecoration: "underline" }}>zpbrazit na mape.cz</p>
             </FooterItem>
           </GridCol>
           <GridCol>
-            <FooterCategoryTitle smMb={`20px`} xlMb={`32px`} mb={`46px`}>
+            <FooterCategoryTitle
+              smMb={`20px`}
+              xlMb={`32px`}
+              mb={`46px`}
+              color={``}
+              lgMb={``}
+              mdMb={``}
+            >
               sledujteNas
             </FooterCategoryTitle>
             <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
