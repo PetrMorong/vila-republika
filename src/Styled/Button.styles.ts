@@ -22,6 +22,15 @@ export const Button = styled.button`
   border: 1px solid
     ${(props: Props) => (props.brColor ? props.brColor : "#bf5757")};
   margin: ${(props: Props) => (props.margin ? props.margin : "0px")};
+
+  font-family: roc-grotesk-wide;
+  font-weight: 600px;
+  font-size: 12px;
+  transition: 200ms;
+  &:hover {
+    opacity: 0.8;
+  }
+
   @media screen and (max-width: 1024px) {
   }
   @media screen and (max-width: 768px) {

@@ -77,54 +77,34 @@ const VilaRepublika: React.FC = () => {
       </Container>
       <Container>
         <GridRow md={1} cols={2}>
-          {swipers.map(({ id, slides }) => {
+          {slides.map(({ id, img, title, desc }) => {
             return (
-              <GridCol key={id}>
-                <Swiper
-                  slidesPerView={1}
-                  onSwiper={(swiper) => console.log(swiper)}
-                  navigation
-                  loop={true}
-                  {...params}
-                >
-                  {slides.map(({ id, img, title, desc }) => {
-                    return (
-                      <SwiperSlide key={id}>
-                        <SlideWrapper>
-                          <ImgWrapper>
-                            <StyledImg
-                              object={`cover`}
-                              h={`100%`}
-                              w={`100%`}
-                              src={img}
-                              alt="img"
-                            />
-                          </ImgWrapper>
-                          <SlideContent>
-                            <div style={{ marginTop: "auto" }}>
-                              <VileSlideTitle color={``} mb={``} smMb={``}>
-                                {title}
-                              </VileSlideTitle>
-                              <FlexRow gap={`16px`} between>
-                                <VileSlideDesc
-                                  width={`450px`}
-                                  color={``}
-                                  mb={``}
-                                >
-                                  {desc}
-                                </VileSlideDesc>
-                                <IconWrapper size={`38px`} color={`white`}>
-                                  <BsChevronRight />
-                                </IconWrapper>
-                              </FlexRow>
-                            </div>
-                          </SlideContent>
-                        </SlideWrapper>
-                      </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
-              </GridCol>
+              <SlideWrapper>
+                <ImgWrapper>
+                  <StyledImg
+                    object={`cover`}
+                    h={`100%`}
+                    w={`100%`}
+                    src={img}
+                    alt="img"
+                  />
+                </ImgWrapper>
+                <SlideContent>
+                  <div style={{ marginTop: "auto" }}>
+                    <VileSlideTitle color={``} mb={``} smMb={``}>
+                      {title}
+                    </VileSlideTitle>
+                    <FlexRow gap={`16px`} between>
+                      <VileSlideDesc width={`450px`} color={`#F0E8D9`} mb={``}>
+                        {desc}
+                      </VileSlideDesc>
+                      <IconWrapper size={`38px`} color={`white`}>
+                        <BsChevronRight />
+                      </IconWrapper>
+                    </FlexRow>
+                  </div>
+                </SlideContent>
+              </SlideWrapper>
             );
           })}
         </GridRow>
@@ -135,39 +115,17 @@ const VilaRepublika: React.FC = () => {
 
 export default VilaRepublika;
 
-const swipers = [
+const slides = [
   {
     id: 1,
-    slides: [
-      {
-        id: 1,
-        img: swiper1,
-        title: "Designové apartmány",
-        desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
-      },
-      {
-        id: 2,
-        img: swiper2,
-        title: "Privátní wellness",
-        desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
-      },
-    ],
+    img: swiper1,
+    title: "Designové apartmány",
+    desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
   },
   {
     id: 2,
-    slides: [
-      {
-        id: 1,
-        img: swiper1,
-        title: "Designové apartmány",
-        desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
-      },
-      {
-        id: 2,
-        img: swiper2,
-        title: "Privátní wellness",
-        desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
-      },
-    ],
+    img: swiper2,
+    title: "Privátní wellness",
+    desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
   },
 ];

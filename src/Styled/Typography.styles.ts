@@ -59,7 +59,11 @@ export const HeaderTitle = styled.h1`
   font-size: 73px;
   color: white;
   max-width: 934px;
-  @media screen and (max-width: 1536px) {
+
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 500;
+
+  @media screen and (max-width: 1400px) {
     font-size: 58px;
     line-height: 66px;
     max-width: 680px;
@@ -82,11 +86,12 @@ export const SectionTitle = styled.h3`
   font-size: 60px;
   line-height: 68px;
   text-align: center;
+  font-family: roc-grotesk-wide;
   color: ${(props: SectionTitleTypes) =>
     props.color ? props.color : "#262b3b"};
   margin-bottom: ${(props: SectionTitleTypes) => (props.mb ? props.mb : "0px")};
-  font-weight: bold;
-  @media screen and (max-width: 1536px) {
+  font-weight: 600;
+  @media screen and (max-width: 1400px) {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: ${(props: SectionTitleTypes) => props.xlMb && props.xlMb};
@@ -118,7 +123,9 @@ export const Desc = styled.p`
   margin-bottom: ${(props: DescTypes) => (props.mb ? props.mb : "0px")};
   margin: ${(props: DescTypes) => props.margin && props.margin};
   max-width: ${(props: DescTypes) => (props.width ? props.width : "none")};
-  @media screen and (max-width: 1536px) {
+  font-weight: 400;
+
+  @media screen and (max-width: 1400px) {
     margin: ${(props: DescTypes) => props.xlMargin && props.xlMargin};
     font-size: ${(props: DescTypes) =>
       props.xlFontsize ? props.xlFontsize : "16px"};
@@ -146,10 +153,12 @@ export const Desc = styled.p`
 export const IconTitle = styled.p`
   font-size: 15px;
   line-height: 23px;
-  font-weight: bold;
+  font-family: roc-grotesk-wide;
+  font-weight: 600px;
+  font-size: 12px;
   color: ${(props: IconTitleTypes) => (props.color ? props.color : "white")};
 
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     font-weight: 600;
   }
   @media screen and (max-width: 1024px) {
@@ -171,10 +180,11 @@ export const FooterTitle = styled.h3`
   color: ${(props: FooterTitleType) => (props.color ? props.color : "white")};
   font-size: 34px;
   line-height: 42px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 32px;
+  font-family: roc-grotesk-wide;
 
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     margin-bottom: 16px;
     font-size: 28px;
     line-height: 36px;
@@ -195,7 +205,7 @@ export const FooterDesc = styled.p`
   line-height: 26px;
   color: ${(props: FooterDescType) => (props.color ? props.color : "white")};
   text-align: left;
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -214,15 +224,15 @@ export const FooterDesc = styled.p`
   }
 `;
 export const FooterCategoryTitle = styled.h3`
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: ${(props: FooterCategoryTitleType) =>
     props.color ? props.color : "white"};
-  text-transform: capitalize;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: roc-grotesk-wide;
   margin-bottom: ${(props: FooterCategoryTitleType) =>
     props.mb ? props.mb : "16px"};
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     margin-bottom: ${(props: FooterCategoryTitleType) =>
       props.xlMb && props.xlMb};
   }
@@ -242,10 +252,11 @@ export const FooterCategoryTitle = styled.h3`
 export const VileSlideTitle = styled.h4`
   font-size: 33px;
   line-height: 41px;
+  font-family: roc-grotesk-wide;
   color: ${(props: VileSlideTitleTypes) =>
     props.color ? props.color : "white"};
-  text-transform: capitalize;
-  font-weight: bold;
+
+  font-weight: 600;
   margin-bottom: ${(props: VileSlideTitleTypes) =>
     props.mb ? props.mb : "16px"};
   @media screen and (max-width: 1024px) {
@@ -262,11 +273,12 @@ export const VileSlideTitle = styled.h4`
 export const VileSlideDesc = styled.p`
   color: ${(props: VileSlideDescTypes) =>
     props.color ? props.color : "white"};
-  text-transform: capitalize;
+
   margin-bottom: ${(props: VileSlideDescTypes) =>
     props.mb ? props.mb : "0px"};
   max-width: ${(props: VileSlideDescTypes) =>
     props.width ? props.width : "none"};
+  font-weight: 400;
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 22px;

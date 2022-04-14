@@ -4,8 +4,8 @@ export const FooterItem = styled.a`
   font-size: 14px;
   color: white;
   text-decoration: none;
-  list-style:none;
-  @media screen and (max-width: 1536px) {
+  list-style: none;
+  @media screen and (max-width: 1400px) {
     font-weight: 400;
     font-size: 12px;
   }

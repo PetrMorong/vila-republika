@@ -21,6 +21,8 @@ import {
   FooterDesc,
   FooterTitle,
 } from "../../Styled/Typography.styles";
+import styled from "styled-components";
+
 const Footer: FunctionComponent<any> = ({ navLinks }) => {
   return (
     <Wrapper bgColor={`#262b3b`} xlPadding={`50px 0px`} padding={`100px 0px`}>
@@ -36,7 +38,9 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
         >
           <GridCol>
             <FooterTitle color={``}>
-              Rezervujte si apartmán v Jeseníkách
+              <span style={{ color: "#F0E8D9" }}>Rezervujte</span>
+              <br />
+              si apartmán <br />v Jeseníkách
             </FooterTitle>
           </GridCol>
           <GridCol lg={1} colSpan={2}>
@@ -48,14 +52,20 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               termální lázně na dosah. Ozvěte se!
             </FooterDesc>
           </GridCol>
-          <GridCol>
+          <GridCol
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          >
             <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
               REZERVACE
             </Button>
           </GridCol>
         </GridRow>
 
-        <hr />
+        <Separator />
 
         <GridRow
           sm={1}
@@ -75,7 +85,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               lgMb={``}
               mdMb={``}
             >
-              Vila Republik
+              Vila Republika
             </FooterCategoryTitle>
             <FlexRow
               gap={`10px`}
@@ -101,7 +111,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               lgMb={``}
               mdMb={``}
             >
-              KONTAKT
+              Kontakt
             </FooterCategoryTitle>
 
             <FlexRow gap={`16px`} itemCenter>
@@ -110,6 +120,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               </ImgWrapper>
               <FlexRow direction={`column`}>
                 <Desc
+                  style={{ textAlign: "left", fontWeight: 600 }}
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
@@ -124,12 +135,12 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   smMargin={``}
                   smFontsize={``}
                 >
-                  Petr Morong
+                  Helena Morongová
                 </Desc>
                 <FooterItem>
                   <p style={{ marginBottom: 8 }}>+420 123 456 789</p>
                   <p style={{ textDecoration: "underline" }}>
-                    info@yilarpublika.cz
+                    info@vila-republika.cz
                   </p>
                 </FooterItem>
               </FlexRow>
@@ -144,7 +155,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               lgMb={``}
               mdMb={``}
             >
-              Kde nas najdete
+              Kde nás najdete
             </FooterCategoryTitle>
 
             <FooterItem>
@@ -152,7 +163,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 Osvobození 354,
                 <br /> Velké Losiny, 788 15
               </p>
-              <p style={{ textDecoration: "underline" }}>zpbrazit na mape.cz</p>
+              <p style={{ textDecoration: "underline" }}>zobrazit na mape</p>
             </FooterItem>
           </GridCol>
           <GridCol>
@@ -164,7 +175,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               lgMb={``}
               mdMb={``}
             >
-              sledujteNas
+              Sledujte nás
             </FooterCategoryTitle>
             <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
               <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
@@ -200,5 +211,13 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
     </Wrapper>
   );
 };
+
+export const Separator = styled.p`
+  background: #3b4f5e;
+  height: 2px;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+`;
 
 export default Footer;

@@ -25,7 +25,7 @@ const HistorieVelkych: React.FC = () => {
           smMb={``}
           mb={`100px`}
         >
-          Staletá lázeňská historie <br /> Velkých Losin
+          Staletá lázenská historie <br /> Velkých Losin
         </SectionTitle>
 
         <GridRow sm={1} cols={2} gap={`32px`}>

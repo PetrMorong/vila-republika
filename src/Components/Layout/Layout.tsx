@@ -3,14 +3,22 @@ import { GlobalStyle } from "../../Styled/GlobStyles";
 import Footer from "./Footer";
 import MobileDrawer from "./MobileDrawer";
 import Nav from "./Nav";
+import { Helmet } from "react-helmet";
+import Favicon from "../../images/faviconWhite.ico";
 
-const Layout: FunctionComponent = ({children}) => {
+const Layout: FunctionComponent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Vila Republika</title>
+        <link rel="stylesheet" href="https://use.typekit.net/uve2xcq.css" />
+        <link rel="icon" type="image/x-icon" href={Favicon} />
+      </Helmet>
       <GlobalStyle />
       <Nav toggle={toggleDrawer} navLinks={navLinks} />
       <MobileDrawer navLinks={navLinks} toggle={toggleDrawer} open={isOpen} />
@@ -23,11 +31,11 @@ const Layout: FunctionComponent = ({children}) => {
 export default Layout;
 
 const navLinks = [
-  { id: 1, text: "APARTMÁNY", path: "/" },
-  { id: 2, text: "WELLNESS", path: "/" },
-  { id: 3, text: "OKOLÍ", path: "/" },
-  { id: 4, text: "BISTRO", path: "/" },
-  { id: 5, text: "DÁRKOVÉ POUKAZY", path: "/" },
-  { id: 6, text: "FOTOGALERIE", path: "/" },
-  { id: 7, text: "KONTAKT", path: "/" },
+  { id: 1, text: "Apartmány", path: "/" },
+  { id: 2, text: "Wellness", path: "/" },
+  { id: 3, text: "Okolí", path: "/" },
+  { id: 4, text: "Bistro", path: "/" },
+  { id: 5, text: "Dárkové Poukazy", path: "/" },
+  { id: 6, text: "Fotogalerie", path: "/" },
+  { id: 7, text: "Kontakt", path: "/" },
 ];

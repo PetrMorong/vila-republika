@@ -17,7 +17,7 @@ const Nostalgick: React.FC = () => {
             smMb={``}
             mb={`40px`}
           >
-            Nostalgické kouzl hrubého Jeseníku{" "}
+            Nostalgické kouzlo hrubého Jeseníku{" "}
           </SectionTitle>
           <Desc
             color={`white`}

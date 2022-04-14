@@ -6,6 +6,7 @@ import HistorieVelkych from "./HistorieVelkych";
 import IntimniAtmosfera from "./IntimniAtmosfera";
 import Nostalgick from "./Nostalgick";
 import VilaRepublika from "./VilaRepublika";
+
 const HomeIndex: React.FC = () => {
   return (
     <Layout>

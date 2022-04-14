@@ -10,6 +10,7 @@ export const StyledNav = styled.div`
   background-color: transparent;
   margin: 0 auto;
   padding: 32px 0px;
+
   @media screen and (max-width: 1440px) {
     padding: 20px 0px;
   }
@@ -18,19 +19,15 @@ export const StyledNav = styled.div`
 export const NavItem = styled.a`
   font-size: 12px;
   color: white;
-  font-weight: 700;
   text-decoration: none;
-  list-style:none;
-  @media screen and (max-width: 1536px) {
-    font-weight: 600;
-  }
-  @media screen and (max-width: 1024px) {
-  }
-  @media screen and (max-width: 768px) {
-  }
-  @media screen and (max-width: 640px) {
+  list-style: none;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 0.8;
   }
 `;
+
 export const NavItemWrapper = styled.div`
   display: block;
   @media screen and (max-width: 1024px) {

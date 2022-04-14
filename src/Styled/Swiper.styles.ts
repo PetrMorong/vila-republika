@@ -4,6 +4,12 @@ export const SlideWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 export const SlideContent = styled.div`

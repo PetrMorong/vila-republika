@@ -17,7 +17,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "gatsby";
 import logo from "../../images/logo.svg";
 
-const Nav: FunctionComponent<any> = ({ navLinks, toggle }) => {
+const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
   return (
     <StyledNav>
       <Container>
@@ -40,7 +40,7 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle }) => {
           </NavItemWrapper>
           <NavItemWrapper>
             <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
-              REZERVACE
+              Rezervace
             </Button>
           </NavItemWrapper>
           <ToggleButton onClick={toggle}>

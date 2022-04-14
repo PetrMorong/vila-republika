@@ -115,7 +115,7 @@ export const Wrapper = styled.div`
   background: ${(props: Props) =>
     props.bgColor ? props.bgColor : "transparent"};
   padding: ${(props: Props) => (props.padding ? props.padding : "0px")};
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     padding: ${(props: Props) => props.xlPadding && props.xlPadding};
   }
   @media screen and (max-width: 1024px) {
@@ -171,25 +171,25 @@ export const FlexRow = styled.div`
       align-items: center;
     `}
 
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     gap: ${(props: FlexRowType) => props.xlGap && props.xlGap};
     flex-direction: ${(props: FlexRowType) =>
-    props.xlDirection && props.xlDirection};
+      props.xlDirection && props.xlDirection};
   }
   @media screen and (max-width: 1024px) {
     gap: ${(props: FlexRowType) => props.lgGap && props.lgGap};
     flex-direction: ${(props: FlexRowType) =>
-    props.lgDirection && props.lgDirection};
+      props.lgDirection && props.lgDirection};
   }
   @media screen and (max-width: 768px) {
     gap: ${(props: FlexRowType) => props.mdGap && props.mdGap};
     flex-direction: ${(props: FlexRowType) =>
-    props.mdDirection && props.mdDirection};
+      props.mdDirection && props.mdDirection};
   }
   @media screen and (max-width: 640px) {
     gap: ${(props: FlexRowType) => props.smGap && props.smGap};
     flex-direction: ${(props: FlexRowType) =>
-    props.smDirection && props.smDirection};
+      props.smDirection && props.smDirection};
   }
 `;
 
@@ -225,28 +225,28 @@ export const GridRow = styled.div`
     css`
       align-items: center;
     `}
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     margin: ${(props: GridRowType) => props.xlMargin && props.xlMargin};
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: ${(props: GridRowType) =>
-    props.lg && props.max
-      ? `repeat(${props.lg}, minmax(0, max-content))`
-      : `repeat(${props.lg}, minmax(0, 1fr))`};
+      props.lg && props.max
+        ? `repeat(${props.lg}, minmax(0, max-content))`
+        : `repeat(${props.lg}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.lgMargin && props.lgMargin};
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: ${(props: GridRowType) =>
-    props.md && props.max
-      ? `repeat(${props.md}, minmax(0, max-content))`
-      : `repeat(${props.md}, minmax(0, 1fr))`};
+      props.md && props.max
+        ? `repeat(${props.md}, minmax(0, max-content))`
+        : `repeat(${props.md}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.mdMargin && props.mdMargin};
   }
   @media screen and (max-width: 640px) {
     grid-template-columns: ${(props: GridRowType) =>
-    props.sm && props.max
-      ? `repeat(${props.sm}, minmax(0, max-content))`
-      : `repeat(${props.sm}, minmax(0, 1fr))`};
+      props.sm && props.max
+        ? `repeat(${props.sm}, minmax(0, max-content))`
+        : `repeat(${props.sm}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.smMargin && props.smMargin};
   }
 `;
@@ -259,23 +259,25 @@ export const GridCol = styled.div`
 
   @media screen and (max-width: 1024px) {
     grid-column: ${(props: GridColType) =>
-    props.lg && `span ${props.lg} / span ${props.lg}`};
+      props.lg && `span ${props.lg} / span ${props.lg}`};
   }
   @media screen and (max-width: 768px) {
     grid-column: ${(props: GridColType) =>
-    props.md && `span ${props.md} / span ${props.md}`};
+      props.md && `span ${props.md} / span ${props.md}`};
   }
   @media screen and (max-width: 640px) {
     grid-column: ${(props: GridColType) =>
-    props.sm && `span ${props.sm} / span ${props.sm}`};
+      props.sm && `span ${props.sm} / span ${props.sm}`};
   }
 `;
 
 export const ImgWrapper = styled.div`
   max-width: ${(props: ImgWrapperTypes) =>
     props.maxWidth ? props.maxWidth : "none"};
+  height: 100%;
+
   margin: ${(props: ImgWrapperTypes) => props.margin && props.margin};
-  @media screen and (max-width: 1536px) {
+  @media screen and (max-width: 1400px) {
     max-width: ${(props: ImgWrapperTypes) => props.xlWidth && props.xlWidth};
   }
   @media screen and (max-width: 1024px) {

@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     <HeaderWrapper padding={`80px 0px 60px`}>
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
-          <HeaderTitle>Wellness apartmány v podhůří Jeseníků</HeaderTitle>
+          <HeaderTitle>Wellness apartmány v podhurí Jeseníku</HeaderTitle>
         </FlexRow>
       </Container>
 
@@ -50,8 +50,8 @@ const Header: React.FC = () => {
 export default Header;
 
 const headrIcons = [
-  { id: 1, text: "PRIVÁTNÍ WELLNESS", icon: headr1 },
-  { id: 2, text: "7 APARTMÁNŮ", icon: headr2 },
-  { id: 3, text: "UBYTOVÁNÍ V HORÁCH", icon: headr3 },
-  { id: 4, text: "MODERNÍ TECHNOLOGIE", icon: headr4 },
+  { id: 1, text: "Privátní Wellness ", icon: headr1 },
+  { id: 2, text: "7 Apartmánů", icon: headr2 },
+  { id: 3, text: "Ubytování v horách ", icon: headr3 },
+  { id: 4, text: "Moderní Technologie", icon: headr4 },
 ];
