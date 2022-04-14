@@ -39,7 +39,7 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle }) => {
             </FlexRow>
           </NavItemWrapper>
           <NavItemWrapper>
-            <Button style={{ minWidth: 180 }} width={`180px`}>
+            <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
               REZERVACE
             </Button>
           </NavItemWrapper>

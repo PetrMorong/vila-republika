@@ -13,6 +13,7 @@ export const Button = styled.button`
   align-items: center;
   width: 100%;
   padding: 0 16px;
+  cursor: pointer;
   background-color: ${(props: Props) =>
     props.bgColor ? props.bgColor : "#bf5757"};
   color: ${(props: Props) => (props.textColor ? props.textColor : "white")};

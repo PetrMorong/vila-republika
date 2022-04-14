@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import { Button } from "../../Styled/Button.styles";
 import { FooterItem } from "../../Styled/Footer.styles";
 import clientImg from "../../images/user.png";
-import facebook from "../../images/facebook.png";
-import insta from "../../images/instagram.png";
-
+import facebook from "../../images/facebook.svg";
+import insta from "../../images/instagram.svg";
+import footerlogo from "../../images/footerLogo.svg";
 import {
   Container,
   GridCol,
@@ -49,7 +49,9 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </FooterDesc>
           </GridCol>
           <GridCol>
-            <Button>REZERVACE</Button>
+            <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
+              REZERVACE
+            </Button>
           </GridCol>
         </GridRow>
 
@@ -186,6 +188,14 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </FlexRow>
           </GridCol>
         </GridRow>
+        <FlexRow
+          itemCenter
+          style={{
+            justifyContent: "center",
+          }}
+        >
+          <img src={footerlogo} alt="" />
+        </FlexRow>
       </Container>
     </Wrapper>
   );

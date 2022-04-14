@@ -9,10 +9,10 @@ import {
 } from "../../../Styled/Theme.styles";
 import { IconTitle, SectionTitle } from "../../../Styled/Typography.styles";
 
-import dalsi1 from "../../../images/dalsi1.png";
-import union1 from "../../../images/union1.png";
-import parkov1 from "../../../images/parkov1.png";
-import chytra1 from "../../../images/chytra1.png";
+import dalsi1 from "../../../images/Union1.svg";
+import union1 from "../../../images/Union2.svg";
+import parkov1 from "../../../images/Union3.svg";
+import chytra1 from "../../../images/Union4.svg";
 
 const Dalsi: React.FC = () => {
   return (
@@ -31,7 +31,7 @@ const Dalsi: React.FC = () => {
           smMb={``}
           mb={`94px`}
         >
-          Dalsi vybaveni
+          Další vybavení
         </SectionTitle>
         <GridRow lg={2} gap={`32px`} max="true" around cols={4}>
           {headrIcons.map(({ id, icon, text }) => {

@@ -130,7 +130,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 1720px;
+  max-width: 1444px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -139,8 +139,8 @@ export const Container = styled.div`
     props.margin ? props.margin : "0px auto"};
   width: ${(props: ContainerType) => (props.width ? props.width : "100%")};
   height: ${(props: ContainerType) => (props.height ? props.height : "auto")};
-  @media screen and (max-width: 1440px) {
-    max-width: 1280px;
+  @media screen and (max-width: 1240px) {
+    max-width: 1140px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -174,22 +174,22 @@ export const FlexRow = styled.div`
   @media screen and (max-width: 1536px) {
     gap: ${(props: FlexRowType) => props.xlGap && props.xlGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.xlDirection && props.xlDirection};
+    props.xlDirection && props.xlDirection};
   }
   @media screen and (max-width: 1024px) {
     gap: ${(props: FlexRowType) => props.lgGap && props.lgGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.lgDirection && props.lgDirection};
+    props.lgDirection && props.lgDirection};
   }
   @media screen and (max-width: 768px) {
     gap: ${(props: FlexRowType) => props.mdGap && props.mdGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.mdDirection && props.mdDirection};
+    props.mdDirection && props.mdDirection};
   }
   @media screen and (max-width: 640px) {
     gap: ${(props: FlexRowType) => props.smGap && props.smGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.smDirection && props.smDirection};
+    props.smDirection && props.smDirection};
   }
 `;
 
@@ -230,23 +230,23 @@ export const GridRow = styled.div`
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.lg && props.max
-        ? `repeat(${props.lg}, minmax(0, max-content))`
-        : `repeat(${props.lg}, minmax(0, 1fr))`};
+    props.lg && props.max
+      ? `repeat(${props.lg}, minmax(0, max-content))`
+      : `repeat(${props.lg}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.lgMargin && props.lgMargin};
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.md && props.max
-        ? `repeat(${props.md}, minmax(0, max-content))`
-        : `repeat(${props.md}, minmax(0, 1fr))`};
+    props.md && props.max
+      ? `repeat(${props.md}, minmax(0, max-content))`
+      : `repeat(${props.md}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.mdMargin && props.mdMargin};
   }
   @media screen and (max-width: 640px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.sm && props.max
-        ? `repeat(${props.sm}, minmax(0, max-content))`
-        : `repeat(${props.sm}, minmax(0, 1fr))`};
+    props.sm && props.max
+      ? `repeat(${props.sm}, minmax(0, max-content))`
+      : `repeat(${props.sm}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.smMargin && props.smMargin};
   }
 `;
@@ -259,15 +259,15 @@ export const GridCol = styled.div`
 
   @media screen and (max-width: 1024px) {
     grid-column: ${(props: GridColType) =>
-      props.lg && `span ${props.lg} / span ${props.lg}`};
+    props.lg && `span ${props.lg} / span ${props.lg}`};
   }
   @media screen and (max-width: 768px) {
     grid-column: ${(props: GridColType) =>
-      props.md && `span ${props.md} / span ${props.md}`};
+    props.md && `span ${props.md} / span ${props.md}`};
   }
   @media screen and (max-width: 640px) {
     grid-column: ${(props: GridColType) =>
-      props.sm && `span ${props.sm} / span ${props.sm}`};
+    props.sm && `span ${props.sm} / span ${props.sm}`};
   }
 `;
 
