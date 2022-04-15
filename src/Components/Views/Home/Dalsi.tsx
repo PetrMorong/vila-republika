@@ -31,7 +31,7 @@ const Dalsi: React.FC = () => {
           smMb={``}
           mb={`94px`}
         >
-          Dalsí vybavení
+          Další vybavení
         </SectionTitle>
         <GridRow lg={2} gap={`32px`} max="true" around cols={4}>
           {headrIcons.map(({ id, icon, text }) => {
@@ -59,8 +59,8 @@ const Dalsi: React.FC = () => {
 export default Dalsi;
 
 const headrIcons = [
-  { id: 1, text: "Lyzárna", icon: dalsi1 },
-  { id: 2, text: "Spolecenská místnost", icon: union1 },
+  { id: 1, text: "Lyžárna", icon: dalsi1 },
+  { id: 2, text: "Společenská místnost", icon: union1 },
   { id: 3, text: "Parkovací místo", icon: parkov1 },
   { id: 4, text: "Chytrá domácnost", icon: chytra1 },
 ];

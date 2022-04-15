@@ -19,7 +19,12 @@ const Header: React.FC = () => {
     <HeaderWrapper padding={`80px 0px 60px`}>
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
-          <HeaderTitle>Wellness apartmány v podhurí Jeseníku</HeaderTitle>
+          <HeaderTitle>
+            Wellness apartmány{" "}
+            <HeaderTitle style={{ color: "#F0E8D9" }}>
+              v podhůří Jeseníků
+            </HeaderTitle>{" "}
+          </HeaderTitle>
         </FlexRow>
       </Container>
 

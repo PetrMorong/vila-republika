@@ -26,9 +26,9 @@ const IntimniAtmosfera: React.FC = () => {
           smMb={``}
           mb={`100px`}
         >
-          Intimni atmosfera
+          Intimní atmosféra
           <br />
-          prvorepublikove vily
+          prvorepublikové vily
         </SectionTitle>
 
         <GridRow sm={1} cols={2} gap={`32px`}>

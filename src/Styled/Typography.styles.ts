@@ -151,11 +151,10 @@ export const Desc = styled.p`
 `;
 
 export const IconTitle = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   line-height: 23px;
   font-family: roc-grotesk-wide;
   font-weight: 600px;
-  font-size: 12px;
   color: ${(props: IconTitleTypes) => (props.color ? props.color : "white")};
 
   @media screen and (max-width: 1400px) {
@@ -201,7 +200,8 @@ export const FooterTitle = styled.h3`
 `;
 
 export const FooterDesc = styled.p`
-  font-size: 18px;
+  margin-left: 80px;
+  font-size: 17px;
   line-height: 26px;
   color: ${(props: FooterDescType) => (props.color ? props.color : "white")};
   text-align: left;

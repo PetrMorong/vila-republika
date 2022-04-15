@@ -38,8 +38,9 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
         >
           <GridCol>
             <FooterTitle color={``}>
-              <span style={{ color: "#F0E8D9" }}>Rezervujte</span>
-              <br />
+              <FooterTitle color={`#F0E8D9`} style={{ marginBottom: 0 }}>
+                Rezervujte
+              </FooterTitle>
               si apartmán <br />v Jeseníkách
             </FooterTitle>
           </GridCol>

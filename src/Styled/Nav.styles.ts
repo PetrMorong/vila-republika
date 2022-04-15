@@ -17,7 +17,7 @@ export const StyledNav = styled.div`
 `;
 
 export const NavItem = styled.a`
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   text-decoration: none;
   list-style: none;
