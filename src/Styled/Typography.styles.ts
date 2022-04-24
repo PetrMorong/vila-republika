@@ -1,10 +1,27 @@
 import styled from "styled-components";
-interface HeaderTitle {
-  mb: string;
-  m: string;
+interface HeaderTitleTypes {
+  align: string;
+  maxWidth: string;
+  fontSize: string;
+  smfontSize: string;
+  smLineheight: string;
 }
 interface IconTitleTypes {
   color: string;
+  fontSize: string;
+  xlfontSize: string;
+  mdFontSize:string;
+  smFontSize: string;
+  textAlign: string;
+  fontWeight: string;
+  xlfontWeight: string;
+  mdfontWeight: string;
+  smFontWeight: string;
+  mb: string;
+  mdMargibBottom:string;
+  mdLineheight: string;
+  smLineheight: string;
+
 }
 interface DescTypes {
   color: string;
@@ -20,6 +37,7 @@ interface DescTypes {
   mdFontsize: string;
   smMargin: string;
   smFontsize: string;
+  smLineHeight: string;
 }
 interface SectionTitleTypes {
   xlMb: string;
@@ -28,6 +46,7 @@ interface SectionTitleTypes {
   mdMb: string;
   smMb: string;
   mb: string;
+  smFontSize: string;
 }
 interface VileSlideTitleTypes {
   color: string;
@@ -41,10 +60,16 @@ interface VileSlideDescTypes {
 }
 interface FooterTitleType {
   color: string;
+  textAlign:string;
+  mdtextAlign:string;
+  mdFontsize:string;
+  mdLineHeight:string;
 }
 interface FooterDescType {
   color: string;
   mdAlign: string;
+  mdFontSize:string;
+  mdLineHeight:string;
 }
 interface FooterCategoryTitleType {
   color: string;
@@ -56,9 +81,13 @@ interface FooterCategoryTitleType {
 }
 
 export const HeaderTitle = styled.h1`
-  font-size: 73px;
-  color: white;
-  max-width: 934px;
+  font-size: ${(props: HeaderTitleTypes) =>
+    props.fontSize ? props.fontSize : "73px"};
+  color: #ffffff;
+  max-width: ${(props: HeaderTitleTypes) =>
+    props.maxWidth ? props.maxWidth : "100%"};
+  text-align: ${(props: HeaderTitleTypes) =>
+    props.align ? props.align : "left"};
 
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 500;
@@ -77,8 +106,10 @@ export const HeaderTitle = styled.h1`
     line-height: 46px;
   }
   @media screen and (max-width: 640px) {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: ${(props: HeaderTitleTypes) =>
+      props.smfontSize ? props.smfontSize : "30px"};
+    line-height: ${(props: HeaderTitleTypes) =>
+      props.smLineheight ? props.smLineheight : "38px"};
   }
 `;
 
@@ -108,7 +139,8 @@ export const SectionTitle = styled.h3`
   }
   @media screen and (max-width: 640px) {
     margin-bottom: ${(props: SectionTitleTypes) => props.smMb && props.smMb};
-    font-size: 26px;
+    font-size: ${(props: SectionTitleTypes) =>
+      props.smFontSize ? props.smFontSize : "26px"};
     line-height: 34px;
   }
 `;
@@ -146,37 +178,55 @@ export const Desc = styled.p`
     margin: ${(props: DescTypes) => props.smMargin && props.smMargin};
     font-size: ${(props: DescTypes) =>
       props.smFontsize ? props.smFontsize : "12px"};
-    line-height: 20px;
+    line-height: ;
+    line-height: ${(props: DescTypes) =>
+      props.smLineHeight ? props.smLineHeight : "20px"};
   }
 `;
 
 export const IconTitle = styled.p`
-  font-size: 14px;
+  font-size: ${(props: IconTitleTypes) =>
+    props.fontSize ? props.fontSize : "14px"};
+  text-align: ${(props: IconTitleTypes) =>
+    props.textAlign ? props.textAlign : "left"};
   line-height: 23px;
   font-family: roc-grotesk-wide;
-  font-weight: 600px;
+  font-weight: ${(props: IconTitleTypes) =>
+    props.fontWeight ? props.fontWeight : "600"};
   color: ${(props: IconTitleTypes) => (props.color ? props.color : "white")};
-
+  margin-bottom: ${(props: IconTitleTypes) => (props.mb ? props.mb : "0px")};
   @media screen and (max-width: 1400px) {
-    font-weight: 600;
+    font-size: ${(props: IconTitleTypes) =>
+      props.xlfontSize ? props.xlfontSize : "14px"};
+    font-weight: ${(props: IconTitleTypes) =>
+      props.xlfontWeight ? props.xlfontWeight : "600"};
   }
   @media screen and (max-width: 1024px) {
   }
   @media screen and (max-width: 768px) {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: ${(props: IconTitleTypes) =>
+      props.mdFontSize ? props.mdFontSize : "14px"};
+    line-height: ${(props: IconTitleTypes) =>
+      props.mdLineheight ? props.mdLineheight : "20px"};
 
-    font-weight: 400;
-  }
+    font-weight: ${(props: IconTitleTypes) =>
+      props.mdfontWeight ? props.mdfontWeight : "400"};
+      margin-bottom: ${(props: IconTitleTypes) => (props.mdMargibBottom ? props.mdMargibBottom : "0px")};
+      
+    }
   @media screen and (max-width: 640px) {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 400;
+    font-size: ${(props: IconTitleTypes) =>
+      props.smFontSize ? props.smFontSize : "12px"};
+    line-height: ${(props: IconTitleTypes) =>
+      props.smLineheight ? props.smLineheight : "12px"};
+    font-weight: ${(props: IconTitleTypes) =>
+      props.smFontWeight ? props.smFontWeight : "400"};
   }
 `;
 
 export const FooterTitle = styled.h3`
   color: ${(props: FooterTitleType) => (props.color ? props.color : "white")};
+  text-align: ${(props: FooterTitleType) => (props.textAlign ? props.textAlign : "left")};
   font-size: 34px;
   line-height: 42px;
   font-weight: 600;
@@ -192,8 +242,10 @@ export const FooterTitle = styled.h3`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
-    line-height: 30px;
+    font-size:${(props: FooterTitleType) => (props.mdFontsize ? props.mdFontsize : "")};
+    line-height: ${(props: FooterTitleType) => (props.mdLineHeight ? props.mdLineHeight : "")};
+    text-align: ${(props: FooterTitleType) =>
+      props.mdtextAlign ? props.mdtextAlign : "left"};
   }
   @media screen and (max-width: 640px) {
   }
@@ -210,14 +262,15 @@ export const FooterDesc = styled.p`
     line-height: 24px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 14px;
-    line-height: 22px;
+    margin-left: 0px;
+    font-size:  ${(props: FooterDescType) => (props.mdFontSize ? props.mdFontSize : "18px")};
+    line-height:  ${(props: FooterDescType) => (props.mdLineHeight ? props.mdLineHeight : "30px")};
     text-align: ${(props: FooterDescType) =>
       props.mdAlign ? props.mdAlign : "left"};
   }
   @media screen and (max-width: 640px) {
-    font-size: 12px;
-    line-height: 20px;
+    font-size:  ${(props: FooterDescType) => (props.mdFontSize ? props.mdFontSize : "18px")};
+    line-height:  ${(props: FooterDescType) => (props.mdLineHeight ? props.mdLineHeight : "30px")};
 
     text-align: ${(props: FooterDescType) =>
       props.mdAlign ? props.mdAlign : "left"};

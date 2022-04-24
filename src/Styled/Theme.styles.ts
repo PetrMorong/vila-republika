@@ -4,8 +4,13 @@ interface ContainerType {
   margin?: string;
   width?: string;
   height?: string;
+  maxWidth?: string;
 }
 interface FlexRowType {
+  padding?: string;
+  mdPadding?: string;
+  smPadding?: string;
+
   gap?: string;
   column?: any;
   width?: string;
@@ -15,6 +20,8 @@ interface FlexRowType {
   margin?: string;
   direction?: string;
   between?: any;
+  center?: any;
+  bgColor?: string;
   itemCenter?: any;
   xlGap?: string;
   xlDirection?: string;
@@ -49,14 +56,21 @@ interface GridRowType {
 
 interface GridColType {
   colSpan?: any;
+  direction?:string;
   lg?: any;
   md?: any;
   sm?: any;
+  mdJustifyContent?:string;
+  
 }
 
 interface ImgWrapperTypes {
+  height?: string;
   maxWidth?: any;
   margin?: any;
+  xlMargin?: string;
+  mdMargin?: string;
+  smMargin?: string;
   xlWidth?: any;
   lgWidth?: any;
   mdWidth?: any;
@@ -109,7 +123,44 @@ interface Props {
   color?: string;
   colSpan?: string;
 }
+export const WrapperSectionBorderLines = styled.div`
+  max-width: 215px;
+  position: relative;
+  margin: auto;
+`;
+export const SectionBorderLines = styled.div`
+  font-size: 15px;
+  text-align: center;
 
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    height: 3px;
+    content: "";
+    background-color: #f0e8d9;
+    z-index: 1000;
+  }
+  &:after {
+    content: "○";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 50%;
+    margin-left: -20px;
+    top: -65px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #f0e8d9;
+    font-weight: 400;
+    z-index: 1000;
+    display: block;
+    background-color: #ffffff;
+  }
+`;
 export const Wrapper = styled.div`
   width: 100%;
   background: ${(props: Props) =>
@@ -130,7 +181,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 1444px;
+  max-width: ${(props: ContainerType) => (props.maxWidth ? props.maxWidth : "1444px")};
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -147,6 +198,10 @@ export const Container = styled.div`
 `;
 
 export const FlexRow = styled.div`
+padding: ${(props: FlexRowType) =>
+    props.padding ? props.padding : "0px 0px 0px 0px"};
+  background: ${(props: FlexRowType) =>
+    props.bgColor ? props.bgColor : "transparent"};
   display: flex;
   gap: ${(props: FlexRowType) => (props.gap ? props.gap : "0px")};
   flex-direction: ${(props: FlexRowType) => (props.column ? "column" : "row")};
@@ -166,30 +221,39 @@ export const FlexRow = styled.div`
       justify-content: space-between;
     `}
   ${(props: FlexRowType) =>
+    props.center &&
+    css`
+      justify-content: center;
+    `}
+  ${(props: FlexRowType) =>
     props.itemCenter &&
     css`
       align-items: center;
     `}
 
-  @media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     gap: ${(props: FlexRowType) => props.xlGap && props.xlGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.xlDirection && props.xlDirection};
+    props.xlDirection && props.xlDirection};
   }
   @media screen and (max-width: 1024px) {
     gap: ${(props: FlexRowType) => props.lgGap && props.lgGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.lgDirection && props.lgDirection};
+    props.lgDirection && props.lgDirection};
   }
   @media screen and (max-width: 768px) {
     gap: ${(props: FlexRowType) => props.mdGap && props.mdGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.mdDirection && props.mdDirection};
+    props.mdDirection && props.mdDirection};
+    padding: ${(props: FlexRowType) =>
+    props.mdPadding ? props.mdPadding : "0px 0px 0px 0px"};
   }
   @media screen and (max-width: 640px) {
     gap: ${(props: FlexRowType) => props.smGap && props.smGap};
     flex-direction: ${(props: FlexRowType) =>
-      props.smDirection && props.smDirection};
+    props.smDirection && props.smDirection};
+      padding: ${(props: FlexRowType) =>
+    props.smPadding ? props.smPadding : "0px 0px 0px 0px"};
   }
 `;
 
@@ -230,28 +294,32 @@ export const GridRow = styled.div`
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.lg && props.max
-        ? `repeat(${props.lg}, minmax(0, max-content))`
-        : `repeat(${props.lg}, minmax(0, 1fr))`};
+    props.lg && props.max
+      ? `repeat(${props.lg}, minmax(0, max-content))`
+      : `repeat(${props.lg}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.lgMargin && props.lgMargin};
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.md && props.max
-        ? `repeat(${props.md}, minmax(0, max-content))`
-        : `repeat(${props.md}, minmax(0, 1fr))`};
+    props.md && props.max
+      ? `repeat(${props.md}, minmax(0, max-content))`
+      : `repeat(${props.md}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.mdMargin && props.mdMargin};
   }
   @media screen and (max-width: 640px) {
     grid-template-columns: ${(props: GridRowType) =>
-      props.sm && props.max
-        ? `repeat(${props.sm}, minmax(0, max-content))`
-        : `repeat(${props.sm}, minmax(0, 1fr))`};
+    props.sm && props.max
+      ? `repeat(${props.sm}, minmax(0, max-content))`
+      : `repeat(${props.sm}, minmax(0, 1fr))`};
     margin: ${(props: GridRowType) => props.smMargin && props.smMargin};
   }
 `;
 
 export const GridCol = styled.div`
+display: flex;
+flex-direction: ${(props: GridColType) => props.direction ? props.direction : "column"};
+align-items: center;
+justify-content:flex-end;
   grid-column: ${(props: GridColType) =>
     props.colSpan
       ? `span ${props.colSpan} / span ${props.colSpan}`
@@ -259,38 +327,51 @@ export const GridCol = styled.div`
 
   @media screen and (max-width: 1024px) {
     grid-column: ${(props: GridColType) =>
-      props.lg && `span ${props.lg} / span ${props.lg}`};
+    props.lg && `span ${props.lg} / span ${props.lg}`};
   }
   @media screen and (max-width: 768px) {
     grid-column: ${(props: GridColType) =>
-      props.md && `span ${props.md} / span ${props.md}`};
+    props.md && `span ${props.md} / span ${props.md}`};
+ 
+    justify-content: ${(props: GridColType) => props.mdJustifyContent && props.mdJustifyContent};
+      
   }
   @media screen and (max-width: 640px) {
     grid-column: ${(props: GridColType) =>
-      props.sm && `span ${props.sm} / span ${props.sm}`};
+    props.sm && `span ${props.sm} / span ${props.sm}`};
   }
 `;
 
 export const ImgWrapper = styled.div`
   max-width: ${(props: ImgWrapperTypes) =>
     props.maxWidth ? props.maxWidth : "none"};
-  height: 100%;
-
+  height: ${(props: ImgWrapperTypes) => (props.height ? props.height : "100%")};
   margin: ${(props: ImgWrapperTypes) => props.margin && props.margin};
   @media screen and (max-width: 1400px) {
     max-width: ${(props: ImgWrapperTypes) => props.xlWidth && props.xlWidth};
+    margin: ${(props: ImgWrapperTypes) => props.xlMargin && props.xlMargin};
   }
   @media screen and (max-width: 1024px) {
     max-width: ${(props: ImgWrapperTypes) => props.lgWidth && props.lgWidth};
   }
   @media screen and (max-width: 768px) {
     max-width: ${(props: ImgWrapperTypes) => props.mdWidth && props.mdWidth};
+    margin: ${(props: ImgWrapperTypes) => props.mdMargin && props.mdMargin};
   }
   @media screen and (max-width: 640px) {
     max-width: ${(props: ImgWrapperTypes) => props.smWidth && props.smWidth};
+    margin: ${(props: ImgWrapperTypes) => props.smMargin && props.smMargin};
   }
 `;
+export const IconContentWrap = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  align-self:center;
+  padding-top:10px;
+  
 
+`
 export const StyledImg = styled.img`
   width: ${(props: Props) => (props.w ? props.w : "auto")};
   height: ${(props: Props) => (props.h ? props.h : "auto")};

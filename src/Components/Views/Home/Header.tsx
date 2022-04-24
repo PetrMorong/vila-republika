@@ -1,5 +1,6 @@
 import React from "react";
 import { HeaderWrapper } from "../../../Styled/Header.styles";
+import header from "../../../images/header-bg.png";
 import headr1 from "../../../images/header-icon1.svg";
 import headr2 from "../../../images/header-icon2.svg";
 import headr3 from "../../../images/header-icon3.svg";
@@ -16,12 +17,12 @@ import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
 
 const Header: React.FC = () => {
   return (
-    <HeaderWrapper padding={`80px 0px 60px`}>
+    <HeaderWrapper padding={`80px 0px 60px`} header={header} bgColor >
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
-          <HeaderTitle>
+          <HeaderTitle align={`left`} maxWidth={`932px`}>
             Wellness apartmány{" "}
-            <HeaderTitle style={{ color: "#F0E8D9" }}>
+            <HeaderTitle style={{ color: "#F0E8D9" }} align={`left`} maxWidth={`932px`}>
               v podhůří Jeseníků
             </HeaderTitle>{" "}
           </HeaderTitle>

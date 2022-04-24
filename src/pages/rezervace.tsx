@@ -13,10 +13,10 @@ const Reservation = () => {
         ></script>
       </Helmet>
 
-      <Layout>
+      {/* <Layout>
         <Wrap>
           <Container>
-            <div class="previo-reservation-form">
+            <div className="previo-reservation-form">
               <iframe
                 src="https://booking.previo.cz/?hotId=758539&theme=dark"
                 scrolling="no"
@@ -30,7 +30,7 @@ const Reservation = () => {
             </div>
           </Container>
         </Wrap>
-      </Layout>
+      </Layout> */}
     </>
   );
 };

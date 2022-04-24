@@ -28,24 +28,48 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
     <Wrapper bgColor={`#262b3b`} xlPadding={`50px 0px`} padding={`100px 0px`}>
       <Container>
         <GridRow
-          sm={1}
-          lg={2}
           cols={4}
+          lg={2}
+          md={1}
+          sm={1}
           gap={`32px`}
           margin={`0px 0px 50px`}
           xlMargin={`0px 0px 32px`}
           mdMargin={`0px 0px 26px`}
         >
-          <GridCol>
-            <FooterTitle color={``}>
-              <FooterTitle color={`#F0E8D9`} style={{ marginBottom: 0 }}>
+          <GridCol mdJustifyContent={`center`}>
+            <FooterTitle
+              color={``}
+              mdFontsize={`30px`}
+              mdLineHeight={`40px`}
+              textAlign={`left`}
+              mdtextAlign={`center`}
+            >
+              <FooterTitle
+                mdFontsize={`30px`}
+                mdLineHeight={`40px`}
+                textAlign={`left`}
+                mdtextAlign={`center`}
+                color={`#F0E8D9`}
+                style={{ marginBottom: 0 }}
+              >
                 Rezervujte
               </FooterTitle>
               si apartmán <br />v Jeseníkách
             </FooterTitle>
           </GridCol>
-          <GridCol lg={1} colSpan={2}>
-            <FooterDesc color={``} mdAlign={``}>
+          <GridCol
+            lg={1}
+            colSpan={2}
+            direction={`row`}
+            mdJustifyContent={`center`}
+          >
+            <FooterDesc
+              color={``}
+              mdFontSize={`18px`}
+              mdLineHeight={`30px`}
+              mdAlign={`center`}
+            >
               Apartmány nabízíme v různých velikostech. Pro jednotlivce, páry i
               rozvětvenou rodinu. Zarezervovat si můžete také celou vilu – na
               oslavu narozenin či dovolenou s přáteli. V okolí budete mít
@@ -53,13 +77,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               termální lázně na dosah. Ozvěte se!
             </FooterDesc>
           </GridCol>
-          <GridCol
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-            }}
-          >
+          <GridCol mdJustifyContent={`center`}>
             <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
               REZERVACE
             </Button>
@@ -88,12 +106,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             >
               Vila Republika
             </FooterCategoryTitle>
-            <FlexRow
-              gap={`10px`}
-              style={{
-                flexDirection: "column",
-              }}
-            >
+            <FlexRow gap={`10px`} column>
               {navLinks.map((item, index) => {
                 return (
                   <Link key={index} to={item.path}>
