@@ -61,6 +61,9 @@ interface GridColType {
   md?: any;
   sm?: any;
   mdJustifyContent?:string;
+  justifyContent?:string;
+  alingItems?:string;
+  alignSelf?:string;
   
 }
 
@@ -204,7 +207,6 @@ padding: ${(props: FlexRowType) =>
     props.bgColor ? props.bgColor : "transparent"};
   display: flex;
   gap: ${(props: FlexRowType) => (props.gap ? props.gap : "0px")};
-  flex-direction: ${(props: FlexRowType) => (props.column ? "column" : "row")};
   width: ${(props: FlexRowType) => (props.width ? props.width : "auto")};
   height: ${(props: FlexRowType) => (props.height ? props.height : "auto")};
   min-height: ${(props: FlexRowType) =>
@@ -318,8 +320,9 @@ export const GridRow = styled.div`
 export const GridCol = styled.div`
 display: flex;
 flex-direction: ${(props: GridColType) => props.direction ? props.direction : "column"};
-align-items: center;
-justify-content:flex-end;
+align-items: ${(props: GridColType) => props.justifyContent ? props.alingItems : ""};
+  align-self:${(props: GridColType) => props.justifyContent ? props.alignSelf : ""};
+justify-content:${(props: GridColType) => props.justifyContent ? props.justifyContent : "start"};
   grid-column: ${(props: GridColType) =>
     props.colSpan
       ? `span ${props.colSpan} / span ${props.colSpan}`

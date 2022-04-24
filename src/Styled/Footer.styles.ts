@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterItem = styled.a`
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   list-style: none;

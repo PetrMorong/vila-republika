@@ -277,7 +277,7 @@ export const FooterDesc = styled.p`
   }
 `;
 export const FooterCategoryTitle = styled.h3`
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: ${(props: FooterCategoryTitleType) =>
     props.color ? props.color : "white"};

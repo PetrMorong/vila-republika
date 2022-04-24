@@ -77,7 +77,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               termální lázně na dosah. Ozvěte se!
             </FooterDesc>
           </GridCol>
-          <GridCol mdJustifyContent={`center`}>
+          <GridCol mdJustifyContent={`center`} justifyContent={`center`} alingItems={`center`} alignSelf={`center`}>
             <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
               REZERVACE
             </Button>
@@ -106,7 +106,9 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             >
               Vila Republika
             </FooterCategoryTitle>
-            <FlexRow gap={`10px`} column>
+            <FlexRow gap={`10px`} style={{
+              flexDirection: "column"
+            }} column={"column"}>
               {navLinks.map((item, index) => {
                 return (
                   <Link key={index} to={item.path}>
@@ -129,12 +131,12 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </FooterCategoryTitle>
 
             <FlexRow gap={`16px`} itemCenter>
-              <ImgWrapper smWidth={`32px`} xlWidth={`50px`}>
+              <ImgWrapper smWidth={`70px`} xlWidth={`50px`}>
                 <StyledImg w={`100%`} src={clientImg} alt="img" />
               </ImgWrapper>
               <FlexRow direction={`column`}>
                 <Desc
-                  style={{ textAlign: "left", fontWeight: 600 }}
+                  style={{ textAlign: "left" }}
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
@@ -147,7 +149,8 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   lgFontsize={``}
                   mdFontsize={``}
                   smMargin={``}
-                  smFontsize={``}
+                  smFontsize={`18px`}
+                  smLineHeight={``}
                 >
                   Helena Morongová
                 </Desc>
@@ -191,26 +194,36 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             >
               Sledujte nás
             </FooterCategoryTitle>
-            <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
-              <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
-                <StyledImg w={`100%`} src={facebook} alt="img" />
-              </ImgWrapper>
-              <FooterItem>
-                <p>
-                  Vila republika <br /> na Facebooku
-                </p>
-              </FooterItem>
-            </FlexRow>
-            <FlexRow gap={`16px`} itemCenter>
-              <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
-                <StyledImg w={`100%`} src={insta} alt="img" />
-              </ImgWrapper>
-              <FooterItem>
-                <p>
-                  Vila republika <br /> na Instagramu
-                </p>
-              </FooterItem>
-            </FlexRow>
+            <GridRow
+              sm={2}
+              md={1}
+              cols={1}
+              gap={`12px`}
+              margin={`0px 0px 0px`}
+              xlMargin={`0px 0px 0px`}
+              mdMargin={`0px 0px 30px`}
+            >
+              <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
+                <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
+                  <StyledImg w={`100%`} src={facebook} alt="img" />
+                </ImgWrapper>
+                <FooterItem>
+                  <p>
+                    Vila republika <br /> na Facebooku
+                  </p>
+                </FooterItem>
+              </FlexRow>
+              <FlexRow gap={`16px`} itemCenter>
+                <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
+                  <StyledImg w={`100%`} src={insta} alt="img" />
+                </ImgWrapper>
+                <FooterItem>
+                  <p>
+                    Vila republika <br /> na Instagramu
+                  </p>
+                </FooterItem>
+              </FlexRow>
+            </GridRow>
           </GridCol>
         </GridRow>
         <FlexRow
