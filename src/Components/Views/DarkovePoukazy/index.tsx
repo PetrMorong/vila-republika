@@ -4,7 +4,7 @@ import ChooseValue from "./ChooseValue";
 import Header from "./Header";
 import SectionTwo from "./SectionTwo";
 
-const GiftCards: React.FC = () => {
+const DarkovePoukazy: React.FC = () => {
   return (
     <Layout>
       <Header />
@@ -14,4 +14,4 @@ const GiftCards: React.FC = () => {
   );
 };
 
-export default GiftCards;
+export default DarkovePoukazy;
