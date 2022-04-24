@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import React from "react";
 import Layout from "../Components/Layout/Layout";
 import styled from "styled-components";
+import Header from "../Components/Views/Rezervace/Header";
 
 const Reservation = () => {
   return (
@@ -13,7 +14,8 @@ const Reservation = () => {
         ></script>
       </Helmet>
 
-      {/* <Layout>
+      <Layout>
+        <Header />
         <Wrap>
           <Container>
             <div className="previo-reservation-form">
@@ -30,7 +32,7 @@ const Reservation = () => {
             </div>
           </Container>
         </Wrap>
-      </Layout> */}
+      </Layout>
     </>
   );
 };

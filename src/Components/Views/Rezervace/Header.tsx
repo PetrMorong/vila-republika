@@ -1,7 +1,6 @@
 import React from "react";
 import { HeaderWrapper } from "../../../Styled/Header.styles";
-import header from "../../../images/giftcard/header-bg.png";
-
+import header from "../../../images/young-bg.png";
 import { Container, FlexRow } from "../../../Styled/Theme.styles";
 import { HeaderTitle } from "../../../Styled/Typography.styles";
 
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
             smLineheight={`52px`}
             maxWidth={`100%`}
           >
-            Dárkové poukazy
+            Rezervace
           </HeaderTitle>
         </FlexRow>
       </Container>
@@ -33,3 +32,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
