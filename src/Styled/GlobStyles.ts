@@ -18,4 +18,10 @@ export const GlobalStyle = createGlobalStyle`
   .btn-primary {
     color: #BF5757 !important;
   }
+
+  @media screen and (max-width: 768px) {
+    .tab{
+      display:none;
+    }
+  }
 `;

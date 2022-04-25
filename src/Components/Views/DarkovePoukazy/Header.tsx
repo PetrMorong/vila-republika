@@ -8,7 +8,7 @@ import { HeaderTitle } from "../../../Styled/Typography.styles";
 const Header: React.FC = () => {
   return (
     <HeaderWrapper
-      padding={`80px 0px 60px`}
+      padding={`160px 0px 60px`}
       smPadding={`140px 0px 0px`}
       header={header}
       smHegiht={"690px"}
