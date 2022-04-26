@@ -48,15 +48,15 @@ export default Tab;
 
 const data = [
   {
-    title: "Apartmány",
-    url: "#Apartmany",
+    title: "Velké Losiny",
+    url: "#VelkeLosiny",
   },
   {
-    title: "Exteriér",
-    url: "#Exterier",
+    title: "Jeseníky",
+    url: "#Jeseniky",
   },
   {
-    title: "Wellness",
-    url: "#Wellness",
+    title: "Výlety",
+    url: "#Vylety",
   },
 ];

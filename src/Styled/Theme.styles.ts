@@ -201,6 +201,7 @@ export const Container = styled.div`
 `;
 
 export const FlexRow = styled.div`
+position:relative;
 padding: ${(props: FlexRowType) =>
     props.padding ? props.padding : "0px 0px 0px 0px"};
   background: ${(props: FlexRowType) =>

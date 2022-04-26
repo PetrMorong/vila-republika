@@ -18,7 +18,9 @@ export const GlobalStyle = createGlobalStyle`
   .btn-primary {
     color: #BF5757 !important;
   }
-
+.tab{
+  border-bottom: 1px solid #F0E8D9;
+}
   @media screen and (max-width: 768px) {
     .tab{
       display:none;
