@@ -15,9 +15,6 @@ import {
   VileSlideDesc,
   VileSlideTitle,
 } from "../../../Styled/Typography.styles";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
 import { BsChevronRight } from "react-icons/bs";
 
 import swiper1 from "../../../images/slide1.png";
@@ -26,12 +23,6 @@ import swiper2 from "../../../images/slide2.png";
 import { SlideContent, SlideWrapper } from "../../../Styled/Swiper.styles";
 
 const VilaRepublika: React.FC = () => {
-  const params = {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
   return (
     <Wrapper
       bgColor={`#f0e8d9`}
@@ -48,23 +39,27 @@ const VilaRepublika: React.FC = () => {
           mdMb={`22px`}
           smMb={``}
           mb={`51px`}
+          smFontSize={``}
         >
           Vila Republika
         </SectionTitle>
         <Desc
           width={`908px`}
-          color={``}
-          fontWeight={``}
-          mb={``}
           margin={`0px auto 138px`}
           xlMargin={`0px auto 40px`}
-          xlFontsize={``}
           lgMargin={`0px auto 32px`}
+          color={``}
+          align={``}
+          fontWeight={``}
+          mb={``}
+          xlFontsize={``}
           mdMargin={``}
           lgFontsize={``}
           mdFontsize={``}
           smMargin={``}
-          smFontsize={``}
+          smFontsize={`18px`}
+          smLineHeight={`30px`}
+          smalign={``}
         >
           Apartmánový dům Vila Republika leží pod svahy Hrubého Jeseníku v
           lázeňské obci Velké Losiny. Původní stavba z 30. let minulého století
@@ -79,8 +74,10 @@ const VilaRepublika: React.FC = () => {
         <GridRow md={1} cols={2}>
           {slides.map(({ id, img, title, desc }) => {
             return (
-              <SlideWrapper>
-                <ImgWrapper>
+              <SlideWrapper key={id}>
+                <ImgWrapper style={{
+                  minHeight:"500px"
+                }}>
                   <StyledImg
                     object={`cover`}
                     h={`100%`}
@@ -91,11 +88,24 @@ const VilaRepublika: React.FC = () => {
                 </ImgWrapper>
                 <SlideContent>
                   <div style={{ marginTop: "auto" }}>
-                    <VileSlideTitle color={``} mb={``} smMb={``}>
+                    <VileSlideTitle
+                      color={``}
+                      mb={``}
+                      smMb={``}
+                      fontSize={``}
+                      smfontSize={``}
+                      smLineHeight={``}
+                    >
                       {title}
                     </VileSlideTitle>
                     <FlexRow gap={`16px`} between>
-                      <VileSlideDesc width={`450px`} color={`#F0E8D9`} mb={``}>
+                      <VileSlideDesc
+                        smFontSize={`16px`}
+                        smLineHeight={`28px`}
+                        width={`450px`}
+                        color={`#F0E8D9`}
+                        mb={``}
+                      >
                         {desc}
                       </VileSlideDesc>
                       <IconWrapper size={`38px`} color={`white`}>

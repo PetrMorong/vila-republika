@@ -17,12 +17,27 @@ import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
 
 const Header: React.FC = () => {
   return (
-    <HeaderWrapper padding={`80px 0px 60px`} header={header} bgColor >
+    <HeaderWrapper padding={`80px 0px 60px`} smPadding={`80px 0px 60px`} header={header} bgColor>
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
-          <HeaderTitle align={`left`} maxWidth={`932px`}>
+          <HeaderTitle
+            fontSize={``}
+            smfontSize={``}
+            smLineheight={``}
+            align={`left`}
+            maxWidth={`932px`}
+            smalign={`center`}
+          >
             Wellness apartmány{" "}
-            <HeaderTitle style={{ color: "#F0E8D9" }} align={`left`} maxWidth={`932px`}>
+            <HeaderTitle
+              style={{ color: "#F0E8D9" }}
+              fontSize={``}
+              smfontSize={``}
+              smLineheight={``}
+              align={`left`}
+              maxWidth={`932px`}
+              smalign={`center`}
+            >
               v podhůří Jeseníků
             </HeaderTitle>{" "}
           </HeaderTitle>
@@ -30,20 +45,41 @@ const Header: React.FC = () => {
       </Container>
 
       <Container>
-        <GridRow lg={"2"} gap={"16px"} between cols={"4"}>
+        <GridRow sm={1} lg={"2"} gap={"16px"} between cols={"4"}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
               <FlexRow
                 gap={`15px`}
-                mdDirection={`column`}
                 lgGap={`12px`}
                 itemCenter
+                
                 key={id}
               >
-                <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
+                <ImgWrapper smWidth={`50px`} xlWidth={`36px`}>
                   <StyledImg w={`100%`} src={icon} alt="img" />
                 </ImgWrapper>
-                <IconTitle color={`#FFFFFF`}>{text}</IconTitle>
+                <IconTitle
+                  color={`#FFFFFF`}
+                  fontSize={`15px`}
+                  linHeight={``}
+                  xlfontSize={`15px`}
+                  mdFontSize={`15px`}
+                  smFontSize={`15px`}
+                  textAlign={``}
+                  fontWeight={`700`}
+                  xlfontWeight={`700`}
+                  mdfontWeight={`700`}
+                  smFontWeight={`700`}
+                  mb={``}
+                  mdMargibBottom={``}
+                  mdLineheight={``}
+                  smLineheight={``}
+                  mdtextAlign={`left`}
+                  smtextAlign={`left`}
+                  smMargibBottom={``}
+                >
+                  {text}
+                </IconTitle>
               </FlexRow>
             );
           })}

@@ -7,6 +7,15 @@ interface Props {
   brColor?: string;
   margin?: string;
 }
+export const ButtonWrapper = styled.div`
+width:100%;
+display: flex;
+justify-content: flex-start;
+@media screen and (max-width: 640px) {
+  justify-content: center;
+}
+
+`
 export const Button = styled.button`
   display: inline-flex;
   justify-content: center;

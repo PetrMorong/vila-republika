@@ -10,7 +10,7 @@ interface FlexRowType {
   padding?: string;
   mdPadding?: string;
   smPadding?: string;
-
+  smcenter?: string;
   gap?: string;
   column?: any;
   width?: string;
@@ -56,15 +56,15 @@ interface GridRowType {
 
 interface GridColType {
   colSpan?: any;
-  direction?:string;
+  direction?: string;
   lg?: any;
   md?: any;
   sm?: any;
-  mdJustifyContent?:string;
-  justifyContent?:string;
-  alingItems?:string;
-  alignSelf?:string;
-  
+  mdJustifyContent?: string;
+  justifyContent?: string;
+  alingItems?: string;
+  alignSelf?: string;
+
 }
 
 interface ImgWrapperTypes {
@@ -257,6 +257,11 @@ padding: ${(props: FlexRowType) =>
     props.smDirection && props.smDirection};
       padding: ${(props: FlexRowType) =>
     props.smPadding ? props.smPadding : "0px 0px 0px 0px"};
+    ${(props: FlexRowType) =>
+    props.smcenter &&
+    css`
+        justify-content: center;
+      `}
   }
 `;
 

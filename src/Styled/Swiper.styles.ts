@@ -6,7 +6,6 @@ export const SlideWrapper = styled.div`
   height: 100%;
   cursor: pointer;
   transition: 200ms;
-
   &:hover {
     opacity: 0.9;
   }

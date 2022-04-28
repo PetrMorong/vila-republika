@@ -25,28 +25,44 @@ const Dalsi: React.FC = () => {
       <Container>
         <SectionTitle
           xlMb={`40px`}
+          mb={`94px`}
           color={``}
           lgMb={``}
           mdMb={``}
           smMb={``}
-          mb={`94px`}
+          smFontSize={``}
         >
           Další vybavení
         </SectionTitle>
-        <GridRow lg={2} gap={`32px`} max="true" around cols={4}>
+        <GridRow sm={1} lg={2} gap={`32px`} max="true" around cols={4}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
-              <FlexRow
-                gap={`15px`}
-                lgGap={`12px`}
-                mdDirection={`column`}
-                itemCenter
-                key={id}
-              >
-                <ImgWrapper smWidth={`22px`} xlWidth={`36px`}>
+              <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
+                <ImgWrapper smWidth={`50px`} xlWidth={`36px`}>
                   <StyledImg w={`100%`} src={icon} alt="img" />
                 </ImgWrapper>
-                <IconTitle color={`#262B3B`}>{text}</IconTitle>
+                <IconTitle
+                  fontSize={`15px`}
+                  linHeight={``}
+                  xlfontSize={`15px`}
+                  mdFontSize={`15px`}
+                  smFontSize={`15px`}
+                  textAlign={``}
+                  fontWeight={`700`}
+                  xlfontWeight={`700`}
+                  mdfontWeight={`700`}
+                  smFontWeight={`700`}
+                  mb={``}
+                  mdMargibBottom={``}
+                  mdLineheight={``}
+                  smLineheight={``}
+                  mdtextAlign={``}
+                  smtextAlign={``}
+                  smMargibBottom={``}
+                  color={`#262B3B`}
+                >
+                  {text}
+                </IconTitle>
               </FlexRow>
             );
           })}

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       padding={`160px 0px 60px`}
       smPadding={`140px 0px 0px`}
       header={header}
-      smHegiht={"690px"}
+      smHegiht={"340px"}
       height={"540px"}
       bgGradient
     >

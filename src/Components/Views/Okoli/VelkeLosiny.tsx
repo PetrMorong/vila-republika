@@ -15,8 +15,9 @@ import img from "../../../images/_06A8153@2x.png";
 const VelkeLosiny: React.FC = () => {
   return (
     <Wrapper
-      mdPadding={`80px 0px 40px`}
-      xlPadding={`100px 0px 0px`}
+      smPadding={`80px 0px 60px`}
+      mdPadding={`80px 0px 60px`}
+      xlPadding={`100px 0px 120px`}
       padding={`106px 0px 138px`}
     >
       <Container>
@@ -32,8 +33,8 @@ const VelkeLosiny: React.FC = () => {
           Velké Losiny
         </SectionTitle>
 
-        <GridRow sm={1} cols={2} gap={`32px`}>
-          <ImgWrapper>
+        <GridRow sm={1} md={1} cols={2} gap={`32px`}>
+          <ImgWrapper mdMargin={`0px 0px 60px`}>
             <StyledImg w={`100%`} src={img} alt="img" />
           </ImgWrapper>
 
@@ -44,6 +45,7 @@ const VelkeLosiny: React.FC = () => {
               </WrapperSectionBorderLines>
               <Desc
                 color={``}
+                align={``}
                 fontWeight={``}
                 mb={``}
                 margin={`auto`}
@@ -53,10 +55,11 @@ const VelkeLosiny: React.FC = () => {
                 lgMargin={``}
                 mdMargin={``}
                 lgFontsize={``}
-                mdFontsize={``}
+                mdFontsize={`18px`}
                 smMargin={``}
-                smFontsize={``}
-                smLineHeight={``}
+                smFontsize={`18px`}
+                smLineHeight={`30px`}
+                smalign={``}
               >
                 Velké Losiny se řadí k nejstarším moravským lázním. Usazené pod
                 majestátnými vrcholky hor jsou vstupní branou Hrubého Jeseníku.

@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       padding={`160px 0px 60px`}
       smPadding={`140px 0px 0px`}
       header={header}
-      smHegiht={"690px"}
+      smHegiht={"390px"}
       height={"540px"}
       bgGradient
     >
@@ -18,10 +18,11 @@ const Header: React.FC = () => {
         <FlexRow width={`100%`} height={`100%`} center>
           <HeaderTitle
             align={`center`}
+            maxWidth={`100%`}
             fontSize={`73px`}
             smfontSize={`42px`}
             smLineheight={`52px`}
-            maxWidth={`100%`}
+            smalign={``}
           >
             Okolí
           </HeaderTitle>

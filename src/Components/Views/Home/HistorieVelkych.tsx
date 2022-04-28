@@ -32,11 +32,12 @@ const HistorieVelkych: React.FC = () => {
         <GridRow sm={1} cols={2} gap={`32px`}>
           <FlexRow>
             <Desc
-              color={``}
-              fontWeight={``}
-              mb={``}
               margin={`auto`}
               width={`509px`}
+              color={``}
+              align={``}
+              fontWeight={``}
+              mb={``}
               xlMargin={``}
               xlFontsize={``}
               lgMargin={``}
@@ -46,6 +47,7 @@ const HistorieVelkych: React.FC = () => {
               smMargin={``}
               smFontsize={``}
               smLineHeight={``}
+              smalign={``}
             >
               Velké Losiny se řadí k nejstarším moravským lázním. Usazené pod
               majestátnými vrcholky hor jsou vstupní branou Hrubého Jeseníku.
