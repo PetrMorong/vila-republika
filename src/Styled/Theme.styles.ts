@@ -125,6 +125,8 @@ interface Props {
   size?: string;
   color?: string;
   colSpan?: string;
+  smw?:string;
+  smh?:string;
 }
 export const WrapperSectionBorderLines = styled.div`
   max-width: 215px;
@@ -384,10 +386,14 @@ export const IconContentWrap = styled.div`
 export const StyledImg = styled.img`
   width: ${(props: Props) => (props.w ? props.w : "auto")};
   height: ${(props: Props) => (props.h ? props.h : "auto")};
-
+  transition:  0.2s;
   margin: ${(props: Props) => props.margin && props.margin};
   object-fit: ${(props: Props) => (props.object ? props.object : "contain")};
   object-position: center;
+  @media screen and (max-width: 640px) {
+    width: ${(props: Props) => (props.w ? props.smw : "auto")};
+  height: ${(props: Props) => (props.h ? props.smwh : "auto")};
+  }
 `;
 
 export const IconWrapper = styled.div`

@@ -41,7 +41,24 @@ export const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   background-color: rgb(0, 0, 0, 0.4);
 }
-
+.scrolled{
+  background-color: #FFFFFF;
+}
+.normal{
+  background-color: transparent;
+}
+.scolled_nav_link{
+  color: #000000;
+}
+.normal_nav_link{
+  color: #FFFFFF;
+}
+.scolled_btn_border{
+  border:2px solid #000000;
+}
+.normal_btn_border{
+  border:2px solid #FFFFFF;
+}
   @media screen and (max-width: 768px) {
     .tab{
       display:none;

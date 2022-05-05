@@ -47,3 +47,27 @@ export const Button = styled.button`
   @media screen and (max-width: 640px) {
   }
 `;
+
+export const MobileButton = styled.button`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  cursor: pointer;
+  background-color: #bf5757;
+  color: white;
+  max-width: 120px;
+  min-height: 45px;
+  border: 1px solid #bf5757;
+  margin: 0px;
+  font-family: roc-grotesk-wide;
+  font-weight: 600px;
+  font-size: 12px;
+  transition: 200ms;
+  margin:0px 20px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+`;

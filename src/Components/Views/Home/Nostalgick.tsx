@@ -9,30 +9,16 @@ const Nostalgick: React.FC = () => {
     <NostalgickWrapper padding={`80px 0px`} height={``}>
       <Container margin={`auto`}>
         <FlexRow maxWidth={`690px`} margin={`0px auto`} column>
-          <SectionTitle
-            xlMb={``}
-            color={`white`}
-            lgMb={``}
-            mdMb={``}
-            smMb={``}
-            mb={`40px`}
-          >
+          <SectionTitle color={`white`} mb={`40px`}>
             Nostalgické kouzlo hrubého Jeseníku{" "}
           </SectionTitle>
           <Desc
-            color={`white`}
-            fontWeight={``}
-            mb={`20px`}
-            margin={``}
-            width={``}
-            xlMargin={``}
-            xlFontsize={``}
-            lgMargin={``}
-            mdMargin={``}
-            lgFontsize={``}
-            mdFontsize={``}
-            smMargin={``}
-            smFontsize={``}
+            color={"white"}
+            mb={"20px"}
+            mdFontsize={`18px`}
+            smMargin={`26px`}
+            smFontsize={`18px`}
+            smLineHeight={`26px`}
           >
             Hrubý Jeseník je druhým největším pohořím České republiky. Na rozdíl
             od Krkonoš a Šumavy není ale tak turisticky navštěvovaný, což má své

@@ -41,20 +41,10 @@ const IntimniAtmosfera: React.FC = () => {
             <Desc
               margin={`auto`}
               width={`509px`}
-              color={``}
-              align={``}
-              fontWeight={``}
-              mb={``}
-              xlMargin={``}
-              xlFontsize={``}
-              lgMargin={``}
-              mdMargin={``}
-              lgFontsize={``}
-              mdFontsize={``}
-              smMargin={``}
-              smFontsize={``}
-              smLineHeight={``}
-              smalign={``}
+              mdFontsize={`18px`}
+              smMargin={`26px`}
+              smFontsize={`18px`}
+              smLineHeight={`26px`}
             >
               Vila Republika na vás dýchne lázeňskou historií. Luxusní ubytování
               předčí všechna vaše očekávání. Moderní interiéry jednotlivých

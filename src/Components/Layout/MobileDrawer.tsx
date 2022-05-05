@@ -14,6 +14,7 @@ export interface INavigation {
   open: any;
   toggle: any;
   navLinks: any;
+  
 }
 const MobileDrawer: FunctionComponent<INavigation> = ({
   open,
@@ -34,11 +35,11 @@ const MobileDrawer: FunctionComponent<INavigation> = ({
             </ImgWrapper>
           </Link>
 
-          <FlexRow margin={`32px 0px`} column gap={`16px`}>
+          <FlexRow margin={`32px 0px`} direction={`column`} gap={`16px`}>
             {navLinks.map(({ id, text, path }) => {
               return (
                 <Link key={id} to={path}>
-                  <NavItem as="li">{text}</NavItem>
+                  <NavItem as="li" className="normal_nav_link" style={{paddingBottom:"14px" }}>{text}</NavItem>
                 </Link>
               );
             })}

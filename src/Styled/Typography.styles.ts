@@ -1,95 +1,95 @@
 import styled from "styled-components";
 interface HeaderTitleTypes {
-  align: string;
-  maxWidth: string;
-  fontSize: string;
-  smfontSize: string;
-  smLineheight: string;
-  smalign:string;
+  align?: string;
+  maxWidth?: string;
+  fontSize?: string;
+  smfontSize?: string;
+  smLineheight?: string;
+  smalign?:string;
 }
 interface IconTitleTypes {
-  color: string;
-  fontSize: string;
-  linHeight: string;
-  xlfontSize: string;
-  mdFontSize: string;
-  smFontSize: string;
-  textAlign: string;
-  fontWeight: string;
-  xlfontWeight: string;
-  mdfontWeight: string;
-  smFontWeight: string;
-  mb: string;
-  mdMargibBottom: string;
-  mdLineheight: string;
-  smLineheight: string;
-  mdtextAlign:string;
-  smtextAlign:string;
-  smMargibBottom:string;
+  color?: string;
+  fontSize?: string;
+  linHeight?: string;
+  xlfontSize?: string;
+  mdFontSize?: string;
+  smFontSize?: string;
+  textAlign?: string;
+  fontWeight?: string;
+  xlfontWeight?: string;
+  mdfontWeight?: string;
+  smFontWeight?: string;
+  mb?: string;
+  mdMargibBottom?: string;
+  mdLineheight?: string;
+  smLineheight?: string;
+  mdtextAlign?:string;
+  smtextAlign?:string;
+  smMargibBottom?:string;
 
 }
 interface DescTypes {
-  color: string;
-  align: string;
-  fontWeight: string;
-  mb: string;
-  margin: string;
-  width: string;
-  xlMargin: string;
-  xlFontsize: string;
-  lgMargin: string;
-  mdMargin: string;
-  lgFontsize: string;
-  mdFontsize: string;
-  smMargin: string;
-  smFontsize: string;
-  smLineHeight: string;
-  smalign:string;
+  color?: string;
+  align?: string;
+  fontWeight?: string;
+  mb?: string;
+  margin?: string;
+  width?: string;
+  xlMargin?: string;
+  xlFontsize?: string;
+  lgMargin?: string;
+  mdMargin?: string;
+  lgFontsize?: string;
+  mdFontsize?: string;
+  smMargin?: string;
+  smFontsize?: string;
+  smLineHeight?: string;
+  smalign?:string;
 }
 interface SectionTitleTypes {
-  xlMb: string;
-  color: string;
-  lgMb: string;
-  mdMb: string;
-  smMb: string;
-  mb: string;
-  smFontSize: string;
+  xlMb?: string;
+  color?: string;
+  lgMb?: string;
+  mdMb?: string;
+  smMb?: string;
+  mb?: string;
+  smFontSize?: string;
 }
 interface VileSlideTitleTypes {
-  color: string;
-  mb: string;
-  smMb: string;
-  fontSize: string;
-  smfontSize: string;
-  smLineHeight: string;
+  color?: string;
+  mb?: string;
+  smMb?: string;
+  fontSize?: string;
+  smfontSize?: string;
+  smLineHeight?: string;
 }
 interface VileSlideDescTypes {
-  color: string;
-  mb: string;
-  width: string;
-  smFontSize: string;
-  smLineHeight: string;
+  color?: string;
+  mb?: string;
+  width?: string;
+  smFontSize?: string;
+  smLineHeight?: string;
 }
 interface FooterTitleType {
-  color: string;
-  textAlign: string;
-  mdtextAlign: string;
-  mdFontsize: string;
-  mdLineHeight: string;
+  color?: string;
+  textAlign?: string;
+  mdtextAlign?: string;
+  mdFontsize?: string;
+  mdLineHeight?: string;
 }
 interface FooterDescType {
-  color: string;
-  mdAlign: string;
-  mdFontSize: string;
-  mdLineHeight: string;
+  color?: string;
+  mdAlign?: string;
+  mdFontSize?: string;
+  mdLineHeight?: string;
 }
 interface FooterCategoryTitleType {
-  color: string;
-  mb: string;
-  xlMb: string;
-  lgMb: string;
-  smMb: string;
-  mdMb: string;
+  color?: string;
+  mb?: string;
+  xlMb?: string;
+  lgMb?: string;
+  smMb?: string;
+  mdMb?: string;
 }
 
 export const HeaderTitle = styled.h1`
