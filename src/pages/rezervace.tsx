@@ -18,7 +18,7 @@ const Reservation = () => {
         <Header />
         <Wrap>
           <Container>
-            {/* <div className="previo-reservation-form">
+            <div className="previo-reservation-form">
               <iframe
                 src="https://booking.previo.cz/?hotId=758539&theme=dark"
                 scrolling="no"
@@ -29,7 +29,7 @@ const Reservation = () => {
                 id="previo-booking-iframe"
                 allowTransparency="true"
               ></iframe>
-            </div> */}
+            </div>
           </Container>
         </Wrap>
       </Layout>
