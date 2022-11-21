@@ -20,6 +20,7 @@ import logo from "../../images/logo.svg";
 import darklogo from "../../images/darklogo.svg";
 
 const isBrowser = typeof window !== "undefined";
+
 const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -32,7 +33,7 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
       }
     });
   }
-  console.log(isScrolled, "isScrolled");
+
   return (
     <StyledNav className={isScrolled ? "scrolled" : "normal"}>
       <Container>
@@ -40,16 +41,17 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
           <Link to={`/`}>
             <ImgWrapper smWidth={`130px`} mdWidth={`150px`} xlWidth={`170px`}>
               <StyledImg
-                w={`200px`}
-                smw={`140px`}
+                w={isScrolled ? "130px" : `180px`}
+                smw={`90px`}
                 src={isScrolled ? darklogo : logo}
                 alt="img"
+                style={{ marginTop: isScrolled ? "5px" : `20px` }}
               />
             </ImgWrapper>
           </Link>
           <NavItemWrapper>
             <FlexRow itemCenter gap={`22px`}>
-              {navLinks.map(({ id, text, path }) => {
+              {navLinks.map(({ id, text, path }: any) => {
                 return (
                   <Link key={id} to={path}>
                     <NavItem
@@ -72,7 +74,12 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
               </Button>
             </NavItemWrapper>
             <MobileButton>Rezervace</MobileButton>
-            <ToggleButton onClick={toggle} className={isScrolled ? "scolled_btn_border" : "normal_btn_border"}>
+            <ToggleButton
+              onClick={toggle}
+              className={
+                isScrolled ? "scolled_btn_border" : "normal_btn_border"
+              }
+            >
               <GiHamburgerMenu
                 className={isScrolled ? "scolled_nav_link" : "normal_nav_link"}
               />

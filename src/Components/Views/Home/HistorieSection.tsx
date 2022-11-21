@@ -8,7 +8,8 @@ import {
   Wrapper,
 } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/unigarden.png";
+import img from "../../../images/zamek.jpg";
+
 const HistorieVelkych: React.FC = () => {
   return (
     <Wrapper

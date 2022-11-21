@@ -8,11 +8,11 @@ export const StyledNav = styled.div`
   width: 100%;
   color: white;
   margin: 0 auto;
-  padding: 32px 0px;
+  padding: 10px 0px;
   z-index:1000;
 
   @media screen and (max-width: 1440px) {
-    padding: 20px 0px;
+    padding: 15px 0px;
   }
 `;
 

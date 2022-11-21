@@ -1,13 +1,24 @@
 import React from "react";
 import { Button } from "../../../Styled/Button.styles";
 import { NostalgickWrapper } from "../../../Styled/Nostalgick.styles";
-import { Container, FlexRow } from "../../../Styled/Theme.styles";
+import { FlexRow } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
+import styled from "styled-components";
+import { Link } from "gatsby";
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+`;
 
 const Nostalgick: React.FC = () => {
   return (
-    <NostalgickWrapper padding={`80px 0px`} height={``}>
-      <Container margin={`auto`}>
+    <NostalgickWrapper padding={`0px 0px`} height={``}>
+      <Container>
         <FlexRow maxWidth={`690px`} margin={`0px auto`} column>
           <SectionTitle color={`white`} mb={`40px`}>
             Nostalgické kouzlo hrubého Jeseníku{" "}
@@ -27,16 +38,19 @@ const Nostalgick: React.FC = () => {
             Nadechněte se a objevujte čistou krásu jesenických hor. Záleží jen
             na vás, zda pěšky, na kole či na lyžích.
           </Desc>
-
-          <Button
-            margin={`auto`}
-            width={`176px`}
-            height={`61px`}
-            brColor={`white`}
-            bgColor={`transparent`}
-          >
-            VÍCE O OKOLÍ{" "}
-          </Button>
+          <div style={{ marginBottom: 30 }} />
+          <Link to="/okoli" style={{ margin: "auto" }}>
+            <Button
+              style={{ width: "176px" }}
+              margin={`auto`}
+              width={`176px`}
+              height={`61px`}
+              brColor={`white`}
+              bgColor={`transparent`}
+            >
+              VÍCE O OKOLÍ{" "}
+            </Button>
+          </Link>
         </FlexRow>
       </Container>
     </NostalgickWrapper>

@@ -8,7 +8,7 @@ import {
   Wrapper,
 } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/img1.png";
+import img from "../../../images/apartmany/ap4/DSC07539-HDR-min.jpg";
 
 const IntimniAtmosfera: React.FC = () => {
   return (

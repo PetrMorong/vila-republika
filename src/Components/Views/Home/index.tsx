@@ -1,21 +1,21 @@
 import React from "react";
 import Layout from "../../Layout/Layout";
-import Dalsi from "./Dalsi";
+import Vybaveni from "./Vybaveni";
 import Header from "./Header";
-import HistorieVelkych from "./HistorieVelkych";
+import HistorieSection from "./HistorieSection";
 import IntimniAtmosfera from "./IntimniAtmosfera";
-import Nostalgick from "./Nostalgick";
-import VilaRepublika from "./VilaRepublika";
+import JesenikySection from "./JesenikySection";
+import SectionTwo from "./SectionTwo";
 
 const HomeIndex: React.FC = () => {
   return (
     <Layout>
       <Header />
-      <VilaRepublika />
+      <SectionTwo />
       <IntimniAtmosfera />
-      <HistorieVelkych />
-      <Dalsi />
-      <Nostalgick />
+      <HistorieSection />
+      <Vybaveni />
+      <JesenikySection />
     </Layout>
   );
 };

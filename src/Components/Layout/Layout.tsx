@@ -6,11 +6,23 @@ import Nav from "./Nav";
 import { Helmet } from "react-helmet";
 import Favicon from "../../images/faviconWhite.ico";
 
+const navLinks = [
+  { id: 1, text: "Apartmány", path: "/apartmany" },
+  { id: 2, text: "Wellness", path: "/wellness" },
+  { id: 3, text: "Okolí", path: "/okoli" },
+  // { id: 4, text: "Bistro", path: "/" },
+  { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
+  { id: 6, text: "Fotogalerie", path: "/fotogalerie" },
+  // { id: 7, text: "Kontakt", path: "/" },
+];
+
 const Layout: FunctionComponent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
+
   return (
     <>
       <Helmet>
@@ -29,13 +41,3 @@ const Layout: FunctionComponent = ({ children }) => {
 };
 
 export default Layout;
-
-const navLinks = [
-  { id: 1, text: "Apartmány", path: "/apartmany" },
-  { id: 2, text: "Wellness", path: "/wellness" },
-  { id: 3, text: "Okolí", path: "/okoli" },
-  { id: 4, text: "Bistro", path: "/" },
-  { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
-  { id: 6, text: "Fotogalerie", path: "/fotogalerie" },
-  { id: 7, text: "Kontakt", path: "/" },
-];

@@ -20,5 +20,4 @@ export const SlideContent = styled.div`
   padding: 32px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0, 0.4);
 `;

@@ -6,7 +6,8 @@ interface NostalgickWrapperTypes {
 }
 export const NostalgickWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background: url("${bg}");
   background-position: center;
@@ -14,10 +15,11 @@ export const NostalgickWrapper = styled.div`
   background-size: cover;
   padding: ${(props: NostalgickWrapperTypes) =>
     props.padding ? props.padding : "0px"};
-  min-height: ${(props: NostalgickWrapperTypes) =>
-    props.height ? `calc(100vh - ${props.height})` : "100vh"};
+  min-height: 650px;
+
   position: relative;
   z-index: 0;
+
   &::before {
     content: "";
     position: absolute;

@@ -195,6 +195,7 @@ export const Container = styled.div`
     props.margin ? props.margin : "0px auto"};
   width: ${(props: ContainerType) => (props.width ? props.width : "100%")};
   height: ${(props: ContainerType) => (props.height ? props.height : "auto")};
+  
   @media screen and (max-width: 1240px) {
     max-width: 1140px;
     padding-left: 20px;

@@ -11,18 +11,18 @@ const ApartmanyIndex: React.FC = () => {
   return (
     <Layout>
       <Header />
-      <Tab />
+      {/* <Tab />
       <div id="VybaveniApartmanu">
         <VybaveniApartmanu />
-      </div>
+      </div> */}
       <div id="Apartmany">
         <Apartmany />
       </div>
       <div id="ProPrijemne">
         <ProPrijemne />
       </div>
-      <div >
-       <Dalsi />
+      <div>
+        <Dalsi />
       </div>
     </Layout>
   );

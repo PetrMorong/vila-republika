@@ -5,7 +5,6 @@ import {
   GridRow,
   IconWrapper,
   ImgWrapper,
-  GridCol,
   StyledImg,
   Wrapper,
 } from "../../../Styled/Theme.styles";
@@ -17,12 +16,27 @@ import {
 } from "../../../Styled/Typography.styles";
 import { BsChevronRight } from "react-icons/bs";
 
-import swiper1 from "../../../images/slide1.png";
+import swiper1 from "../../../images/apartmany/ap1/DSC07427-HDR-min.jpg";
 import swiper2 from "../../../images/slide2.png";
 
 import { SlideContent, SlideWrapper } from "../../../Styled/Swiper.styles";
 
-const VilaRepublika: React.FC = () => {
+const slides = [
+  {
+    id: 1,
+    img: swiper1,
+    title: "Designové apartmány",
+    desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
+  },
+  {
+    id: 2,
+    img: swiper2,
+    title: "Privátní wellness",
+    desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
+  },
+];
+
+const SectionTwo: React.FC = () => {
   return (
     <Wrapper
       bgColor={`#f0e8d9`}
@@ -75,9 +89,11 @@ const VilaRepublika: React.FC = () => {
           {slides.map(({ id, img, title, desc }) => {
             return (
               <SlideWrapper key={id}>
-                <ImgWrapper style={{
-                  minHeight:"500px"
-                }}>
+                <ImgWrapper
+                  style={{
+                    minHeight: "500px",
+                  }}
+                >
                   <StyledImg
                     object={`cover`}
                     h={`100%`}
@@ -123,19 +139,4 @@ const VilaRepublika: React.FC = () => {
   );
 };
 
-export default VilaRepublika;
-
-const slides = [
-  {
-    id: 1,
-    img: swiper1,
-    title: "Designové apartmány",
-    desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
-  },
-  {
-    id: 2,
-    img: swiper2,
-    title: "Privátní wellness",
-    desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
-  },
-];
+export default SectionTwo;

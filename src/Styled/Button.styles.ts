@@ -16,6 +16,18 @@ justify-content: flex-start;
 }
 
 `
+
+export const ButtonWrapperFoto = styled.div`
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  @media screen and (max-width: 640px) {
+    justify-content: center;
+  }
+
+`
+
 export const Button = styled.button`
   display: inline-flex;
   justify-content: center;

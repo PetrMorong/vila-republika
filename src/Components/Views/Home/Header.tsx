@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderWrapper } from "../../../Styled/Header.styles";
-import header from "../../../images/header-bg.png";
+import headerBg from "../../../images/homeMain.jpg";
 import headr1 from "../../../images/header-icon1.svg";
 import headr2 from "../../../images/header-icon2.svg";
 import headr3 from "../../../images/header-icon3.svg";
@@ -17,7 +17,12 @@ import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
 
 const Header: React.FC = () => {
   return (
-    <HeaderWrapper padding={`80px 0px 60px`} smPadding={`80px 0px 60px`} header={header} bgColor>
+    <HeaderWrapper
+      padding={`80px 0px 60px`}
+      smPadding={`80px 0px 60px`}
+      header={headerBg}
+      bgColor
+    >
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`}>
           <HeaderTitle
@@ -48,13 +53,7 @@ const Header: React.FC = () => {
         <GridRow sm={1} lg={"2"} gap={"16px"} between cols={"4"}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
-              <FlexRow
-                gap={`15px`}
-                lgGap={`12px`}
-                itemCenter
-                
-                key={id}
-              >
+              <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
                 <ImgWrapper smWidth={`50px`} xlWidth={`36px`}>
                   <StyledImg w={`100%`} src={icon} alt="img" />
                 </ImgWrapper>
