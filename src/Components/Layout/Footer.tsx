@@ -77,10 +77,17 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               termální lázně na dosah. Ozvěte se!
             </FooterDesc>
           </GridCol>
-          <GridCol mdJustifyContent={`center`} justifyContent={`center`} alingItems={`center`} alignSelf={`center`}>
-            <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
-              REZERVACE
-            </Button>
+          <GridCol
+            mdJustifyContent={`center`}
+            justifyContent={`center`}
+            alingItems={`center`}
+            alignSelf={`center`}
+          >
+            <Link to="/rezervace">
+              <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
+                REZERVACE
+              </Button>
+            </Link>
           </GridCol>
         </GridRow>
 
@@ -96,19 +103,16 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
           mdMargin={`26px 0px 0px`}
         >
           <GridCol>
-            <FooterCategoryTitle
-              smMb={`20px`}
-              xlMb={`36px`}
-              mb={`59px`}
-              color={``}
-              lgMb={``}
-              mdMb={``}
-            >
+            <FooterCategoryTitle smMb={`20px`} xlMb={`36px`} mb={`59px`}>
               Vila Republika
             </FooterCategoryTitle>
-            <FlexRow gap={`10px`} style={{
-              flexDirection: "column"
-            }} column={"column"}>
+            <FlexRow
+              gap={`10px`}
+              style={{
+                flexDirection: "column",
+              }}
+              column={"column"}
+            >
               {navLinks.map((item, index) => {
                 return (
                   <Link key={index} to={item.path}>
@@ -119,43 +123,27 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </FlexRow>
           </GridCol>
           <GridCol>
-            <FooterCategoryTitle
-              smMb={`20px`}
-              mb={`27px`}
-              xlMb={``}
-              color={``}
-              lgMb={``}
-              mdMb={``}
-            >
+            <FooterCategoryTitle smMb={`20px`} mb={`27px`}>
               Kontakt
             </FooterCategoryTitle>
 
             <FlexRow gap={`16px`} itemCenter>
-              <ImgWrapper smWidth={`70px`} xlWidth={`50px`}>
+              {/* <ImgWrapper smWidth={`70px`} xlWidth={`50px`}>
                 <StyledImg w={`100%`} src={clientImg} alt="img" />
-              </ImgWrapper>
+              </ImgWrapper> */}
               <FlexRow direction={`column`}>
                 <Desc
                   style={{ textAlign: "left" }}
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
-                  margin={``}
-                  width={``}
-                  xlMargin={``}
-                  xlFontsize={``}
-                  lgMargin={``}
-                  mdMargin={``}
-                  lgFontsize={``}
-                  mdFontsize={``}
-                  smMargin={``}
                   smFontsize={`18px`}
-                  smLineHeight={``}
+                  style={{ marginTop: 30 }}
                 >
                   Helena Morongová
                 </Desc>
                 <FooterItem>
-                  <p style={{ marginBottom: 8 }}>+420 123 456 789</p>
+                  <p style={{ marginBottom: 8 }}>+420 605 291 431</p>
                   <p style={{ textDecoration: "underline" }}>
                     info@vila-republika.cz
                   </p>
@@ -164,14 +152,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </FlexRow>
           </GridCol>
           <GridCol>
-            <FooterCategoryTitle
-              smMb={`20px`}
-              xlMb={`32px`}
-              mb={`57px`}
-              color={``}
-              lgMb={``}
-              mdMb={``}
-            >
+            <FooterCategoryTitle smMb={`20px`} xlMb={`32px`} mb={`57px`}>
               Kde nás najdete
             </FooterCategoryTitle>
 
@@ -180,7 +161,13 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 Osvobození 354,
                 <br /> Velké Losiny, 788 15
               </p>
-              <p style={{ textDecoration: "underline" }}>zobrazit na mape</p>
+              <HoverWrap
+                href="https://goo.gl/maps/EhQvkAzabw2sFAm18"
+                target="_blank"
+                style={{ textDecoration: "underline", color: "white" }}
+              >
+                Zobrazit na mapě
+              </HoverWrap>
             </FooterItem>
           </GridCol>
           <GridCol>
@@ -203,26 +190,33 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               xlMargin={`0px 0px 0px`}
               mdMargin={`0px 0px 30px`}
             >
-              <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
-                <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
-                  <StyledImg w={`100%`} src={facebook} alt="img" />
-                </ImgWrapper>
-                <FooterItem>
-                  <p>
-                    Vila republika <br /> na Facebooku
-                  </p>
-                </FooterItem>
-              </FlexRow>
-              <FlexRow gap={`16px`} itemCenter>
-                <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
-                  <StyledImg w={`100%`} src={insta} alt="img" />
-                </ImgWrapper>
-                <FooterItem>
-                  <p>
-                    Vila republika <br /> na Instagramu
-                  </p>
-                </FooterItem>
-              </FlexRow>
+              <HoverWrap href="/" target="_blank">
+                <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
+                  <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
+                    <StyledImg w={`100%`} src={facebook} alt="img" />
+                  </ImgWrapper>
+                  <FooterItem>
+                    <p>
+                      Vila republika <br /> na Facebooku
+                    </p>
+                  </FooterItem>
+                </FlexRow>
+              </HoverWrap>
+              <HoverWrap
+                href="https://www.instagram.com/vila_republika/"
+                target="_blank"
+              >
+                <FlexRow gap={`16px`} itemCenter>
+                  <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
+                    <StyledImg w={`100%`} src={insta} alt="img" />
+                  </ImgWrapper>
+                  <FooterItem>
+                    <p>
+                      Vila republika <br /> na Instagramu
+                    </p>
+                  </FooterItem>
+                </FlexRow>
+              </HoverWrap>
             </GridRow>
           </GridCol>
         </GridRow>
@@ -245,6 +239,15 @@ export const Separator = styled.p`
   width: 100%;
   margin-top: 70px;
   margin-bottom: 70px;
+`;
+
+export const HoverWrap = styled.a`
+  cursor: pointer;
+  trasition: 200ms;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export default Footer;

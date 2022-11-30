@@ -21,6 +21,13 @@ export const ButtonWrapperFoto = styled.div`
   position: absolute;
   left: 20px;
   bottom: 20px;
+  z-index: 1;
+  transition: 250ms;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   @media screen and (max-width: 640px) {
     justify-content: center;

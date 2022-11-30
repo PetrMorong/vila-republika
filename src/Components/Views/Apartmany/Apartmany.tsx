@@ -7,19 +7,15 @@ import {
   StyledImg,
   Wrapper,
 } from "../../../Styled/Theme.styles";
-import {
-  Desc,
-  IconTitle,
-  SectionTitle,
-} from "../../../Styled/Typography.styles";
+import { Desc, IconTitle } from "../../../Styled/Typography.styles";
 import ap1Image from "../../../images/apartmany/ap1/DSC07382-HDR-min.jpg";
 import ap4Image from "../../../images/apartmany/ap4/DSC07518-HDR-min.jpg";
-
 import img from "../../../images/apartmany/ap1/DSC07445-HDR-min.jpg";
+import leftArrowImg from "../../../images/LeftArrow.svg";
 import usersIcon from "../../../images/users.svg";
 import cardIcon from "../../../images/card.svg";
 import cameraIcon from "../../../images/Icon feather-camera.svg";
-
+import Lightbox from "react-spring-lightbox";
 import {
   Button,
   ButtonWrapper,
@@ -27,6 +23,7 @@ import {
 } from "../../../Styled/Button.styles";
 import { SlideContent } from "../../../Styled/Swiper.styles";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -39,7 +36,48 @@ export const SlideWrapper = styled.div`
   }
 `;
 
+const apImages = [
+  // ap 1
+  [ap1Image, ap4Image],
+  // ap 2
+  [ap4Image, ap4Image, ap4Image],
+  // ap 4
+  [ap4Image, ap4Image, ap4Image],
+  // ap 5
+  [ap4Image, ap4Image, ap4Image],
+  // ap 6
+  [ap4Image, ap4Image, ap4Image],
+  // ap 7
+  [ap4Image, ap4Image, ap4Image],
+];
+
 const Apartmany: React.FC = () => {
+  const [carouselIndex, setCarouseIndex] = React.useState(0);
+  const [showGallery, setShowGallery] = React.useState(false);
+  const [selectedGallery, setSelectedGallery] = React.useState(0);
+
+  const images = apImages[selectedGallery];
+
+  const handleNext = () => {
+    if (carouselIndex === images.length - 1) {
+      setCarouseIndex(0);
+    } else {
+      setCarouseIndex(carouselIndex + 1);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (carouselIndex === 0) {
+      setCarouseIndex(images.length - 1);
+    } else {
+      setCarouseIndex(carouselIndex - 1);
+    }
+  };
+
+  const lightboxImages: any = images.map((image) => {
+    return { src: image };
+  });
+
   return (
     <Wrapper
       mdPadding={`130px 0px 30px`}
@@ -53,7 +91,12 @@ const Apartmany: React.FC = () => {
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap1Image} alt="img" />
-                <ButtonWrapperFoto>
+                <ButtonWrapperFoto
+                  onClick={() => {
+                    setShowGallery(true);
+                    setSelectedGallery(0);
+                  }}
+                >
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -146,14 +189,17 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{" "}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 2 */}
-
         <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
@@ -221,7 +267,11 @@ const Apartmany: React.FC = () => {
                 italského výrobce se stará o unikátní světelnou pohodu.
               </Desc>
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>
               </ButtonWrapper>
             </div>
           </FlexRow>
@@ -232,7 +282,12 @@ const Apartmany: React.FC = () => {
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: "auto" }}>
-                  <ButtonWrapper>
+                  <ButtonWrapperFoto
+                    onClick={() => {
+                      setShowGallery(true);
+                      setSelectedGallery(1);
+                    }}
+                  >
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -247,7 +302,7 @@ const Apartmany: React.FC = () => {
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
-                  </ButtonWrapper>
+                  </ButtonWrapperFoto>
                 </div>
               </SlideContent>
             </SlideWrapper>
@@ -260,7 +315,12 @@ const Apartmany: React.FC = () => {
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap4Image} alt="img" />
-                <ButtonWrapperFoto>
+                <ButtonWrapperFoto
+                  onClick={() => {
+                    setShowGallery(true);
+                    setSelectedGallery(2);
+                  }}
+                >
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -353,14 +413,17 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{" "}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 5 */}
-
         <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
@@ -428,7 +491,11 @@ const Apartmany: React.FC = () => {
                 italského výrobce se stará o unikátní světelnou pohodu.
               </Desc>
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{" "}
               </ButtonWrapper>
             </div>
           </FlexRow>
@@ -439,7 +506,12 @@ const Apartmany: React.FC = () => {
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: "auto" }}>
-                  <ButtonWrapper>
+                  <ButtonWrapperFoto
+                    onClick={() => {
+                      setShowGallery(true);
+                      setSelectedGallery(3);
+                    }}
+                  >
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -454,7 +526,7 @@ const Apartmany: React.FC = () => {
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
-                  </ButtonWrapper>
+                  </ButtonWrapperFoto>
                 </div>
               </SlideContent>
             </SlideWrapper>
@@ -467,7 +539,12 @@ const Apartmany: React.FC = () => {
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap1Image} alt="img" />
-                <ButtonWrapperFoto>
+                <ButtonWrapperFoto
+                  onClick={() => {
+                    setShowGallery(true);
+                    setSelectedGallery(4);
+                  }}
+                >
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -560,14 +637,17 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{" "}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 7 */}
-
         <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
@@ -635,7 +715,11 @@ const Apartmany: React.FC = () => {
                 italského výrobce se stará o unikátní světelnou pohodu.
               </Desc>
               <ButtonWrapper>
-                <Button margin={`35px 0px 10px 0px`}>Vytvořit rezervaci</Button>
+                <Link to="/rezervace">
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{" "}
               </ButtonWrapper>
             </div>
           </FlexRow>
@@ -646,7 +730,12 @@ const Apartmany: React.FC = () => {
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: "auto" }}>
-                  <ButtonWrapper>
+                  <ButtonWrapperFoto
+                    onClick={() => {
+                      setShowGallery(true);
+                      setSelectedGallery(5);
+                    }}
+                  >
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -661,16 +750,94 @@ const Apartmany: React.FC = () => {
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
-                  </ButtonWrapper>
+                  </ButtonWrapperFoto>
                 </div>
               </SlideContent>
             </SlideWrapper>
           </div>
         </GridRow>
+
+        <Lightbox
+          isOpen={showGallery}
+          onPrev={handlePrevious}
+          onNext={handleNext}
+          images={lightboxImages}
+          currentIndex={carouselIndex}
+          /* Add your own UI */
+          renderHeader={() => (
+            <div
+              onClick={() => setShowGallery(false)}
+              style={{
+                position: "absolute",
+                zIndex: 99,
+                right: 20,
+                top: 20,
+                color: "white",
+                fontSize: 30,
+                cursor: "pointer",
+              }}
+            >
+              x
+            </div>
+          )}
+          // renderFooter={() => (<CustomFooter />)}
+          renderPrevButton={() => (
+            <ArrowWrap
+              onClick={handlePrevious}
+              style={{
+                position: "absolute",
+                zIndex: 99,
+                left: 0,
+                top: "45%",
+              }}
+            >
+              <img src={leftArrowImg}></img>
+            </ArrowWrap>
+          )}
+          renderNextButton={() => (
+            <ArrowWrap
+              onClick={handleNext}
+              style={{
+                position: "absolute",
+                zIndex: 99,
+                right: 0,
+                top: "45%",
+              }}
+            >
+              <img
+                style={{ transform: "rotate(180deg)" }}
+                src={leftArrowImg}
+              ></img>
+            </ArrowWrap>
+          )}
+          style={{ background: "rgba(0,0,0,0.99)" }}
+          onClose={() => setShowGallery(false)}
+
+          // renderImageOverlay={() => (<ImageOverlayComponent >)}
+          // className="cool-class"
+
+          /* Use single or double click to zoom */
+          // singleClickToZoom
+        />
       </Container>
     </Wrapper>
   );
 };
+
+const ArrowWrap = styled.div`
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    width: 44px;
+    height: 44px;
+  }
+`;
 
 const ApPopisekText = ({ children }: any) => (
   <IconTitle

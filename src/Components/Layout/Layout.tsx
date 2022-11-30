@@ -11,9 +11,9 @@ const navLinks = [
   { id: 2, text: "Wellness", path: "/wellness" },
   { id: 3, text: "Okolí", path: "/okoli" },
   // { id: 4, text: "Bistro", path: "/" },
-  { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
+  // { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
   { id: 6, text: "Fotogalerie", path: "/fotogalerie" },
-  // { id: 7, text: "Kontakt", path: "/" },
+  { id: 7, text: "Rezervace", path: "/rezervace" },
 ];
 
 const Layout: FunctionComponent = ({ children }) => {

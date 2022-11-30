@@ -39,7 +39,8 @@ const Reservation = () => {
 
 export const Wrap = styled.div`
   width: 100%;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: center;
 `;
