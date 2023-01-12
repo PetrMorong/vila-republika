@@ -86,7 +86,7 @@ const ProVerejnost: React.FC = () => {
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      8:00-17:00
+                      Bude otevřeno 15.3.
                     </IconTitle>
                   </div>
                   <div>
@@ -130,7 +130,7 @@ const ProVerejnost: React.FC = () => {
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      500 Kč 1 osoba za hodinu
+                      990 Kč za hodinu
                     </IconTitle>
                   </div>
                 </FlexRow>
@@ -152,13 +152,12 @@ const ProVerejnost: React.FC = () => {
                 smFontsize={`18px`}
                 smLineHeight={`30px`}
               >
-                V době, kdy naše wellness nebudou využívat ubytovaní hosté, je
-                přístupné i pro veřejnost. Za příplatek XX Kč vám rádi zapůjčíme
-                ručník, župan a prostěradlo.
+                V době, kdy naše privátní wellness nebudou využívat ubytovaní
+                hosté, je přístupné i pro veřejnost.
                 <br />
                 <br />
-                Svůj termín si můžete zarezervovat telefonicky na čísle +420 XXX
-                XXX, a to každý den včetně víkendů v době od X do Y hodin.
+                Svůj termín si můžete zarezervovat na bašich webových stránkách,
+                a to každý den včetně víkendů v době od X do Y hodin.
               </Desc>
               <div>
                 <ButtonWrapper>

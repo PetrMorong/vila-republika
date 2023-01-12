@@ -31,8 +31,8 @@ const slides = [
   {
     id: 2,
     img: swiper2,
-    title: "Privátní wellness",
-    desc: "Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online.",
+    title: "Privátní wellness (od 15.3.)",
+    desc: "Dokončujeme práce na wellness, otevřené bude od 15.3. Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online. Welness není v ceně pobytu",
   },
 ];
 

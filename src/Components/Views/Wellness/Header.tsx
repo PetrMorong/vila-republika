@@ -24,7 +24,8 @@ const Header: React.FC = () => {
             maxWidth={`100%`}
             smalign={``}
           >
-            Wellness
+            Wellness <br />
+            Otevřeno od 15.3.
           </HeaderTitle>
         </FlexRow>
       </Container>
