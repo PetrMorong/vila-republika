@@ -199,7 +199,7 @@ export const Desc = styled.p`
   }
 `;
 
-export const IconTitle = styled.p`
+export const IconTitle = styled.h2`
   font-size: ${(props: IconTitleTypes) =>
     props.fontSize ? props.fontSize : "14px"};
   text-align: ${(props: IconTitleTypes) =>
