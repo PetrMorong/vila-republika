@@ -13,12 +13,48 @@ import pic1 from "../../../images/exterior/1.png";
 import pic2 from "../../../images/exterior/2.png";
 import pic3 from "../../../images/exterior/3.png";
 import pic4 from "../../../images/exterior/1.png";
-import pic5 from "../../../images/exterior/2.png";
-import pic6 from "../../../images/exterior/3.png";
-import pic7 from "../../../images/exterior/1.png";
-import pic8 from "../../../images/exterior/2.png";
+import { buildImageUrl } from "cloudinary-build-url";
 
 const Exterier: React.FC = () => {
+  const data = [
+    {
+      picture: buildImageUrl("v1645822964/vilaRepublika/img2_j6mpok.png", {}),
+    },
+    {
+      picture: buildImageUrl(
+        "v1645822941/vilaRepublika/mp01-min_pilgkw.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1645822943/vilaRepublika/mp02-min_yspitq.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl("v1645822964/vilaRepublika/img2_j6mpok.png", {}),
+    },
+    {
+      picture: buildImageUrl(
+        "v1645822938/vilaRepublika/1.3.3-min_j5ku93.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1645822938/vilaRepublika/1.1-min_yaebmu.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl("v1673798915/vilaRepublika/1.4.4_lbjby6.jpg", {}),
+    },
+    {
+      picture: buildImageUrl("v1673798908/vilaRepublika/1.2_eyvh8t.jpg", {}),
+    },
+  ];
+
   return (
     <Wrapper
       bgColor={`#FFFFFF`}
@@ -36,7 +72,7 @@ const Exterier: React.FC = () => {
           mb={`65px`}
           smFontSize={`30px`}
         >
-          Exteriér
+          Společné prostory
         </SectionTitle>
         <GridRow sm={2} md={3} cols={4} gap={`16px`}>
           {data.map((item, index) => {
@@ -74,30 +110,3 @@ const Exterier: React.FC = () => {
 };
 
 export default Exterier;
-
-const data = [
-  {
-    picture: pic1,
-  },
-  {
-    picture: pic2,
-  },
-  {
-    picture: pic3,
-  },
-  {
-    picture: pic4,
-  },
-  {
-    picture: pic5,
-  },
-  {
-    picture: pic6,
-  },
-  {
-    picture: pic7,
-  },
-  {
-    picture: pic8,
-  },
-];

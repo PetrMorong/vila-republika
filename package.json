@@ -17,6 +17,7 @@
   "dependencies": {
     "@types/swiper": "^6.0.0",
     "babel-plugin-styled-components": "^2.0.6",
+    "cloudinary-build-url": "^0.2.4",
     "gatsby": "^4.10.3",
     "gatsby-plugin-image": "^2.11.0",
     "gatsby-plugin-sharp": "^4.11.0",

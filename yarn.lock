@@ -1019,6 +1019,13 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     "to-fast-properties" "^2.0.0"
 
+"@cld-apis/utils@^0.2.0":
+  "integrity" "sha512-WBhOZ+wz93G/vsqkfmIBsPYf7FH4i5ZKN3QYlUfg9Ni5A2E09CCfsNG6RUuGeLjDPaFXFbta1rkNf3+2hFlavQ=="
+  "resolved" "https://registry.npmjs.org/@cld-apis/utils/-/utils-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "snake-case" "^3.0.4"
+
 "@emotion/is-prop-valid@^1.1.0":
   "integrity" "sha512-3QnhqeL+WW88YjYbQL5gUIkthuMw7a0NGbZ7wfFVk2kg/CK5w8w5FFa0RzWjyY1+sujN0NWbtSHH6OJmWHtJpQ=="
   "resolved" "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-1.1.2.tgz"
@@ -3694,6 +3701,13 @@
   "resolved" "https://registry.npmjs.org/clone/-/clone-2.1.2.tgz"
   "version" "2.1.2"
 
+"cloudinary-build-url@^0.2.4":
+  "integrity" "sha512-Wi0aZPHOa90xDCCC4k9eoTVPIm3aWNyycO+rJUXvOyusQqmkPSprHSuJh3s2zNxEtuGj24aCM13iLDpilWMpSw=="
+  "resolved" "https://registry.npmjs.org/cloudinary-build-url/-/cloudinary-build-url-0.2.4.tgz"
+  "version" "0.2.4"
+  dependencies:
+    "@cld-apis/utils" "^0.2.0"
+
 "coa@^2.0.2":
   "integrity" "sha512-q5/jG+YQnSy4nRTV4F7lPepBJZ8qBNJJDBuJdoejDyLXgmL7IEo+Le2JDZudFTFt7mrCqIRaSjws4ygRCTCAXA=="
   "resolved" "https://registry.npmjs.org/coa/-/coa-2.0.2.tgz"
@@ -4597,6 +4611,14 @@
     "dom-serializer" "^1.0.1"
     "domelementtype" "^2.2.0"
     "domhandler" "^4.2.0"
+
+"dot-case@^3.0.4":
+  "integrity" "sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w=="
+  "resolved" "https://registry.npmjs.org/dot-case/-/dot-case-3.0.4.tgz"
+  "version" "3.0.4"
+  dependencies:
+    "no-case" "^3.0.4"
+    "tslib" "^2.0.3"
 
 "dot-prop@^5.2.0":
   "integrity" "sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q=="
@@ -9884,6 +9906,14 @@
   "integrity" "sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ=="
   "resolved" "https://registry.npmjs.org/slugify/-/slugify-1.6.5.tgz"
   "version" "1.6.5"
+
+"snake-case@^3.0.4":
+  "integrity" "sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg=="
+  "resolved" "https://registry.npmjs.org/snake-case/-/snake-case-3.0.4.tgz"
+  "version" "3.0.4"
+  dependencies:
+    "dot-case" "^3.0.4"
+    "tslib" "^2.0.3"
 
 "snapdragon-node@^2.0.1":
   "integrity" "sha512-O27l4xaMYt/RSQ5TR3vpWCAB5Kb/czIcqUFOM/C4fYcLnbZUc1PkjTAMjof2pBWaSTwOUd6qUHcFGVGj7aIwnw=="

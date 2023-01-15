@@ -1,10 +1,11 @@
 import React from "react";
 import Fotogalerie from "../Components/Views/Fotogalerie";
 import { Helmet } from "react-helmet";
+import DataContainer from "../Components/DataContainer";
 
 const FotogaleriePage = () => {
   return (
-    <>
+    <DataContainer>
       <Helmet>
         <title>Wellness Apartmány Vila Republika Velké Losiny</title>
         <meta
@@ -13,7 +14,7 @@ const FotogaleriePage = () => {
         />
       </Helmet>
       <Fotogalerie />
-    </>
+    </DataContainer>
   );
 };
 

@@ -9,7 +9,7 @@ import {
 } from "../../../Styled/Theme.styles";
 import { SectionTitle } from "../../../Styled/Typography.styles";
 import { SlideWrapper } from "../../../Styled/Swiper.styles";
-import pic1 from "../../../images/apartmany/1.png";
+// import pic1 from "../../../images/apartmany/1.png";
 import pic2 from "../../../images/apartmany/2.png";
 import pic3 from "../../../images/apartmany/3.png";
 import pic4 from "../../../images/apartmany/4.png";
@@ -17,8 +17,66 @@ import pic5 from "../../../images/apartmany/5.png";
 import pic6 from "../../../images/apartmany/6.png";
 import pic7 from "../../../images/apartmany/7.png";
 import pic8 from "../../../images/apartmany/8.png";
+import { buildImageUrl } from "cloudinary-build-url";
 
 const Apartmany: React.FC = () => {
+  const data = [
+    // byt 1
+    {
+      picture: buildImageUrl(
+        "v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg",
+        {}
+      ),
+    },
+
+    // byt 4
+    {
+      picture: buildImageUrl(
+        "v1673797426/vilaRepublikaFoto/byt4/DSC07545-HDR_g11alm.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg",
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        "v1673797431/vilaRepublikaFoto/byt4/DSC07518-HDR_yvydy6.jpg",
+        {}
+      ),
+    },
+
+    {
+      picture: buildImageUrl(
+        "v1673797427/vilaRepublikaFoto/byt4/DSC07539-HDR_qcpgxr.jpg",
+        {}
+      ),
+    },
+  ];
+
+  // TODO add titles
+
   return (
     <Wrapper
       bgColor={`#F0E8D9`}
@@ -74,30 +132,3 @@ const Apartmany: React.FC = () => {
 };
 
 export default Apartmany;
-
-const data = [
-  {
-    picture: pic1,
-  },
-  {
-    picture: pic2,
-  },
-  {
-    picture: pic3,
-  },
-  {
-    picture: pic4,
-  },
-  {
-    picture: pic5,
-  },
-  {
-    picture: pic6,
-  },
-  {
-    picture: pic7,
-  },
-  {
-    picture: pic8,
-  },
-];

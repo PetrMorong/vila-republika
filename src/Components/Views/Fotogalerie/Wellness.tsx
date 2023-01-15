@@ -19,6 +19,33 @@ import pic7 from "../../../images/wallness/3.png";
 import pic8 from "../../../images/wallness/4.png";
 
 const Wellness: React.FC = () => {
+  const data = [
+    {
+      picture: pic1,
+    },
+    {
+      picture: pic2,
+    },
+    {
+      picture: pic3,
+    },
+    {
+      picture: pic4,
+    },
+    {
+      picture: pic5,
+    },
+    {
+      picture: pic6,
+    },
+    {
+      picture: pic7,
+    },
+    {
+      picture: pic8,
+    },
+  ];
+
   return (
     <Wrapper
       bgColor={`#F0E8D9`}
@@ -36,9 +63,9 @@ const Wellness: React.FC = () => {
           mb={`65px`}
           smFontSize={`30px`}
         >
-          Wellness
+          Wellness (od 15.3.)
         </SectionTitle>
-        <GridRow sm={2} md={3} cols={4} between  gap={`16px`}>
+        <GridRow sm={2} md={3} cols={4} between gap={`16px`}>
           {data.map((item, index) => {
             return (
               <FlexRow
@@ -74,30 +101,3 @@ const Wellness: React.FC = () => {
 };
 
 export default Wellness;
-
-const data = [
-  {
-    picture: pic1,
-  },
-  {
-    picture: pic2,
-  },
-  {
-    picture: pic3,
-  },
-  {
-    picture: pic4,
-  },
-  {
-    picture: pic5,
-  },
-  {
-    picture: pic6,
-  },
-  {
-    picture: pic7,
-  },
-  {
-    picture: pic8,
-  },
-];

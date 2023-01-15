@@ -7,19 +7,21 @@ import Header from "./Header";
 import Tab from "./Tab";
 
 const Fotogalerie: React.FC = () => {
+  // TODO add fotogalery
+
   return (
     <Layout>
       <Header />
-      <Tab />
+      {/* <Tab /> */}
       <div id="Apartmany">
         <Apartmany />
       </div>
       <div id="Exterier">
         <Exterier />
       </div>
-      <div id="Wellness">
+      {/* <div id="Wellness">
         <Wellness />
-      </div>
+      </div> */}
     </Layout>
   );
 };
