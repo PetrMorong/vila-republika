@@ -9,14 +9,6 @@ import {
 } from "../../../Styled/Theme.styles";
 import { SectionTitle } from "../../../Styled/Typography.styles";
 import { SlideWrapper } from "../../../Styled/Swiper.styles";
-// import pic1 from "../../../images/apartmany/1.png";
-import pic2 from "../../../images/apartmany/2.png";
-import pic3 from "../../../images/apartmany/3.png";
-import pic4 from "../../../images/apartmany/4.png";
-import pic5 from "../../../images/apartmany/5.png";
-import pic6 from "../../../images/apartmany/6.png";
-import pic7 from "../../../images/apartmany/7.png";
-import pic8 from "../../../images/apartmany/8.png";
 import { buildImageUrl } from "cloudinary-build-url";
 
 const Apartmany: React.FC = () => {

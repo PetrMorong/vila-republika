@@ -1,6 +1,7 @@
 import React from "react";
 import Okoli from "../Components/Views/Okoli";
 import { Helmet } from "react-helmet";
+
 const OkoliPage = () => {
   return (
     <>

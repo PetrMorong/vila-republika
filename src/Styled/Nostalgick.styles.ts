@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import bg from "../images/nostalgick-bg.png";
+
+
 interface NostalgickWrapperTypes {
   padding: string;
   height: string;
+  bg: string
 }
-export const NostalgickWrapper = styled.div`
+export const NostalgickWrapper = styled.div<NostalgickWrapperTypes>`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: url("${bg}");
+  background: url("${p => p.bg}");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

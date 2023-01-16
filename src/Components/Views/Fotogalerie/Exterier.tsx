@@ -9,10 +9,6 @@ import {
 } from "../../../Styled/Theme.styles";
 import { SectionTitle } from "../../../Styled/Typography.styles";
 import { SlideWrapper } from "../../../Styled/Swiper.styles";
-import pic1 from "../../../images/exterior/1.png";
-import pic2 from "../../../images/exterior/2.png";
-import pic3 from "../../../images/exterior/3.png";
-import pic4 from "../../../images/exterior/1.png";
 import { buildImageUrl } from "cloudinary-build-url";
 
 const Exterier: React.FC = () => {

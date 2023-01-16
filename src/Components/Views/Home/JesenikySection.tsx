@@ -5,6 +5,7 @@ import { FlexRow } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { buildImageUrl } from "cloudinary-build-url";
 
 export const Container = styled.div`
   display: flex;
@@ -16,8 +17,12 @@ export const Container = styled.div`
 `;
 
 const Nostalgick: React.FC = () => {
+  const bg = buildImageUrl(
+    "v1673867133/vilaRepublikaFoto/nostalgick-bg_psvvlh.png",
+    {}
+  );
   return (
-    <NostalgickWrapper padding={`0px 0px`} height={``}>
+    <NostalgickWrapper padding={`0px 0px`} height={``} bg={bg}>
       <Container>
         <FlexRow maxWidth={`690px`} margin={`0px auto`} column>
           <SectionTitle color={`white`} mb={`40px`}>

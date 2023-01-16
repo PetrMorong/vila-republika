@@ -8,9 +8,14 @@ import {
   Wrapper,
 } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/apartmany/ap4/DSC07539-HDR-min.jpg";
+import { buildImageUrl } from "cloudinary-build-url";
 
 const IntimniAtmosfera: React.FC = () => {
+  const img = buildImageUrl(
+    "v1673797427/vilaRepublikaFoto/byt4/DSC07530-HDR_fhmjqv.jpg",
+    {}
+  );
+
   return (
     <Wrapper
       mdPadding={`80px 0px 40px`}

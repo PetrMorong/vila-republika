@@ -1,11 +1,10 @@
 import React from "react";
 import { HeaderWrapper } from "../../../Styled/Header.styles";
-import headerBg from "../../../images/homeMain.jpg";
 import headr1 from "../../../images/header-icon1.svg";
 import headr2 from "../../../images/header-icon2.svg";
 import headr3 from "../../../images/header-icon3.svg";
 import headr4 from "../../../images/header-icon4.svg";
-
+import { buildImageUrl } from "cloudinary-build-url";
 import {
   Container,
   FlexRow,
@@ -16,6 +15,11 @@ import {
 import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
 
 const Header: React.FC = () => {
+  const headerBg = buildImageUrl(
+    "v1673863133/vilaRepublikaFoto/DSC07600-HDR_3_maveff.jpg",
+    {}
+  );
+
   return (
     <HeaderWrapper
       padding={`80px 0px 60px`}

@@ -6,17 +6,20 @@ import HistorieSection from "./HistorieSection";
 import IntimniAtmosfera from "./IntimniAtmosfera";
 import JesenikySection from "./JesenikySection";
 import SectionTwo from "./SectionTwo";
+import DataContainer from "../../../Components/DataContainer";
 
 const HomeIndex: React.FC = () => {
   return (
-    <Layout>
-      <Header />
-      <SectionTwo />
-      <IntimniAtmosfera />
-      <HistorieSection />
-      <Vybaveni />
-      <JesenikySection />
-    </Layout>
+    <DataContainer>
+      <Layout>
+        <Header />
+        <SectionTwo />
+        <IntimniAtmosfera />
+        <HistorieSection />
+        <Vybaveni />
+        <JesenikySection />
+      </Layout>
+    </DataContainer>
   );
 };
 

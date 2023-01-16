@@ -10,16 +10,16 @@ const Okoli: React.FC = () => {
   return (
     <Layout>
       <Header />
-      <Tab />
+      {/* <Tab /> */}
       <div id="VelkeLosiny">
         <VelkeLosiny />
       </div>
       <div id="Jeseniky">
         <Jeseniky />
       </div>
-      <div id="Vylety">
+      {/* <div id="Vylety">
         <Vylety />
-      </div>
+      </div> */}
     </Layout>
   );
 };

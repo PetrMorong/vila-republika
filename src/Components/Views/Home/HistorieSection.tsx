@@ -8,9 +8,14 @@ import {
   Wrapper,
 } from "../../../Styled/Theme.styles";
 import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/zamek.jpg";
+import { buildImageUrl } from "cloudinary-build-url";
 
 const HistorieVelkych: React.FC = () => {
+  const img = buildImageUrl(
+    "v1673866808/vilaRepublikaFoto/zamek_dqh5cb.jpg",
+    {}
+  );
+
   return (
     <Wrapper
       mdPadding={`80px 0px 40px`}
