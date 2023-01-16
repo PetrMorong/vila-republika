@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: ``,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.vila-republika.cz`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -10,21 +10,22 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.example.com",
-        sitemap: "https://www.example.com/sitemap/sitemap-index.xml",
+        host: "https://www.vila-republika.cz",
+        sitemap: "https://www.vila-republika.cz/sitemap-index.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
-        isTSX: true, // defaults to false
-        jsxPragma: `jsx`, // defaults to "React"
-        allExtensions: true, // defaults to false
+        isTSX: true,
+        jsxPragma: `jsx`,
+        allExtensions: true,
       },
-    }, // Needed for dynamic images
+    },
   ],
 };
