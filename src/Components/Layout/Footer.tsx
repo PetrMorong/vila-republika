@@ -143,7 +143,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   Helena Morongová
                 </Desc>
                 <FooterItem>
-                  <p style={{ marginBottom: 8 }}>+420 605 291 431</p>
+                  <p style={{ marginBottom: 8 }}>+420 797 625 340</p>
                   <p style={{ textDecoration: "underline" }}>
                     info@vila-republika.cz
                   </p>
