@@ -25,7 +25,7 @@ const Dalsi: React.FC = () => {
     >
       <Container>
         <GridRow sm={1} lg={2} gap={`32px`} max="true" around cols={5}>
-          {data.map(({ id, icon, text,description }) => {
+          {data.map(({ id, icon, text, description }) => {
             return (
               <div key={id}>
                 <ImgWrapper smWidth={`50px`} xlWidth={`50px`} maxWidth={`50px`}>
@@ -86,7 +86,7 @@ const data = [
   { id: 1, text: "Pračka", description: "ve společné prádelně", icon: icon1 },
   {
     id: 2,
-    text: "Wellness",
+    text: "Privátní Wellness",
     description: "sauna pro 4, vířivka pro 3 osoby",
     icon: icon2,
   },
@@ -105,7 +105,7 @@ const data = [
   {
     id: 5,
     text: "Elektrokola",
-    description: "s vinotékou a zábavou",
+    description: "2 kola k zapůjčení",
     icon: icon5,
   },
 ];

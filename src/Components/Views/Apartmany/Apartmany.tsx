@@ -755,18 +755,15 @@ const Apartmany: React.FC = () => {
                 smalign={`center`}
                 smFontsize={`18px`}
               >
-                Klenot projektu Vila Republika. Nádherný apartmán
-                s panoramatickou dispozicí poskytuje z každé místnosti překrásné
-                výhledy. Má celkem tři ložnice, velký obývací prostor s kuchyní
-                a jídelní částí. V klidu se zde může ubytovat až 10 osob a každý
+                Apartmán má celkem dvě ložnice, obývací prostor s kuchyní
+                a jídelní částí. V klidu se zde může ubytovat až 8 osob a každý
                 najde soukromí. Apartmán vás upoutá velice zajímavým a nevšedním
                 designem.
                 <br />
                 <br />
-                Vše tu voní dřevem. Nádherným prvkem je přiznané původní
-                trámoví, stejně jako kruhová okna s průhledy do malebné krajiny.
-                Jako by se tu čas zastavil. V tomto apartmánu s rodinou a
-                přáteli zapomenete na starosti všedních dní.
+                Nádherným prvkem je přiznané původní. Jako by se tu čas
+                zastavil. V tomto apartmánu s rodinou a přáteli zapomenete na
+                starosti všedních dní.
               </Desc>
 
               <ButtonWrapper>
@@ -839,7 +836,7 @@ const Apartmany: React.FC = () => {
                 Klenot projektu Vila Republika. Nádherný apartmán
                 s panoramatickou dispozicí poskytuje z každé místnosti překrásné
                 výhledy. Má celkem tři ložnice, velký obývací prostor s kuchyní
-                a jídelní částí. V klidu se zde může ubytovat až 10 osob a každý
+                a jídelní částí. V klidu se zde může ubytovat až 12 osob a každý
                 najde soukromí. Apartmán vás upoutá velice zajímavým a nevšedním
                 designem.
                 <br />
