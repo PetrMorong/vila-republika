@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../../Layout/Layout";
 import VybaveniApartmanu from "./VybaveniApartmanu";
 import Header from "./Header";
 import Tab from "./Tab";
@@ -9,7 +8,7 @@ import Dalsi from "./Dalsi";
 
 const ApartmanyIndex: React.FC = () => {
   return (
-    <Layout>
+    <>
       <Header />
       {/* <Tab />
       <div id="VybaveniApartmanu">
@@ -24,7 +23,7 @@ const ApartmanyIndex: React.FC = () => {
       <div>
         <Dalsi />
       </div>
-    </Layout>
+    </>
   );
 };
 

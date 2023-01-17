@@ -24,6 +24,7 @@ import {
 import { SlideContent } from "../../../Styled/Swiper.styles";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { buildImageUrl } from "cloudinary-build-url";
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -36,25 +37,156 @@ export const SlideWrapper = styled.div`
   }
 `;
 
-const apImages = [
-  // ap 1
-  [ap1Image, ap4Image],
-  // ap 2
-  [ap4Image, ap4Image, ap4Image],
-  // ap 4
-  [ap4Image, ap4Image, ap4Image],
-  // ap 5
-  [ap4Image, ap4Image, ap4Image],
-  // ap 6
-  [ap4Image, ap4Image, ap4Image],
-  // ap 7
-  [ap4Image, ap4Image, ap4Image],
-];
-
 const Apartmany: React.FC = () => {
   const [carouselIndex, setCarouseIndex] = React.useState(0);
   const [showGallery, setShowGallery] = React.useState(false);
   const [selectedGallery, setSelectedGallery] = React.useState(0);
+
+  // AP 1
+  const ap1Image1 = buildImageUrl(
+    "v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg",
+    {}
+  );
+
+  const ap1Image2 = buildImageUrl(
+    "v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg",
+    {}
+  );
+
+  const ap1Image3 = buildImageUrl(
+    "v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg",
+    {}
+  );
+
+  const ap1Image4 = buildImageUrl(
+    "v1673797465/vilaRepublikaFoto/byt1/DSC07421-HDR_cqlm0x.jpg",
+    {}
+  );
+
+  const ap1Image5 = buildImageUrl(
+    "v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg",
+    {}
+  );
+
+  const ap1Image6 = buildImageUrl(
+    "v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg",
+    {}
+  );
+
+  // AP 4
+  const ap4Image1 = buildImageUrl(
+    "v1673797426/vilaRepublikaFoto/byt4/DSC07545-HDR_g11alm.jpg",
+    {}
+  );
+
+  const ap4Image2 = buildImageUrl(
+    "v1673797431/vilaRepublikaFoto/byt4/DSC07518-HDR_yvydy6.jpg",
+    {}
+  );
+
+  const ap4Image3 = buildImageUrl(
+    "v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg",
+    {}
+  );
+
+  const ap4Image4 = buildImageUrl(
+    "v1673797428/vilaRepublikaFoto/byt4/DSC07557-HDR_qp18zg.jpg",
+    {}
+  );
+
+  const ap4Image5 = buildImageUrl(
+    "v1673797427/vilaRepublikaFoto/byt4/DSC07530-HDR_fhmjqv.jpg",
+    {}
+  );
+
+  const ap4Image6 = buildImageUrl(
+    "v1673797427/vilaRepublikaFoto/byt4/DSC07539-HDR_qcpgxr.jpg",
+    {}
+  );
+
+  // AP 7
+
+  const ap7Image1 = buildImageUrl("v1645823019/vlAp7_utapq6.jpg", {});
+
+  const ap7Image2 = buildImageUrl(
+    "v1645822939/homeThreeImageOne_osn1s7.jpg",
+    {}
+  );
+
+  const ap7Image3 = buildImageUrl(
+    "v1673901976/vilaRepublikaFoto/byt7/04_qw3rnf.jpg",
+    {}
+  );
+
+  const ap7Image4 = buildImageUrl(
+    "v1673901976/vilaRepublikaFoto/byt7/05_lwmqcg.jpg",
+    {}
+  );
+
+  const ap7Image5 = buildImageUrl(
+    "v1673901976/vilaRepublikaFoto/byt7/02_rd91f5.jpg",
+    {}
+  );
+
+  // APP 6
+
+  const ap6Image1 = buildImageUrl(
+    "v1673903298/vilaRepublikaFoto/byt6/pohled_kuchyne-min_ne47wb.png",
+    {}
+  );
+
+  const ap6Image2 = buildImageUrl(
+    "v1673903301/vilaRepublikaFoto/byt6/pohled_obyvaci_pokoj2-min_iyrkju.png",
+    {}
+  );
+
+  const ap6Image3 = buildImageUrl(
+    "v1673903849/vilaRepublikaFoto/byt6/loznce2_ferbgv.png",
+    {}
+  );
+
+  const ap6Image4 = buildImageUrl(
+    "v1673903854/vilaRepublikaFoto/byt6/loznice1_x3gik9.png",
+    {}
+  );
+
+  const ap6Image5 = buildImageUrl(
+    "v1673903850/vilaRepublikaFoto/byt6/loznice3_zjsqka.png",
+    {}
+  );
+
+  const ap6Image6 = buildImageUrl(
+    "v1673903289/vilaRepublikaFoto/byt6/6-min_ob9dlc.png",
+    {}
+  );
+
+  const ap6Image7 = buildImageUrl(
+    "v1673903293/vilaRepublikaFoto/byt6/1-min_sgoba8.png",
+    {}
+  );
+
+  const apImages = [
+    // ap 1
+    [ap1Image1, ap1Image2, ap1Image3, ap1Image4, ap1Image5, ap1Image6],
+    // ap 2
+    [ap4Image, ap4Image, ap4Image],
+    // ap 4
+    [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
+    // ap 5
+    [ap4Image, ap4Image, ap4Image],
+    // ap 6
+    [
+      ap6Image1,
+      ap6Image2,
+      ap6Image3,
+      ap6Image4,
+      ap6Image5,
+      ap6Image6,
+      ap6Image7,
+    ],
+    // ap 7
+    [ap7Image1, ap7Image2, ap7Image3, ap7Image4, ap7Image5],
+  ];
 
   const images = apImages[selectedGallery];
 
@@ -90,7 +222,7 @@ const Apartmany: React.FC = () => {
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap1Image} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap1Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
                     setShowGallery(true);
@@ -134,7 +266,7 @@ const Apartmany: React.FC = () => {
                 smGap={`60px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -213,7 +345,7 @@ const Apartmany: React.FC = () => {
                 smGap={`80px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -255,16 +387,16 @@ const Apartmany: React.FC = () => {
                 smLineHeight={`30px`}
                 smalign={`center`}
               >
-                Optimistické interiéry, ve kterých se zabydlelo slunce. Slunečný
-                apartmán se dvěma ložnicemi je díky své jižní orientaci plný
-                denního světla. Má vlastní terasu a samostatný vstup na zahradu.
+                Oblékněte župan, nazujte pantofle a vydejte se do SPA. Tento
+                klidný apartmán představuje ideální volbu pro milovníky relaxu.
+                Do sauny a wellness nemusíte chodit přes chodbu, ale pohodlně
+                přímo z bytu.
                 <br />
                 <br />
-                Na čerstvém vzduchu budete moct trávit času, kolik se vám jen
-                zachce. Uklidňující atmosféru zde navozují přírodní materiály a
-                neutrální barvy. Zrenovované parkety a dřevěná obložení zase
-                umocňují elegantní styl. Nápadité designové osvětlení od
-                italského výrobce se stará o unikátní světelnou pohodu.
+                Interiéry s poctou minimalismu, odkazy na severskou architekturu
+                a zachovalými prvorepublikovými prvky skvěle ladí s okolní
+                krajinou Jeseníků. Doporučujeme zamilovaným párům a všem, kdo si
+                chtějí naplno užít dovolenou v lázeňském duchu.
               </Desc>
               <ButtonWrapper>
                 <Link to="/rezervace">
@@ -314,7 +446,7 @@ const Apartmany: React.FC = () => {
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap4Image} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap4Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
                     setShowGallery(true);
@@ -358,7 +490,7 @@ const Apartmany: React.FC = () => {
                 smGap={`60px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -400,16 +532,15 @@ const Apartmany: React.FC = () => {
                 smalign={`center`}
                 smFontsize={`18px`}
               >
-                Optimistické interiéry, ve kterých se zabydlelo slunce. Slunečný
-                apartmán se dvěma ložnicemi je díky své jižní orientaci plný
-                denního světla. Má vlastní terasu a samostatný vstup na zahradu.
+                Rádi se kocháte výhledy na panorama hor? V Pradědově apartmánu
+                budete mít Jeseníky jako na dlani. Z vlastní terasy můžete
+                sledovat dalekohledem krásy zdejší krajiny a zasněžené vrcholky.
                 <br />
                 <br />
-                Na čerstvém vzduchu budete moct trávit času, kolik se vám jen
-                zachce. Uklidňující atmosféru zde navozují přírodní materiály a
-                neutrální barvy. Zrenovované parkety a dřevěná obložení zase
-                umocňují elegantní styl. Nápadité designové osvětlení od
-                italského výrobce se stará o unikátní světelnou pohodu.
+                Nádherný apartmán v prvorepublikovém stylu vás okouzlí dřevěným
+                obložením, zrenovovanými parketami a jemným barevným laděním.
+                Jistě vás potěší i nadstandardně velká obývací část pro chvíle
+                pohody a nicnedělání.
               </Desc>
 
               <ButtonWrapper>
@@ -437,7 +568,7 @@ const Apartmany: React.FC = () => {
                 smGap={`80px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -451,7 +582,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>4 - 6 osob</SmallBoldText>
+                      <SmallBoldText>6 - 8 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -466,7 +597,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 1900 kč</SmallBoldText>
+                      <SmallBoldText>od 2500 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -479,16 +610,16 @@ const Apartmany: React.FC = () => {
                 smLineHeight={`30px`}
                 smalign={`center`}
               >
-                Optimistické interiéry, ve kterých se zabydlelo slunce. Slunečný
-                apartmán se dvěma ložnicemi je díky své jižní orientaci plný
-                denního světla. Má vlastní terasu a samostatný vstup na zahradu.
+                Vzdušný apartmán, jehož dominantu tvoří dřevěné parkety a bílé
+                dřevěné obložení stěn. Olivově zelené akcenty a designové
+                osvětlení dodávají interiérům prvorepublikový půvab. Z balkonu
+                si můžete užívat výhledy na hory a místní kostel.
                 <br />
                 <br />
-                Na čerstvém vzduchu budete moct trávit času, kolik se vám jen
-                zachce. Uklidňující atmosféru zde navozují přírodní materiály a
-                neutrální barvy. Zrenovované parkety a dřevěná obložení zase
-                umocňují elegantní styl. Nápadité designové osvětlení od
-                italského výrobce se stará o unikátní světelnou pohodu.
+                Probouzet vás budou první paprsky slunce díky východně
+                orientované ložnici. A ve velkoryse pojaté obytné části
+                s jídelnou a kuchyní se budete cítit skvěle. Luxus a historie
+                lázeňství si v tomto apartmánu podávají ruce.
               </Desc>
               <ButtonWrapper>
                 <Link to="/rezervace">
@@ -538,7 +669,7 @@ const Apartmany: React.FC = () => {
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap1Image} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
                     setShowGallery(true);
@@ -582,7 +713,7 @@ const Apartmany: React.FC = () => {
                 smGap={`60px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -624,16 +755,18 @@ const Apartmany: React.FC = () => {
                 smalign={`center`}
                 smFontsize={`18px`}
               >
-                Optimistické interiéry, ve kterých se zabydlelo slunce. Slunečný
-                apartmán se dvěma ložnicemi je díky své jižní orientaci plný
-                denního světla. Má vlastní terasu a samostatný vstup na zahradu.
+                Klenot projektu Vila Republika. Nádherný apartmán
+                s panoramatickou dispozicí poskytuje z každé místnosti překrásné
+                výhledy. Má celkem tři ložnice, velký obývací prostor s kuchyní
+                a jídelní částí. V klidu se zde může ubytovat až 10 osob a každý
+                najde soukromí. Apartmán vás upoutá velice zajímavým a nevšedním
+                designem.
                 <br />
                 <br />
-                Na čerstvém vzduchu budete moct trávit času, kolik se vám jen
-                zachce. Uklidňující atmosféru zde navozují přírodní materiály a
-                neutrální barvy. Zrenovované parkety a dřevěná obložení zase
-                umocňují elegantní styl. Nápadité designové osvětlení od
-                italského výrobce se stará o unikátní světelnou pohodu.
+                Vše tu voní dřevem. Nádherným prvkem je přiznané původní
+                trámoví, stejně jako kruhová okna s průhledy do malebné krajiny.
+                Jako by se tu čas zastavil. V tomto apartmánu s rodinou a
+                přáteli zapomenete na starosti všedních dní.
               </Desc>
 
               <ButtonWrapper>
@@ -661,7 +794,7 @@ const Apartmany: React.FC = () => {
                 smGap={`80px`}
                 mdDirection={`row`}
                 itemCenter
-                margin={`0px 0px 40px 0px`}
+                margin={`0px 0px 20px 0px`}
                 smcenter={`center`}
               >
                 <div>
@@ -675,7 +808,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>4 - 6 osob</SmallBoldText>
+                      <SmallBoldText>10 - 12 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -690,7 +823,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 1900 kč</SmallBoldText>
+                      <SmallBoldText>od 3900 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -703,16 +836,18 @@ const Apartmany: React.FC = () => {
                 smLineHeight={`30px`}
                 smalign={`center`}
               >
-                Optimistické interiéry, ve kterých se zabydlelo slunce. Slunečný
-                apartmán se dvěma ložnicemi je díky své jižní orientaci plný
-                denního světla. Má vlastní terasu a samostatný vstup na zahradu.
+                Klenot projektu Vila Republika. Nádherný apartmán
+                s panoramatickou dispozicí poskytuje z každé místnosti překrásné
+                výhledy. Má celkem tři ložnice, velký obývací prostor s kuchyní
+                a jídelní částí. V klidu se zde může ubytovat až 10 osob a každý
+                najde soukromí. Apartmán vás upoutá velice zajímavým a nevšedním
+                designem.
                 <br />
                 <br />
-                Na čerstvém vzduchu budete moct trávit času, kolik se vám jen
-                zachce. Uklidňující atmosféru zde navozují přírodní materiály a
-                neutrální barvy. Zrenovované parkety a dřevěná obložení zase
-                umocňují elegantní styl. Nápadité designové osvětlení od
-                italského výrobce se stará o unikátní světelnou pohodu.
+                Vše tu voní dřevem. Nádherným prvkem je přiznané původní
+                trámoví, stejně jako kruhová okna s průhledy do malebné krajiny.
+                Jako by se tu čas zastavil. V tomto apartmánu s rodinou a
+                přáteli zapomenete na starosti všedních dní.
               </Desc>
               <ButtonWrapper>
                 <Link to="/rezervace">
@@ -726,7 +861,7 @@ const Apartmany: React.FC = () => {
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={img} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: "auto" }}>
