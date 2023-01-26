@@ -705,7 +705,7 @@ const Apartmany: React.FC = () => {
             <div>
               <div>
                 <ApNameText>Prvorepublikový</ApNameText>
-                <ApPopisekText>s elegancí a vanou</ApPopisekText>
+                <ApPopisekText>s útulným podkrovím a vanou</ApPopisekText>
               </div>
               <FlexRow
                 gap={`15px`}
@@ -727,7 +727,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 osob</SmallBoldText>
+                      <SmallBoldText>6 - 8 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -755,15 +755,17 @@ const Apartmany: React.FC = () => {
                 smalign={`center`}
                 smFontsize={`18px`}
               >
-                Apartmán má celkem dvě ložnice, obývací prostor s kuchyní
-                a jídelní částí. V klidu se zde může ubytovat až 8 osob a každý
-                najde soukromí. Apartmán vás upoutá velice zajímavým a nevšedním
-                designem.
+                Pro rozvětvenou rodinu i partu přátel. Prvorepublikový apartmán
+                sestává ze dvou útulných ložnic, které se ukrývají v dřevěném
+                podkroví. Vyspíte se do růžova – pokoje jsou velmi tiché a
+                skýtají pohodlí. V obývací části jsme vše nachystali pro
+                společné vaření, stolování a lenošení.
                 <br />
                 <br />
-                Nádherným prvkem je přiznané původní. Jako by se tu čas
-                zastavil. V tomto apartmánu s rodinou a přáteli zapomenete na
-                starosti všedních dní.
+                Máte chuť na horkou koupel po celém dni na svahu? Ani to nebude
+                problém. Tento slunečný apartmán vás okouzlí svou elegancí,
+                keramickou dlažbou s prvorepublikovým dekorem a dřevěnými prvky,
+                které připomínají horskou chalupu.
               </Desc>
 
               <ButtonWrapper>

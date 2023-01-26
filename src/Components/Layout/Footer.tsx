@@ -133,7 +133,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               </ImgWrapper> */}
               <FlexRow direction={`column`}>
                 <Desc
-                  style={{ textAlign: "left" }}
+                  align="left"
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
@@ -144,9 +144,13 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 </Desc>
                 <FooterItem>
                   <p style={{ marginBottom: 8 }}>+420 797 625 340</p>
-                  <p style={{ textDecoration: "underline" }}>
+                  <p style={{ textDecoration: "underline", marginBottom: 30 }}>
                     info@vila-republika.cz
                   </p>
+
+                  <p style={{ marginBottom: 8 }}>Vila Republika s.r.o.</p>
+
+                  <p>Ič: 17936403 </p>
                 </FooterItem>
               </FlexRow>
             </FlexRow>

@@ -25,12 +25,6 @@ const Layout: FunctionComponent = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Vila Republika</title>
-        <link rel="stylesheet" href="https://use.typekit.net/uve2xcq.css" />
-        <link rel="icon" type="image/x-icon" href={Favicon} />
-      </Helmet>
       <GlobalStyle />
       <Nav toggle={toggleDrawer} navLinks={navLinks} />
       <MobileDrawer navLinks={navLinks} toggle={toggleDrawer} open={isOpen} />
