@@ -1,24 +1,24 @@
-import React from "react";
-import { HeaderWrapper } from "../../../Styled/Header.styles";
-import headr1 from "../../../images/header-icon1.svg";
-import headr2 from "../../../images/header-icon2.svg";
-import headr3 from "../../../images/header-icon3.svg";
-import headr4 from "../../../images/header-icon4.svg";
-import { buildImageUrl } from "cloudinary-build-url";
+import React from 'react'
+import { HeaderWrapper } from '../../../Styled/Header.styles'
+import headr1 from '../../../images/header-icon1.svg'
+import headr2 from '../../../images/header-icon2.svg'
+import headr3 from '../../../images/header-icon3.svg'
+import headr4 from '../../../images/header-icon4.svg'
+import { buildImageUrl } from 'cloudinary-build-url'
 import {
   Container,
   FlexRow,
   GridRow,
   ImgWrapper,
   StyledImg,
-} from "../../../Styled/Theme.styles";
-import { HeaderTitle, IconTitle } from "../../../Styled/Typography.styles";
+} from '../../../Styled/Theme.styles'
+import { HeaderTitle, IconTitle } from '../../../Styled/Typography.styles'
 
 const Header: React.FC = () => {
   const headerBg = buildImageUrl(
-    "v1673863133/vilaRepublikaFoto/DSC07600-HDR_3_maveff.jpg",
+    'v1675799326/vilaRepublikaFoto/DSC08542-HDR_aoyaqx.jpg',
     {}
-  );
+  )
 
   return (
     <HeaderWrapper
@@ -37,9 +37,9 @@ const Header: React.FC = () => {
             maxWidth={`932px`}
             smalign={`center`}
           >
-            Wellness apartmány{" "}
+            Wellness apartmány{' '}
             <HeaderTitle
-              style={{ color: "#F0E8D9" }}
+              style={{ color: '#F0E8D9' }}
               fontSize={``}
               smfontSize={``}
               smLineheight={``}
@@ -48,13 +48,13 @@ const Header: React.FC = () => {
               smalign={`center`}
             >
               v podhůří Jeseníků
-            </HeaderTitle>{" "}
+            </HeaderTitle>{' '}
           </HeaderTitle>
         </FlexRow>
       </Container>
 
       <Container>
-        <GridRow sm={1} lg={"2"} gap={"16px"} between cols={"4"}>
+        <GridRow sm={1} lg={'2'} gap={'16px'} between cols={'4'}>
           {headrIcons.map(({ id, icon, text }) => {
             return (
               <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
@@ -84,19 +84,19 @@ const Header: React.FC = () => {
                   {text}
                 </IconTitle>
               </FlexRow>
-            );
+            )
           })}
         </GridRow>
       </Container>
     </HeaderWrapper>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
 
 const headrIcons = [
-  { id: 1, text: "Privátní Wellness ", icon: headr1 },
-  { id: 2, text: "7 Apartmánů", icon: headr2 },
-  { id: 3, text: "Ubytování v horách ", icon: headr3 },
-  { id: 4, text: "Moderní Technologie", icon: headr4 },
-];
+  { id: 1, text: 'Privátní Wellness ', icon: headr1 },
+  { id: 2, text: '7 Apartmánů', icon: headr2 },
+  { id: 3, text: 'Ubytování v horách ', icon: headr3 },
+  { id: 4, text: 'Moderní Technologie', icon: headr4 },
+]

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,25 +6,25 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { Desc, IconTitle } from "../../../Styled/Typography.styles";
-import ap1Image from "../../../images/apartmany/ap1/DSC07382-HDR-min.jpg";
-import ap4Image from "../../../images/apartmany/ap4/DSC07518-HDR-min.jpg";
-import img from "../../../images/apartmany/ap1/DSC07445-HDR-min.jpg";
-import leftArrowImg from "../../../images/LeftArrow.svg";
-import usersIcon from "../../../images/users.svg";
-import cardIcon from "../../../images/card.svg";
-import cameraIcon from "../../../images/Icon feather-camera.svg";
-import Lightbox from "react-spring-lightbox";
+} from '../../../Styled/Theme.styles'
+import { Desc, IconTitle } from '../../../Styled/Typography.styles'
+import ap1Image from '../../../images/apartmany/ap1/DSC07382-HDR-min.jpg'
+import ap4Image from '../../../images/apartmany/ap4/DSC07518-HDR-min.jpg'
+import img from '../../../images/apartmany/ap1/DSC07445-HDR-min.jpg'
+import leftArrowImg from '../../../images/LeftArrow.svg'
+import usersIcon from '../../../images/users.svg'
+import cardIcon from '../../../images/card.svg'
+import cameraIcon from '../../../images/Icon feather-camera.svg'
+import Lightbox from 'react-spring-lightbox'
 import {
   Button,
   ButtonWrapper,
   ButtonWrapperFoto,
-} from "../../../Styled/Button.styles";
-import { SlideContent } from "../../../Styled/Swiper.styles";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import { buildImageUrl } from "cloudinary-build-url";
+} from '../../../Styled/Button.styles'
+import { SlideContent } from '../../../Styled/Swiper.styles'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -35,135 +35,171 @@ export const SlideWrapper = styled.div`
   &:hover {
     opacity: 0.9;
   }
-`;
+`
 
 const Apartmany: React.FC = () => {
-  const [carouselIndex, setCarouseIndex] = React.useState(0);
-  const [showGallery, setShowGallery] = React.useState(false);
-  const [selectedGallery, setSelectedGallery] = React.useState(0);
+  const [carouselIndex, setCarouseIndex] = React.useState(0)
+  const [showGallery, setShowGallery] = React.useState(false)
+  const [selectedGallery, setSelectedGallery] = React.useState(0)
 
   // AP 1
   const ap1Image1 = buildImageUrl(
-    "v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg",
+    'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
     {}
-  );
+  )
 
   const ap1Image2 = buildImageUrl(
-    "v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg",
+    'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
     {}
-  );
+  )
 
   const ap1Image3 = buildImageUrl(
-    "v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg",
+    'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
     {}
-  );
+  )
 
   const ap1Image4 = buildImageUrl(
-    "v1673797465/vilaRepublikaFoto/byt1/DSC07421-HDR_cqlm0x.jpg",
+    'v1673797465/vilaRepublikaFoto/byt1/DSC07421-HDR_cqlm0x.jpg',
     {}
-  );
+  )
 
   const ap1Image5 = buildImageUrl(
-    "v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg",
+    'v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg',
     {}
-  );
+  )
 
   const ap1Image6 = buildImageUrl(
-    "v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg",
+    'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
     {}
-  );
+  )
 
   // AP 4
   const ap4Image1 = buildImageUrl(
-    "v1673797426/vilaRepublikaFoto/byt4/DSC07545-HDR_g11alm.jpg",
+    'v1675802254/vilaRepublikaFoto/byt4/DSC08238-HDR_mzdbyr.jpg',
     {}
-  );
+  )
 
   const ap4Image2 = buildImageUrl(
-    "v1673797431/vilaRepublikaFoto/byt4/DSC07518-HDR_yvydy6.jpg",
+    'v1675802258/vilaRepublikaFoto/byt4/DSC08274-HDR_hmhsy0.jpg',
     {}
-  );
+  )
 
   const ap4Image3 = buildImageUrl(
-    "v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg",
+    'v1673797428/vilaRepublikaFoto/byt4/DSC07557-HDR_qp18zg.jpg',
     {}
-  );
+  )
 
   const ap4Image4 = buildImageUrl(
-    "v1673797428/vilaRepublikaFoto/byt4/DSC07557-HDR_qp18zg.jpg",
+    'v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg',
     {}
-  );
+  )
 
   const ap4Image5 = buildImageUrl(
-    "v1673797427/vilaRepublikaFoto/byt4/DSC07530-HDR_fhmjqv.jpg",
+    'v1675802257/vilaRepublikaFoto/byt4/DSC08289-HDR_e9kr2k.jpg',
     {}
-  );
+  )
 
   const ap4Image6 = buildImageUrl(
-    "v1673797427/vilaRepublikaFoto/byt4/DSC07539-HDR_qcpgxr.jpg",
+    'v1675802258/vilaRepublikaFoto/byt4/DSC08259-HDR_asblp3.jpg',
     {}
-  );
+  )
+
+  // AP 5
+
+  const ap5Image1 = buildImageUrl(
+    'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
+    {}
+  )
+
+  const ap5Image2 = buildImageUrl(
+    'v1675799777/vilaRepublikaFoto/byt5/DSC08348-HDR_wpdt4v.jpg',
+    {}
+  )
+
+  const ap5Image3 = buildImageUrl(
+    'v1675799774/vilaRepublikaFoto/byt5/DSC08390-HDR_fkz4zz.jpg',
+    {}
+  )
+
+  const ap5Image4 = buildImageUrl(
+    'v1675799776/vilaRepublikaFoto/byt5/DSC08396-HDR_d6dkus.jpg',
+
+    {}
+  )
+
+  const ap5Image5 = buildImageUrl(
+    'v1675799776/vilaRepublikaFoto/byt5/DSC08363-HDR_yqdcwr.jpg',
+    {}
+  )
+
+  const ap5Image6 = buildImageUrl(
+    'v1675799776/vilaRepublikaFoto/byt5/DSC08354-HDR_liikg7.jpg',
+    {}
+  )
+
+  const ap5Image7 = buildImageUrl(
+    'v1675799779/vilaRepublikaFoto/byt5/DSC08405-HDR_xba91c.jpg',
+    {}
+  )
+
+  // AP 6
+
+  const ap6Image1 = buildImageUrl(
+    'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
+    {}
+  )
+
+  const ap6Image2 = buildImageUrl(
+    'v1675801411/vilaRepublikaFoto/byt6/DSC08292-HDR-2_epxgyj.jpg',
+    {}
+  )
+
+  const ap6Image3 = buildImageUrl(
+    'v1675801405/vilaRepublikaFoto/byt6/DSC08316-HDR_jgxs2h.jpg',
+    {}
+  )
+
+  const ap6Image4 = buildImageUrl(
+    'v1675801405/vilaRepublikaFoto/byt6/DSC08310-HDR_dccwul.jpg',
+    {}
+  )
+
+  const ap6Image5 = buildImageUrl(
+    'v1675801404/vilaRepublikaFoto/byt6/DSC08301-HDR_mfiyhx.jpg',
+    {}
+  )
+
+  const ap6Image6 = buildImageUrl(
+    'v1675801404/vilaRepublikaFoto/byt6/DSC08307-HDR_wuz4e8.jpg',
+    {}
+  )
 
   // AP 7
 
-  const ap7Image1 = buildImageUrl("v1645823019/vlAp7_utapq6.jpg", {});
+  const ap7Image1 = buildImageUrl(
+    'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
+    {}
+  )
 
   const ap7Image2 = buildImageUrl(
-    "v1645822939/homeThreeImageOne_osn1s7.jpg",
+    'v1675799512/vilaRepublikaFoto/byt7/DSC08460-HDR_cinhnp.jpg',
     {}
-  );
+  )
 
   const ap7Image3 = buildImageUrl(
-    "v1673901976/vilaRepublikaFoto/byt7/04_qw3rnf.jpg",
+    'v1675799514/vilaRepublikaFoto/byt7/DSC08436-HDR_axsnpn.jpg',
     {}
-  );
+  )
 
   const ap7Image4 = buildImageUrl(
-    "v1673901976/vilaRepublikaFoto/byt7/05_lwmqcg.jpg",
+    'v1675799505/vilaRepublikaFoto/byt7/DSC08469-HDR_elf6fr.jpg',
     {}
-  );
+  )
 
   const ap7Image5 = buildImageUrl(
-    "v1673901976/vilaRepublikaFoto/byt7/02_rd91f5.jpg",
+    'v1675799516/vilaRepublikaFoto/byt7/DSC08432-HDR_hxsdth.jpg',
     {}
-  );
-
-  // APP 6
-
-  const ap6Image1 = buildImageUrl(
-    "v1673903298/vilaRepublikaFoto/byt6/pohled_kuchyne-min_ne47wb.png",
-    {}
-  );
-
-  const ap6Image2 = buildImageUrl(
-    "v1673903301/vilaRepublikaFoto/byt6/pohled_obyvaci_pokoj2-min_iyrkju.png",
-    {}
-  );
-
-  const ap6Image3 = buildImageUrl(
-    "v1673903849/vilaRepublikaFoto/byt6/loznce2_ferbgv.png",
-    {}
-  );
-
-  const ap6Image4 = buildImageUrl(
-    "v1673903854/vilaRepublikaFoto/byt6/loznice1_x3gik9.png",
-    {}
-  );
-
-  const ap6Image5 = buildImageUrl(
-    "v1673903850/vilaRepublikaFoto/byt6/loznice3_zjsqka.png",
-    {}
-  );
-
-  const ap6Image6 = buildImageUrl(
-    "v1673903289/vilaRepublikaFoto/byt6/6-min_ob9dlc.png",
-    {}
-  );
-
-  const ap6Image7 = buildImageUrl(
-    "v1673903293/vilaRepublikaFoto/byt6/1-min_sgoba8.png",
-    {}
-  );
+  )
 
   const apImages = [
     // ap 1
@@ -173,42 +209,42 @@ const Apartmany: React.FC = () => {
     // ap 4
     [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
     // ap 5
-    [ap4Image, ap4Image, ap4Image],
-    // ap 6
     [
-      ap6Image1,
-      ap6Image2,
-      ap6Image3,
-      ap6Image4,
-      ap6Image5,
-      ap6Image6,
-      ap6Image7,
+      ap5Image1,
+      ap5Image2,
+      ap5Image3,
+      ap5Image4,
+      ap5Image5,
+      ap5Image6,
+      ap5Image7,
     ],
+    // ap 6
+    [ap6Image1, ap6Image2, ap6Image3, ap6Image4, ap6Image5, ap6Image6],
     // ap 7
     [ap7Image1, ap7Image2, ap7Image3, ap7Image4, ap7Image5],
-  ];
+  ]
 
-  const images = apImages[selectedGallery];
+  const images = apImages[selectedGallery]
 
   const handleNext = () => {
     if (carouselIndex === images.length - 1) {
-      setCarouseIndex(0);
+      setCarouseIndex(0)
     } else {
-      setCarouseIndex(carouselIndex + 1);
+      setCarouseIndex(carouselIndex + 1)
     }
-  };
+  }
 
   const handlePrevious = () => {
     if (carouselIndex === 0) {
-      setCarouseIndex(images.length - 1);
+      setCarouseIndex(images.length - 1)
     } else {
-      setCarouseIndex(carouselIndex - 1);
+      setCarouseIndex(carouselIndex - 1)
     }
-  };
+  }
 
   const lightboxImages: any = images.map((image) => {
-    return { src: image };
-  });
+    return { src: image }
+  })
 
   return (
     <Wrapper
@@ -218,15 +254,15 @@ const Apartmany: React.FC = () => {
     >
       <Container>
         {/* AP 1 */}
-        <GridRow sm={1} cols={2} gap={`5px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap1Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
-                    setShowGallery(true);
-                    setSelectedGallery(0);
+                    setShowGallery(true)
+                    setSelectedGallery(0)
                   }}
                 >
                   <FlexRow
@@ -245,7 +281,7 @@ const Apartmany: React.FC = () => {
                 </ButtonWrapperFoto>
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}></div>
+                <div style={{ marginTop: 'auto' }}></div>
               </SlideContent>
             </SlideWrapper>
           </div>
@@ -325,14 +361,14 @@ const Apartmany: React.FC = () => {
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
-                </Link>{" "}
+                </Link>{' '}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 2 */}
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
               <div>
@@ -413,11 +449,11 @@ const Apartmany: React.FC = () => {
                 <StyledImg w={`100%`} h={`100%`} src={img} alt="img" />
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}>
+                <div style={{ marginTop: 'auto' }}>
                   <ButtonWrapperFoto
                     onClick={() => {
-                      setShowGallery(true);
-                      setSelectedGallery(1);
+                      setShowGallery(true)
+                      setSelectedGallery(1)
                     }}
                   >
                     <FlexRow
@@ -442,15 +478,15 @@ const Apartmany: React.FC = () => {
         </GridRow>
 
         {/* AP 4 */}
-        <GridRow sm={1} cols={2} gap={`5px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap4Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
-                    setShowGallery(true);
-                    setSelectedGallery(2);
+                    setShowGallery(true)
+                    setSelectedGallery(2)
                   }}
                 >
                   <FlexRow
@@ -469,7 +505,7 @@ const Apartmany: React.FC = () => {
                 </ButtonWrapperFoto>
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}></div>
+                <div style={{ marginTop: 'auto' }}></div>
               </SlideContent>
             </SlideWrapper>
           </div>
@@ -548,14 +584,14 @@ const Apartmany: React.FC = () => {
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
-                </Link>{" "}
+                </Link>{' '}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 5 */}
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
               <div>
@@ -626,21 +662,21 @@ const Apartmany: React.FC = () => {
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
-                </Link>{" "}
+                </Link>{' '}
               </ButtonWrapper>
             </div>
           </FlexRow>
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={img} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap5Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}>
+                <div style={{ marginTop: 'auto' }}>
                   <ButtonWrapperFoto
                     onClick={() => {
-                      setShowGallery(true);
-                      setSelectedGallery(3);
+                      setShowGallery(true)
+                      setSelectedGallery(3)
                     }}
                   >
                     <FlexRow
@@ -665,15 +701,15 @@ const Apartmany: React.FC = () => {
         </GridRow>
 
         {/* AP 6 */}
-        <GridRow sm={1} cols={2} gap={`5px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
             <SlideWrapper>
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt="img" />
                 <ButtonWrapperFoto
                   onClick={() => {
-                    setShowGallery(true);
-                    setSelectedGallery(4);
+                    setShowGallery(true)
+                    setSelectedGallery(4)
                   }}
                 >
                   <FlexRow
@@ -692,7 +728,7 @@ const Apartmany: React.FC = () => {
                 </ButtonWrapperFoto>
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}></div>
+                <div style={{ marginTop: 'auto' }}></div>
               </SlideContent>
             </SlideWrapper>
           </div>
@@ -773,14 +809,14 @@ const Apartmany: React.FC = () => {
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
-                </Link>{" "}
+                </Link>{' '}
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
 
         {/* AP 7 */}
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={"0px 0px 120px"}>
+        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className="orderReverse">
             <div>
               <div>
@@ -853,7 +889,7 @@ const Apartmany: React.FC = () => {
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
-                </Link>{" "}
+                </Link>{' '}
               </ButtonWrapper>
             </div>
           </FlexRow>
@@ -863,11 +899,11 @@ const Apartmany: React.FC = () => {
                 <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
-                <div style={{ marginTop: "auto" }}>
+                <div style={{ marginTop: 'auto' }}>
                   <ButtonWrapperFoto
                     onClick={() => {
-                      setShowGallery(true);
-                      setSelectedGallery(5);
+                      setShowGallery(true)
+                      setSelectedGallery(5)
                     }}
                   >
                     <FlexRow
@@ -902,13 +938,13 @@ const Apartmany: React.FC = () => {
             <div
               onClick={() => setShowGallery(false)}
               style={{
-                position: "absolute",
+                position: 'absolute',
                 zIndex: 99,
                 right: 20,
                 top: 20,
-                color: "white",
+                color: 'white',
                 fontSize: 30,
-                cursor: "pointer",
+                cursor: 'pointer',
               }}
             >
               x
@@ -919,10 +955,10 @@ const Apartmany: React.FC = () => {
             <ArrowWrap
               onClick={handlePrevious}
               style={{
-                position: "absolute",
+                position: 'absolute',
                 zIndex: 99,
                 left: 0,
-                top: "45%",
+                top: '45%',
               }}
             >
               <img src={leftArrowImg}></img>
@@ -932,19 +968,19 @@ const Apartmany: React.FC = () => {
             <ArrowWrap
               onClick={handleNext}
               style={{
-                position: "absolute",
+                position: 'absolute',
                 zIndex: 99,
                 right: 0,
-                top: "45%",
+                top: '45%',
               }}
             >
               <img
-                style={{ transform: "rotate(180deg)" }}
+                style={{ transform: 'rotate(180deg)' }}
                 src={leftArrowImg}
               ></img>
             </ArrowWrap>
           )}
-          style={{ background: "rgba(0,0,0,0.99)" }}
+          style={{ background: 'rgba(0,0,0,0.99)' }}
           onClose={() => setShowGallery(false)}
 
           // renderImageOverlay={() => (<ImageOverlayComponent >)}
@@ -955,8 +991,8 @@ const Apartmany: React.FC = () => {
         />
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
 const ArrowWrap = styled.div`
   width: 54px;
@@ -971,7 +1007,7 @@ const ArrowWrap = styled.div`
     width: 44px;
     height: 44px;
   }
-`;
+`
 
 const ApPopisekText = ({ children }: any) => (
   <IconTitle
@@ -990,13 +1026,13 @@ const ApPopisekText = ({ children }: any) => (
     mdfontWeight={`400`}
     smFontWeight={`400`}
     color={`#262B3B`}
-    mb={"25px"}
+    mb={'25px'}
     mdMargibBottom={`2px`}
     smMargibBottom={`30px`}
   >
     {children}
   </IconTitle>
-);
+)
 
 const ApNameText = ({ children }: any) => (
   <IconTitle
@@ -1015,13 +1051,13 @@ const ApNameText = ({ children }: any) => (
     mdtextAlign={`center`}
     smtextAlign={`center`}
     color={`#262B3B`}
-    mb={"16px"}
+    mb={'16px'}
     mdMargibBottom={`16px`}
     smMargibBottom={`2px`}
   >
     {children}
   </IconTitle>
-);
+)
 
 const FotogalerieText = ({ children }: any) => (
   <IconTitle
@@ -1040,13 +1076,13 @@ const FotogalerieText = ({ children }: any) => (
     smFontWeight={`400`}
     mdfontWeight={`400`}
     color={`#262B3B`}
-    mb={""}
+    mb={''}
     mdMargibBottom={``}
     smMargibBottom={``}
   >
     {children}
   </IconTitle>
-);
+)
 
 const SmallBoldText = ({ children }: any) => (
   <IconTitle
@@ -1065,12 +1101,12 @@ const SmallBoldText = ({ children }: any) => (
     mdfontWeight={`700`}
     smFontWeight={`700`}
     color={`#262B3B`}
-    mb={"2px"}
+    mb={'2px'}
     mdMargibBottom={`2px`}
     smMargibBottom={`10px`}
   >
     {children}
   </IconTitle>
-);
+)
 
-export default Apartmany;
+export default Apartmany

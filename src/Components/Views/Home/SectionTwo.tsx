@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -7,43 +7,43 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
+} from '../../../Styled/Theme.styles'
 import {
   Desc,
   SectionTitle,
   VileSlideDesc,
   VileSlideTitle,
-} from "../../../Styled/Typography.styles";
-import { BsChevronRight } from "react-icons/bs";
-import { buildImageUrl } from "cloudinary-build-url";
+} from '../../../Styled/Typography.styles'
+import { BsChevronRight } from 'react-icons/bs'
+import { buildImageUrl } from 'cloudinary-build-url'
 
-import { SlideContent, SlideWrapper } from "../../../Styled/Swiper.styles";
+import { SlideContent, SlideWrapper } from '../../../Styled/Swiper.styles'
 
 const SectionTwo: React.FC = () => {
   const img1 = buildImageUrl(
-    "v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg",
+    'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
     {}
-  );
+  )
 
   const img2 = buildImageUrl(
-    "v1673863576/vilaRepublikaFoto/PastedGraphic-5_u0yq2i.png",
+    'v1673863576/vilaRepublikaFoto/PastedGraphic-5_u0yq2i.png',
     {}
-  );
+  )
 
   const slides = [
     {
       id: 1,
       img: img1,
-      title: "Designové apartmány",
-      desc: "Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.",
+      title: 'Designové apartmány',
+      desc: 'Zcela unikátní vyznění a jiné barevné ladění. Každý z našich apartmánů je originál, navrhoval ho jiný architekt. Vždy je to ale minimalismus s poctou k prvorepublikové architektuře. Vyberte si styl, který vám sedne.',
     },
     {
       id: 2,
       img: img2,
-      title: "Privátní wellness (od 15.3.)",
-      desc: "Dokončujeme práce na wellness, otevřené bude od 15.3. Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online. Welness není v ceně pobytu",
+      title: 'Privátní wellness (od 15.3.)',
+      desc: 'Dokončujeme práce na wellness, otevřené bude od 15.3. Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online. Welness není v ceně pobytu',
     },
-  ];
+  ]
 
   return (
     <Wrapper
@@ -99,7 +99,7 @@ const SectionTwo: React.FC = () => {
               <SlideWrapper key={id}>
                 <ImgWrapper
                   style={{
-                    minHeight: "500px",
+                    minHeight: '500px',
                   }}
                 >
                   <StyledImg
@@ -111,7 +111,7 @@ const SectionTwo: React.FC = () => {
                   />
                 </ImgWrapper>
                 <SlideContent>
-                  <div style={{ marginTop: "auto" }}>
+                  <div style={{ marginTop: 'auto' }}>
                     <VileSlideTitle
                       color={``}
                       mb={``}
@@ -139,12 +139,12 @@ const SectionTwo: React.FC = () => {
                   </div>
                 </SlideContent>
               </SlideWrapper>
-            );
+            )
           })}
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default SectionTwo;
+export default SectionTwo

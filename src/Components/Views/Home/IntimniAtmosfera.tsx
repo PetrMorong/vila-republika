@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,15 +6,15 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import { buildImageUrl } from "cloudinary-build-url";
+} from '../../../Styled/Theme.styles'
+import { Desc, SectionTitle } from '../../../Styled/Typography.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 const IntimniAtmosfera: React.FC = () => {
   const img = buildImageUrl(
-    "v1673797427/vilaRepublikaFoto/byt4/DSC07530-HDR_fhmjqv.jpg",
+    'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
     {}
-  );
+  )
 
   return (
     <Wrapper
@@ -63,7 +63,7 @@ const IntimniAtmosfera: React.FC = () => {
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default IntimniAtmosfera;
+export default IntimniAtmosfera

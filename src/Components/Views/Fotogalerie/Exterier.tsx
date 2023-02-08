@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,50 +6,39 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { SectionTitle } from "../../../Styled/Typography.styles";
-import { SlideWrapper } from "../../../Styled/Swiper.styles";
-import { buildImageUrl } from "cloudinary-build-url";
+} from '../../../Styled/Theme.styles'
+import { SectionTitle } from '../../../Styled/Typography.styles'
+import { SlideWrapper } from '../../../Styled/Swiper.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 const Exterier: React.FC = () => {
   const data = [
     {
-      picture: buildImageUrl("v1645822964/vilaRepublika/img2_j6mpok.png", {}),
-    },
-    {
       picture: buildImageUrl(
-        "v1645822941/vilaRepublika/mp01-min_pilgkw.jpg",
+        'v1675799324/vilaRepublikaFoto/DSC08533-HDR_v7mlgu.jpg',
         {}
       ),
     },
     {
       picture: buildImageUrl(
-        "v1645822943/vilaRepublika/mp02-min_yspitq.jpg",
-        {}
-      ),
-    },
-    {
-      picture: buildImageUrl("v1645822964/vilaRepublika/img2_j6mpok.png", {}),
-    },
-    {
-      picture: buildImageUrl(
-        "v1645822938/vilaRepublika/1.3.3-min_j5ku93.jpg",
+        'v1675799326/vilaRepublikaFoto/DSC08542-HDR_aoyaqx.jpg',
         {}
       ),
     },
     {
       picture: buildImageUrl(
-        "v1645822938/vilaRepublika/1.1-min_yaebmu.jpg",
+        'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
         {}
       ),
     },
+
     {
-      picture: buildImageUrl("v1673798915/vilaRepublika/1.4.4_lbjby6.jpg", {}),
+      picture: buildImageUrl(
+        'v1675799329/vilaRepublikaFoto/DSC08530-HDR_bw0gqc.jpg',
+        {}
+      ),
     },
-    {
-      picture: buildImageUrl("v1673798908/vilaRepublika/1.2_eyvh8t.jpg", {}),
-    },
-  ];
+  ]
 
   return (
     <Wrapper
@@ -97,12 +86,12 @@ const Exterier: React.FC = () => {
                   </ImgWrapper>
                 </SlideWrapper>
               </FlexRow>
-            );
+            )
           })}
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Exterier;
+export default Exterier
