@@ -1,10 +1,11 @@
-import React from "react";
-import Wellnesss from "../Components/Views/Wellness";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import Wellnesss from '../Components/Views/Wellness'
+import { Helmet } from 'react-helmet'
+import DataContainer from '../Components/DataContainer'
 
 const WellnessPage = () => {
   return (
-    <>
+    <DataContainer>
       <Helmet>
         <title>Wellness Apartmány Vila Republika Velké Losiny</title>
         <meta
@@ -13,8 +14,8 @@ const WellnessPage = () => {
         />
       </Helmet>
       <Wellnesss />
-    </>
-  );
-};
+    </DataContainer>
+  )
+}
 
-export default WellnessPage;
+export default WellnessPage
