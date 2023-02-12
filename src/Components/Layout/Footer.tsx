@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from "react";
-import { Link } from "gatsby";
-import { Button } from "../../Styled/Button.styles";
-import { FooterItem } from "../../Styled/Footer.styles";
-import clientImg from "../../images/user.png";
-import facebook from "../../images/facebook.svg";
-import insta from "../../images/instagram.svg";
-import footerlogo from "../../images/footerLogo.svg";
+import React, { FunctionComponent } from 'react'
+import { Link } from 'gatsby'
+import { Button } from '../../Styled/Button.styles'
+import { FooterItem } from '../../Styled/Footer.styles'
+import clientImg from '../../images/user.png'
+import facebook from '../../images/facebook.svg'
+import insta from '../../images/instagram.svg'
+import footerlogo from '../../images/footerLogo.svg'
 import {
   Container,
   GridCol,
@@ -14,14 +14,14 @@ import {
   FlexRow,
   ImgWrapper,
   StyledImg,
-} from "../../Styled/Theme.styles";
+} from '../../Styled/Theme.styles'
 import {
   Desc,
   FooterCategoryTitle,
   FooterDesc,
   FooterTitle,
-} from "../../Styled/Typography.styles";
-import styled from "styled-components";
+} from '../../Styled/Typography.styles'
+import styled from 'styled-components'
 
 const Footer: FunctionComponent<any> = ({ navLinks }) => {
   return (
@@ -109,16 +109,16 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             <FlexRow
               gap={`10px`}
               style={{
-                flexDirection: "column",
+                flexDirection: 'column',
               }}
-              column={"column"}
+              column={'column'}
             >
               {navLinks.map((item, index) => {
                 return (
                   <Link key={index} to={item.path}>
                     <FooterItem as="li">{item.text}</FooterItem>
                   </Link>
-                );
+                )
               })}
             </FlexRow>
           </GridCol>
@@ -143,8 +143,8 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   Helena Morongová
                 </Desc>
                 <FooterItem>
-                  <p style={{ marginBottom: 8 }}>+420 797 625 340</p>
-                  <p style={{ textDecoration: "underline", marginBottom: 30 }}>
+                  <p style={{ marginBottom: 8 }}>+420 605 291 431</p>
+                  <p style={{ textDecoration: 'underline', marginBottom: 30 }}>
                     info@vila-republika.cz
                   </p>
 
@@ -168,7 +168,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               <HoverWrap
                 href="https://goo.gl/maps/EhQvkAzabw2sFAm18"
                 target="_blank"
-                style={{ textDecoration: "underline", color: "white" }}
+                style={{ textDecoration: 'underline', color: 'white' }}
               >
                 Zobrazit na mapě
               </HoverWrap>
@@ -227,15 +227,15 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
         <FlexRow
           itemCenter
           style={{
-            justifyContent: "center",
+            justifyContent: 'center',
           }}
         >
           <img src={footerlogo} alt="" />
         </FlexRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
 export const Separator = styled.p`
   background: #3b4f5e;
@@ -243,7 +243,7 @@ export const Separator = styled.p`
   width: 100%;
   margin-top: 70px;
   margin-bottom: 70px;
-`;
+`
 
 export const HoverWrap = styled.a`
   cursor: pointer;
@@ -252,6 +252,6 @@ export const HoverWrap = styled.a`
   &:hover {
     opacity: 0.7;
   }
-`;
+`
 
-export default Footer;
+export default Footer
