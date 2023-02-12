@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const FooterItem = styled.a`
+export const FooterItem = styled.div`
   font-size: 16px;
   color: white;
   text-decoration: none;
@@ -15,4 +15,4 @@ export const FooterItem = styled.a`
   }
   @media screen and (max-width: 640px) {
   }
-`;
+`

@@ -1,21 +1,22 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { setConfig } from "cloudinary-build-url";
-import { buildImageUrl } from "cloudinary-build-url";
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { setConfig } from 'cloudinary-build-url'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 setConfig({
-  cloudName: "morireality",
-  apiKey: "465321175721736",
-  apiSecret: "71xSUQ9WJBuUtLTVwlBy5BwOQ74",
-});
+  cloudName: 'morireality',
+  apiKey: '465321175721736',
+  apiSecret: '71xSUQ9WJBuUtLTVwlBy5BwOQ74',
+})
 
 export default function DataContainer({ children }: any) {
   const ogImage = buildImageUrl(
-    "v1673863133/vilaRepublikaFoto/DSC07600-HDR_3_maveff.jpg",
+    'v1673863133/vilaRepublikaFoto/DSC07600-HDR_3_maveff.jpg',
     {}
-  );
+  )
   return (
     <>
+      <html lang="cs"></html>
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/uve2xcq.css" />
         <meta
@@ -33,5 +34,5 @@ export default function DataContainer({ children }: any) {
       </Helmet>
       {children}
     </>
-  );
+  )
 }

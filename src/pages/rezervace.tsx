@@ -1,12 +1,13 @@
-import { Helmet } from "react-helmet";
-import React from "react";
-import Layout from "../Components/Layout/Layout";
-import styled from "styled-components";
-import Header from "../Components/Views/Rezervace/Header";
+import { Helmet } from 'react-helmet'
+import React from 'react'
+import Layout from '../Components/Layout/Layout'
+import styled from 'styled-components'
+import Header from '../Components/Views/Rezervace/Header'
+import DataContainer from '../Components/DataContainer'
 
 const Reservation = () => {
   return (
-    <>
+    <DataContainer>
       <Helmet>
         <script
           type="text/javascript"
@@ -41,9 +42,9 @@ const Reservation = () => {
           </Container>
         </Wrap>
       </Layout>
-    </>
-  );
-};
+    </DataContainer>
+  )
+}
 
 export const Wrap = styled.div`
   width: 100%;
@@ -51,11 +52,11 @@ export const Wrap = styled.div`
   margin-bottom: 150px;
   display: flex;
   justify-content: center;
-`;
+`
 
 export const Container = styled.div`
   max-width: 1444px;
   width: 100%;
-`;
+`
 
-export default Reservation;
+export default Reservation
