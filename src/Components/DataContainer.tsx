@@ -31,6 +31,10 @@ export default function DataContainer({ children }: any) {
         <meta property="og:url" content="https://www.vila-republika.cz" />
         <meta property="og:site_name" content="Vila Republika" />
         <meta property="og:type" content="website" />
+        <meta
+          name="facebook-domain-verification"
+          content="gppmzwm6cys23wdwxsp0ww94ydcu8g"
+        />
       </Helmet>
       {children}
     </>

@@ -19,6 +19,8 @@
     "babel-plugin-styled-components": "^2.0.6",
     "cloudinary-build-url": "^0.2.4",
     "gatsby": "^4.10.3",
+    "gatsby-plugin-facebook-pixel": "^1.0.8",
+    "gatsby-plugin-google-gtag": "^5.7.0",
     "gatsby-plugin-image": "^2.11.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^4.11.0",
