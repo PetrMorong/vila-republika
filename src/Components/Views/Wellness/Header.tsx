@@ -1,8 +1,8 @@
-import React from "react";
-import { HeaderWrapper } from "../../../Styled/Header.styles";
-import header from "../../../images/SAUNA 2 (1).png";
-import { Container, FlexRow } from "../../../Styled/Theme.styles";
-import { HeaderTitle } from "../../../Styled/Typography.styles";
+import React from 'react'
+import { HeaderWrapper } from '../../../Styled/Header.styles'
+import header from '../../../images/SAUNA 2 (1).png'
+import { Container, FlexRow } from '../../../Styled/Theme.styles'
+import { HeaderTitle } from '../../../Styled/Typography.styles'
 
 const Header: React.FC = () => {
   return (
@@ -10,8 +10,8 @@ const Header: React.FC = () => {
       padding={`160px 0px 60px`}
       smPadding={`140px 0px 0px`}
       header={header}
-      smHegiht={"390px"}
-      height={"540px"}
+      smHegiht={'390px'}
+      height={'540px'}
       bgGradient
     >
       <Container margin={`auto`}>
@@ -25,12 +25,12 @@ const Header: React.FC = () => {
             smalign={``}
           >
             Wellness <br />
-            Otevřeno od 15.3.
+            Otevřeno od 31.3.
           </HeaderTitle>
         </FlexRow>
       </Container>
     </HeaderWrapper>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

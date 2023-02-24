@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -8,14 +8,14 @@ import {
   StyledImg,
   Wrapper,
   WrapperSectionBorderLines,
-} from "../../../Styled/Theme.styles";
+} from '../../../Styled/Theme.styles'
 import {
   Desc,
   IconTitle,
   SectionTitle,
-} from "../../../Styled/Typography.styles";
-import img from "../../../images/DJI_.png";
-import { Button, ButtonWrapper } from "../../../Styled/Button.styles";
+} from '../../../Styled/Typography.styles'
+import img from '../../../images/DJI_.png'
+import { Button, ButtonWrapper } from '../../../Styled/Button.styles'
 const ProVerejnost: React.FC = () => {
   return (
     <Wrapper
@@ -41,7 +41,7 @@ const ProVerejnost: React.FC = () => {
             <div>
               <div
                 style={{
-                  marginBottom: "50px",
+                  marginBottom: '50px',
                 }}
               >
                 <FlexRow gap={`72px`} lgGap={`40px`} center>
@@ -59,7 +59,7 @@ const ProVerejnost: React.FC = () => {
                       smFontWeight={`600`}
                       mdfontWeight={`600`}
                       color={`#262B3B`}
-                      mb={"12px"}
+                      mb={'12px'}
                       mdMargibBottom={`12px`}
                       mdtextAlign={`center`}
                       smtextAlign={`center`}
@@ -80,13 +80,13 @@ const ProVerejnost: React.FC = () => {
                       smFontWeight={`700`}
                       mdfontWeight={`700`}
                       color={`#262B3B`}
-                      mb={"0px"}
+                      mb={'0px'}
                       mdMargibBottom={`0px`}
                       mdtextAlign={`center`}
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      Bude otevřeno 15.3.
+                      Bude otevřeno 31.3.
                     </IconTitle>
                   </div>
                   <div>
@@ -103,7 +103,7 @@ const ProVerejnost: React.FC = () => {
                       smFontWeight={`600`}
                       mdfontWeight={`600`}
                       color={`#262B3B`}
-                      mb={"12px"}
+                      mb={'12px'}
                       mdMargibBottom={`12px`}
                       mdtextAlign={`center`}
                       smtextAlign={`center`}
@@ -124,7 +124,7 @@ const ProVerejnost: React.FC = () => {
                       smFontWeight={`700`}
                       mdfontWeight={`700`}
                       color={`#262B3B`}
-                      mb={"0px"}
+                      mb={'0px'}
                       mdMargibBottom={`0px`}
                       mdtextAlign={`center`}
                       smtextAlign={`center`}
@@ -175,7 +175,7 @@ const ProVerejnost: React.FC = () => {
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default ProVerejnost;
+export default ProVerejnost

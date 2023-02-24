@@ -194,7 +194,10 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               xlMargin={`0px 0px 0px`}
               mdMargin={`0px 0px 30px`}
             >
-              <HoverWrap href="/" target="_blank">
+              <HoverWrap
+                href="https://www.facebook.com/VilaRepublika"
+                target="_blank"
+              >
                 <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
                   <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
                     <StyledImg w={`100%`} src={facebook} alt="img" />

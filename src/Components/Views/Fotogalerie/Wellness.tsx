@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,17 +6,17 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { SectionTitle } from "../../../Styled/Typography.styles";
-import { SlideWrapper } from "../../../Styled/Swiper.styles";
-import pic1 from "../../../images/wallness/1.png";
-import pic2 from "../../../images/wallness/2.png";
-import pic3 from "../../../images/wallness/3.png";
-import pic4 from "../../../images/wallness/4.png";
-import pic5 from "../../../images/wallness/1.png";
-import pic6 from "../../../images/wallness/2.png";
-import pic7 from "../../../images/wallness/3.png";
-import pic8 from "../../../images/wallness/4.png";
+} from '../../../Styled/Theme.styles'
+import { SectionTitle } from '../../../Styled/Typography.styles'
+import { SlideWrapper } from '../../../Styled/Swiper.styles'
+import pic1 from '../../../images/wallness/1.png'
+import pic2 from '../../../images/wallness/2.png'
+import pic3 from '../../../images/wallness/3.png'
+import pic4 from '../../../images/wallness/4.png'
+import pic5 from '../../../images/wallness/1.png'
+import pic6 from '../../../images/wallness/2.png'
+import pic7 from '../../../images/wallness/3.png'
+import pic8 from '../../../images/wallness/4.png'
 
 const Wellness: React.FC = () => {
   const data = [
@@ -44,7 +44,7 @@ const Wellness: React.FC = () => {
     {
       picture: pic8,
     },
-  ];
+  ]
 
   return (
     <Wrapper
@@ -63,7 +63,7 @@ const Wellness: React.FC = () => {
           mb={`65px`}
           smFontSize={`30px`}
         >
-          Wellness (od 15.3.)
+          Wellness (od 31.3.)
         </SectionTitle>
         <GridRow sm={2} md={3} cols={4} between gap={`16px`}>
           {data.map((item, index) => {
@@ -92,12 +92,12 @@ const Wellness: React.FC = () => {
                   </ImgWrapper>
                 </SlideWrapper>
               </FlexRow>
-            );
+            )
           })}
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Wellness;
+export default Wellness
