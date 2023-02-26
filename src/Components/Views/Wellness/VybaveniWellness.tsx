@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,14 +6,14 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { IconTitle, SectionTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/_06A8153@2x.png";
-import { Button, ButtonWrapper } from "../../../Styled/Button.styles";
-import dalsi1 from "../../../images/Union1.svg";
-import union1 from "../../../images/Union2.svg";
-import parkov1 from "../../../images/Union3.svg";
-import chytra1 from "../../../images/Union4.svg";
+} from '../../../Styled/Theme.styles'
+import { IconTitle, SectionTitle } from '../../../Styled/Typography.styles'
+import img from '../../../images/_06A8153@2x.png'
+import { Button, ButtonWrapper } from '../../../Styled/Button.styles'
+import dalsi1 from '../../../images/Union1.svg'
+import union1 from '../../../images/Union2.svg'
+import parkov1 from '../../../images/Union3.svg'
+import chytra1 from '../../../images/Union4.svg'
 const VybaveniWellness: React.FC = () => {
   return (
     <Wrapper
@@ -64,7 +64,7 @@ const VybaveniWellness: React.FC = () => {
                           smFontWeight={`700`}
                           mdfontWeight={`700`}
                           color={`#262B3B`}
-                          mb={"2px"}
+                          mb={'2px'}
                           mdMargibBottom={`2px`}
                           mdtextAlign={``}
                           smtextAlign={``}
@@ -86,7 +86,7 @@ const VybaveniWellness: React.FC = () => {
                           xlfontWeight={`400`}
                           smFontWeight={`400`}
                           mdfontWeight={`400`}
-                          mb={"0px"}
+                          mb={'0px'}
                           mdMargibBottom={`0px`}
                           mdtextAlign={``}
                           smtextAlign={``}
@@ -96,56 +96,63 @@ const VybaveniWellness: React.FC = () => {
                         </IconTitle>
                       </div>
                     </FlexRow>
-                  );
+                  )
                 })}
               </GridRow>
               <ButtonWrapper>
-                <Button margin={`50px 0px 0px 0px`}>Vytvořit rezervaci</Button>
+                <a
+                  href="https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c"
+                  target="_blank"
+                >
+                  <Button margin={`50px 0px 0px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </a>
               </ButtonWrapper>
             </div>
           </FlexRow>
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default VybaveniWellness;
+export default VybaveniWellness
 const data = [
   {
     id: 1,
-    text: "Finská sauna",
+    text: 'Finská sauna',
     description: `s parním nárazem`,
     icon: dalsi1,
   },
   {
     id: 2,
-    text: "Ochlazovací vědro",
+    text: 'Ochlazovací vědro',
     description: `s ledovou vodou`,
     icon: union1,
   },
   {
     id: 3,
-    text: "Odpočinkový kout",
+    text: 'Odpočinkový kout',
     description: `s výhledem do zeleně`,
     icon: parkov1,
   },
   {
     id: 4,
-    text: "Whirlpool vana",
+    text: 'Whirlpool vana',
     description: `pro dvě osoby`,
     icon: chytra1,
   },
   {
     id: 5,
-    text: "Zážitková sprcha",
+    text: 'Zážitková sprcha',
     description: `s relaxačními programy`,
     icon: dalsi1,
   },
   {
     id: 6,
-    text: "Šatní skříňky",
+    text: 'Šatní skříňky',
     description: `pro úschovu věcí`,
     icon: union1,
   },
-];
+]

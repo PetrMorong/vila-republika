@@ -161,9 +161,14 @@ const ProVerejnost: React.FC = () => {
               </Desc>
               <div>
                 <ButtonWrapper>
-                  <Button margin={`50px 0px 0px 0px`}>
-                    Vytvořit rezervaci
-                  </Button>
+                  <a
+                    href="https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c"
+                    target="_blank"
+                  >
+                    <Button margin={`50px 0px 0px 0px`}>
+                      Vytvořit rezervaci
+                    </Button>
+                  </a>
                 </ButtonWrapper>
               </div>
             </div>
