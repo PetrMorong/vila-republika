@@ -41,6 +41,33 @@ const Apartmany: React.FC = () => {
     },
   ]
 
+  const data2 = [
+    {
+      picture: buildImageUrl(
+        'v1677920414/vilaRepublikaFoto/byt 2/DSC09444-HDR_euewl0.jpg',
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1677920409/vilaRepublikaFoto/byt 2/DSC09477-HDR_w4300b.jpg',
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1677920541/vilaRepublikaFoto/byt 2/DSC09474-HDR_oysnn4.jpg',
+        {}
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1677920408/vilaRepublikaFoto/byt 2/DSC09483-HDR_oh3wvl.jpg',
+        {}
+      ),
+    },
+  ]
+
   const data4 = [
     {
       picture: buildImageUrl(
@@ -134,28 +161,28 @@ const Apartmany: React.FC = () => {
   const data7 = [
     {
       picture: buildImageUrl(
-        'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
+        'v1677920196/vilaRepublikaFoto/byt7/new/DSC09560-HDR_m7zz5r.jpg',
         {}
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1675799512/vilaRepublikaFoto/byt7/DSC08460-HDR_cinhnp.jpg',
+        'v1677920190/vilaRepublikaFoto/byt7/new/DSC09611-HDR_uytxsa.jpg',
         {}
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1675799514/vilaRepublikaFoto/byt7/DSC08436-HDR_axsnpn.jpg',
+        'v1677920193/vilaRepublikaFoto/byt7/new/DSC09569-HDR_gpopzr.jpg',
         {}
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1675799505/vilaRepublikaFoto/byt7/DSC08469-HDR_elf6fr.jpg',
+        'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
         {}
       ),
     },
@@ -212,9 +239,13 @@ const Apartmany: React.FC = () => {
         </SectionTitle>
 
         <TitleAps>Slunečný</TitleAps>
-
         <GridRow sm={2} md={3} cols={4} gap={`16px`}>
           {renderRow(data1)}
+        </GridRow>
+
+        <TitleAps>Lázeňský</TitleAps>
+        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+          {renderRow(data2)}
         </GridRow>
 
         <TitleAps>Pradědův</TitleAps>

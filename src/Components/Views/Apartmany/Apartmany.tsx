@@ -8,8 +8,6 @@ import {
   Wrapper,
 } from '../../../Styled/Theme.styles'
 import { Desc, IconTitle } from '../../../Styled/Typography.styles'
-import ap1Image from '../../../images/apartmany/ap1/DSC07382-HDR-min.jpg'
-import ap4Image from '../../../images/apartmany/ap4/DSC07518-HDR-min.jpg'
 import img from '../../../images/apartmany/ap1/DSC07445-HDR-min.jpg'
 import leftArrowImg from '../../../images/LeftArrow.svg'
 import usersIcon from '../../../images/users.svg'
@@ -70,6 +68,58 @@ const Apartmany: React.FC = () => {
 
   const ap1Image6 = buildImageUrl(
     'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
+    {}
+  )
+
+  // AP 2
+
+  const ap2Image1 = buildImageUrl(
+    'v1677920414/vilaRepublikaFoto/byt 2/DSC09444-HDR_euewl0.jpg',
+    {}
+  )
+
+  const ap2Image2 = buildImageUrl(
+    'v1677920418/vilaRepublikaFoto/byt 2/DSC09450-HDR_kgjnji.jpg',
+    {}
+  )
+
+  const ap2Image3 = buildImageUrl(
+    'v1677920541/vilaRepublikaFoto/byt 2/DSC09474-HDR_oysnn4.jpg',
+    {}
+  )
+
+  const ap2Image4 = buildImageUrl(
+    'v1677920412/vilaRepublikaFoto/byt 2/DSC09514-HDR_ewlvn7.jpg',
+    {}
+  )
+
+  const ap2Image5 = buildImageUrl(
+    'v1677920409/vilaRepublikaFoto/byt 2/DSC09477-HDR_w4300b.jpg',
+    {}
+  )
+
+  const ap2Image6 = buildImageUrl(
+    'v1677920409/vilaRepublikaFoto/byt 2/DSC09465-HDR_h7jpen.jpg',
+    {}
+  )
+
+  const ap2Image7 = buildImageUrl(
+    'v1677920408/vilaRepublikaFoto/byt 2/DSC09483-HDR_oh3wvl.jpg',
+    {}
+  )
+
+  const ap2Image8 = buildImageUrl(
+    'v1677920409/vilaRepublikaFoto/byt 2/DSC09471-HDR_ixxlbw.jpg',
+    {}
+  )
+
+  const ap2Image9 = buildImageUrl(
+    'v1677920408/vilaRepublikaFoto/byt 2/DSC09486-HDR_jrxsjc.jpg',
+    {}
+  )
+
+  const ap2Image10 = buildImageUrl(
+    'v1677920407/vilaRepublikaFoto/byt 2/DSC09648_tbbuhy.jpg',
     {}
   )
 
@@ -187,17 +237,47 @@ const Apartmany: React.FC = () => {
   )
 
   const ap7Image3 = buildImageUrl(
-    'v1675799514/vilaRepublikaFoto/byt7/DSC08436-HDR_axsnpn.jpg',
+    'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
     {}
   )
 
   const ap7Image4 = buildImageUrl(
-    'v1675799505/vilaRepublikaFoto/byt7/DSC08469-HDR_elf6fr.jpg',
+    'v1677920193/vilaRepublikaFoto/byt7/new/DSC09578-HDR_rnpozp.jpg',
     {}
   )
 
   const ap7Image5 = buildImageUrl(
-    'v1675799516/vilaRepublikaFoto/byt7/DSC08432-HDR_hxsdth.jpg',
+    'v1677920193/vilaRepublikaFoto/byt7/new/DSC09581-HDR_cn91gs.jpg',
+    {}
+  )
+
+  const ap7Image6 = buildImageUrl(
+    'v1677920198/vilaRepublikaFoto/byt7/new/DSC09575-HDR_vfhyfx.jpg',
+    {}
+  )
+
+  const ap7Image6_1 = buildImageUrl(
+    'v1677920191/vilaRepublikaFoto/byt7/new/DSC09584-HDR_qrrqim.jpg',
+    {}
+  )
+
+  const ap7Image7 = buildImageUrl(
+    'v1677920189/vilaRepublikaFoto/byt7/new/DSC09634-HDR_xp99kv.jpg',
+    {}
+  )
+
+  const ap7Image8 = buildImageUrl(
+    'v1677920192/vilaRepublikaFoto/byt7/new/DSC09596-HDR_xm60we.jpg',
+    {}
+  )
+
+  const ap7Image9 = buildImageUrl(
+    'v1677920192/vilaRepublikaFoto/byt7/new/DSC09587-HDR_afux7f.jpg',
+    {}
+  )
+
+  const ap7Image10 = buildImageUrl(
+    'v1677920191/vilaRepublikaFoto/byt7/new/DSC09625-HDR_rerqnr.jpg',
     {}
   )
 
@@ -205,7 +285,18 @@ const Apartmany: React.FC = () => {
     // ap 1
     [ap1Image1, ap1Image2, ap1Image3, ap1Image4, ap1Image5, ap1Image6],
     // ap 2
-    [ap4Image, ap4Image, ap4Image],
+    [
+      ap2Image1,
+      ap2Image2,
+      ap2Image3,
+      ap2Image4,
+      ap2Image5,
+      ap2Image6,
+      ap2Image7,
+      ap2Image8,
+      ap2Image9,
+      ap2Image10,
+    ],
     // ap 4
     [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
     // ap 5
@@ -221,7 +312,19 @@ const Apartmany: React.FC = () => {
     // ap 6
     [ap6Image1, ap6Image2, ap6Image3, ap6Image4, ap6Image5, ap6Image6],
     // ap 7
-    [ap7Image1, ap7Image2, ap7Image3, ap7Image4, ap7Image5],
+    [
+      ap7Image1,
+      ap7Image2,
+      ap7Image3,
+      ap7Image4,
+      ap7Image5,
+      ap7Image6,
+      ap7Image6_1,
+      ap7Image7,
+      ap7Image8,
+      ap7Image9,
+      ap7Image10,
+    ],
   ]
 
   const images = apImages[selectedGallery]
@@ -446,7 +549,7 @@ const Apartmany: React.FC = () => {
           <div>
             <SlideWrapper>
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={img} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap2Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
