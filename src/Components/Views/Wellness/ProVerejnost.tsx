@@ -130,7 +130,7 @@ const ProVerejnost: React.FC = () => {
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      990 Kč za hodinu
+                      od 1200 Kč za 90min
                     </IconTitle>
                   </div>
                 </FlexRow>
