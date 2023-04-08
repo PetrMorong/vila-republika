@@ -5,11 +5,6 @@ import { buildImageUrl } from 'cloudinary-build-url'
 import styled from 'styled-components'
 import { url } from 'inspector'
 
-const img1 = buildImageUrl(
-  'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
-  {}
-)
-
 export const Bg = styled.div`
   background-position: center;
   background-size: cover;
@@ -20,6 +15,10 @@ export const Bg = styled.div`
 `
 
 const ProPrijemne: React.FC = () => {
+  const img1 = buildImageUrl(
+    'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
+    {}
+  )
   return (
     <Wrapper
       mdPadding={`0px 0px 0px`}

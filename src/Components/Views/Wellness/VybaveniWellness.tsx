@@ -15,12 +15,12 @@ import parkov1 from '../../../images/Union3.svg'
 import chytra1 from '../../../images/Union4.svg'
 import { buildImageUrl } from 'cloudinary-build-url'
 
-const img = buildImageUrl(
-  'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
-  {}
-)
-
 const VybaveniWellness: React.FC = () => {
+  const img = buildImageUrl(
+    'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
+    {}
+  )
+
   return (
     <Wrapper
       bgColor={`#F0E8D9`}

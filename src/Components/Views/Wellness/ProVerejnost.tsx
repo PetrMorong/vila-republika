@@ -18,12 +18,11 @@ import { Button, ButtonWrapper } from '../../../Styled/Button.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 import styled from 'styled-components'
 
-const img = buildImageUrl(
-  'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
-  {}
-)
-
 const ProVerejnost: React.FC = () => {
+  const img = buildImageUrl(
+    'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
+    {}
+  )
   return (
     <Wrapper
       mdPadding={`130px 0px 148px`}

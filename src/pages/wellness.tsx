@@ -12,7 +12,7 @@ const WellnessPage = () => {
           <title>Privátní Wellness Velké Losiny</title>
           <meta
             name="description"
-            content="Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí."
+            content="Po aktivně stráveném dni na čerstvém vzduchu si dopřejte zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí."
           />
         </Helmet>
         <Wellnesss />

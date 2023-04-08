@@ -41,7 +41,7 @@ const SectionTwo: React.FC = () => {
       id: 2,
       img: img2,
       title: 'Privátní wellness',
-      desc: 'Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka, ochlazovací bazének a hlavně soukromí.',
+      desc: 'Po aktivně stráveném dni na čerstvém vzduchu si dopřejte zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka, ochlazovací bazének a hlavně soukromí.',
     },
   ]
 

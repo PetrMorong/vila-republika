@@ -4,12 +4,12 @@ import { Container, FlexRow } from '../../../Styled/Theme.styles'
 import { HeaderTitle } from '../../../Styled/Typography.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 
-const img = buildImageUrl(
-  'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
-  {}
-)
-
 const Header: React.FC = () => {
+  const img = buildImageUrl(
+    'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
+    {}
+  )
+
   return (
     <HeaderWrapper
       padding={`180px 0px 80px`}
