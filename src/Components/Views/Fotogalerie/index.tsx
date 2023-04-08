@@ -1,10 +1,10 @@
-import React from "react";
-import Layout from "../../Layout/Layout";
-import Apartmany from "./Apartmany";
-import Exterier from "./Exterier";
-import Wellness from "./Wellness";
-import Header from "./Header";
-import Tab from "./Tab";
+import React from 'react'
+import Layout from '../../Layout/Layout'
+import Apartmany from './Apartmany'
+import Exterier from './Exterier'
+import Wellness from './Wellness'
+import Header from './Header'
+import Tab from './Tab'
 
 const Fotogalerie: React.FC = () => {
   // TODO add fotogalery
@@ -19,11 +19,11 @@ const Fotogalerie: React.FC = () => {
       <div id="Exterier">
         <Exterier />
       </div>
-      {/* <div id="Wellness">
+      <div id="Wellness">
         <Wellness />
-      </div> */}
+      </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Fotogalerie;
+export default Fotogalerie

@@ -8,12 +8,18 @@ import {
   Wrapper,
 } from '../../../Styled/Theme.styles'
 import { IconTitle, SectionTitle } from '../../../Styled/Typography.styles'
-import img from '../../../images/_06A8153@2x.png'
 import { Button, ButtonWrapper } from '../../../Styled/Button.styles'
 import dalsi1 from '../../../images/Union1.svg'
 import union1 from '../../../images/Union2.svg'
 import parkov1 from '../../../images/Union3.svg'
 import chytra1 from '../../../images/Union4.svg'
+import { buildImageUrl } from 'cloudinary-build-url'
+
+const img = buildImageUrl(
+  'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
+  {}
+)
+
 const VybaveniWellness: React.FC = () => {
   return (
     <Wrapper
@@ -46,9 +52,9 @@ const VybaveniWellness: React.FC = () => {
                 {data.map(({ id, icon, text, description }) => {
                   return (
                     <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
-                      <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      {/* <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
                         <StyledImg w={`45px`} src={icon} alt="img" />
-                      </ImgWrapper>
+                      </ImgWrapper> */}
                       <div>
                         <IconTitle
                           fontSize={`18px`}
@@ -121,33 +127,34 @@ export default VybaveniWellness
 const data = [
   {
     id: 1,
-    text: 'Finská sauna',
-    description: `s parním nárazem`,
+    text: 'Finská a bio sauna',
+    description: `pro 5 osob`,
     icon: dalsi1,
   },
   {
     id: 2,
-    text: 'Ochlazovací vědro',
+    text: 'Ochlazovací bazének',
     description: `s ledovou vodou`,
-    icon: union1,
+    icon: dalsi1,
   },
   {
     id: 3,
+    text: 'Whirlpool vana',
+    description: `pro tři osoby`,
+    icon: chytra1,
+  },
+  {
+    id: 4,
     text: 'Odpočinkový kout',
     description: `s výhledem do zeleně`,
     icon: parkov1,
   },
-  {
-    id: 4,
-    text: 'Whirlpool vana',
-    description: `pro dvě osoby`,
-    icon: chytra1,
-  },
+
   {
     id: 5,
-    text: 'Zážitková sprcha',
-    description: `s relaxačními programy`,
-    icon: dalsi1,
+    text: 'Ochlazovací vědro',
+    description: `s ledovou vodou`,
+    icon: union1,
   },
   {
     id: 6,

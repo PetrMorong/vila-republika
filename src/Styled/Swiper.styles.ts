@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SlideWrapper = styled.div`
   position: relative;
@@ -6,9 +6,7 @@ export const SlideWrapper = styled.div`
   height: 100%;
   cursor: pointer;
   transition: 200ms;
-
-
-`;
+`
 
 export const SlideContent = styled.div`
   position: absolute;
@@ -19,4 +17,4 @@ export const SlideContent = styled.div`
   padding: 32px;
   display: flex;
   flex-direction: column;
-`;
+`

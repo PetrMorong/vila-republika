@@ -1,27 +1,27 @@
-import React, { FunctionComponent, useState } from "react";
-import { GlobalStyle } from "../../Styled/GlobStyles";
-import Footer from "./Footer";
-import MobileDrawer from "./MobileDrawer";
-import Nav from "./Nav";
-import { Helmet } from "react-helmet";
-import Favicon from "../../images/faviconWhite.ico";
+import React, { FunctionComponent, useState } from 'react'
+import { GlobalStyle } from '../../Styled/GlobStyles'
+import Footer from './Footer'
+import MobileDrawer from './MobileDrawer'
+import Nav from './Nav'
+import { Helmet } from 'react-helmet'
+import Favicon from '../../images/faviconWhite.ico'
 
 const navLinks = [
-  { id: 1, text: "Apartmány", path: "/apartmany" },
-  { id: 2, text: "Wellness", path: "/wellness" },
+  { id: 1, text: 'Apartmány', path: '/apartmany' },
+  { id: 2, text: 'Privátní Wellness', path: '/wellness' },
   // { id: 3, text: "Okolí", path: "/okoli" },
   // { id: 4, text: "Bistro", path: "/" },
   // { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
-  { id: 6, text: "Fotogalerie", path: "/fotogalerie" },
-  { id: 7, text: "Rezervace", path: "/rezervace" },
-];
+  { id: 6, text: 'Fotogalerie', path: '/fotogalerie' },
+  { id: 7, text: 'Rezervace', path: '/rezervace' },
+]
 
 const Layout: FunctionComponent = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-  };
+    setIsOpen((prevState) => !prevState)
+  }
 
   return (
     <>
@@ -31,7 +31,7 @@ const Layout: FunctionComponent = ({ children }) => {
       {children}
       <Footer navLinks={navLinks} />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

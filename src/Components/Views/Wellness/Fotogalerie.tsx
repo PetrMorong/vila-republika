@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,17 +6,10 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { SectionTitle } from "../../../Styled/Typography.styles";
-import { SlideWrapper } from "../../../Styled/Swiper.styles";
-import pic1 from "../../../images/wallness/1.png";
-import pic2 from "../../../images/wallness/2.png";
-import pic3 from "../../../images/wallness/3.png";
-import pic4 from "../../../images/wallness/4.png";
-import pic5 from "../../../images/wallness/1.png";
-import pic6 from "../../../images/wallness/2.png";
-import pic7 from "../../../images/wallness/3.png";
-import pic8 from "../../../images/wallness/4.png";
+} from '../../../Styled/Theme.styles'
+import { SectionTitle } from '../../../Styled/Typography.styles'
+import { SlideWrapper } from '../../../Styled/Swiper.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 const Fotogalerie: React.FC = () => {
   return (
@@ -65,39 +58,79 @@ const Fotogalerie: React.FC = () => {
                   </ImgWrapper>
                 </SlideWrapper>
               </FlexRow>
-            );
+            )
           })}
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Fotogalerie;
+export default Fotogalerie
+
+const imageConfig = {
+  transformations: {
+    resize: {
+      type: 'scale',
+      width: 393 * 2,
+      height: 270 * 2,
+      aspectRatio: '16:9',
+    },
+  },
+}
 
 const data = [
   {
-    picture: pic1,
+    picture: buildImageUrl(
+      'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
+      imageConfig
+    ),
+  },
+
+  {
+    picture: buildImageUrl(
+      'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
+      imageConfig
+    ),
   },
   {
-    picture: pic2,
+    picture: buildImageUrl(
+      'v1680936960/vilaRepublikaFoto/wellness/DSC01740-HDR_nddukh.jpg',
+      imageConfig
+    ),
+  },
+
+  {
+    picture: buildImageUrl(
+      'v1680936976/vilaRepublikaFoto/wellness/DSC01861_jluirn.jpg',
+      imageConfig
+    ),
   },
   {
-    picture: pic3,
+    picture: buildImageUrl(
+      'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
+      imageConfig
+    ),
   },
+
   {
-    picture: pic4,
+    picture: buildImageUrl(
+      'v1680936963/vilaRepublikaFoto/wellness/DSC01821-HDR_wfg2sw.jpg',
+      imageConfig
+    ),
   },
+
   {
-    picture: pic5,
+    picture: buildImageUrl(
+      'v1680936961/vilaRepublikaFoto/wellness/DSC01809-HDR_ln8ljz.jpg',
+      imageConfig
+    ),
   },
+
   {
-    picture: pic6,
+    picture: buildImageUrl(
+      'v1680936972/vilaRepublikaFoto/wellness/DSC01866_b2dn34.jpg',
+      imageConfig
+    ),
   },
-  {
-    picture: pic7,
-  },
-  {
-    picture: pic8,
-  },
-];
+]

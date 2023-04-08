@@ -14,8 +14,15 @@ import {
   IconTitle,
   SectionTitle,
 } from '../../../Styled/Typography.styles'
-import img from '../../../images/DJI_.png'
 import { Button, ButtonWrapper } from '../../../Styled/Button.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
+import styled from 'styled-components'
+
+const img = buildImageUrl(
+  'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
+  {}
+)
+
 const ProVerejnost: React.FC = () => {
   return (
     <Wrapper
@@ -44,54 +51,10 @@ const ProVerejnost: React.FC = () => {
                   marginBottom: '50px',
                 }}
               >
-                <FlexRow gap={`72px`} lgGap={`40px`} center>
+                <RowWrap>
                   <div>
                     <IconTitle
-                      fontSize={`18px`}
-                      xlfontSize={`14px`}
-                      mdFontSize={`14px`}
-                      mdLineheight={`20px`}
-                      textAlign={`left`}
-                      smFontSize={`16px`}
-                      smLineheight={`26px`}
-                      fontWeight={`600`}
-                      xlfontWeight={`600`}
-                      smFontWeight={`600`}
-                      mdfontWeight={`600`}
-                      color={`#262B3B`}
-                      mb={'12px'}
-                      mdMargibBottom={`12px`}
-                      mdtextAlign={`center`}
-                      smtextAlign={`center`}
-                      smMargibBottom={``}
-                    >
-                      OTEVÍRACÍ DOBA
-                    </IconTitle>
-                    <IconTitle
-                      fontSize={`30px`}
-                      xlfontSize={`20px`}
-                      mdFontSize={`20px`}
-                      mdLineheight={`20px`}
-                      textAlign={`left`}
-                      smFontSize={`20px`}
-                      smLineheight={`26px`}
-                      fontWeight={`700`}
-                      xlfontWeight={`700`}
-                      smFontWeight={`700`}
-                      mdfontWeight={`700`}
-                      color={`#262B3B`}
-                      mb={'0px'}
-                      mdMargibBottom={`0px`}
-                      mdtextAlign={`center`}
-                      smtextAlign={`center`}
-                      smMargibBottom={``}
-                    >
-                      Bude otevřeno 31.3.
-                    </IconTitle>
-                  </div>
-                  <div>
-                    <IconTitle
-                      fontSize={`18px`}
+                      fontSize={`25px`}
                       xlfontSize={`18px`}
                       mdFontSize={`18px`}
                       mdLineheight={`20px`}
@@ -112,7 +75,7 @@ const ProVerejnost: React.FC = () => {
                       CENA
                     </IconTitle>
                     <IconTitle
-                      fontSize={`20px`}
+                      fontSize={`28px`}
                       xlfontSize={`20px`}
                       mdFontSize={`20px`}
                       mdLineheight={`20px`}
@@ -130,10 +93,10 @@ const ProVerejnost: React.FC = () => {
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      od 1200 Kč za 90min
+                      od 1290 Kč za 90min
                     </IconTitle>
                   </div>
-                </FlexRow>
+                </RowWrap>
               </div>
               <Desc
                 color={``}
@@ -157,7 +120,7 @@ const ProVerejnost: React.FC = () => {
                 <br />
                 <br />
                 Svůj termín si můžete zarezervovat na bašich webových stránkách,
-                a to každý den včetně víkendů v době od X do Y hodin.
+                a to každý den včetně víkendů.
               </Desc>
               <div>
                 <ButtonWrapper>
@@ -182,5 +145,14 @@ const ProVerejnost: React.FC = () => {
     </Wrapper>
   )
 }
+
+export const RowWrap = styled.div`
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 640px) {
+  }
+`
 
 export default ProVerejnost

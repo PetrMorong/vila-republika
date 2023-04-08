@@ -12,31 +12,42 @@ import { SlideWrapper } from '../../../Styled/Swiper.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 import styled from 'styled-components'
 
+const imageConfig = {
+  transformations: {
+    resize: {
+      type: 'scale',
+      width: 393 * 2,
+      height: 270 * 2,
+      aspectRatio: '16:9',
+    },
+  },
+}
+
 const Apartmany: React.FC = () => {
   const data1 = [
     // byt 1
     {
       picture: buildImageUrl(
         'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
-        {}
+        imageConfig
       ),
     },
   ]
@@ -45,25 +56,25 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1677920414/vilaRepublikaFoto/byt 2/DSC09444-HDR_euewl0.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1677920409/vilaRepublikaFoto/byt 2/DSC09477-HDR_w4300b.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1677920541/vilaRepublikaFoto/byt 2/DSC09474-HDR_oysnn4.jpg',
-        {}
+        imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1677920408/vilaRepublikaFoto/byt 2/DSC09483-HDR_oh3wvl.jpg',
-        {}
+        imageConfig
       ),
     },
   ]
@@ -72,28 +83,28 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1675802254/vilaRepublikaFoto/byt4/DSC08238-HDR_mzdbyr.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675802258/vilaRepublikaFoto/byt4/DSC08274-HDR_hmhsy0.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675802258/vilaRepublikaFoto/byt4/DSC08259-HDR_asblp3.jpg',
-        {}
+        imageConfig
       ),
     },
   ]
@@ -102,28 +113,28 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675799774/vilaRepublikaFoto/byt5/DSC08390-HDR_fkz4zz.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675799776/vilaRepublikaFoto/byt5/DSC08363-HDR_yqdcwr.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675799779/vilaRepublikaFoto/byt5/DSC08405-HDR_xba91c.jpg',
-        {}
+        imageConfig
       ),
     },
   ]
@@ -132,28 +143,28 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675801405/vilaRepublikaFoto/byt6/DSC08316-HDR_jgxs2h.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675801405/vilaRepublikaFoto/byt6/DSC08310-HDR_dccwul.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1675801404/vilaRepublikaFoto/byt6/DSC08301-HDR_mfiyhx.jpg',
-        {}
+        imageConfig
       ),
     },
   ]
@@ -162,28 +173,28 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1677920196/vilaRepublikaFoto/byt7/new/DSC09560-HDR_m7zz5r.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1677920190/vilaRepublikaFoto/byt7/new/DSC09611-HDR_uytxsa.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1677920193/vilaRepublikaFoto/byt7/new/DSC09569-HDR_gpopzr.jpg',
-        {}
+        imageConfig
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
-        {}
+        imageConfig
       ),
     },
   ]

@@ -1,18 +1,24 @@
 import React from 'react'
 import { HeaderWrapper } from '../../../Styled/Header.styles'
-import header from '../../../images/SAUNA 2 (1).png'
 import { Container, FlexRow } from '../../../Styled/Theme.styles'
 import { HeaderTitle } from '../../../Styled/Typography.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
+
+const img = buildImageUrl(
+  'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
+  {}
+)
 
 const Header: React.FC = () => {
   return (
     <HeaderWrapper
-      padding={`160px 0px 60px`}
+      padding={`180px 0px 80px`}
       smPadding={`140px 0px 0px`}
-      header={header}
+      header={img}
       smHegiht={'390px'}
       height={'540px'}
       bgGradient
+      style={{ backgroundPosition: '0px -355px' }}
     >
       <Container margin={`auto`}>
         <FlexRow width={`100%`} height={`100%`} center>
@@ -24,8 +30,7 @@ const Header: React.FC = () => {
             maxWidth={`100%`}
             smalign={``}
           >
-            Wellness <br />
-            Otevřeno od 31.3.
+            Privátní Wellnes
           </HeaderTitle>
         </FlexRow>
       </Container>

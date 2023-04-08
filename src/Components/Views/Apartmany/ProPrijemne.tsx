@@ -1,16 +1,24 @@
-import React from "react";
-import {
-  Container,
-  FlexRow,
-  GridRow,
-  ImgWrapper,
-  StyledImg,
-  Wrapper,
-} from "../../../Styled/Theme.styles";
-import { IconTitle } from "../../../Styled/Typography.styles";
-import img from "../../../images/F1.png";
+import React from 'react'
+import { FlexRow, Wrapper } from '../../../Styled/Theme.styles'
+import { IconTitle } from '../../../Styled/Typography.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
+import styled from 'styled-components'
+import { url } from 'inspector'
 
-import { SlideContent, SlideWrapper } from "../../../Styled/Swiper.styles";
+const img1 = buildImageUrl(
+  'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
+  {}
+)
+
+export const Bg = styled.div`
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  object-fit: cover;
+  position: relative;
+`
+
 const ProPrijemne: React.FC = () => {
   return (
     <Wrapper
@@ -18,7 +26,7 @@ const ProPrijemne: React.FC = () => {
       xlPadding={`0px 0px 0px`}
       padding={`0px 0px 0px`}
     >
-      <div className="pro_bg">
+      <Bg style={{ backgroundImage: `url(${img1})` }}>
         <div className="pro_bg_overlay">
           <FlexRow
             direction="column"
@@ -31,10 +39,10 @@ const ProPrijemne: React.FC = () => {
           >
             <IconTitle
               color={`#FFFFFF`}
-              fontSize={`60px`}
-              linHeight={`68px`}
-              xlfontSize={`50px`}
-              mdFontSize={`40px`}
+              fontSize={`45px`}
+              linHeight={`48px`}
+              xlfontSize={`35px`}
+              mdFontSize={`30px`}
               textAlign={`center`}
               smFontSize={`30px`}
               fontWeight={`600`}
@@ -53,13 +61,13 @@ const ProPrijemne: React.FC = () => {
             </IconTitle>
             <IconTitle
               color={`#FFFFFF`}
-              fontSize={`18px`}
-              linHeight={`26px`}
-              xlfontSize={`18px`}
-              mdFontSize={`18px`}
+              fontSize={`16px`}
+              linHeight={`27px`}
+              xlfontSize={`16px`}
+              mdFontSize={`16px`}
               textAlign={`center`}
-              smFontSize={`18px`}
-              fontWeight={`600`}
+              smFontSize={`16px`}
+              fontWeight={`400`}
               xlfontWeight={`400`}
               smFontWeight={`400`}
               mdfontWeight={`400`}
@@ -72,19 +80,18 @@ const ProPrijemne: React.FC = () => {
               smMargibBottom={``}
             >
               V přízemí Vily Republiky jsme pro vás vybudovali společenskou
-              místnost s 20 místy k sezení. Každé ráno vám zde budeme podávat
-              skvělé snídaně. Vydat se sem ale můžete i kdykoliv během dne. A
-              třeba si z naší vinotéky zakoupit pečlivě vybraná vína plná slunce
-              a harmonických chutí. Připraveny zde pro vás máme nejrůznější
-              společenské hry, playstation i širokoúhlou TV pro sledování filmů
-              anebo hudebních koncertů. Díky odhlučnění se můžete bavit až do
+              místnost s 20 místy k sezení. Vydat se sem můžete kdykoliv během
+              dne. A třeba si z naší vinotéky zakoupit pečlivě vybraná vína plná
+              slunce a harmonických chutí. Připraveny zde pro vás máme
+              nejrůznější společenské hry, širokoúhlou TV pro sledování filmů
+              anebo sportovních zápasů. Díky odhlučnění se můžete bavit až do
               pozdních nočních hodin.
             </IconTitle>
           </FlexRow>
         </div>
-      </div>
+      </Bg>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default ProPrijemne;
+export default ProPrijemne

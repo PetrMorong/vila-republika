@@ -26,7 +26,7 @@ const SectionTwo: React.FC = () => {
   )
 
   const img2 = buildImageUrl(
-    'v1673863576/vilaRepublikaFoto/PastedGraphic-5_u0yq2i.png',
+    'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
     {}
   )
 
@@ -40,8 +40,8 @@ const SectionTwo: React.FC = () => {
     {
       id: 2,
       img: img2,
-      title: 'Privátní wellness (od 31.3.)',
-      desc: 'Dokončujeme práce na wellness, otevřené bude od 31.3. Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí. Svůj termín si můžete rezervovat online. Welness není v ceně pobytu',
+      title: 'Privátní wellness',
+      desc: 'Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka, ochlazovací bazének a hlavně soukromí.',
     },
   ]
 
@@ -110,7 +110,7 @@ const SectionTwo: React.FC = () => {
                     alt="img"
                   />
                 </ImgWrapper>
-                <SlideContent>
+                <SlideContent style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
                   <div style={{ marginTop: 'auto' }}>
                     <VileSlideTitle
                       color={``}
