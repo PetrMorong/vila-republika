@@ -2,19 +2,22 @@ import React from 'react'
 import Wellnesss from '../Components/Views/Wellness'
 import { Helmet } from 'react-helmet'
 import DataContainer from '../Components/DataContainer'
+import Layout from '../Components/Layout/Layout'
 
 const WellnessPage = () => {
   return (
-    <DataContainer>
-      <Helmet>
-        <title>Wellness Apartmány Vila Republika Velké Losiny</title>
-        <meta
-          name="description"
-          content="Wellness Apartmány Vila Republika leží pod svahy Hrubého Jeseníku v lázeňské obci Velké Losiny. K ubytování nabízíme i privátní wellness. Původní stavba z 30. let minulého století je citlivě zrekonstruována, krásné prvorepublikové prvky zachovány. Moderně pojaté, komfortní ubytování uspokojí i nejnáročnější klientelu. Vila Republika je díky své poloze ideální destinací pro trávení letní i zimní lyžařské dovolené. Na dosah budete mít termální lázně, malebný lázeňský park i čistou přírodu CHKO Jeseníky."
-        />
-      </Helmet>
-      <Wellnesss />
-    </DataContainer>
+    <Layout>
+      <DataContainer>
+        <Helmet>
+          <title>Privátní Wellness Velké Losiny</title>
+          <meta
+            name="description"
+            content="Po aktivně stráveném dni na čerstvém vzduchu zasloužený relax. Rozmazlujte se v našem privátním wellness vonícím dřevem. Čeká zde na vás finská sauna, vířivka a soukromí."
+          />
+        </Helmet>
+        <Wellnesss />
+      </DataContainer>
+    </Layout>
   )
 }
 

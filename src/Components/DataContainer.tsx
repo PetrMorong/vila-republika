@@ -11,7 +11,7 @@ setConfig({
 
 export default function DataContainer({ children }: any) {
   const ogImage = buildImageUrl(
-    'v1673863133/vilaRepublikaFoto/DSC07600-HDR_3_maveff.jpg',
+    'v1680936650/vilaRepublikaFoto/DSC02010-HDR_ztnz7h.jpg',
     {}
   )
   return (

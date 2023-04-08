@@ -1,14 +1,14 @@
-import React from "react";
-import Layout from "../../Layout/Layout";
-import VybaveniWellness from "./VybaveniWellness";
-import Header from "./Header";
-import Tab from "./Tab";
-import ProVerejnost from "./ProVerejnost";
-import Fotogalerie from "./Fotogalerie";
+import React from 'react'
+import Layout from '../../Layout/Layout'
+import VybaveniWellness from './VybaveniWellness'
+import Header from './Header'
+import Tab from './Tab'
+import ProVerejnost from './ProVerejnost'
+import Fotogalerie from './Fotogalerie'
 
 const Wellnesss: React.FC = () => {
   return (
-    <Layout>
+    <>
       <Header />
       <Tab />
       <div id="VybaveniWellness">
@@ -20,8 +20,8 @@ const Wellnesss: React.FC = () => {
       <div id="Fotogalerie">
         <Fotogalerie />
       </div>
-    </Layout>
-  );
-};
+    </>
+  )
+}
 
-export default Wellnesss;
+export default Wellnesss
