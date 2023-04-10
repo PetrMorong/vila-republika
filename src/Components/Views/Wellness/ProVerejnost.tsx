@@ -118,7 +118,7 @@ const ProVerejnost: React.FC = () => {
                 hosté, je přístupné i pro veřejnost.
                 <br />
                 <br />
-                Svůj termín si můžete zarezervovat na vašich webových stránkách,
+                Svůj termín si můžete zarezervovat na našich webových stránkách,
                 a to každý den včetně víkendů.
               </Desc>
               <div>
