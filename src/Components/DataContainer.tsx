@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { setConfig } from 'cloudinary-build-url'
 import { buildImageUrl } from 'cloudinary-build-url'
-
+import Favicon from '../../images/faviconWhite.ico'
 setConfig({
   cloudName: 'morireality',
   apiKey: '465321175721736',
@@ -19,6 +19,7 @@ export default function DataContainer({ children }: any) {
       <html lang="cs"></html>
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/uve2xcq.css" />
+        <link rel="icon" href={Favicon} />
         <meta
           property="og:title"
           content="Wellness Apartmány Vila Republika - Velké Losiny"
