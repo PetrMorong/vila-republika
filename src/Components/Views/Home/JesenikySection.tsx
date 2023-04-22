@@ -41,7 +41,7 @@ const Nostalgick: React.FC = () => {
             na vás, zda pěšky, na kole či na lyžích.
           </Desc>
           <div style={{ marginBottom: 30 }} />
-          <Link to="/okoli" style={{ margin: 'auto' }}>
+          {/* <Link to="/okoli" style={{ margin: 'auto' }}>
             <Button
               style={{ width: '176px' }}
               margin={`auto`}
@@ -52,7 +52,7 @@ const Nostalgick: React.FC = () => {
             >
               VÍCE O OKOLÍ{' '}
             </Button>
-          </Link>
+          </Link> */}
         </FlexRow>
       </Container>
     </NostalgickWrapper>

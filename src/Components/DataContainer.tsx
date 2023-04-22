@@ -2,7 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { setConfig } from 'cloudinary-build-url'
 import { buildImageUrl } from 'cloudinary-build-url'
-import Favicon from '../../images/faviconWhite.ico'
+import Favicon from '../images/faviconWhite.ico'
+
 setConfig({
   cloudName: 'morireality',
   apiKey: '465321175721736',

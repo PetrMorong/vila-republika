@@ -11,8 +11,8 @@ const navLinks = [
   { id: 2, text: 'Privátní Wellness', path: '/wellness' },
   // { id: 3, text: "Okolí", path: "/okoli" },
   // { id: 4, text: "Bistro", path: "/" },
-  // { id: 5, text: "Dárkové Poukazy", path: "/darkove-poukazy" },
-  { id: 6, text: 'Fotogalerie', path: '/fotogalerie' },
+  { id: 5, text: 'Fotogalerie', path: '/fotogalerie' },
+  { id: 6, text: 'Dárkové Poukazy', path: '/darkove-poukazy' },
   { id: 7, text: 'Rezervace', path: '/rezervace' },
 ]
 

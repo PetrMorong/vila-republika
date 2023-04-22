@@ -29,7 +29,7 @@ const Reservation = () => {
           <Container>
             <div className="previo-reservation-form">
               <iframe
-                src="https://booking.previo.cz/?hotId=758539&theme=dark"
+                src="https://booking.previo.cz/?hotId=758539&theme=dark&hideTabs=stay-review-pricelist-occupancy-map"
                 scrolling="no"
                 frameborder="0"
                 width="100%"
