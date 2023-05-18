@@ -37,6 +37,18 @@ const Exterier: React.FC = () => {
     },
     {
       picture: buildImageUrl(
+        'v1684391707/vilaRepublikaFoto/IMG_20230513_175649_vnf02j.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1684391707/vilaRepublikaFoto/IMG_20230513_175256_uzk9nz.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
         'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
         imageConfig
       ),
@@ -87,18 +99,19 @@ const Exterier: React.FC = () => {
         imageConfig
       ),
     },
-    {
-      picture: buildImageUrl(
-        'v1680942698/vilaRepublikaFoto/SpolecenskaMistnost/DSC01971-min_vqmzdq.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1680942527/vilaRepublikaFoto/SpolecenskaMistnost/DSC01958_ocv9lw.jpg',
-        imageConfig
-      ),
-    },
+
+    // {
+    //   picture: buildImageUrl(
+    //     'v1680942698/vilaRepublikaFoto/SpolecenskaMistnost/DSC01971-min_vqmzdq.jpg',
+    //     imageConfig
+    //   ),
+    // },
+    // {
+    //   picture: buildImageUrl(
+    //     'v1680942527/vilaRepublikaFoto/SpolecenskaMistnost/DSC01958_ocv9lw.jpg',
+    //     imageConfig
+    //   ),
+    // },
   ]
 
   return (
