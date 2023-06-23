@@ -43,7 +43,7 @@ const Exterier: React.FC = () => {
     },
     {
       picture: buildImageUrl(
-        'v1684391707/vilaRepublikaFoto/IMG_20230513_175256_uzk9nz.jpg',
+        'v1687499420/vilaRepublikaFoto/353110191_5813387308763230_7526979099478048553_n_wvpbf6.jpg',
         imageConfig
       ),
     },
