@@ -69,11 +69,19 @@ const Nav: FunctionComponent<any> = ({ navLinks, toggle, is }) => {
           </NavItemWrapper>
           <ToogleWrapper>
             <NavItemWrapper>
-              <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
-                Rezervace
-              </Button>
+              <Link to="/rezervace">
+                <Button
+                  style={{ minWidth: 176 }}
+                  width={`176px`}
+                  height={`61px`}
+                >
+                  Rezervace
+                </Button>
+              </Link>
             </NavItemWrapper>
-            {/* <MobileButton>Rezervace</MobileButton> */}
+            <Link to="/rezervace">
+              <MobileButton>Rezervace</MobileButton>
+            </Link>
             <ToggleButton
               onClick={toggle}
               className={

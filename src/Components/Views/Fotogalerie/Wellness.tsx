@@ -10,19 +10,25 @@ import {
 import { SectionTitle } from '../../../Styled/Typography.styles'
 import { SlideWrapper } from '../../../Styled/Swiper.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
+import Lightbox from 'react-spring-lightbox'
+import leftArrowImg from '../../../images/LeftArrow.svg'
+import styled from 'styled-components'
 
 const imageConfig = {
   transformations: {
     resize: {
       type: 'scale',
-      width: 393 * 2,
-      height: 270 * 2,
+      width: 393 * 3,
+      height: 270 * 3,
       aspectRatio: '16:9',
     },
   },
 }
 
 const Wellness: React.FC = () => {
+  const [showGallery, setShowGallery] = React.useState(false)
+  const [carouselIndex, setCarouseIndex] = React.useState(0)
+
   const data = [
     {
       picture: buildImageUrl(
@@ -79,6 +85,28 @@ const Wellness: React.FC = () => {
     },
   ]
 
+  const images = [...data]
+
+  const lightboxImages: any = images.map((image) => {
+    return { src: image.picture }
+  })
+
+  const handleNext = () => {
+    if (carouselIndex === images.length - 1) {
+      setCarouseIndex(0)
+    } else {
+      setCarouseIndex(carouselIndex + 1)
+    }
+  }
+
+  const handlePrevious = () => {
+    if (carouselIndex === 0) {
+      setCarouseIndex(images.length - 1)
+    } else {
+      setCarouseIndex(carouselIndex - 1)
+    }
+  }
+
   return (
     <Wrapper
       bgColor={`#F0E8D9`}
@@ -98,7 +126,7 @@ const Wellness: React.FC = () => {
         >
           Privátní Wellness
         </SectionTitle>
-        <GridRow sm={2} md={3} cols={4} between gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} between gap={`16px`}>
           {data.map((item, index) => {
             return (
               <FlexRow
@@ -113,7 +141,7 @@ const Wellness: React.FC = () => {
                 center
                 key={index}
               >
-                <SlideWrapper>
+                <SlideWrapper onClick={() => setShowGallery(true)}>
                   <ImgWrapper>
                     <StyledImg
                       object={`cover`}
@@ -129,8 +157,77 @@ const Wellness: React.FC = () => {
           })}
         </GridRow>
       </Container>
+
+      <Lightbox
+        isOpen={showGallery}
+        onPrev={handlePrevious}
+        onNext={handleNext}
+        images={lightboxImages}
+        currentIndex={carouselIndex}
+        renderHeader={() => (
+          // @ts-ignore
+          <div onClick={() => setShowGallery(false)} style={styleClose}>
+            x
+          </div>
+        )}
+        renderPrevButton={() => (
+          // @ts-ignore
+          <ArrowWrap onClick={handlePrevious} style={prevArrowStyle}>
+            <img src={leftArrowImg}></img>
+          </ArrowWrap>
+        )}
+        renderNextButton={() => (
+          // @ts-ignore
+          <ArrowWrap onClick={handleNext} style={nextArrowStyle}>
+            <img
+              style={{ transform: 'rotate(180deg)' }}
+              src={leftArrowImg}
+            ></img>
+          </ArrowWrap>
+        )}
+        style={{ background: 'rgba(0,0,0,0.99)' }}
+        onClose={() => setShowGallery(false)}
+      />
     </Wrapper>
   )
 }
+
+const styleClose = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 20,
+  top: 20,
+  color: 'white',
+  fontSize: 30,
+  cursor: 'pointer',
+}
+
+const prevArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  left: 0,
+  top: '45%',
+}
+
+const nextArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 0,
+  top: '45%',
+}
+const ArrowWrap = styled.div`
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    width: 44px;
+    height: 44px;
+  }
+`
 
 export default Wellness

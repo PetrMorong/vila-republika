@@ -5,8 +5,6 @@ import Wellness from './Wellness'
 import Header from './Header'
 
 const Fotogalerie: React.FC = () => {
-  // TODO add fotogalery
-
   return (
     <>
       <Header />

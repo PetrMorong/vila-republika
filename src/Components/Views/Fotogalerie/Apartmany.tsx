@@ -11,19 +11,24 @@ import { SectionTitle } from '../../../Styled/Typography.styles'
 import { SlideWrapper } from '../../../Styled/Swiper.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 import styled from 'styled-components'
+import Lightbox from 'react-spring-lightbox'
+import leftArrowImg from '../../../images/LeftArrow.svg'
 
 const imageConfig = {
   transformations: {
     resize: {
       type: 'scale',
-      width: 393 * 2,
-      height: 270 * 2,
+      width: 393 * 3,
+      height: 270 * 3,
       aspectRatio: '16:9',
     },
   },
 }
 
 const Apartmany: React.FC = () => {
+  const [showGallery, setShowGallery] = React.useState(false)
+  const [carouselIndex, setCarouseIndex] = React.useState(0)
+
   const data1 = [
     // byt 1
     {
@@ -199,6 +204,28 @@ const Apartmany: React.FC = () => {
     },
   ]
 
+  const images = [...data1, ...data2, ...data4, ...data5, ...data6, ...data7]
+
+  const lightboxImages: any = images.map((image) => {
+    return { src: image.picture }
+  })
+
+  const handleNext = () => {
+    if (carouselIndex === images.length - 1) {
+      setCarouseIndex(0)
+    } else {
+      setCarouseIndex(carouselIndex + 1)
+    }
+  }
+
+  const handlePrevious = () => {
+    if (carouselIndex === 0) {
+      setCarouseIndex(images.length - 1)
+    } else {
+      setCarouseIndex(carouselIndex - 1)
+    }
+  }
+
   const renderRow = (images: typeof data1) =>
     images.map((item, index) => {
       return (
@@ -214,7 +241,7 @@ const Apartmany: React.FC = () => {
           center
           key={index}
         >
-          <SlideWrapper>
+          <SlideWrapper onClick={() => setShowGallery(true)}>
             <ImgWrapper>
               <StyledImg
                 object={`cover`}
@@ -250,40 +277,109 @@ const Apartmany: React.FC = () => {
         </SectionTitle>
 
         <TitleAps>Slunečný</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data1)}
         </GridRow>
 
         <TitleAps>Lázeňský</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data2)}
         </GridRow>
 
         <TitleAps>Pradědův</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data4)}
         </GridRow>
 
         <TitleAps>Losinský</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data5)}
         </GridRow>
 
         <TitleAps>Prvorepublikový</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data6)}
         </GridRow>
 
         <TitleAps>Prezidentský</TitleAps>
-        <GridRow sm={2} md={3} cols={4} gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data7)}
         </GridRow>
       </Container>
+
+      <Lightbox
+        isOpen={showGallery}
+        onPrev={handlePrevious}
+        onNext={handleNext}
+        images={lightboxImages}
+        currentIndex={carouselIndex}
+        renderHeader={() => (
+          // @ts-ignore
+          <div onClick={() => setShowGallery(false)} style={styleClose}>
+            x
+          </div>
+        )}
+        renderPrevButton={() => (
+          // @ts-ignore
+          <ArrowWrap onClick={handlePrevious} style={prevArrowStyle}>
+            <img src={leftArrowImg}></img>
+          </ArrowWrap>
+        )}
+        renderNextButton={() => (
+          // @ts-ignore
+          <ArrowWrap onClick={handleNext} style={nextArrowStyle}>
+            <img
+              style={{ transform: 'rotate(180deg)' }}
+              src={leftArrowImg}
+            ></img>
+          </ArrowWrap>
+        )}
+        style={{ background: 'rgba(0,0,0,0.99)' }}
+        onClose={() => setShowGallery(false)}
+      />
     </Wrapper>
   )
 }
 
 export default Apartmany
+
+const styleClose = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 20,
+  top: 20,
+  color: 'white',
+  fontSize: 30,
+  cursor: 'pointer',
+}
+
+const prevArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  left: 0,
+  top: '45%',
+}
+
+const nextArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 0,
+  top: '45%',
+}
+const ArrowWrap = styled.div`
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    width: 44px;
+    height: 44px;
+  }
+`
 
 export const TitleAps = styled.h2`
   font-size: 23px;

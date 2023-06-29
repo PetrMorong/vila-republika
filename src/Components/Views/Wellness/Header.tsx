@@ -13,9 +13,9 @@ const Header: React.FC = () => {
   return (
     <HeaderWrapper
       padding={`180px 0px 80px`}
-      smPadding={`140px 0px 0px`}
+      smPadding={`80px 0px 0px`}
       header={img}
-      smHegiht={'390px'}
+      smHegiht={'600px'}
       height={'540px'}
       bgGradient
       style={{ backgroundPosition: '0px -355px' }}

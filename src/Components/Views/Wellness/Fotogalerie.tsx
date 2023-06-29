@@ -98,7 +98,7 @@ const Fotogalerie: React.FC = () => {
         >
           Fotogalerie
         </SectionTitle>
-        <GridRow sm={2} md={3} cols={4} between gap={`16px`}>
+        <GridRow sm={1} md={3} cols={4} between gap={`16px`}>
           {data.map((item, index) => {
             return (
               <FlexRow

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyledNav = styled.div`
   position: absolute;
@@ -9,38 +9,36 @@ export const StyledNav = styled.div`
   color: white;
   margin: 0 auto;
   padding: 10px 0px;
-  z-index:1000;
+  z-index: 100;
 
   @media screen and (max-width: 1440px) {
     padding: 15px 0px;
   }
-`;
+`
 
 export const NavItem = styled.a`
   font-size: 14px;
   text-decoration: none;
   list-style: none;
 
-
   &:hover {
     transition: 200ms;
     opacity: 0.8;
   }
-`;
+`
 
 export const NavItemWrapper = styled.div`
   display: block;
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 export const ToogleWrapper = styled.div`
   display: none;
   @media screen and (max-width: 1024px) {
     display: flex;
   }
-`;
-
+`
 
 export const ToggleButton = styled.button`
   display: none;
@@ -49,10 +47,11 @@ export const ToggleButton = styled.button`
   border: none;
   cursor: pointer;
   color: white;
-  margin-top:0px;
- 
-  padding:5px 10px 0px 10px;
+  margin-top: 0px;
+  height: 48px;
+  padding: 7px 10px 0px 10px;
+
   @media screen and (max-width: 1024px) {
     display: block;
   }
-`;
+`

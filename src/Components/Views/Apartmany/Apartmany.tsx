@@ -359,15 +359,15 @@ const Apartmany: React.FC = () => {
         {/* AP 1 */}
         <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(0)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap1Image1} alt="img" />
-                <ButtonWrapperFoto
-                  onClick={() => {
-                    setShowGallery(true)
-                    setSelectedGallery(0)
-                  }}
-                >
+                <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -547,18 +547,18 @@ const Apartmany: React.FC = () => {
             </div>
           </FlexRow>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(1)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap2Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
-                  <ButtonWrapperFoto
-                    onClick={() => {
-                      setShowGallery(true)
-                      setSelectedGallery(1)
-                    }}
-                  >
+                  <ButtonWrapperFoto>
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -583,15 +583,15 @@ const Apartmany: React.FC = () => {
         {/* AP 4 */}
         <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(2)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap4Image1} alt="img" />
-                <ButtonWrapperFoto
-                  onClick={() => {
-                    setShowGallery(true)
-                    setSelectedGallery(2)
-                  }}
-                >
+                <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -770,18 +770,18 @@ const Apartmany: React.FC = () => {
             </div>
           </FlexRow>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(3)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap5Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
-                  <ButtonWrapperFoto
-                    onClick={() => {
-                      setShowGallery(true)
-                      setSelectedGallery(3)
-                    }}
-                  >
+                  <ButtonWrapperFoto>
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -806,15 +806,15 @@ const Apartmany: React.FC = () => {
         {/* AP 6 */}
         <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(4)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt="img" />
-                <ButtonWrapperFoto
-                  onClick={() => {
-                    setShowGallery(true)
-                    setSelectedGallery(4)
-                  }}
-                >
+                <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
                     maxWidth={`350px`}
@@ -997,18 +997,18 @@ const Apartmany: React.FC = () => {
             </div>
           </FlexRow>
           <div>
-            <SlideWrapper>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(5)
+              }}
+            >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt="img" />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
-                  <ButtonWrapperFoto
-                    onClick={() => {
-                      setShowGallery(true)
-                      setSelectedGallery(5)
-                    }}
-                  >
+                  <ButtonWrapperFoto>
                     <FlexRow
                       gap={`12px`}
                       maxWidth={`350px`}
@@ -1036,47 +1036,21 @@ const Apartmany: React.FC = () => {
           onNext={handleNext}
           images={lightboxImages}
           currentIndex={carouselIndex}
-          /* Add your own UI */
           renderHeader={() => (
-            <div
-              onClick={() => setShowGallery(false)}
-              style={{
-                position: 'absolute',
-                zIndex: 99,
-                right: 20,
-                top: 20,
-                color: 'white',
-                fontSize: 30,
-                cursor: 'pointer',
-              }}
-            >
+            // @ts-ignore
+            <div onClick={() => setShowGallery(false)} style={styleClose}>
               x
             </div>
           )}
-          // renderFooter={() => (<CustomFooter />)}
           renderPrevButton={() => (
-            <ArrowWrap
-              onClick={handlePrevious}
-              style={{
-                position: 'absolute',
-                zIndex: 99,
-                left: 0,
-                top: '45%',
-              }}
-            >
+            // @ts-ignore
+            <ArrowWrap onClick={handlePrevious} style={prevArrowStyle}>
               <img src={leftArrowImg}></img>
             </ArrowWrap>
           )}
           renderNextButton={() => (
-            <ArrowWrap
-              onClick={handleNext}
-              style={{
-                position: 'absolute',
-                zIndex: 99,
-                right: 0,
-                top: '45%',
-              }}
-            >
+            // @ts-ignore
+            <ArrowWrap onClick={handleNext} style={nextArrowStyle}>
               <img
                 style={{ transform: 'rotate(180deg)' }}
                 src={leftArrowImg}
@@ -1085,18 +1059,35 @@ const Apartmany: React.FC = () => {
           )}
           style={{ background: 'rgba(0,0,0,0.99)' }}
           onClose={() => setShowGallery(false)}
-
-          // renderImageOverlay={() => (<ImageOverlayComponent >)}
-          // className="cool-class"
-
-          /* Use single or double click to zoom */
-          // singleClickToZoom
         />
       </Container>
     </Wrapper>
   )
 }
 
+const styleClose = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 20,
+  top: 20,
+  color: 'white',
+  fontSize: 30,
+  cursor: 'pointer',
+}
+
+const prevArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  left: 0,
+  top: '45%',
+}
+
+const nextArrowStyle = {
+  position: 'absolute',
+  zIndex: 99,
+  right: 0,
+  top: '45%',
+}
 const ArrowWrap = styled.div`
   width: 54px;
   height: 54px;

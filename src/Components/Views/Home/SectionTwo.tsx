@@ -132,9 +132,9 @@ const SectionTwo: React.FC = () => {
                       >
                         {desc}
                       </VileSlideDesc>
-                      <IconWrapper size={`38px`} color={`white`}>
+                      {/* <IconWrapper size={`38px`} color={`white`}>
                         <BsChevronRight />
-                      </IconWrapper>
+                      </IconWrapper> */}
                     </FlexRow>
                   </div>
                 </SlideContent>
