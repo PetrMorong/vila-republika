@@ -12,7 +12,7 @@ import { buildImageUrl } from 'cloudinary-build-url'
 
 const IntimniAtmosfera: React.FC = () => {
   const img = buildImageUrl(
-    'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
+    'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
     {}
   )
 

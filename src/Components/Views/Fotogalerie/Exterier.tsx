@@ -31,37 +31,63 @@ const Exterier: React.FC = () => {
   const data = [
     {
       picture: buildImageUrl(
-        'v1680936650/vilaRepublikaFoto/DSC02010-HDR_ztnz7h.jpg',
+        'v1689504133/vilaRepublikaFoto/IMG_1319-HDR-min_esxlxf.jpg',
         imageConfig
       ),
     },
     {
       picture: buildImageUrl(
-        'v1680936646/vilaRepublikaFoto/DSC01992-HDR_aknq1t.jpg',
+        'v1689504132/vilaRepublikaFoto/IMG_1449-HDR-min_ppfdjp.jpg',
+        imageConfig
+      ),
+    },
+
+    {
+      picture: buildImageUrl(
+        'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
+        imageConfig
+      ),
+    },
+
+    {
+      picture: buildImageUrl(
+        'vilaRepublikaFoto/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
         imageConfig
       ),
     },
     {
       picture: buildImageUrl(
-        'v1684391707/vilaRepublikaFoto/IMG_20230513_175649_vnf02j.jpg',
+        'v1689504130/vilaRepublikaFoto/IMG_1287-HDR-min_fjfc2b.jpg',
         imageConfig
       ),
     },
     {
       picture: buildImageUrl(
-        'v1687499420/vilaRepublikaFoto/353110191_5813387308763230_7526979099478048553_n_wvpbf6.jpg',
+        'v1689504125/vilaRepublikaFoto/IMG_1280-HDR-min_zdbls5.jpg',
         imageConfig
       ),
     },
     {
       picture: buildImageUrl(
-        'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
+        'v1689504131/vilaRepublikaFoto/IMG_1349-HDR-min_d00shg.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1689504131/vilaRepublikaFoto/IMG_1389-HDR-min_iycbno.jpg',
         imageConfig
       ),
     },
     {
       picture: buildImageUrl(
         'v1675799329/vilaRepublikaFoto/DSC08530-HDR_bw0gqc.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
         imageConfig
       ),
     },

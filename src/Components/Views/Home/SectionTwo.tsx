@@ -21,7 +21,7 @@ import { SlideContent, SlideWrapper } from '../../../Styled/Swiper.styles'
 
 const SectionTwo: React.FC = () => {
   const img1 = buildImageUrl(
-    'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
+    'v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg',
     {}
   )
 
