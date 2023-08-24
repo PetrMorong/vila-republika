@@ -92,7 +92,7 @@ const ProVerejnost: React.FC = () => {
                       smtextAlign={`center`}
                       smMargibBottom={``}
                     >
-                      od 1490 Kč za 90min
+                      od 1490 Kč na 90min
                     </IconTitle>
                   </div>
                 </RowWrap>
