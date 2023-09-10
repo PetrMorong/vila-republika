@@ -721,7 +721,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 - 8 osob</SmallBoldText>
+                      <SmallBoldText>4 - 6 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -946,7 +946,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>10 - 12 osob</SmallBoldText>
+                      <SmallBoldText>9 - 11 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
