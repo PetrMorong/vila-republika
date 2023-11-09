@@ -16,6 +16,7 @@ import leftArrowImg from '../../../images/LeftArrow.svg'
 
 const imageConfig = {
   transformations: {
+    format: 'png',
     resize: {
       type: 'scale',
       width: 393 * 3,

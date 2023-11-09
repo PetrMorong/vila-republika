@@ -28,10 +28,16 @@ const Apartmany: React.FC = () => {
   const [showGallery, setShowGallery] = React.useState(false)
   const [selectedGallery, setSelectedGallery] = React.useState(0)
 
+  const imageConfig = {
+    transformations: {
+      format: 'png',
+    },
+  }
+
   // AP 1
   const ap1Image1 = buildImageUrl(
     'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
-    {}
+    imageConfig
   )
 
   const ap1Image2 = buildImageUrl(
