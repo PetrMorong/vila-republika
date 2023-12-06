@@ -38,7 +38,7 @@ const Wrap = styled.div`
   width: 1444px;
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 1400px) {
