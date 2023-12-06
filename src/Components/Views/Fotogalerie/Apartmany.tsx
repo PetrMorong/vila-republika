@@ -13,6 +13,7 @@ import { buildImageUrl } from 'cloudinary-build-url'
 import styled from 'styled-components'
 import Lightbox from 'react-spring-lightbox'
 import leftArrowImg from '../../../images/LeftArrow.svg'
+import { stringOrNumber } from '@cloudinary/url-gen/types/types'
 
 const imageConfig = {
   transformations: {
@@ -29,6 +30,7 @@ const imageConfig = {
 const Apartmany: React.FC = () => {
   const [showGallery, setShowGallery] = React.useState(false)
   const [carouselIndex, setCarouseIndex] = React.useState(0)
+
 
   const data1 = [
     // byt 1
@@ -80,6 +82,33 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1677920408/vilaRepublikaFoto/byt 2/DSC09483-HDR_oh3wvl.jpg',
+        imageConfig
+      ),
+    },
+  ]
+
+  const data3 = [
+    {
+      picture: buildImageUrl(
+        'v1701863800/vilaRepublikaFoto/byt3/DSC_0222_rhgnsn.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1701863796/vilaRepublikaFoto/byt3/DSC_0257_ley59f.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1701863792/vilaRepublikaFoto/byt3/DSC_0303_as0fin.jpg',
+        imageConfig
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1701863797/vilaRepublikaFoto/byt3/DSC_0329_utoicn.jpg',
         imageConfig
       ),
     },
@@ -205,7 +234,7 @@ const Apartmany: React.FC = () => {
     },
   ]
 
-  const images = [...data1, ...data2, ...data4, ...data5, ...data6, ...data7]
+  const images = [...data1, ...data2, ...data3, ...data4, ...data5, ...data6, ...data7]
 
   const lightboxImages: any = images.map((image) => {
     return { src: image.picture }
@@ -227,7 +256,7 @@ const Apartmany: React.FC = () => {
     }
   }
 
-  const renderRow = (images: typeof data1) =>
+  const renderRow = (images: typeof data1, rowIndex: number) =>
     images.map((item, index) => {
       return (
         <FlexRow
@@ -242,7 +271,10 @@ const Apartmany: React.FC = () => {
           center
           key={index}
         >
-          <SlideWrapper onClick={() => setShowGallery(true)}>
+          <SlideWrapper onClick={() => {
+            setShowGallery(true)
+            setCarouseIndex((rowIndex * 4) + index)
+          }}>
             <ImgWrapper>
               <StyledImg
                 object={`cover`}
@@ -279,32 +311,37 @@ const Apartmany: React.FC = () => {
 
         <TitleAps>Slunečný</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data1)}
+          {renderRow(data1, 0)}
         </GridRow>
 
         <TitleAps>Lázeňský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data2)}
+          {renderRow(data2, 1)}
+        </GridRow>
+
+        <TitleAps>Jesenický</TitleAps>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
+          {renderRow(data3, 2)}
         </GridRow>
 
         <TitleAps>Pradědův</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data4)}
+          {renderRow(data4, 3)}
         </GridRow>
 
         <TitleAps>Losinský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data5)}
+          {renderRow(data5, 4)}
         </GridRow>
 
         <TitleAps>Prvorepublikový</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data6)}
+          {renderRow(data6, 5)}
         </GridRow>
 
         <TitleAps>Prezidentský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data7)}
+          {renderRow(data7, 6)}
         </GridRow>
       </Container>
 

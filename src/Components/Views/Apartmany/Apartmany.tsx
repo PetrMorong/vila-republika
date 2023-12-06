@@ -120,34 +120,58 @@ const Apartmany: React.FC = () => {
   // AP 3
 
   const ap3Image1 = buildImageUrl(
-    'v1695109249/vilaRepublikaFoto/byt3/20230719211557_FQyBK8_wjoc3a.png',
+    'v1701863800/vilaRepublikaFoto/byt3/DSC_0222_rhgnsn.jpg',
     {}
   )
 
   const ap3Image2 = buildImageUrl(
-    'v1695109250/vilaRepublikaFoto/byt3/20230719211557_o67YB8_mmyeqc.png',
+    'v1701863796/vilaRepublikaFoto/byt3/DSC_0257_ley59f.jpg',
     {}
   )
 
   const ap3Image3 = buildImageUrl(
-    'v1695109252/vilaRepublikaFoto/byt3/20230719211557_iKksSU_dn3jas.png',
+    'v1701863792/vilaRepublikaFoto/byt3/DSC_0303_as0fin.jpg',
     {}
   )
 
   const ap3Image4 = buildImageUrl(
-    'v1695109249/vilaRepublikaFoto/byt3/20230719211557_9Q5Efo_zxnmyl.png',
+    'v1701863795/vilaRepublikaFoto/byt3/DSC_0302_pfd1ya.jpg',
     {}
   )
 
   const ap3Image5 = buildImageUrl(
-    'v1695109249/vilaRepublikaFoto/byt3/20230918141320_JyObI7_ussj6w.jpg',
+    'v1701863794/vilaRepublikaFoto/byt3/DSC_0229_pou4l1.jpg',
     {}
   )
 
   const ap3Image6 = buildImageUrl(
+    'v1701863793/vilaRepublikaFoto/byt3/DSC_0231_ihulzb.jpg',
+    {}
+  )
+
+  const ap3Image7 = buildImageUrl(
+    'v1701863795/vilaRepublikaFoto/byt3/DSC_0369_mdikei.jpg',
+    {}
+  )
+
+  const ap3Image8 = buildImageUrl(
+    'v1701863797/vilaRepublikaFoto/byt3/DSC_0329_utoicn.jpg',
+    {}
+  )
+
+  const ap3Image9 = buildImageUrl(
+    'v1695109249/vilaRepublikaFoto/byt3/20230918141320_JyObI7_ussj6w.jpg',
+    {}
+  )
+
+  const ap3Image10 = buildImageUrl(
     'v1695109249/vilaRepublikaFoto/byt3/20230918141320_Ginzoh_opnivd.jpg',
     {}
   )
+
+  
+
+
 
   // AP 4
   const ap4Image1 = buildImageUrl(
@@ -324,7 +348,7 @@ const Apartmany: React.FC = () => {
       ap2Image10,
     ],
     // ap 3
-    [ap3Image1, ap3Image2, ap3Image3, ap3Image4, ap3Image5],
+    [ap3Image1, ap3Image2, ap3Image3, ap3Image4, ap3Image5, ap3Image6, ap3Image7, ap3Image8, ap3Image9, ap3Image10],
 
     // ap 4
     [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
@@ -413,7 +437,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt="img" />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 - 8 osob</SmallBoldText>
+                      <SmallBoldText>6 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
