@@ -12,6 +12,7 @@ const navLinks = [
   // { id: 3, text: "Okolí", path: "/okoli" },
   // { id: 4, text: "Bistro", path: "/" },
   { id: 5, text: 'Fotogalerie', path: '/fotogalerie' },
+  { id: 5, text: 'Recenze', path: '/recenze' },
   { id: 6, text: 'Dárkové Poukazy', path: '/darkove-poukazy' },
   { id: 7, text: 'Rezervace', path: '/rezervace' },
 ]
@@ -20,7 +21,7 @@ const Layout: FunctionComponent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState)
+    setIsOpen(prevState => !prevState)
   }
 
   return (

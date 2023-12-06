@@ -9,13 +9,13 @@ const Fotogalerie: React.FC = () => {
     <>
       <Header />
       {/* <Tab /> */}
-      <div id="Apartmany">
+      <div id='Apartmany'>
         <Apartmany />
       </div>
-      <div id="Exterier">
+      <div id='Exterier'>
         <Exterier />
       </div>
-      <div id="Wellness">
+      <div id='Wellness'>
         <Wellness />
       </div>
     </>

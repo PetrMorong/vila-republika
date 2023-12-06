@@ -5,11 +5,13 @@ import HistorieSection from './HistorieSection'
 import IntimniAtmosfera from './IntimniAtmosfera'
 import JesenikySection from './JesenikySection'
 import SectionTwo from './SectionTwo'
+import Reviews from './Reviews'
 
 const HomeIndex: React.FC = () => {
   return (
     <>
       <Header />
+      <Reviews />
       <SectionTwo />
       <IntimniAtmosfera />
       <HistorieSection />
