@@ -17,7 +17,7 @@ export const Bg = styled.div`
 const ProPrijemne: React.FC = () => {
   const img1 = buildImageUrl(
     'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
-    {}
+    {},
   )
   return (
     <Wrapper
@@ -26,15 +26,15 @@ const ProPrijemne: React.FC = () => {
       padding={`0px 0px 0px`}
     >
       <Bg style={{ backgroundImage: `url(${img1})` }}>
-        <div className="pro_bg_overlay">
+        <div className='pro_bg_overlay'>
           <FlexRow
-            direction="column"
+            direction='column'
             gap={`12px`}
             padding={`12px 0px`}
             itemCenter
             center
             maxWidth={`860px`}
-            margin="auto"
+            margin='auto'
           >
             <IconTitle
               color={`#FFFFFF`}
