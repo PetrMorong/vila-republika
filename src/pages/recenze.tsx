@@ -45,7 +45,7 @@ const RecenzePage = () => {
             scrolling='no'
             width='100%'
             height={'100%'}
-            style={{ border: 'none', height: 1500, overflow: 'scroll' }}
+            style={{ border: 'none', height: 1700, overflow: 'scroll' }}
           ></iframe>
         </Wrap>
       </Layout>
@@ -55,11 +55,11 @@ const RecenzePage = () => {
 
 const Wrap = styled.div`
   margin-top: 80px;
-  height: 500px;
-  height: 1400px;
+  height: 1150px;
 
   @media screen and (max-width: 640px) {
     margin-top: 30px;
+    height: 1700px;
   }
 `
 
