@@ -37,298 +37,304 @@ const Apartmany: React.FC = () => {
   // AP 1
   const ap1Image1 = buildImageUrl(
     'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
-    imageConfig
+    imageConfig,
   )
 
   const ap1Image2 = buildImageUrl(
     'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
-    {}
+    {},
   )
 
   const ap1Image3 = buildImageUrl(
     'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
-    {}
+    {},
   )
 
   const ap1Image4 = buildImageUrl(
     'v1673797465/vilaRepublikaFoto/byt1/DSC07421-HDR_cqlm0x.jpg',
-    {}
+    {},
   )
 
   const ap1Image5 = buildImageUrl(
     'v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg',
-    {}
+    {},
   )
 
   const ap1Image6 = buildImageUrl(
     'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
-    {}
+    {},
   )
 
   // AP 2
 
   const ap2Image1 = buildImageUrl(
     'v1677920414/vilaRepublikaFoto/byt 2/DSC09444-HDR_euewl0.jpg',
-    {}
+    {},
   )
 
   const ap2Image2 = buildImageUrl(
     'v1677920418/vilaRepublikaFoto/byt 2/DSC09450-HDR_kgjnji.jpg',
-    {}
+    {},
   )
 
   const ap2Image3 = buildImageUrl(
     'v1677920541/vilaRepublikaFoto/byt 2/DSC09474-HDR_oysnn4.jpg',
-    {}
+    {},
   )
 
   const ap2Image4 = buildImageUrl(
     'v1677920412/vilaRepublikaFoto/byt 2/DSC09514-HDR_ewlvn7.jpg',
-    {}
+    {},
   )
 
   const ap2Image5 = buildImageUrl(
     'v1677920409/vilaRepublikaFoto/byt 2/DSC09477-HDR_w4300b.jpg',
-    {}
+    {},
   )
 
   const ap2Image6 = buildImageUrl(
     'v1677920409/vilaRepublikaFoto/byt 2/DSC09465-HDR_h7jpen.jpg',
-    {}
+    {},
   )
 
   const ap2Image7 = buildImageUrl(
     'v1677920408/vilaRepublikaFoto/byt 2/DSC09483-HDR_oh3wvl.jpg',
-    {}
+    {},
   )
 
   const ap2Image8 = buildImageUrl(
     'v1677920409/vilaRepublikaFoto/byt 2/DSC09471-HDR_ixxlbw.jpg',
-    {}
+    {},
   )
 
   const ap2Image9 = buildImageUrl(
     'v1677920408/vilaRepublikaFoto/byt 2/DSC09486-HDR_jrxsjc.jpg',
-    {}
+    {},
   )
 
   const ap2Image10 = buildImageUrl(
     'v1677920407/vilaRepublikaFoto/byt 2/DSC09648_tbbuhy.jpg',
-    {}
+    {},
   )
 
   // AP 3
 
   const ap3Image1 = buildImageUrl(
     'v1701863800/vilaRepublikaFoto/byt3/DSC_0222_rhgnsn.jpg',
-    {}
+    {},
   )
 
   const ap3Image2 = buildImageUrl(
     'v1701863796/vilaRepublikaFoto/byt3/DSC_0257_ley59f.jpg',
-    {}
+    {},
   )
 
   const ap3Image3 = buildImageUrl(
     'v1701863792/vilaRepublikaFoto/byt3/DSC_0303_as0fin.jpg',
-    {}
+    {},
   )
 
   const ap3Image4 = buildImageUrl(
     'v1701863795/vilaRepublikaFoto/byt3/DSC_0302_pfd1ya.jpg',
-    {}
+    {},
   )
 
   const ap3Image5 = buildImageUrl(
     'v1701863794/vilaRepublikaFoto/byt3/DSC_0229_pou4l1.jpg',
-    {}
+    {},
   )
 
   const ap3Image6 = buildImageUrl(
     'v1701863793/vilaRepublikaFoto/byt3/DSC_0231_ihulzb.jpg',
-    {}
+    {},
   )
 
   const ap3Image7 = buildImageUrl(
     'v1701863795/vilaRepublikaFoto/byt3/DSC_0369_mdikei.jpg',
-    {}
+    {},
   )
 
   const ap3Image8 = buildImageUrl(
     'v1701863797/vilaRepublikaFoto/byt3/DSC_0329_utoicn.jpg',
-    {}
+    {},
   )
 
   const ap3Image9 = buildImageUrl(
-    'v1695109249/vilaRepublikaFoto/byt3/20230918141320_JyObI7_ussj6w.jpg',
-    {}
+    'v1704374807/vilaRepublikaFoto/byt3/403411311_613516337502930_7923135537301219325_n_lzwlzp.jpg',
+    {},
   )
 
   const ap3Image10 = buildImageUrl(
-    'v1695109249/vilaRepublikaFoto/byt3/20230918141320_Ginzoh_opnivd.jpg',
-    {}
+    'v1704374803/vilaRepublikaFoto/byt3/403401548_896082575214588_71484505079232548_n_1_xvov9e.jpg',
+    {},
   )
 
-  
+  const ap3Image11 = buildImageUrl(
+    'v1704374810/vilaRepublikaFoto/byt3/403421974_1089472378716835_2632770112828463423_n_1_syvbli.jpg',
+    {},
+  )
 
-
+  const ap3Image12 = buildImageUrl(
+    'v1704374800/vilaRepublikaFoto/byt3/403387737_1731492340595181_3969013450975816228_n_1_gurtyv.jpg',
+    {},
+  )
 
   // AP 4
   const ap4Image1 = buildImageUrl(
     'v1675802254/vilaRepublikaFoto/byt4/DSC08238-HDR_mzdbyr.jpg',
-    {}
+    {},
   )
 
   const ap4Image2 = buildImageUrl(
     'v1675802258/vilaRepublikaFoto/byt4/DSC08274-HDR_hmhsy0.jpg',
-    {}
+    {},
   )
 
   const ap4Image3 = buildImageUrl(
     'v1673797428/vilaRepublikaFoto/byt4/DSC07557-HDR_qp18zg.jpg',
-    {}
+    {},
   )
 
   const ap4Image4 = buildImageUrl(
     'v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg',
-    {}
+    {},
   )
 
   const ap4Image5 = buildImageUrl(
     'v1675802257/vilaRepublikaFoto/byt4/DSC08289-HDR_e9kr2k.jpg',
-    {}
+    {},
   )
 
   const ap4Image6 = buildImageUrl(
     'v1675802258/vilaRepublikaFoto/byt4/DSC08259-HDR_asblp3.jpg',
-    {}
+    {},
   )
 
   // AP 5
 
   const ap5Image1 = buildImageUrl(
     'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
-    {}
+    {},
   )
 
   const ap5Image2 = buildImageUrl(
     'v1675799777/vilaRepublikaFoto/byt5/DSC08348-HDR_wpdt4v.jpg',
-    {}
+    {},
   )
 
   const ap5Image3 = buildImageUrl(
     'v1675799774/vilaRepublikaFoto/byt5/DSC08390-HDR_fkz4zz.jpg',
-    {}
+    {},
   )
 
   const ap5Image4 = buildImageUrl(
     'v1675799776/vilaRepublikaFoto/byt5/DSC08396-HDR_d6dkus.jpg',
 
-    {}
+    {},
   )
 
   const ap5Image5 = buildImageUrl(
     'v1675799776/vilaRepublikaFoto/byt5/DSC08363-HDR_yqdcwr.jpg',
-    {}
+    {},
   )
 
   const ap5Image6 = buildImageUrl(
     'v1675799776/vilaRepublikaFoto/byt5/DSC08354-HDR_liikg7.jpg',
-    {}
+    {},
   )
 
   const ap5Image7 = buildImageUrl(
     'v1675799779/vilaRepublikaFoto/byt5/DSC08405-HDR_xba91c.jpg',
-    {}
+    {},
   )
 
   // AP 6
 
   const ap6Image1 = buildImageUrl(
     'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
-    {}
+    {},
   )
 
   const ap6Image2 = buildImageUrl(
     'v1675801411/vilaRepublikaFoto/byt6/DSC08292-HDR-2_epxgyj.jpg',
-    {}
+    {},
   )
 
   const ap6Image3 = buildImageUrl(
     'v1675801405/vilaRepublikaFoto/byt6/DSC08316-HDR_jgxs2h.jpg',
-    {}
+    {},
   )
 
   const ap6Image4 = buildImageUrl(
     'v1675801405/vilaRepublikaFoto/byt6/DSC08310-HDR_dccwul.jpg',
-    {}
+    {},
   )
 
   const ap6Image5 = buildImageUrl(
     'v1675801404/vilaRepublikaFoto/byt6/DSC08301-HDR_mfiyhx.jpg',
-    {}
+    {},
   )
 
   const ap6Image6 = buildImageUrl(
     'v1675801404/vilaRepublikaFoto/byt6/DSC08307-HDR_wuz4e8.jpg',
-    {}
+    {},
   )
 
   // AP 7
 
   const ap7Image1 = buildImageUrl(
     'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
-    {}
+    {},
   )
 
   const ap7Image2 = buildImageUrl(
     'v1675799512/vilaRepublikaFoto/byt7/DSC08460-HDR_cinhnp.jpg',
-    {}
+    {},
   )
 
   const ap7Image3 = buildImageUrl(
     'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
-    {}
+    {},
   )
 
   const ap7Image4 = buildImageUrl(
     'v1677920193/vilaRepublikaFoto/byt7/new/DSC09578-HDR_rnpozp.jpg',
-    {}
+    {},
   )
 
   const ap7Image5 = buildImageUrl(
     'v1677920193/vilaRepublikaFoto/byt7/new/DSC09581-HDR_cn91gs.jpg',
-    {}
+    {},
   )
 
   const ap7Image6 = buildImageUrl(
     'v1677920198/vilaRepublikaFoto/byt7/new/DSC09575-HDR_vfhyfx.jpg',
-    {}
+    {},
   )
 
   const ap7Image6_1 = buildImageUrl(
     'v1677920191/vilaRepublikaFoto/byt7/new/DSC09584-HDR_qrrqim.jpg',
-    {}
+    {},
   )
 
   const ap7Image7 = buildImageUrl(
     'v1677920189/vilaRepublikaFoto/byt7/new/DSC09634-HDR_xp99kv.jpg',
-    {}
+    {},
   )
 
   const ap7Image8 = buildImageUrl(
     'v1677920192/vilaRepublikaFoto/byt7/new/DSC09596-HDR_xm60we.jpg',
-    {}
+    {},
   )
 
   const ap7Image9 = buildImageUrl(
     'v1677920192/vilaRepublikaFoto/byt7/new/DSC09587-HDR_afux7f.jpg',
-    {}
+    {},
   )
 
   const ap7Image10 = buildImageUrl(
     'v1677920191/vilaRepublikaFoto/byt7/new/DSC09625-HDR_rerqnr.jpg',
-    {}
+    {},
   )
 
   const apImages = [
@@ -348,7 +354,20 @@ const Apartmany: React.FC = () => {
       ap2Image10,
     ],
     // ap 3
-    [ap3Image1, ap3Image2, ap3Image3, ap3Image4, ap3Image5, ap3Image6, ap3Image7, ap3Image8, ap3Image9, ap3Image10],
+    [
+      ap3Image1,
+      ap3Image2,
+      ap3Image3,
+      ap3Image4,
+      ap3Image5,
+      ap3Image6,
+      ap3Image7,
+      ap3Image8,
+      ap3Image9,
+      ap3Image10,
+      ap3Image11,
+      ap3Image12,
+    ],
 
     // ap 4
     [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
@@ -398,7 +417,7 @@ const Apartmany: React.FC = () => {
     }
   }
 
-  const lightboxImages: any = images.map((image) => {
+  const lightboxImages: any = images.map(image => {
     return { src: image }
   })
 
@@ -411,7 +430,7 @@ const Apartmany: React.FC = () => {
       <Container>
         {/* AP 3 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
-          <FlexRow itemCenter between gap={`32px`} className="orderReverse">
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
                 <ApNameText>Jesenický</ApNameText>
@@ -434,7 +453,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>6 osob</SmallBoldText>
@@ -449,7 +468,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2900 kč</SmallBoldText>
@@ -481,7 +500,7 @@ const Apartmany: React.FC = () => {
                 má vlastní zahradu s venkovním wellness.
               </Desc>
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -497,7 +516,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt='img' />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
@@ -512,7 +531,7 @@ const Apartmany: React.FC = () => {
                       center
                       bgColor={`#FFFFFF`}
                     >
-                      <img src={cameraIcon} alt="" />
+                      <img src={cameraIcon} alt='' />
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
@@ -533,7 +552,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap1Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap1Image1} alt='img' />
                 <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
@@ -545,7 +564,7 @@ const Apartmany: React.FC = () => {
                     center
                     bgColor={`#FFFFFF`}
                   >
-                    <img src={cameraIcon} alt="" />
+                    <img src={cameraIcon} alt='' />
                     <FotogalerieText>Fotogalerie</FotogalerieText>
                   </FlexRow>
                 </ButtonWrapperFoto>
@@ -583,7 +602,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>6 osob</SmallBoldText>
@@ -598,7 +617,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2900 Kč</SmallBoldText>
@@ -627,7 +646,7 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -639,7 +658,7 @@ const Apartmany: React.FC = () => {
 
         {/* AP 2 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
-          <FlexRow itemCenter between gap={`32px`} className="orderReverse">
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
                 <ApNameText>Lázeňský</ApNameText>
@@ -662,7 +681,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>4 - 6 osob</SmallBoldText>
@@ -677,7 +696,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2500 kč</SmallBoldText>
@@ -705,7 +724,7 @@ const Apartmany: React.FC = () => {
                 chtějí naplno užít dovolenou v lázeňském duchu.
               </Desc>
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -721,7 +740,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap2Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap2Image1} alt='img' />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
@@ -736,7 +755,7 @@ const Apartmany: React.FC = () => {
                       center
                       bgColor={`#FFFFFF`}
                     >
-                      <img src={cameraIcon} alt="" />
+                      <img src={cameraIcon} alt='' />
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
@@ -757,7 +776,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap4Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap4Image1} alt='img' />
                 <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
@@ -769,7 +788,7 @@ const Apartmany: React.FC = () => {
                     center
                     bgColor={`#FFFFFF`}
                   >
-                    <img src={cameraIcon} alt="" />
+                    <img src={cameraIcon} alt='' />
                     <FotogalerieText>Fotogalerie</FotogalerieText>
                   </FlexRow>
                 </ButtonWrapperFoto>
@@ -807,7 +826,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>2 - 4 osoby</SmallBoldText>
@@ -822,7 +841,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2500 Kč</SmallBoldText>
@@ -850,7 +869,7 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -862,7 +881,7 @@ const Apartmany: React.FC = () => {
 
         {/* AP 5 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
-          <FlexRow itemCenter between gap={`32px`} className="orderReverse">
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
                 <ApNameText>Losinský</ApNameText>
@@ -885,7 +904,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>4 - 6 osob</SmallBoldText>
@@ -900,7 +919,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2900 kč</SmallBoldText>
@@ -928,7 +947,7 @@ const Apartmany: React.FC = () => {
                 lázeňství si v tomto apartmánu podávají ruce.
               </Desc>
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -944,7 +963,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap5Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap5Image1} alt='img' />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
@@ -959,7 +978,7 @@ const Apartmany: React.FC = () => {
                       center
                       bgColor={`#FFFFFF`}
                     >
-                      <img src={cameraIcon} alt="" />
+                      <img src={cameraIcon} alt='' />
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>
@@ -980,7 +999,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt='img' />
                 <ButtonWrapperFoto>
                   <FlexRow
                     gap={`12px`}
@@ -992,7 +1011,7 @@ const Apartmany: React.FC = () => {
                     center
                     bgColor={`#FFFFFF`}
                   >
-                    <img src={cameraIcon} alt="" />
+                    <img src={cameraIcon} alt='' />
                     <FotogalerieText>Fotogalerie</FotogalerieText>
                   </FlexRow>
                 </ButtonWrapperFoto>
@@ -1030,7 +1049,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>6 osob</SmallBoldText>
@@ -1045,7 +1064,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 2900 Kč</SmallBoldText>
@@ -1075,7 +1094,7 @@ const Apartmany: React.FC = () => {
               </Desc>
 
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -1087,7 +1106,7 @@ const Apartmany: React.FC = () => {
 
         {/* AP 7 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
-          <FlexRow itemCenter between gap={`32px`} className="orderReverse">
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
                 <ApNameText>Prezidentský</ApNameText>
@@ -1110,7 +1129,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt="img" />
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>9 - 11 osob</SmallBoldText>
@@ -1125,7 +1144,7 @@ const Apartmany: React.FC = () => {
                     itemCenter
                   >
                     <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt="img" />
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
                       <SmallBoldText>od 4400 kč</SmallBoldText>
@@ -1155,7 +1174,7 @@ const Apartmany: React.FC = () => {
                 přáteli zapomenete na starosti všedních dní.
               </Desc>
               <ButtonWrapper>
-                <Link to="/rezervace">
+                <Link to='/rezervace'>
                   <Button margin={`35px 0px 10px 0px`}>
                     Vytvořit rezervaci
                   </Button>
@@ -1171,7 +1190,7 @@ const Apartmany: React.FC = () => {
               }}
             >
               <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt="img" />
+                <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt='img' />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
@@ -1186,7 +1205,7 @@ const Apartmany: React.FC = () => {
                       center
                       bgColor={`#FFFFFF`}
                     >
-                      <img src={cameraIcon} alt="" />
+                      <img src={cameraIcon} alt='' />
 
                       <FotogalerieText>Fotogalerie</FotogalerieText>
                     </FlexRow>

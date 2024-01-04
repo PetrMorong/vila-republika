@@ -107,7 +107,7 @@ const Apartmany: React.FC = () => {
     },
     {
       picture: buildImageUrl(
-        'v1701863797/vilaRepublikaFoto/byt3/DSC_0329_utoicn.jpg',
+        'v1704374816/vilaRepublikaFoto/byt3/406657417_839465621251347_6386413000260341348_n_1_puttru.jpg',
         imageConfig,
       ),
     },
