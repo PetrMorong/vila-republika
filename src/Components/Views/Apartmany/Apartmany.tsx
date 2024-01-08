@@ -486,18 +486,18 @@ const Apartmany: React.FC = () => {
               >
                 Užijte si saunování na čerstvém vzduchu. Největším pokladem
                 tohoto apartmánu je privátní venkovní wellness. Přístup budete
-                mít na zahradu, kde se nachází srub s finskou saunou a
-                ochlazovací sud s ledovou vodou. Aktivní dovolenou tak můžete
-                propojit s ozdravnou relaxací, v jakoukoliv denní i noční dobu.
+                mít na zahradu, kde se nachází srub s finskou saunou a
+                ochlazovací sud s ledovou vodou. Aktivní dovolenou tak můžete
+                propojit s ozdravnou relaxací, v jakoukoliv denní i noční dobu.
+                V rámci rezervace pokoje máte k dispozici 3 hodiny ve wellness.
+                Další hodiny je možné dokoupit.
                 <br />
                 <br />
-                Jesenický apartmán harmonicky propojuje moderní luxus
-                s historickým šarmem. Interiéru dominují prvorepublikové prvky,
+                Jesenický apartmán harmonicky propojuje moderní luxus s
+                historickým šarmem. Interiéru dominují prvorepublikové prvky,
                 oblé tvary a secesní zelená. Mimořádný vizuální efekt tvoří
                 krásné klenbové stropy. Pokud hledáte svůj kousek ráje,
-                Jesenický apartmán splní vaše představy. Připravujeme pro vás
-                nový Jesenický apartmán, který bude spuštěn od 15.10. Apartmán
-                má vlastní zahradu s venkovním wellness.
+                Jesenický apartmán splní vaše představy.
               </Desc>
               <ButtonWrapper>
                 <Link to='/rezervace'>
