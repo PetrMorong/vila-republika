@@ -21,7 +21,7 @@ import styled from 'styled-components'
 const ProVerejnost: React.FC = () => {
   const img = buildImageUrl(
     'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
-    {}
+    {},
   )
   return (
     <Wrapper
@@ -39,11 +39,11 @@ const ProVerejnost: React.FC = () => {
           smMb={``}
           smFontSize={``}
         >
-          Pro veřejnost
+          Cena
         </SectionTitle>
 
         <GridRow sm={1} lg={1} cols={2} gap={`32px`} between>
-          <FlexRow itemCenter className="orderReverse">
+          <FlexRow itemCenter className='orderReverse'>
             <div>
               <div
                 style={{
@@ -52,27 +52,6 @@ const ProVerejnost: React.FC = () => {
               >
                 <RowWrap>
                   <div>
-                    <IconTitle
-                      fontSize={`25px`}
-                      xlfontSize={`18px`}
-                      mdFontSize={`18px`}
-                      mdLineheight={`20px`}
-                      textAlign={`left`}
-                      smFontSize={`18px`}
-                      smLineheight={`26px`}
-                      fontWeight={`600`}
-                      xlfontWeight={`600`}
-                      smFontWeight={`600`}
-                      mdfontWeight={`600`}
-                      color={`#262B3B`}
-                      mb={'12px'}
-                      mdMargibBottom={`12px`}
-                      mdtextAlign={`center`}
-                      smtextAlign={`center`}
-                      smMargibBottom={``}
-                    >
-                      CENA
-                    </IconTitle>
                     <IconTitle
                       fontSize={`28px`}
                       xlfontSize={`20px`}
@@ -124,8 +103,8 @@ const ProVerejnost: React.FC = () => {
               <div>
                 <ButtonWrapper>
                   <a
-                    href="https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c"
-                    target="_blank"
+                    href='https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c'
+                    target='_blank'
                   >
                     <Button margin={`50px 0px 0px 0px`}>
                       Vytvořit rezervaci
@@ -137,7 +116,7 @@ const ProVerejnost: React.FC = () => {
           </FlexRow>
 
           <ImgWrapper>
-            <StyledImg w={`100%`} src={img} alt="img" />
+            <StyledImg w={`100%`} src={img} alt='img' />
           </ImgWrapper>
         </GridRow>
       </Container>
