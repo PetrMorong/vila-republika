@@ -55,11 +55,11 @@ const RecenzePage = () => {
 
 const Wrap = styled.div`
   margin-top: 80px;
-  height: 1150px;
+  height: 1300px;
 
   @media screen and (max-width: 640px) {
     margin-top: 30px;
-    height: 1700px;
+    height: 1750px;
   }
 `
 
