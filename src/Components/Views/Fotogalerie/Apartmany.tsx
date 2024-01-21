@@ -89,25 +89,25 @@ const Apartmany: React.FC = () => {
   const data3 = [
     {
       picture: buildImageUrl(
-        'v1701863800/vilaRepublikaFoto/byt3/DSC_0222_rhgnsn.jpg',
+        'v1705755235/vilaRepublikaFoto/byt3/DSC08806-HDR_ped1k7.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1701863796/vilaRepublikaFoto/byt3/DSC_0257_ley59f.jpg',
+        'v1705755225/vilaRepublikaFoto/byt3/DSC08800-HDR_ek4sjr.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1701863792/vilaRepublikaFoto/byt3/DSC_0303_as0fin.jpg',
+        'v1705755250/vilaRepublikaFoto/byt3/DSC08867-HDR_mtgqmv.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1704374816/vilaRepublikaFoto/byt3/406657417_839465621251347_6386413000260341348_n_1_puttru.jpg',
+        'v1705755250/vilaRepublikaFoto/byt3/DSC08873-HDR_wjoscf.jpg',
         imageConfig,
       ),
     },

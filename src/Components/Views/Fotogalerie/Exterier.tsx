@@ -29,106 +29,137 @@ const Exterier: React.FC = () => {
   const [showGallery, setShowGallery] = React.useState(false)
   const [carouselIndex, setCarouseIndex] = React.useState(0)
   const data = [
+    // LETO
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504133/vilaRepublikaFoto/IMG_1319-HDR-min_esxlxf.jpg',
+    //     imageConfig
+    //   ),
+    // },
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504132/vilaRepublikaFoto/IMG_1449-HDR-min_ppfdjp.jpg',
+    //     imageConfig
+    //   ),
+    // },
+
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
+    //     imageConfig
+    //   ),
+    // },
+
+    // {
+    //   picture: buildImageUrl(
+    //     'vilaRepublikaFoto/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
+    //     imageConfig
+    //   ),
+    // },
+
+    // LETO rada 2
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504130/vilaRepublikaFoto/IMG_1287-HDR-min_fjfc2b.jpg',
+    //     imageConfig
+    //   ),
+    // },
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504125/vilaRepublikaFoto/IMG_1280-HDR-min_zdbls5.jpg',
+    //     imageConfig
+    //   ),
+    // },
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504131/vilaRepublikaFoto/IMG_1349-HDR-min_d00shg.jpg',
+    //     imageConfig
+    //   ),
+    // },
+    // {
+    //   picture: buildImageUrl(
+    //     'v1689504131/vilaRepublikaFoto/IMG_1389-HDR-min_iycbno.jpg',
+    //     imageConfig
+    //   ),
+    // },
+
+    // ZIMA
     {
       picture: buildImageUrl(
-        'v1689504133/vilaRepublikaFoto/IMG_1319-HDR-min_esxlxf.jpg',
-        imageConfig
+        'v1705756857/vilaRepublikaFoto/Exterier-zima/DSC08936-HDR_oiv0wx.jpg',
+        imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1689504132/vilaRepublikaFoto/IMG_1449-HDR-min_ppfdjp.jpg',
-        imageConfig
+        'v1705756856/vilaRepublikaFoto/Exterier-zima/DSC08954-HDR_pmiza1.jpg',
+        imageConfig,
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1705756858/vilaRepublikaFoto/Exterier-zima/DSC08957-HDR_rkkj7h.jpg',
+        imageConfig,
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1705756860/vilaRepublikaFoto/Exterier-zima/DSC08963-HDR_snyilr.jpg',
+        imageConfig,
       ),
     },
 
-    {
-      picture: buildImageUrl(
-        'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
-        imageConfig
-      ),
-    },
-
-    {
-      picture: buildImageUrl(
-        'vilaRepublikaFoto/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1689504130/vilaRepublikaFoto/IMG_1287-HDR-min_fjfc2b.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1689504125/vilaRepublikaFoto/IMG_1280-HDR-min_zdbls5.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1689504131/vilaRepublikaFoto/IMG_1349-HDR-min_d00shg.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1689504131/vilaRepublikaFoto/IMG_1389-HDR-min_iycbno.jpg',
-        imageConfig
-      ),
-    },
+    // CHODBA
     {
       picture: buildImageUrl(
         'v1675799329/vilaRepublikaFoto/DSC08530-HDR_bw0gqc.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
         'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
 
-    // sklep
+    // SKLEP
     {
       picture: buildImageUrl(
         'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
         'v1680942700/vilaRepublikaFoto/SpolecenskaMistnost/DSC01975-min_p2jh6q.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
         'v1680942534/vilaRepublikaFoto/SpolecenskaMistnost/DSC01918-HDR_ltphob.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1680942527/vilaRepublikaFoto/SpolecenskaMistnost/DSC01951-HDR_r9c6ro.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
         'v1680942701/vilaRepublikaFoto/SpolecenskaMistnost/DSC01974-min_gpkq1v.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
         'v1680942699/vilaRepublikaFoto/SpolecenskaMistnost/DSC01987-min_ljoda4.jpg',
-        imageConfig
+        imageConfig,
       ),
     },
 
@@ -148,7 +179,7 @@ const Exterier: React.FC = () => {
 
   const images = [...data]
 
-  const lightboxImages: any = images.map((image) => {
+  const lightboxImages: any = images.map(image => {
     return { src: image.picture }
   })
 
@@ -209,7 +240,7 @@ const Exterier: React.FC = () => {
                       h={`100%`}
                       w={`100%`}
                       src={item.picture}
-                      alt="img"
+                      alt='img'
                     />
                   </ImgWrapper>
                 </SlideWrapper>

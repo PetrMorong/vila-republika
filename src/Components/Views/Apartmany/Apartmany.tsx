@@ -120,62 +120,67 @@ const Apartmany: React.FC = () => {
   // AP 3
 
   const ap3Image1 = buildImageUrl(
-    'v1701863800/vilaRepublikaFoto/byt3/DSC_0222_rhgnsn.jpg',
+    'v1705755250/vilaRepublikaFoto/byt3/DSC08873-HDR_wjoscf.jpg',
     {},
   )
 
   const ap3Image2 = buildImageUrl(
-    'v1701863796/vilaRepublikaFoto/byt3/DSC_0257_ley59f.jpg',
+    'v1705755235/vilaRepublikaFoto/byt3/DSC08806-HDR_ped1k7.jpg',
     {},
   )
 
   const ap3Image3 = buildImageUrl(
-    'v1701863792/vilaRepublikaFoto/byt3/DSC_0303_as0fin.jpg',
+    'v1705755225/vilaRepublikaFoto/byt3/DSC08800-HDR_ek4sjr.jpg',
     {},
   )
 
   const ap3Image4 = buildImageUrl(
-    'v1701863795/vilaRepublikaFoto/byt3/DSC_0302_pfd1ya.jpg',
+    'v1705755221/vilaRepublikaFoto/byt3/DSC08803-HDR_onxduc.jpg',
     {},
   )
 
   const ap3Image5 = buildImageUrl(
-    'v1701863794/vilaRepublikaFoto/byt3/DSC_0229_pou4l1.jpg',
+    'v1705755227/vilaRepublikaFoto/byt3/DSC08821-HDR_ktd3i3.jpg',
     {},
   )
 
   const ap3Image6 = buildImageUrl(
-    'v1701863793/vilaRepublikaFoto/byt3/DSC_0231_ihulzb.jpg',
+    'v1705755227/vilaRepublikaFoto/byt3/DSC08818-HDR_ohc0w7.jpg',
     {},
   )
 
   const ap3Image7 = buildImageUrl(
-    'v1701863795/vilaRepublikaFoto/byt3/DSC_0369_mdikei.jpg',
+    'v1705755236/vilaRepublikaFoto/byt3/DSC08824-HDR_f2ph9x.jpg',
     {},
   )
 
   const ap3Image8 = buildImageUrl(
-    'v1701863797/vilaRepublikaFoto/byt3/DSC_0329_utoicn.jpg',
+    'v1705755236/vilaRepublikaFoto/byt3/DSC08815-HDR_s2mr6a.jpg',
     {},
   )
 
   const ap3Image9 = buildImageUrl(
-    'v1704374807/vilaRepublikaFoto/byt3/403411311_613516337502930_7923135537301219325_n_lzwlzp.jpg',
+    'v1705755251/vilaRepublikaFoto/byt3/DSC08930-HDR_nqhos4.jpg',
     {},
   )
 
   const ap3Image10 = buildImageUrl(
-    'v1704374803/vilaRepublikaFoto/byt3/403401548_896082575214588_71484505079232548_n_1_xvov9e.jpg',
+    'v1705755250/vilaRepublikaFoto/byt3/DSC08867-HDR_mtgqmv.jpg',
     {},
   )
 
   const ap3Image11 = buildImageUrl(
-    'v1704374810/vilaRepublikaFoto/byt3/403421974_1089472378716835_2632770112828463423_n_1_syvbli.jpg',
+    'v1705755238/vilaRepublikaFoto/byt3/DSC08876-HDR_jlke9w.jpg',
     {},
   )
 
   const ap3Image12 = buildImageUrl(
-    'v1704374800/vilaRepublikaFoto/byt3/403387737_1731492340595181_3969013450975816228_n_1_gurtyv.jpg',
+    'v1705755253/vilaRepublikaFoto/byt3/DSC08881-HDR_m6szij.jpg',
+    {},
+  )
+
+  const ap3Image13 = buildImageUrl(
+    'v1705755249/vilaRepublikaFoto/byt3/DSC08903-HDR_txxfzk.jpg',
     {},
   )
 
@@ -367,6 +372,7 @@ const Apartmany: React.FC = () => {
       ap3Image10,
       ap3Image11,
       ap3Image12,
+      ap3Image13,
     ],
 
     // ap 4
