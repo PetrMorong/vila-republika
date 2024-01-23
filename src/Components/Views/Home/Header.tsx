@@ -16,8 +16,8 @@ import { HeaderTitle, IconTitle } from '../../../Styled/Typography.styles'
 
 const Header: React.FC = () => {
   const headerBg = buildImageUrl(
-    'v1675799324/vilaRepublikaFoto/DSC08533-HDR_v7mlgu.jpg',
-    {}
+    'v1705756857/vilaRepublikaFoto/Exterier-zima/DSC08936-HDR_oiv0wx.jpg',
+    {},
   )
 
   return (
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
             return (
               <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
                 <ImgWrapper smWidth={`50px`} xlWidth={`36px`}>
-                  <StyledImg w={`100%`} src={icon} alt="img" />
+                  <StyledImg w={`100%`} src={icon} alt='img' />
                 </ImgWrapper>
                 <IconTitle
                   color={`#FFFFFF`}
