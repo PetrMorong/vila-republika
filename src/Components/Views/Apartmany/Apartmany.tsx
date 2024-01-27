@@ -462,7 +462,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 osob</SmallBoldText>
+                      <SmallBoldText>6 - 8 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -477,7 +477,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 2900 kč</SmallBoldText>
+                      <SmallBoldText>od 3500 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -492,11 +492,12 @@ const Apartmany: React.FC = () => {
               >
                 Užijte si saunování na čerstvém vzduchu. Největším pokladem
                 tohoto apartmánu je privátní venkovní wellness. Přístup budete
-                mít na zahradu, kde se nachází srub s finskou saunou a
-                ochlazovací sud s ledovou vodou. Aktivní dovolenou tak můžete
-                propojit s ozdravnou relaxací, v jakoukoliv denní i noční dobu.
-                V rámci rezervace pokoje máte k dispozici 3 hodiny ve wellness.
-                Další hodiny je možné dokoupit.
+                mít na zahradu, kde se nachází srub s finskou saunou, vyhřátý
+                koupací sud a ochlazovací sud s ledovou vodou. Aktivní dovolenou
+                tak můžete propojit s ozdravnou relaxací. Pokud máte pobyt na
+                dvě a více nocí, tak v rámci rezervace apartmánu máte k
+                dispozici 2,5 hodiny ve wellness, kde si můžete saunu a koupací
+                sud sami kdykoliv roztopit pomocí nachystaného dřeva.
                 <br />
                 <br />
                 Jesenický apartmán harmonicky propojuje moderní luxus s
@@ -913,7 +914,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>4 - 6 osob</SmallBoldText>
+                      <SmallBoldText>2 - 6 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1138,7 +1139,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>9 - 11 osob</SmallBoldText>
+                      <SmallBoldText>6 - 11 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
