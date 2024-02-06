@@ -83,7 +83,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             alingItems={`center`}
             alignSelf={`center`}
           >
-            <Link to="/rezervace">
+            <Link to='/rezervace'>
               <Button style={{ minWidth: 176 }} width={`176px`} height={`61px`}>
                 REZERVACE
               </Button>
@@ -116,7 +116,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               {navLinks.map((item, index) => {
                 return (
                   <Link key={index} to={item.path}>
-                    <FooterItem as="li">{item.text}</FooterItem>
+                    <FooterItem as='li'>{item.text}</FooterItem>
                   </Link>
                 )
               })}
@@ -133,7 +133,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               </ImgWrapper> */}
               <FlexRow direction={`column`}>
                 <Desc
-                  align="left"
+                  align='left'
                   mb={`12px`}
                   fontWeight={`700`}
                   color={`white`}
@@ -143,7 +143,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                   Helena Morongová
                 </Desc>
                 <FooterItem>
-                  <p style={{ marginBottom: 8 }}>+420 605 291 431</p>
+                  <p style={{ marginBottom: 8 }}>+420 725 304 817</p>
                   <p style={{ textDecoration: 'underline', marginBottom: 30 }}>
                     info@vila-republika.cz
                   </p>
@@ -166,8 +166,8 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 <br /> Velké Losiny, 788 15
               </p>
               <HoverWrap
-                href="https://goo.gl/maps/EhQvkAzabw2sFAm18"
-                target="_blank"
+                href='https://goo.gl/maps/EhQvkAzabw2sFAm18'
+                target='_blank'
                 style={{ textDecoration: 'underline', color: 'white' }}
               >
                 Zobrazit na mapě
@@ -195,12 +195,12 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
               mdMargin={`0px 0px 30px`}
             >
               <HoverWrap
-                href="https://www.facebook.com/VilaRepublika"
-                target="_blank"
+                href='https://www.facebook.com/VilaRepublika'
+                target='_blank'
               >
                 <FlexRow margin={`0px 0px 10px`} gap={`16px`} itemCenter>
                   <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
-                    <StyledImg w={`100%`} src={facebook} alt="img" />
+                    <StyledImg w={`100%`} src={facebook} alt='img' />
                   </ImgWrapper>
                   <FooterItem>
                     <p>
@@ -210,12 +210,12 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                 </FlexRow>
               </HoverWrap>
               <HoverWrap
-                href="https://www.instagram.com/vila_republika/"
-                target="_blank"
+                href='https://www.instagram.com/vila_republika/'
+                target='_blank'
               >
                 <FlexRow gap={`16px`} itemCenter>
                   <ImgWrapper smWidth={`40px`} xlWidth={`36px`}>
-                    <StyledImg w={`100%`} src={insta} alt="img" />
+                    <StyledImg w={`100%`} src={insta} alt='img' />
                   </ImgWrapper>
                   <FooterItem>
                     <p>
@@ -233,7 +233,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             justifyContent: 'center',
           }}
         >
-          <img src={footerlogo} alt="" />
+          <img src={footerlogo} alt='' />
         </FlexRow>
       </Container>
     </Wrapper>
