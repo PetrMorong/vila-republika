@@ -148,7 +148,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
                     info@vila-republika.cz
                   </p>
 
-                  <p style={{ marginBottom: 8 }}>Vila Republika s.r.o.</p>
+                  <p style={{ marginBottom: 8 }}>Mori Reality s.r.o.</p>
 
                   <p>Ič: 17936403 </p>
                 </FooterItem>
