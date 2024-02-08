@@ -150,7 +150,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
 
                   <p style={{ marginBottom: 8 }}>Mori Reality s.r.o.</p>
 
-                  <p>Ič: 17936403 </p>
+                  <p>Ič: 14426021 </p>
                 </FooterItem>
               </FlexRow>
             </FlexRow>
