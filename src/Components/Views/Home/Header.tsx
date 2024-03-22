@@ -16,7 +16,7 @@ import { HeaderTitle, IconTitle } from '../../../Styled/Typography.styles'
 
 const Header: React.FC = () => {
   const headerBg = buildImageUrl(
-    'v1705756857/vilaRepublikaFoto/Exterier-zima/DSC08936-HDR_oiv0wx.jpg',
+    'v1689504195/vilaRepublikaFoto/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
     {},
   )
 
