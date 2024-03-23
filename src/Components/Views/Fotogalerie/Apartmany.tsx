@@ -318,10 +318,10 @@ const Apartmany: React.FC = () => {
           Apartmány
         </SectionTitle>
 
-        <TitleAps>Slunečný</TitleAps>
+        {/* <TitleAps>Slunečný</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data1, 0)}
-        </GridRow>
+        </GridRow> */}
 
         <TitleAps>Lázeňský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
