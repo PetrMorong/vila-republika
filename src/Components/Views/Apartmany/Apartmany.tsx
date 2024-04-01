@@ -549,7 +549,8 @@ const Apartmany: React.FC = () => {
           </div>
         </GridRow>
 
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
+        {/* AP 5 */}
+        {/* <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
@@ -656,7 +657,7 @@ const Apartmany: React.FC = () => {
               </SlideContent>
             </SlideWrapper>
           </div>
-        </GridRow>
+        </GridRow> */}
 
         {/* AP 1 */}
         {/* <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
@@ -1113,7 +1114,7 @@ const Apartmany: React.FC = () => {
         </GridRow>
 
         {/* AP 7 */}
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
+        {/* <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
@@ -1222,7 +1223,7 @@ const Apartmany: React.FC = () => {
               </SlideContent>
             </SlideWrapper>
           </div>
-        </GridRow>
+        </GridRow> */}
 
         <Lightbox
           isOpen={showGallery}
