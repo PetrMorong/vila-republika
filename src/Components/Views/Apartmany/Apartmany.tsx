@@ -773,6 +773,121 @@ const Apartmany: React.FC = () => {
           </FlexRow>
         </GridRow> */}
 
+        {/* AP 6 */}
+        <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
+          <div>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(5)
+              }}
+            >
+              <ImgWrapper>
+                <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt='img' />
+                <ButtonWrapperFoto>
+                  <FlexRow
+                    gap={`12px`}
+                    maxWidth={`350px`}
+                    padding={`12px 12px`}
+                    mdPadding={`12px 12px`}
+                    smPadding={`12px 12px`}
+                    itemCenter
+                    center
+                    bgColor={`#FFFFFF`}
+                  >
+                    <img src={cameraIcon} alt='' />
+                    <FotogalerieText>Fotogalerie</FotogalerieText>
+                  </FlexRow>
+                </ButtonWrapperFoto>
+              </ImgWrapper>
+              <SlideContent>
+                <div style={{ marginTop: 'auto' }}></div>
+              </SlideContent>
+            </SlideWrapper>
+          </div>
+          <FlexRow
+            itemCenter
+            between
+            gap={`32px`}
+            padding={`0px 0px 0px 100px`}
+          >
+            <div>
+              <div>
+                <ApNameText>Prvorepublikový</ApNameText>
+                <ApPopisekText>s útulným podkrovím a vanou</ApPopisekText>
+              </div>
+              <FlexRow
+                gap={`15px`}
+                lgGap={`12px`}
+                smGap={`60px`}
+                mdDirection={`row`}
+                itemCenter
+                margin={`0px 0px 20px 0px`}
+                smcenter={`center`}
+              >
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>6 osob</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>od 2900 Kč</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+              </FlexRow>
+
+              <Desc
+                align={`left`}
+                width={`509px`}
+                smLineHeight={`30px`}
+                smalign={`center`}
+                smFontsize={`18px`}
+              >
+                Pro rozvětvenou rodinu i partu přátel. Prvorepublikový apartmán
+                sestává ze dvou útulných ložnic, které se ukrývají v dřevěném
+                podkroví. Vyspíte se do růžova – pokoje jsou velmi tiché a
+                skýtají pohodlí. V obývací části jsme vše nachystali pro
+                společné vaření, stolování a lenošení.
+                <br />
+                <br />
+                Máte chuť na horkou koupel po celém dni na svahu? Ani to nebude
+                problém. Tento slunečný apartmán vás okouzlí svou elegancí,
+                keramickou dlažbou s prvorepublikovým dekorem a dřevěnými prvky,
+                které připomínají horskou chalupu.
+              </Desc>
+
+              <ButtonWrapper>
+                <Link to='/rezervace'>
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{' '}
+              </ButtonWrapper>
+            </div>
+          </FlexRow>
+        </GridRow>
+
         {/* AP 2 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
@@ -997,121 +1112,6 @@ const Apartmany: React.FC = () => {
         </GridRow>
 
         {/* AP 5 */}
-
-        {/* AP 6 */}
-        <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
-          <div>
-            <SlideWrapper
-              onClick={() => {
-                setShowGallery(true)
-                setSelectedGallery(5)
-              }}
-            >
-              <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap6Image1} alt='img' />
-                <ButtonWrapperFoto>
-                  <FlexRow
-                    gap={`12px`}
-                    maxWidth={`350px`}
-                    padding={`12px 12px`}
-                    mdPadding={`12px 12px`}
-                    smPadding={`12px 12px`}
-                    itemCenter
-                    center
-                    bgColor={`#FFFFFF`}
-                  >
-                    <img src={cameraIcon} alt='' />
-                    <FotogalerieText>Fotogalerie</FotogalerieText>
-                  </FlexRow>
-                </ButtonWrapperFoto>
-              </ImgWrapper>
-              <SlideContent>
-                <div style={{ marginTop: 'auto' }}></div>
-              </SlideContent>
-            </SlideWrapper>
-          </div>
-          <FlexRow
-            itemCenter
-            between
-            gap={`32px`}
-            padding={`0px 0px 0px 100px`}
-          >
-            <div>
-              <div>
-                <ApNameText>Prvorepublikový</ApNameText>
-                <ApPopisekText>s útulným podkrovím a vanou</ApPopisekText>
-              </div>
-              <FlexRow
-                gap={`15px`}
-                lgGap={`12px`}
-                smGap={`60px`}
-                mdDirection={`row`}
-                itemCenter
-                margin={`0px 0px 20px 0px`}
-                smcenter={`center`}
-              >
-                <div>
-                  <FlexRow
-                    gap={`15px`}
-                    lgGap={`12px`}
-                    mdDirection={`column`}
-                    itemCenter
-                  >
-                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
-                    </ImgWrapper>
-                    <div>
-                      <SmallBoldText>6 osob</SmallBoldText>
-                    </div>
-                  </FlexRow>
-                </div>
-                <div>
-                  <FlexRow
-                    gap={`15px`}
-                    lgGap={`12px`}
-                    mdDirection={`column`}
-                    itemCenter
-                  >
-                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
-                    </ImgWrapper>
-                    <div>
-                      <SmallBoldText>od 2900 Kč</SmallBoldText>
-                    </div>
-                  </FlexRow>
-                </div>
-              </FlexRow>
-
-              <Desc
-                align={`left`}
-                width={`509px`}
-                smLineHeight={`30px`}
-                smalign={`center`}
-                smFontsize={`18px`}
-              >
-                Pro rozvětvenou rodinu i partu přátel. Prvorepublikový apartmán
-                sestává ze dvou útulných ložnic, které se ukrývají v dřevěném
-                podkroví. Vyspíte se do růžova – pokoje jsou velmi tiché a
-                skýtají pohodlí. V obývací části jsme vše nachystali pro
-                společné vaření, stolování a lenošení.
-                <br />
-                <br />
-                Máte chuť na horkou koupel po celém dni na svahu? Ani to nebude
-                problém. Tento slunečný apartmán vás okouzlí svou elegancí,
-                keramickou dlažbou s prvorepublikovým dekorem a dřevěnými prvky,
-                které připomínají horskou chalupu.
-              </Desc>
-
-              <ButtonWrapper>
-                <Link to='/rezervace'>
-                  <Button margin={`35px 0px 10px 0px`}>
-                    Vytvořit rezervaci
-                  </Button>
-                </Link>{' '}
-              </ButtonWrapper>
-            </div>
-          </FlexRow>
-        </GridRow>
 
         {/* AP 7 */}
         {/* <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
