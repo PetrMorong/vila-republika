@@ -4,7 +4,7 @@ import header from '../../../images/young-bg.png'
 import { Container, FlexRow } from '../../../Styled/Theme.styles'
 import { HeaderTitle } from '../../../Styled/Typography.styles'
 
-const Header: React.FC = () => {
+const Header: React.FC = ({ title }) => {
   return (
     <HeaderWrapper
       padding={`160px 0px 60px`}
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             maxWidth={`100%`}
             style={{ marginBottom: 50 }}
           >
-            Rezervace
+            {title || 'Rezervace'}
           </HeaderTitle>
         </FlexRow>
       </Container>

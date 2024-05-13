@@ -14,7 +14,9 @@ const Reservation = () => {
           src='https://booking.previo.cz/iframe/'
         ></script>
 
-        <title>Balíčky - Wellness Apartmány Vila Republika Velké Losiny</title>
+        <title>
+          Rezervace - Wellness Apartmány Vila Republika Velké Losiny
+        </title>
         <meta
           name='description'
           content='Wellness Apartmány Vila Republika leží pod svahy Hrubého Jeseníku v lázeňské obci Velké Losiny. K ubytování nabízíme i privátní wellness. Původní stavba z 30. let minulého století je citlivě zrekonstruována, krásné prvorepublikové prvky zachovány. Moderně pojaté, komfortní ubytování uspokojí i nejnáročnější klientelu. Vila Republika je díky své poloze ideální destinací pro trávení letní i zimní lyžařské dovolené. Na dosah budete mít termální lázně, malebný lázeňský park i čistou přírodu CHKO Jeseníky.'
@@ -22,12 +24,12 @@ const Reservation = () => {
       </Helmet>
 
       <Layout>
-        <Header />
+        <Header title='Pobytové Balíčky' />
         <Wrap>
           <Container>
             <div className='previo-reservation-form'>
               <iframe
-                src='https://booking.previo.cz/?hotId=758539&theme=dark&hideTabs=review-pricelist-map&guestFilter=1'
+                src='https://booking.previo.cz/?hotId=758539&showTabs=stay&theme=dark&'
                 scrolling='no'
                 frameborder='0'
                 width='100%'
