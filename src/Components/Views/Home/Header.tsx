@@ -98,5 +98,5 @@ const headrIcons = [
   { id: 1, text: 'Privátní Wellness ', icon: headr1 },
   { id: 2, text: '7 Apartmánů', icon: headr2 },
   { id: 3, text: 'Ubytování v horách ', icon: headr3 },
-  { id: 4, text: 'Moderní Technologie', icon: headr4 },
+  { id: 4, text: 'Psi vítáni', icon: headr4 },
 ]

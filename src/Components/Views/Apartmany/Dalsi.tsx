@@ -85,8 +85,8 @@ export default Dalsi
 const data = [
   {
     id: 1,
-    text: 'Praní prádla',
-    description: 'na vyžádání u správce',
+    text: 'Psi',
+    description: 'jsou u nás vítáni',
     icon: icon1,
   },
   {
