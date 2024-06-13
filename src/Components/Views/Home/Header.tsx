@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeaderWrapper } from '../../../Styled/Header.styles'
+import dogIcon2 from '../../../images/dog2.svg'
 import headr1 from '../../../images/header-icon1.svg'
 import headr2 from '../../../images/header-icon2.svg'
 import headr3 from '../../../images/header-icon3.svg'
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
           {headrIcons.map(({ id, icon, text }) => {
             return (
               <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
-                <ImgWrapper smWidth={`50px`} xlWidth={`36px`}>
+                <ImgWrapper maxWidth='50px' smWidth={`50px`} xlWidth={`36px`}>
                   <StyledImg w={`100%`} src={icon} alt='img' />
                 </ImgWrapper>
                 <IconTitle
@@ -96,7 +97,7 @@ export default Header
 
 const headrIcons = [
   { id: 1, text: 'Privátní Wellness ', icon: headr1 },
-  { id: 2, text: '7 Apartmánů', icon: headr2 },
+  { id: 2, text: '6 Apartmánů', icon: headr2 },
   { id: 3, text: 'Ubytování v horách ', icon: headr3 },
-  { id: 4, text: 'Psi vítáni', icon: headr4 },
+  { id: 4, text: 'Psi vítáni', icon: dogIcon2 },
 ]

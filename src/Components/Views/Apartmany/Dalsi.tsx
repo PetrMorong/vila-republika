@@ -14,6 +14,7 @@ import icon2 from '../../../images/0002.svg'
 import icon3 from '../../../images/0003.svg'
 import icon4 from '../../../images/0004.svg'
 import icon5 from '../../../images/0005.svg'
+import dogIcon from '../../../images/Vila_Republika_Pes.svg'
 
 const Dalsi: React.FC = () => {
   return (
@@ -87,7 +88,7 @@ const data = [
     id: 1,
     text: 'Psi',
     description: 'jsou u nás vítáni',
-    icon: icon1,
+    icon: dogIcon,
   },
   {
     id: 2,

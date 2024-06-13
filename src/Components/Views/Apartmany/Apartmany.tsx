@@ -434,121 +434,6 @@ const Apartmany: React.FC = () => {
       padding={`130px 0px 30px`}
     >
       <Container>
-        {/* AP 3 */}
-        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
-          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
-            <div>
-              <div>
-                <ApNameText>Jesenický</ApNameText>
-                <ApPopisekText>s vlastní saunou a koupacím sudem</ApPopisekText>
-              </div>
-              <FlexRow
-                gap={`15px`}
-                lgGap={`12px`}
-                smGap={`80px`}
-                mdDirection={`row`}
-                itemCenter
-                margin={`0px 0px 20px 0px`}
-                smcenter={`center`}
-              >
-                <div>
-                  <FlexRow
-                    gap={`15px`}
-                    lgGap={`12px`}
-                    mdDirection={`column`}
-                    itemCenter
-                  >
-                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
-                    </ImgWrapper>
-                    <div>
-                      <SmallBoldText>6 - 8 osob</SmallBoldText>
-                    </div>
-                  </FlexRow>
-                </div>
-                <div>
-                  <FlexRow
-                    gap={`15px`}
-                    lgGap={`12px`}
-                    mdDirection={`column`}
-                    itemCenter
-                  >
-                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
-                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
-                    </ImgWrapper>
-                    <div>
-                      <SmallBoldText>od 3500 kč</SmallBoldText>
-                    </div>
-                  </FlexRow>
-                </div>
-              </FlexRow>
-
-              <Desc
-                align={`left`}
-                width={`509px`}
-                smFontsize={`18px`}
-                smLineHeight={`30px`}
-                smalign={`center`}
-              >
-                Užijte si saunování na čerstvém vzduchu. Největším pokladem
-                tohoto apartmánu je privátní venkovní wellness. Přístup budete
-                mít na zahradu, kde se nachází srub s finskou saunou, vyhřátý
-                koupací sud a ochlazovací sud s ledovou vodou. Aktivní dovolenou
-                tak můžete propojit s ozdravnou relaxací. Pokud máte pobyt na
-                dvě a více nocí, tak v rámci rezervace apartmánu máte k
-                dispozici 2,5 hodiny ve wellness, kde si můžete saunu a koupací
-                sud sami kdykoliv roztopit pomocí nachystaného dřeva.
-                <br />
-                <br />
-                Jesenický apartmán harmonicky propojuje moderní luxus s
-                historickým šarmem. Interiéru dominují prvorepublikové prvky,
-                oblé tvary a secesní zelená. Mimořádný vizuální efekt tvoří
-                krásné klenbové stropy. Pokud hledáte svůj kousek ráje,
-                Jesenický apartmán splní vaše představy.
-              </Desc>
-              <ButtonWrapper>
-                <Link to='/rezervace'>
-                  <Button margin={`35px 0px 10px 0px`}>
-                    Vytvořit rezervaci
-                  </Button>
-                </Link>
-              </ButtonWrapper>
-            </div>
-          </FlexRow>
-          <div>
-            <SlideWrapper
-              onClick={() => {
-                setShowGallery(true)
-                setSelectedGallery(2)
-              }}
-            >
-              <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt='img' />
-              </ImgWrapper>
-              <SlideContent>
-                <div style={{ marginTop: 'auto' }}>
-                  <ButtonWrapperFoto>
-                    <FlexRow
-                      gap={`12px`}
-                      maxWidth={`350px`}
-                      padding={`12px 12px`}
-                      mdPadding={`12px 12px`}
-                      smPadding={`12px 12px`}
-                      itemCenter
-                      center
-                      bgColor={`#FFFFFF`}
-                    >
-                      <img src={cameraIcon} alt='' />
-
-                      <FotogalerieText>Fotogalerie</FotogalerieText>
-                    </FlexRow>
-                  </ButtonWrapperFoto>
-                </div>
-              </SlideContent>
-            </SlideWrapper>
-          </div>
-        </GridRow>
-
         {/* AP 5 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
@@ -1200,6 +1085,121 @@ const Apartmany: React.FC = () => {
             >
               <ImgWrapper>
                 <StyledImg w={`100%`} h={`100%`} src={ap7Image1} alt='img' />
+              </ImgWrapper>
+              <SlideContent>
+                <div style={{ marginTop: 'auto' }}>
+                  <ButtonWrapperFoto>
+                    <FlexRow
+                      gap={`12px`}
+                      maxWidth={`350px`}
+                      padding={`12px 12px`}
+                      mdPadding={`12px 12px`}
+                      smPadding={`12px 12px`}
+                      itemCenter
+                      center
+                      bgColor={`#FFFFFF`}
+                    >
+                      <img src={cameraIcon} alt='' />
+
+                      <FotogalerieText>Fotogalerie</FotogalerieText>
+                    </FlexRow>
+                  </ButtonWrapperFoto>
+                </div>
+              </SlideContent>
+            </SlideWrapper>
+          </div>
+        </GridRow>
+
+        {/* AP 3 */}
+        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
+            <div>
+              <div>
+                <ApNameText>Jesenický</ApNameText>
+                <ApPopisekText>s vlastní saunou a koupacím sudem</ApPopisekText>
+              </div>
+              <FlexRow
+                gap={`15px`}
+                lgGap={`12px`}
+                smGap={`80px`}
+                mdDirection={`row`}
+                itemCenter
+                margin={`0px 0px 20px 0px`}
+                smcenter={`center`}
+              >
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>6 - 8 osob</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>od 3500 kč</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+              </FlexRow>
+
+              <Desc
+                align={`left`}
+                width={`509px`}
+                smFontsize={`18px`}
+                smLineHeight={`30px`}
+                smalign={`center`}
+              >
+                Užijte si saunování na čerstvém vzduchu. Největším pokladem
+                tohoto apartmánu je privátní venkovní wellness. Přístup budete
+                mít na zahradu, kde se nachází srub s finskou saunou, vyhřátý
+                koupací sud a ochlazovací sud s ledovou vodou. Aktivní dovolenou
+                tak můžete propojit s ozdravnou relaxací. Pokud máte pobyt na
+                dvě a více nocí, tak v rámci rezervace apartmánu máte k
+                dispozici 2,5 hodiny ve wellness, kde si můžete saunu a koupací
+                sud sami kdykoliv roztopit pomocí nachystaného dřeva.
+                <br />
+                <br />
+                Jesenický apartmán harmonicky propojuje moderní luxus s
+                historickým šarmem. Interiéru dominují prvorepublikové prvky,
+                oblé tvary a secesní zelená. Mimořádný vizuální efekt tvoří
+                krásné klenbové stropy. Pokud hledáte svůj kousek ráje,
+                Jesenický apartmán splní vaše představy.
+              </Desc>
+              <ButtonWrapper>
+                <Link to='/rezervace'>
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>
+              </ButtonWrapper>
+            </div>
+          </FlexRow>
+          <div>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(2)
+              }}
+            >
+              <ImgWrapper>
+                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt='img' />
               </ImgWrapper>
               <SlideContent>
                 <div style={{ marginTop: 'auto' }}>
