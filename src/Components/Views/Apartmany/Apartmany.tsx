@@ -1144,7 +1144,12 @@ const Apartmany: React.FC = () => {
               </SlideContent>
             </SlideWrapper>
           </div>
-          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
+          <FlexRow
+            itemCenter
+            between
+            gap={`32px`}
+            padding={`0px 0px 0px 100px`}
+          >
             <div>
               <div>
                 <ApNameText>Jesenický</ApNameText>
