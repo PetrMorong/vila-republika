@@ -1026,7 +1026,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 - 11 osob</SmallBoldText>
+                      <SmallBoldText>6 - 9 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1041,7 +1041,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 4400 kč</SmallBoldText>
+                      <SmallBoldText>od 3900 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1112,6 +1112,38 @@ const Apartmany: React.FC = () => {
 
         {/* AP 3 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
+          <div>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(2)
+              }}
+            >
+              <ImgWrapper>
+                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt='img' />
+              </ImgWrapper>
+              <SlideContent>
+                <div style={{ marginTop: 'auto' }}>
+                  <ButtonWrapperFoto>
+                    <FlexRow
+                      gap={`12px`}
+                      maxWidth={`350px`}
+                      padding={`12px 12px`}
+                      mdPadding={`12px 12px`}
+                      smPadding={`12px 12px`}
+                      itemCenter
+                      center
+                      bgColor={`#FFFFFF`}
+                    >
+                      <img src={cameraIcon} alt='' />
+
+                      <FotogalerieText>Fotogalerie</FotogalerieText>
+                    </FlexRow>
+                  </ButtonWrapperFoto>
+                </div>
+              </SlideContent>
+            </SlideWrapper>
+          </div>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
@@ -1191,38 +1223,6 @@ const Apartmany: React.FC = () => {
               </ButtonWrapper>
             </div>
           </FlexRow>
-          <div>
-            <SlideWrapper
-              onClick={() => {
-                setShowGallery(true)
-                setSelectedGallery(2)
-              }}
-            >
-              <ImgWrapper>
-                <StyledImg w={`100%`} h={`100%`} src={ap3Image1} alt='img' />
-              </ImgWrapper>
-              <SlideContent>
-                <div style={{ marginTop: 'auto' }}>
-                  <ButtonWrapperFoto>
-                    <FlexRow
-                      gap={`12px`}
-                      maxWidth={`350px`}
-                      padding={`12px 12px`}
-                      mdPadding={`12px 12px`}
-                      smPadding={`12px 12px`}
-                      itemCenter
-                      center
-                      bgColor={`#FFFFFF`}
-                    >
-                      <img src={cameraIcon} alt='' />
-
-                      <FotogalerieText>Fotogalerie</FotogalerieText>
-                    </FlexRow>
-                  </ButtonWrapperFoto>
-                </div>
-              </SlideContent>
-            </SlideWrapper>
-          </div>
         </GridRow>
 
         <Lightbox
