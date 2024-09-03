@@ -477,7 +477,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 2900 kč</SmallBoldText>
+                      <SmallBoldText>od 1390 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -721,7 +721,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 osob</SmallBoldText>
+                      <SmallBoldText>2 - 6 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -736,7 +736,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 2900 Kč</SmallBoldText>
+                      <SmallBoldText>od 1690 Kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -801,7 +801,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>4 - 6 osob</SmallBoldText>
+                      <SmallBoldText>2 - 6 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -816,7 +816,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 2500 kč</SmallBoldText>
+                      <SmallBoldText>od 1390 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -961,7 +961,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 2500 Kč</SmallBoldText>
+                      <SmallBoldText>od 1390 Kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1026,7 +1026,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 - 9 osob</SmallBoldText>
+                      <SmallBoldText>2 - 9 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1041,7 +1041,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 3900 kč</SmallBoldText>
+                      <SmallBoldText>od 3490 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1175,7 +1175,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={usersIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>6 - 8 osob</SmallBoldText>
+                      <SmallBoldText>2 - 8 osob</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
@@ -1190,7 +1190,7 @@ const Apartmany: React.FC = () => {
                       <StyledImg w={`45px`} src={cardIcon} alt='img' />
                     </ImgWrapper>
                     <div>
-                      <SmallBoldText>od 3500 kč</SmallBoldText>
+                      <SmallBoldText>od 2090 kč</SmallBoldText>
                     </div>
                   </FlexRow>
                 </div>
