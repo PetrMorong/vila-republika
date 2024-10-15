@@ -22,6 +22,18 @@ import {
   FooterTitle,
 } from '../../Styled/Typography.styles'
 import styled from 'styled-components'
+import { buildImageUrl } from 'cloudinary-build-url'
+
+const imageConfig = {
+  transformations: {
+    resize: {
+      type: 'scale',
+      width: 250,
+      height: 150,
+      aspectRatio: '16:9',
+    },
+  },
+}
 
 const Footer: FunctionComponent<any> = ({ navLinks }) => {
   return (
@@ -64,12 +76,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             direction={`row`}
             mdJustifyContent={`center`}
           >
-            <FooterDesc
-              color={``}
-              mdFontSize={`18px`}
-              mdLineHeight={`30px`}
-              mdAlign={`center`}
-            >
+            <FooterDesc>
               Apartmány nabízíme v různých velikostech. Pro jednotlivce, páry i
               rozvětvenou rodinu. Zarezervovat si můžete také celou vilu – na
               oslavu narozenin či dovolenou s přáteli. V okolí budete mít
@@ -90,6 +97,50 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
             </Link>
           </GridCol>
         </GridRow>
+
+        <BannerWrap>
+          <BannerImg
+            src={buildImageUrl(
+              'v1720684653/Rapotin/DSC08357-min_lmko87.jpg',
+              imageConfig,
+            )}
+          ></BannerImg>
+          <BannerText>
+            Vyzkoušejte naše nově otevřené apartmány v Rapotíně! <br />
+            <p
+              style={{
+                fontSize: '26px',
+                fontFamily: 'roc-grotesk-wide',
+                fontWeight: 600,
+              }}
+            >
+              Nyní za zvýhodněné{' '}
+              <span
+                style={{
+                  fontSize: '26px',
+                  fontFamily: 'roc-grotesk-wide',
+                  fontWeight: 600,
+                  color: '#BF5757',
+                }}
+              >
+                zaváděcí ceny
+              </span>
+            </p>
+          </BannerText>
+
+          <Link to='https://www.resortcervenydvur.cz' target='_blank'>
+            <Button
+              brColor={`#000000`}
+              textColor={`#000000`}
+              bgColor={`transparent`}
+              style={{ minWidth: 176 }}
+              width={`176px`}
+              height={`61px`}
+            >
+              Více o ubytování
+            </Button>
+          </Link>
+        </BannerWrap>
 
         <Separator />
 
@@ -239,6 +290,51 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
     </Wrapper>
   )
 }
+
+export const BannerWrap = styled.div`
+  background: #f0e8d9;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+`
+
+export const BannerImg = styled.img`
+  height: 150px;
+  width: 250px;
+  margin-right: 30px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0px;
+    height: 200px;
+  }
+`
+
+export const BannerText = styled.p`
+  color: #000;
+  font-size: 23px;
+  font-family: roc-grotesk-wide;
+  margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+    margin-right: 0px;
+    margin: 15px;
+    text-align: center;
+  }
+`
 
 export const Separator = styled.p`
   background: #3b4f5e;
