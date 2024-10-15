@@ -146,21 +146,21 @@ const Apartmany: React.FC = () => {
   const data5 = [
     {
       picture: buildImageUrl(
-        'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
+        'v1728982510/vilaRepublikaFoto/byt5/LL406469-HDR-min_ks7xwb.jpg',
         imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1675799774/vilaRepublikaFoto/byt5/DSC08390-HDR_fkz4zz.jpg',
+        'v1728982516/vilaRepublikaFoto/byt5/LL406448-HDR-min_e8ukhy.jpg',
         imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1675799776/vilaRepublikaFoto/byt5/DSC08363-HDR_yqdcwr.jpg',
+        'v1728982508/vilaRepublikaFoto/byt5/LL406427-HDR-min_vnkncg.jpg',
         imageConfig,
       ),
     },
@@ -206,21 +206,21 @@ const Apartmany: React.FC = () => {
   const data7 = [
     {
       picture: buildImageUrl(
-        'v1677920196/vilaRepublikaFoto/byt7/new/DSC09560-HDR_m7zz5r.jpg',
+        'v1675799512/vilaRepublikaFoto/byt7/DSC08460-HDR_cinhnp.jpg',
         imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1677920190/vilaRepublikaFoto/byt7/new/DSC09611-HDR_uytxsa.jpg',
+        'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
         imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1677920193/vilaRepublikaFoto/byt7/new/DSC09569-HDR_gpopzr.jpg',
+        'v1675799505/vilaRepublikaFoto/byt7/DSC08469-HDR_elf6fr.jpg',
         imageConfig,
       ),
     },
@@ -228,6 +228,33 @@ const Apartmany: React.FC = () => {
     {
       picture: buildImageUrl(
         'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
+        imageConfig,
+      ),
+    },
+  ]
+
+  const data8 = [
+    {
+      picture: buildImageUrl(
+        'v1728981009/vilaRepublikaFoto/zahradniDomek/LL406604-min_drw5dr.jpg',
+        imageConfig,
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1728980992/vilaRepublikaFoto/zahradniDomek/LL406529-HDR-min_bjmobx.jpg',
+        imageConfig,
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1728980995/vilaRepublikaFoto/zahradniDomek/LL406571-HDR-min_m8fjtr.jpg',
+        imageConfig,
+      ),
+    },
+    {
+      picture: buildImageUrl(
+        'v1728980991/vilaRepublikaFoto/zahradniDomek/LL406550-HDR-min_xl7izk.jpg',
         imageConfig,
       ),
     },
@@ -241,6 +268,7 @@ const Apartmany: React.FC = () => {
     ...data5,
     ...data6,
     ...data7,
+    ...data8,
   ]
 
   const lightboxImages: any = images.map(image => {
@@ -338,20 +366,25 @@ const Apartmany: React.FC = () => {
           {renderRow(data4, 3)}
         </GridRow>
 
-        {/* <TitleAps>Losinský</TitleAps>
+        <TitleAps>Losinský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data5, 4)}
-        </GridRow> */}
+        </GridRow>
 
         <TitleAps>Prvorepublikový</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data6, 5)}
         </GridRow>
 
-        {/* <TitleAps>Prezidentský</TitleAps>
+        <TitleAps>Prezidentský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data7, 6)}
-        </GridRow> */}
+        </GridRow>
+
+        <TitleAps>Zahradní domek</TitleAps>
+        <GridRow sm={1} md={3} cols={4} gap={`16px`}>
+          {renderRow(data8, 7)}
+        </GridRow>
       </Container>
 
       <Lightbox

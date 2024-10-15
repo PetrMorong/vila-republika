@@ -32,20 +32,20 @@ const Exterier: React.FC = () => {
     // LETO
     {
       picture: buildImageUrl(
-        'v1689504133/vilaRepublikaFoto/IMG_1319-HDR-min_esxlxf.jpg',
+        'v1728983886/vilaRepublikaFoto/LL406618-min_n3ne6i.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1689504132/vilaRepublikaFoto/IMG_1449-HDR-min_ppfdjp.jpg',
+        'v1728984149/vilaRepublikaFoto/LL406610_yfobxv.jpg',
         imageConfig,
       ),
     },
 
     {
       picture: buildImageUrl(
-        'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
+        'v1728984292/vilaRepublikaFoto/LL406598_r1hc78.jpg',
         imageConfig,
       ),
     },
@@ -58,18 +58,21 @@ const Exterier: React.FC = () => {
     },
 
     // LETO rada 2
+
+    {
+      picture: buildImageUrl(
+        'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
+        imageConfig,
+      ),
+    },
+
     {
       picture: buildImageUrl(
         'v1689504130/vilaRepublikaFoto/IMG_1287-HDR-min_fjfc2b.jpg',
         imageConfig,
       ),
     },
-    {
-      picture: buildImageUrl(
-        'v1689504125/vilaRepublikaFoto/IMG_1280-HDR-min_zdbls5.jpg',
-        imageConfig,
-      ),
-    },
+
     {
       picture: buildImageUrl(
         'v1689504131/vilaRepublikaFoto/IMG_1349-HDR-min_d00shg.jpg',

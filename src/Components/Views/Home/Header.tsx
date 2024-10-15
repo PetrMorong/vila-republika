@@ -97,7 +97,7 @@ export default Header
 
 const headrIcons = [
   { id: 1, text: 'Privátní Wellness ', icon: headr1 },
-  { id: 2, text: '6 Apartmánů', icon: headr2 },
+  { id: 2, text: '7 Apartmánů', icon: headr2 },
   { id: 3, text: 'Ubytování v horách ', icon: headr3 },
   { id: 4, text: 'Psi vítáni', icon: dogIcon2 },
 ]

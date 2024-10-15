@@ -218,37 +218,32 @@ const Apartmany: React.FC = () => {
   // AP 5
 
   const ap5Image1 = buildImageUrl(
-    'v1675799782/vilaRepublikaFoto/byt5/DSC08342-HDR_eqajrc.jpg',
+    'v1728982510/vilaRepublikaFoto/byt5/LL406469-HDR-min_ks7xwb.jpg',
     {},
   )
 
   const ap5Image2 = buildImageUrl(
-    'v1675799777/vilaRepublikaFoto/byt5/DSC08348-HDR_wpdt4v.jpg',
+    'v1728982516/vilaRepublikaFoto/byt5/LL406448-HDR-min_e8ukhy.jpg',
     {},
   )
 
   const ap5Image3 = buildImageUrl(
-    'v1675799774/vilaRepublikaFoto/byt5/DSC08390-HDR_fkz4zz.jpg',
+    'v1728982508/vilaRepublikaFoto/byt5/LL406427-HDR-min_vnkncg.jpg',
     {},
   )
 
   const ap5Image4 = buildImageUrl(
-    'v1675799776/vilaRepublikaFoto/byt5/DSC08396-HDR_d6dkus.jpg',
+    'v1728205639/vilaRepublikaFoto/byt5/DSC00421-HDR-min_hisqo1.jpg',
 
     {},
   )
 
   const ap5Image5 = buildImageUrl(
-    'v1675799776/vilaRepublikaFoto/byt5/DSC08363-HDR_yqdcwr.jpg',
-    {},
-  )
-
-  const ap5Image6 = buildImageUrl(
     'v1675799776/vilaRepublikaFoto/byt5/DSC08354-HDR_liikg7.jpg',
     {},
   )
 
-  const ap5Image7 = buildImageUrl(
+  const ap5Image6 = buildImageUrl(
     'v1675799779/vilaRepublikaFoto/byt5/DSC08405-HDR_xba91c.jpg',
     {},
   )
@@ -342,6 +337,62 @@ const Apartmany: React.FC = () => {
     {},
   )
 
+  // AP 8
+  const ap8Image1 = buildImageUrl(
+    'v1728981009/vilaRepublikaFoto/zahradniDomek/LL406604-min_drw5dr.jpg',
+    {},
+  )
+
+  const ap8Image2 = buildImageUrl(
+    'v1728981001/vilaRepublikaFoto/zahradniDomek/LL406520-HDR-min_pefh17.jpg',
+    {},
+  )
+
+  const ap8Image3 = buildImageUrl(
+    'v1728980992/vilaRepublikaFoto/zahradniDomek/LL406529-HDR-min_bjmobx.jpg',
+    {},
+  )
+
+  const ap8Image4 = buildImageUrl(
+    'v1728980991/vilaRepublikaFoto/zahradniDomek/LL406550-HDR-min_xl7izk.jpg',
+    {},
+  )
+
+  const ap8Image5 = buildImageUrl(
+    'v1728981002/vilaRepublikaFoto/zahradniDomek/LL406556-HDR-min_vye8ed.jpg',
+    {},
+  )
+
+  const ap8Image6 = buildImageUrl(
+    'v1728980995/vilaRepublikaFoto/zahradniDomek/LL406571-HDR-min_m8fjtr.jpg',
+    {},
+  )
+
+  const ap8Image7 = buildImageUrl(
+    'v1728980999/vilaRepublikaFoto/zahradniDomek/LL406562-HDR-min_zqnbyq.jpg',
+    {},
+  )
+
+  const ap8Image8 = buildImageUrl(
+    'v1728981001/vilaRepublikaFoto/zahradniDomek/LL406535-HDR-min_i37xsw.jpg',
+    {},
+  )
+
+  const ap8Image9 = buildImageUrl(
+    'v1728980997/vilaRepublikaFoto/zahradniDomek/LL406538-HDR-min_gc8wll.jpg',
+    {},
+  )
+
+  const ap8Image10 = buildImageUrl(
+    'v1728981006/vilaRepublikaFoto/zahradniDomek/LL406593-min_uj18m0.jpg',
+    {},
+  )
+
+  const ap8Image11 = buildImageUrl(
+    'v1728981007/vilaRepublikaFoto/zahradniDomek/LL406598-min_dtzfse.jpg',
+    {},
+  )
+
   const apImages = [
     // ap 1
     [ap1Image1, ap1Image2, ap1Image3, ap1Image4, ap1Image5, ap1Image6],
@@ -378,15 +429,7 @@ const Apartmany: React.FC = () => {
     // ap 4
     [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
     // ap 5
-    [
-      ap5Image1,
-      ap5Image2,
-      ap5Image3,
-      ap5Image4,
-      ap5Image5,
-      ap5Image6,
-      ap5Image7,
-    ],
+    [ap5Image1, ap5Image2, ap5Image3, ap5Image4, ap5Image5, ap5Image6],
     // ap 6
     [ap6Image1, ap6Image2, ap6Image3, ap6Image4, ap6Image5, ap6Image6],
     // ap 7
@@ -402,6 +445,20 @@ const Apartmany: React.FC = () => {
       ap7Image8,
       ap7Image9,
       ap7Image10,
+    ],
+    // ap 8
+    [
+      ap8Image1,
+      ap8Image2,
+      ap8Image3,
+      ap8Image4,
+      ap8Image5,
+      ap8Image6,
+      ap8Image7,
+      ap8Image8,
+      ap8Image9,
+      ap8Image10,
+      ap8Image11,
     ],
   ]
 
@@ -996,8 +1053,6 @@ const Apartmany: React.FC = () => {
           </FlexRow>
         </GridRow>
 
-        {/* AP 5 */}
-
         {/* AP 7 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
@@ -1228,6 +1283,111 @@ const Apartmany: React.FC = () => {
               </ButtonWrapper>
             </div>
           </FlexRow>
+        </GridRow>
+
+        {/* AP 7 */}
+        <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>
+          <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
+            <div>
+              <div>
+                <ApNameText>Zahradní domek</ApNameText>
+                <ApPopisekText>s vlastní zahradou</ApPopisekText>
+              </div>
+              <FlexRow
+                gap={`15px`}
+                lgGap={`12px`}
+                smGap={`80px`}
+                mdDirection={`row`}
+                itemCenter
+                margin={`0px 0px 20px 0px`}
+                smcenter={`center`}
+              >
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={usersIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>2 - 5 osob</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+                <div>
+                  <FlexRow
+                    gap={`15px`}
+                    lgGap={`12px`}
+                    mdDirection={`column`}
+                    itemCenter
+                  >
+                    <ImgWrapper smWidth={`45px`} xlWidth={`45px`}>
+                      <StyledImg w={`45px`} src={cardIcon} alt='img' />
+                    </ImgWrapper>
+                    <div>
+                      <SmallBoldText>od 2090 kč</SmallBoldText>
+                    </div>
+                  </FlexRow>
+                </div>
+              </FlexRow>
+
+              <Desc
+                align={`left`}
+                width={`509px`}
+                smFontsize={`18px`}
+                smLineHeight={`30px`}
+                smalign={`center`}
+              >
+                Nádherný apartmán s panoramatickou dispozicí poskytuje z každé
+                místnosti překrásné výhledy. Má celkem dvě ložnice, velký
+                obývací prostor s kuchyní a jídelní částí. V klidu se zde může
+                ubytovat až 4 osoby a každý najde soukromí. Apartmán vás upoutá
+                krásným výhledem.
+              </Desc>
+              <ButtonWrapper>
+                <Link to='/rezervace'>
+                  <Button margin={`35px 0px 10px 0px`}>
+                    Vytvořit rezervaci
+                  </Button>
+                </Link>{' '}
+              </ButtonWrapper>
+            </div>
+          </FlexRow>
+          <div>
+            <SlideWrapper
+              onClick={() => {
+                setShowGallery(true)
+                setSelectedGallery(7)
+              }}
+            >
+              <ImgWrapper>
+                <StyledImg w={`100%`} h={`100%`} src={ap8Image1} alt='img' />
+              </ImgWrapper>
+              <SlideContent>
+                <div style={{ marginTop: 'auto' }}>
+                  <ButtonWrapperFoto>
+                    <FlexRow
+                      gap={`12px`}
+                      maxWidth={`350px`}
+                      padding={`12px 12px`}
+                      mdPadding={`12px 12px`}
+                      smPadding={`12px 12px`}
+                      itemCenter
+                      center
+                      bgColor={`#FFFFFF`}
+                    >
+                      <img src={cameraIcon} alt='' />
+
+                      <FotogalerieText>Fotogalerie</FotogalerieText>
+                    </FlexRow>
+                  </ButtonWrapperFoto>
+                </div>
+              </SlideContent>
+            </SlideWrapper>
+          </div>
         </GridRow>
 
         <Lightbox
