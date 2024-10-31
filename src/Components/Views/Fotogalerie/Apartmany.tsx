@@ -381,7 +381,7 @@ const Apartmany: React.FC = () => {
           {renderRow(data7, 6)}
         </GridRow>
 
-        <TitleAps>Zahradní domek</TitleAps>
+        <TitleAps>Zahradní</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
           {renderRow(data8, 7)}
         </GridRow>
