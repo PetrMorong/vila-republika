@@ -1290,8 +1290,8 @@ const Apartmany: React.FC = () => {
           <FlexRow itemCenter between gap={`32px`} className='orderReverse'>
             <div>
               <div>
-                <ApNameText>Zahradní domek</ApNameText>
-                <ApPopisekText>s vlastní zahradou</ApPopisekText>
+                <ApNameText>Zahradní</ApNameText>
+                <ApPopisekText>s výhledem do zahrady</ApPopisekText>
               </div>
               <FlexRow
                 gap={`15px`}
