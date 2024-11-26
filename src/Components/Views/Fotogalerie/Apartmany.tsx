@@ -31,33 +31,33 @@ const Apartmany: React.FC = () => {
   const [showGallery, setShowGallery] = React.useState(false)
   const [carouselIndex, setCarouseIndex] = React.useState(0)
 
-  const data1 = [
-    // byt 1
-    {
-      picture: buildImageUrl(
-        'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
-        imageConfig,
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
-        imageConfig,
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
-        imageConfig,
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
-        imageConfig,
-      ),
-    },
-  ]
+  // const data1 = [
+  //   // byt 1
+  //   {
+  //     picture: buildImageUrl(
+  //       'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
+  //       imageConfig,
+  //     ),
+  //   },
+  //   {
+  //     picture: buildImageUrl(
+  //       'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
+  //       imageConfig,
+  //     ),
+  //   },
+  //   {
+  //     picture: buildImageUrl(
+  //       'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
+  //       imageConfig,
+  //     ),
+  //   },
+  //   {
+  //     picture: buildImageUrl(
+  //       'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
+  //       imageConfig,
+  //     ),
+  //   },
+  // ]
 
   const data2 = [
     {
@@ -242,26 +242,26 @@ const Apartmany: React.FC = () => {
     },
     {
       picture: buildImageUrl(
-        'v1728980992/vilaRepublikaFoto/zahradniDomek/LL406529-HDR-min_bjmobx.jpg',
+        'v1732624209/vilaRepublikaFoto/zahradniDomek/LL408068-HDR_gcvuad.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1728980995/vilaRepublikaFoto/zahradniDomek/LL406571-HDR-min_m8fjtr.jpg',
+        'v1732624207/vilaRepublikaFoto/zahradniDomek/LL408092-HDR_n9fcib.jpg',
         imageConfig,
       ),
     },
     {
       picture: buildImageUrl(
-        'v1728980991/vilaRepublikaFoto/zahradniDomek/LL406550-HDR-min_xl7izk.jpg',
+        'v1732624202/vilaRepublikaFoto/zahradniDomek/LL408128-HDR_faeoer.jpg',
         imageConfig,
       ),
     },
   ]
 
   const images = [
-    ...data1,
+    // ...data1,
     ...data2,
     ...data3,
     ...data4,
@@ -291,7 +291,7 @@ const Apartmany: React.FC = () => {
     }
   }
 
-  const renderRow = (images: typeof data1, rowIndex: number) =>
+  const renderRow = (images: typeof data2, rowIndex: number) =>
     images.map((item, index) => {
       return (
         <FlexRow

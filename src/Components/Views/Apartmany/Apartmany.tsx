@@ -339,57 +339,59 @@ const Apartmany: React.FC = () => {
 
   // AP 8
   const ap8Image1 = buildImageUrl(
-    'v1728981009/vilaRepublikaFoto/zahradniDomek/LL406604-min_drw5dr.jpg',
+    'v1732624209/vilaRepublikaFoto/zahradniDomek/LL408068-HDR_gcvuad.jpg',
     {},
   )
 
   const ap8Image2 = buildImageUrl(
-    'v1728981001/vilaRepublikaFoto/zahradniDomek/LL406520-HDR-min_pefh17.jpg',
+    'v1728981009/vilaRepublikaFoto/zahradniDomek/LL406604-min_drw5dr.jpg',
     {},
   )
 
   const ap8Image3 = buildImageUrl(
-    'v1728980992/vilaRepublikaFoto/zahradniDomek/LL406529-HDR-min_bjmobx.jpg',
+    'v1732624207/vilaRepublikaFoto/zahradniDomek/LL408092-HDR_n9fcib.jpg',
     {},
   )
 
   const ap8Image4 = buildImageUrl(
-    'v1728980991/vilaRepublikaFoto/zahradniDomek/LL406550-HDR-min_xl7izk.jpg',
+    'v1732624205/vilaRepublikaFoto/zahradniDomek/LL408134-HDR_bidcdy.jpg',
     {},
   )
 
   const ap8Image5 = buildImageUrl(
-    'v1728981002/vilaRepublikaFoto/zahradniDomek/LL406556-HDR-min_vye8ed.jpg',
+    'v1732624210/vilaRepublikaFoto/zahradniDomek/LL408077-HDR_dndiui.jpg',
     {},
   )
 
   const ap8Image6 = buildImageUrl(
-    'v1728980995/vilaRepublikaFoto/zahradniDomek/LL406571-HDR-min_m8fjtr.jpg',
+    'v1732624210/vilaRepublikaFoto/zahradniDomek/LL408080-HDR_aj5bar.jpg',
     {},
   )
 
   const ap8Image7 = buildImageUrl(
-    'v1728980999/vilaRepublikaFoto/zahradniDomek/LL406562-HDR-min_zqnbyq.jpg',
+    'v1732624202/vilaRepublikaFoto/zahradniDomek/LL408101-HDR_rczxde.jpg',
     {},
   )
 
   const ap8Image8 = buildImageUrl(
-    'v1728981001/vilaRepublikaFoto/zahradniDomek/LL406535-HDR-min_i37xsw.jpg',
+    'v1732624207/vilaRepublikaFoto/zahradniDomek/LL408116-HDR_aytefo.jpg',
     {},
   )
 
   const ap8Image9 = buildImageUrl(
-    'v1728980997/vilaRepublikaFoto/zahradniDomek/LL406538-HDR-min_gc8wll.jpg',
+    'v1732624175/vilaRepublikaFoto/zahradniDomek/LL408119-HDR_l3dmyy.jpg',
     {},
   )
 
+  //koupelna
   const ap8Image10 = buildImageUrl(
-    'v1728981006/vilaRepublikaFoto/zahradniDomek/LL406593-min_uj18m0.jpg',
+    'v1728981007/vilaRepublikaFoto/zahradniDomek/LL406598-min_dtzfse.jpg',
     {},
   )
 
   const ap8Image11 = buildImageUrl(
-    'v1728981007/vilaRepublikaFoto/zahradniDomek/LL406598-min_dtzfse.jpg',
+    'v1728981006/vilaRepublikaFoto/zahradniDomek/LL406593-min_uj18m0.jpg',
+
     {},
   )
 
