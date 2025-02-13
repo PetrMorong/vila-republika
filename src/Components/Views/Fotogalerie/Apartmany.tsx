@@ -353,37 +353,37 @@ const Apartmany: React.FC = () => {
 
         <TitleAps>Lázeňský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data2, 1)}
+          {renderRow(data2, 0)}
         </GridRow>
 
         <TitleAps>Jesenický</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data3, 2)}
+          {renderRow(data3, 1)}
         </GridRow>
 
         <TitleAps>Pradědův</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data4, 3)}
+          {renderRow(data4, 2)}
         </GridRow>
 
         <TitleAps>Losinský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data5, 4)}
+          {renderRow(data5, 3)}
         </GridRow>
 
         <TitleAps>Prvorepublikový</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data6, 5)}
+          {renderRow(data6, 4)}
         </GridRow>
 
         <TitleAps>Prezidentský</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data7, 6)}
+          {renderRow(data7, 5)}
         </GridRow>
 
         <TitleAps>Zahradní</TitleAps>
         <GridRow sm={1} md={3} cols={4} gap={`16px`}>
-          {renderRow(data8, 7)}
+          {renderRow(data8, 6)}
         </GridRow>
       </Container>
 
