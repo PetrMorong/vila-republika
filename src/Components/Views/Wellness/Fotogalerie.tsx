@@ -25,57 +25,35 @@ const imageConfig = {
 const Fotogalerie: React.FC = () => {
   const data = [
     {
-      picture: buildImageUrl(
-        'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC01755-HDR_jf1qnz.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1680936960/vilaRepublikaFoto/wellness/DSC01740-HDR_nddukh.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC02016-HDR_onzspt.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680936976/vilaRepublikaFoto/wellness/DSC01861_jluirn.jpg',
-        imageConfig
-      ),
-    },
-    {
-      picture: buildImageUrl(
-        'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC01740-HDR_nddukh.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680936963/vilaRepublikaFoto/wellness/DSC01821-HDR_wfg2sw.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC01861_jluirn.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680936961/vilaRepublikaFoto/wellness/DSC01809-HDR_ln8ljz.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC01791-HDR_xrkdf9.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680936972/vilaRepublikaFoto/wellness/DSC01866_b2dn34.jpg',
-        imageConfig
-      ),
+      picture: '/images/apartmany/wellness/DSC01821-HDR_wfg2sw.jpg',
+    },
+
+    {
+      picture: '/images/apartmany/wellness/DSC01809-HDR_ln8ljz.jpg',
+    },
+
+    {
+      picture: '/images/apartmany/wellness/DSC01866_b2dn34.jpg',
     },
   ]
 
@@ -120,7 +98,7 @@ const Fotogalerie: React.FC = () => {
                       h={`100%`}
                       w={`100%`}
                       src={item.picture}
-                      alt="img"
+                      alt='img'
                     />
                   </ImgWrapper>
                 </SlideWrapper>
