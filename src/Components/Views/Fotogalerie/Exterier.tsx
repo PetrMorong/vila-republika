@@ -31,59 +31,36 @@ const Exterier: React.FC = () => {
   const data = [
     // LETO
     {
-      picture: buildImageUrl(
-        'v1728983886/vilaRepublikaFoto/LL406618-min_n3ne6i.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/LL406618-min_n3ne6i.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1728984149/vilaRepublikaFoto/LL406610_yfobxv.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/LL406610_yfobxv.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1728984292/vilaRepublikaFoto/LL406598_r1hc78.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/LL406598_r1hc78.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'vilaRepublikaFoto/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
-        imageConfig,
-      ),
+      picture:
+        '/images/apartmany/spolProstory/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg',
     },
 
     // LETO rada 2
 
     {
-      picture: buildImageUrl(
-        'v1689504129/vilaRepublikaFoto/IMG_1338-HDR-min_i68xc6.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/IMG_1338-HDR-min_i68xc6.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1689504130/vilaRepublikaFoto/IMG_1287-HDR-min_fjfc2b.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/IMG_1287-HDR-min_fjfc2b.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1689504131/vilaRepublikaFoto/IMG_1349-HDR-min_d00shg.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/IMG_1349-HDR-min_d00shg.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1689504131/vilaRepublikaFoto/IMG_1389-HDR-min_iycbno.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/IMG_1389-HDR-min_iycbno.jpg',
     },
 
     // ZIMA
@@ -114,56 +91,32 @@ const Exterier: React.FC = () => {
 
     // CHODBA
     {
-      picture: buildImageUrl(
-        'v1675799329/vilaRepublikaFoto/DSC08530-HDR_bw0gqc.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC08530-HDR_bw0gqc.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1675799326/vilaRepublikaFoto/DSC08524-HDR_rx1gft.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC08524-HDR_rx1gft.jpg',
     },
 
     // SKLEP
     {
-      picture: buildImageUrl(
-        'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01924-HDR_zldqdu.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1680942700/vilaRepublikaFoto/SpolecenskaMistnost/DSC01975-min_p2jh6q.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01975-min_p2jh6q.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1680942534/vilaRepublikaFoto/SpolecenskaMistnost/DSC01918-HDR_ltphob.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01918-HDR_ltphob.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680942527/vilaRepublikaFoto/SpolecenskaMistnost/DSC01951-HDR_r9c6ro.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01951-HDR_r9c6ro.jpg',
     },
     {
-      picture: buildImageUrl(
-        'v1680942701/vilaRepublikaFoto/SpolecenskaMistnost/DSC01974-min_gpkq1v.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01974-min_gpkq1v.jpg',
     },
 
     {
-      picture: buildImageUrl(
-        'v1680942699/vilaRepublikaFoto/SpolecenskaMistnost/DSC01987-min_ljoda4.jpg',
-        imageConfig,
-      ),
+      picture: '/images/apartmany/spolProstory/DSC01987-min_ljoda4.jpg',
     },
 
     // {

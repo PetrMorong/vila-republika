@@ -100,10 +100,7 @@ const Footer: FunctionComponent<any> = ({ navLinks }) => {
 
         <BannerWrap>
           <BannerImg
-            src={buildImageUrl(
-              'v1720684653/Rapotin/DSC08357-min_lmko87.jpg',
-              imageConfig,
-            )}
+            src={'/images/footer/DSC08357-min_lmko87 (2).jpg'}
           ></BannerImg>
           <BannerText>
             Vyzkoušejte naše nově otevřené apartmány v Rapotíně! <br />
