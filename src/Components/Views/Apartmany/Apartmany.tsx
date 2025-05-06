@@ -69,23 +69,23 @@ const Apartmany: React.FC = () => {
 
   const ap2Image1 = '/images/apartmany/byt2/DSC09444-HDR_euewl0.jpg'
 
-  const ap2Image2 = '/images/apartmany/byt2/DSC09450-HDR_kgjnji.jpg'
+  // const ap2Image2 = '/images/apartmany/byt2/DSC09450-HDR_kgjnji.jpg'
 
   const ap2Image3 = '/images/apartmany/byt2/DSC09474-HDR_oysnn4.jpg'
 
-  const ap2Image4 = '/images/apartmany/byt2/DSC09514-HDR_ewlvn7.jpg'
+  // const ap2Image4 = '/images/apartmany/byt2/DSC09514-HDR_ewlvn7.jpg'
 
   const ap2Image5 = '/images/apartmany/byt2/DSC09477-HDR_w4300b.jpg'
 
-  const ap2Image6 = '/images/apartmany/byt2/DSC09465-HDR_h7jpen.jpg'
+  // const ap2Image6 = '/images/apartmany/byt2/DSC09465-HDR_h7jpen.jpg'
 
   const ap2Image7 = '/images/apartmany/byt2/DSC09483-HDR_oh3wvl.jpg'
 
-  const ap2Image8 = '/images/apartmany/byt2/DSC09471-HDR_ixxlbw.jpg'
+  // const ap2Image8 = '/images/apartmany/byt2/DSC09471-HDR_ixxlbw.jpg'
 
-  const ap2Image9 = '/images/apartmany/byt2/DSC09486-HDR_jrxsjc.jpg'
+  // const ap2Image9 = '/images/apartmany/byt2/DSC09486-HDR_jrxsjc.jpg'
 
-  const ap2Image10 = '/images/apartmany/byt2/DSC09648_tbbuhy.jpg'
+  // const ap2Image10 = '/images/apartmany/byt2/DSC09648_tbbuhy.jpg'
 
   // AP 3
 
@@ -371,15 +371,15 @@ const Apartmany: React.FC = () => {
     // ap 2
     [
       ap2Image1,
-      ap2Image2,
+      // ap2Image2,
       ap2Image3,
-      ap2Image4,
+      // ap2Image4,
       ap2Image5,
-      ap2Image6,
+      // ap2Image6,
       ap2Image7,
-      ap2Image8,
-      ap2Image9,
-      ap2Image10,
+      // ap2Image8,
+      // ap2Image9,
+      // ap2Image10,
     ],
     // ap 3
     [
