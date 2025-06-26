@@ -5,10 +5,7 @@ import { HeaderTitle } from '../../../Styled/Typography.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 
 const Header: React.FC = () => {
-  const img = buildImageUrl(
-    'v1680936968/vilaRepublikaFoto/wellness/DSC01755-HDR_jf1qnz.jpg',
-    {}
-  )
+  const img = '/images/apartmany/wellness/DSC01755-HDR_jf1qnz.jpg'
 
   return (
     <HeaderWrapper

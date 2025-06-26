@@ -16,10 +16,7 @@ import chytra1 from '../../../images/Union4.svg'
 import { buildImageUrl } from 'cloudinary-build-url'
 
 const VybaveniWellness: React.FC = () => {
-  const img = buildImageUrl(
-    'v1680936973/vilaRepublikaFoto/wellness/DSC01791-HDR_xrkdf9.jpg',
-    {}
-  )
+  const img = '/images/apartmany/wellness/DSC01791-HDR_xrkdf9.jpg'
 
   return (
     <Wrapper
@@ -43,12 +40,12 @@ const VybaveniWellness: React.FC = () => {
 
         <GridRow sm={1} lg={1} cols={2} gap={`32px`}>
           <ImgWrapper>
-            <StyledImg w={`100%`} src={img} alt="img" />
+            <StyledImg w={`100%`} src={img} alt='img' />
           </ImgWrapper>
 
           <FlexRow itemCenter padding={`0px 0px 0px 50px`}>
             <div>
-              <GridRow sm={1} lg={2} gap={`32px`} max="true" around cols={2}>
+              <GridRow sm={1} lg={2} gap={`32px`} max='true' around cols={2}>
                 {data.map(({ id, icon, text, description }) => {
                   return (
                     <FlexRow gap={`15px`} lgGap={`12px`} itemCenter key={id}>
@@ -107,8 +104,8 @@ const VybaveniWellness: React.FC = () => {
               </GridRow>
               <ButtonWrapper>
                 <a
-                  href="https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c"
-                  target="_blank"
+                  href='https://vila-republika.reservio.com/booking/business/service?businessId=89b43bc7-3262-4446-89fc-eda62a80fa7c'
+                  target='_blank'
                 >
                   <Button margin={`50px 0px 0px 0px`}>
                     Vytvořit rezervaci
