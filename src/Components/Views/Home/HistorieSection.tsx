@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FlexRow,
@@ -6,15 +6,12 @@ import {
   ImgWrapper,
   StyledImg,
   Wrapper,
-} from "../../../Styled/Theme.styles";
-import { Desc, SectionTitle } from "../../../Styled/Typography.styles";
-import { buildImageUrl } from "cloudinary-build-url";
+} from '../../../Styled/Theme.styles'
+import { Desc, SectionTitle } from '../../../Styled/Typography.styles'
+import { buildImageUrl } from 'cloudinary-build-url'
 
 const HistorieVelkych: React.FC = () => {
-  const img = buildImageUrl(
-    "v1673866808/vilaRepublikaFoto/zamek_dqh5cb.jpg",
-    {}
-  );
+  const img = 'images/apartmany/spolProstory/zamek.jpg'
 
   return (
     <Wrapper
@@ -48,12 +45,12 @@ const HistorieVelkych: React.FC = () => {
           </FlexRow>
 
           <ImgWrapper>
-            <StyledImg w={`100%`} src={img} alt="img" />
+            <StyledImg w={`100%`} src={img} alt='img' />
           </ImgWrapper>
         </GridRow>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default HistorieVelkych;
+export default HistorieVelkych

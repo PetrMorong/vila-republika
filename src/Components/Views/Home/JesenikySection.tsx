@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 const Nostalgick: React.FC = () => {
   // zima const bg = buildImageUrl('v1673867133/vilaRepublikaFoto/nostalgick-bg_psvvlh.png', {})
-  const bg = buildImageUrl('v1680961843/vilaRepublikaFoto/5_1_hfljc1.jpg', {})
+  const bg = 'images/apartmany/spolProstory/bg-banner.png'
   return (
     <NostalgickWrapper padding={`0px 0px`} height={``} bg={bg}>
       <Container>

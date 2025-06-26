@@ -20,15 +20,9 @@ import { buildImageUrl } from 'cloudinary-build-url'
 import { SlideContent, SlideWrapper } from '../../../Styled/Swiper.styles'
 
 const SectionTwo: React.FC = () => {
-  const img1 = buildImageUrl(
-    'v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg',
-    {}
-  )
+  const img1 = 'images/apartmany/byt5/LL406469-HDR-min_ks7xwb.jpg'
 
-  const img2 = buildImageUrl(
-    'v1680936961/vilaRepublikaFoto/wellness/DSC02016-HDR_onzspt.jpg',
-    {}
-  )
+  const img2 = 'images/apartmany/wellness/DSC01791-HDR_xrkdf9.jpg'
 
   const slides = [
     {
@@ -107,7 +101,7 @@ const SectionTwo: React.FC = () => {
                     h={`100%`}
                     w={`100%`}
                     src={img}
-                    alt="img"
+                    alt='img'
                   />
                 </ImgWrapper>
                 <SlideContent style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>

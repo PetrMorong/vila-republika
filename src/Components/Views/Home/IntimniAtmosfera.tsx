@@ -11,10 +11,7 @@ import { Desc, SectionTitle } from '../../../Styled/Typography.styles'
 import { buildImageUrl } from 'cloudinary-build-url'
 
 const IntimniAtmosfera: React.FC = () => {
-  const img = buildImageUrl(
-    'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
-    {}
-  )
+  const img = 'images/apartmany/byt7/DSC08421-HDR_dfz6rg.jpg'
 
   return (
     <Wrapper
@@ -39,7 +36,7 @@ const IntimniAtmosfera: React.FC = () => {
 
         <GridRow sm={1} cols={2} gap={`32px`}>
           <ImgWrapper>
-            <StyledImg w={`100%`} src={img} alt="img" />
+            <StyledImg w={`100%`} src={img} alt='img' />
           </ImgWrapper>
 
           <FlexRow>

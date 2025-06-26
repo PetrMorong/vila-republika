@@ -25,7 +25,9 @@ const Header: React.FC = () => {
     <HeaderWrapper
       padding={`80px 0px 60px`}
       smPadding={`80px 0px 60px`}
-      header={headerBg}
+      header={
+        '/images/apartmany/spolProstory/356584285_1096124314696983_2263942071942825600_n_xv0nkq.jpg'
+      }
       bgColor
     >
       <Container margin={`auto`}>

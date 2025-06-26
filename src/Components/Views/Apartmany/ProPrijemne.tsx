@@ -15,10 +15,8 @@ export const Bg = styled.div`
 `
 
 const ProPrijemne: React.FC = () => {
-  const img1 = buildImageUrl(
-    'v1680942535/vilaRepublikaFoto/SpolecenskaMistnost/DSC01924-HDR_zldqdu.jpg',
-    {},
-  )
+  const img1 = '/images/apartmany/spolProstory/DSC01924-HDR_zldqdu.jpg'
+
   return (
     <Wrapper
       mdPadding={`0px 0px 0px`}

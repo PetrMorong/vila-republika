@@ -34,404 +34,91 @@ const Apartmany: React.FC = () => {
     },
   }
 
-  // AP 1
-  const ap1Image1 = buildImageUrl(
-    'v1673797462/vilaRepublikaFoto/byt1/DSC07382-HDR_x8twfm.jpg',
-    imageConfig,
-  )
-
-  const ap1Image2 = buildImageUrl(
-    'v1673797459/vilaRepublikaFoto/byt1/DSC07388-HDR_hc02vu.jpg',
-    {},
-  )
-
-  const ap1Image3 = buildImageUrl(
-    'v1673797461/vilaRepublikaFoto/byt1/DSC07418-HDR_oxlcy5.jpg',
-    {},
-  )
-
-  const ap1Image4 = buildImageUrl(
-    'v1673797465/vilaRepublikaFoto/byt1/DSC07421-HDR_cqlm0x.jpg',
-    {},
-  )
-
-  const ap1Image5 = buildImageUrl(
-    'v1673797459/vilaRepublikaFoto/byt1/DSC07427-HDR_ij0maf.jpg',
-    {},
-  )
-
-  const ap1Image6 = buildImageUrl(
-    'v1673797458/vilaRepublikaFoto/byt1/DSC07433-HDR_cy9sjv.jpg',
-    {},
-  )
-
   // AP 2
 
   const ap2Image1 = '/images/apartmany/byt2/DSC09444-HDR_euewl0.jpg'
 
-  // const ap2Image2 = '/images/apartmany/byt2/DSC09450-HDR_kgjnji.jpg'
-
   const ap2Image3 = '/images/apartmany/byt2/DSC09474-HDR_oysnn4.jpg'
-
-  // const ap2Image4 = '/images/apartmany/byt2/DSC09514-HDR_ewlvn7.jpg'
 
   const ap2Image5 = '/images/apartmany/byt2/DSC09477-HDR_w4300b.jpg'
 
-  // const ap2Image6 = '/images/apartmany/byt2/DSC09465-HDR_h7jpen.jpg'
-
   const ap2Image7 = '/images/apartmany/byt2/DSC09483-HDR_oh3wvl.jpg'
-
-  // const ap2Image8 = '/images/apartmany/byt2/DSC09471-HDR_ixxlbw.jpg'
-
-  // const ap2Image9 = '/images/apartmany/byt2/DSC09486-HDR_jrxsjc.jpg'
-
-  // const ap2Image10 = '/images/apartmany/byt2/DSC09648_tbbuhy.jpg'
 
   // AP 3
 
-  const ap3Image1 = buildImageUrl(
-    'v1705755250/vilaRepublikaFoto/byt3/DSC08873-HDR_wjoscf.jpg',
-    {},
-  )
+  const ap3Image1 = '/images/apartmany/byt3/DSC08806-HDR_ped1k7.jpg'
 
-  const ap3Image2 = buildImageUrl(
-    'v1705755235/vilaRepublikaFoto/byt3/DSC08806-HDR_ped1k7.jpg',
-    {},
-  )
+  const ap3Image2 = '/images/apartmany/byt3/DSC08873-HDR_wjoscf.jpg'
 
-  const ap3Image3 = buildImageUrl(
-    'v1705755225/vilaRepublikaFoto/byt3/DSC08800-HDR_ek4sjr.jpg',
-    {},
-  )
+  const ap3Image3 = '/images/apartmany/byt3/DSC08800-HDR_ek4sjr.jpg'
 
-  const ap3Image4 = buildImageUrl(
-    'v1705755221/vilaRepublikaFoto/byt3/DSC08803-HDR_onxduc.jpg',
-    {},
-  )
-
-  const ap3Image5 = buildImageUrl(
-    'v1705755227/vilaRepublikaFoto/byt3/DSC08821-HDR_ktd3i3.jpg',
-    {},
-  )
-
-  const ap3Image6 = buildImageUrl(
-    'v1705755227/vilaRepublikaFoto/byt3/DSC08818-HDR_ohc0w7.jpg',
-    {},
-  )
-
-  const ap3Image7 = buildImageUrl(
-    'v1705755236/vilaRepublikaFoto/byt3/DSC08824-HDR_f2ph9x.jpg',
-    {},
-  )
-
-  const ap3Image8 = buildImageUrl(
-    'v1705755236/vilaRepublikaFoto/byt3/DSC08815-HDR_s2mr6a.jpg',
-    {},
-  )
-
-  const ap3Image9 = buildImageUrl(
-    'v1705755251/vilaRepublikaFoto/byt3/DSC08930-HDR_nqhos4.jpg',
-    {},
-  )
-
-  const ap3Image10 = buildImageUrl(
-    'v1705755250/vilaRepublikaFoto/byt3/DSC08867-HDR_mtgqmv.jpg',
-    {},
-  )
-
-  const ap3Image11 = buildImageUrl(
-    'v1705755238/vilaRepublikaFoto/byt3/DSC08876-HDR_jlke9w.jpg',
-    {},
-  )
-
-  const ap3Image12 = buildImageUrl(
-    'v1705755253/vilaRepublikaFoto/byt3/DSC08881-HDR_m6szij.jpg',
-    {},
-  )
-
-  const ap3Image13 = buildImageUrl(
-    'v1705755249/vilaRepublikaFoto/byt3/DSC08903-HDR_txxfzk.jpg',
-    {},
-  )
+  const ap3Image4 = '/images/apartmany/byt3/DSC08867-HDR_mtgqmv.jpg'
 
   // AP 4
-  const ap4Image1 = buildImageUrl(
-    'v1675802254/vilaRepublikaFoto/byt4/DSC08238-HDR_mzdbyr.jpg',
-    {},
-  )
+  const ap4Image1 = 'images/apartmany/byt4/DSC08238-HDR_mzdbyr.jpg'
 
-  const ap4Image2 = buildImageUrl(
-    'v1675802258/vilaRepublikaFoto/byt4/DSC08274-HDR_hmhsy0.jpg',
-    {},
-  )
+  const ap4Image2 = '/images/apartmany/byt4/DSC07527-HDR_qq1xqb.jpg'
 
-  const ap4Image3 = buildImageUrl(
-    'v1673797428/vilaRepublikaFoto/byt4/DSC07557-HDR_qp18zg.jpg',
-    {},
-  )
+  const ap4Image3 = '/images/apartmany/byt4/DSC08259-HDR_asblp3.jpg'
 
-  const ap4Image4 = buildImageUrl(
-    'v1673797431/vilaRepublikaFoto/byt4/DSC07527-HDR_qq1xqb.jpg',
-    {},
-  )
-
-  const ap4Image5 = buildImageUrl(
-    'v1675802257/vilaRepublikaFoto/byt4/DSC08289-HDR_e9kr2k.jpg',
-    {},
-  )
-
-  const ap4Image6 = buildImageUrl(
-    'v1675802258/vilaRepublikaFoto/byt4/DSC08259-HDR_asblp3.jpg',
-    {},
-  )
+  const ap4Image4 = '/images/apartmany/byt4/DSC08274-HDR_hmhsy0.jpg'
 
   // AP 5
 
-  const ap5Image1 = buildImageUrl(
-    'v1728982510/vilaRepublikaFoto/byt5/LL406469-HDR-min_ks7xwb.jpg',
-    {},
-  )
+  const ap5Image1 = 'images/apartmany/byt5/LL406469-HDR-min_ks7xwb.jpg'
 
-  const ap5Image2 = buildImageUrl(
-    'v1728982516/vilaRepublikaFoto/byt5/LL406448-HDR-min_e8ukhy.jpg',
-    {},
-  )
+  const ap5Image2 = '/images/apartmany/byt5/DSC08405-HDR_xba91c.jpg'
 
-  const ap5Image3 = buildImageUrl(
-    'v1728982508/vilaRepublikaFoto/byt5/LL406427-HDR-min_vnkncg.jpg',
-    {},
-  )
+  const ap5Image3 = '/images/apartmany/byt5/LL406448-HDR-min_e8ukhy.jpg'
 
-  const ap5Image4 = buildImageUrl(
-    'v1728205639/vilaRepublikaFoto/byt5/DSC00421-HDR-min_hisqo1.jpg',
-
-    {},
-  )
-
-  const ap5Image5 = buildImageUrl(
-    'v1675799776/vilaRepublikaFoto/byt5/DSC08354-HDR_liikg7.jpg',
-    {},
-  )
-
-  const ap5Image6 = buildImageUrl(
-    'v1675799779/vilaRepublikaFoto/byt5/DSC08405-HDR_xba91c.jpg',
-    {},
-  )
+  const ap5Image4 = '/images/apartmany/byt5/LL406469-HDR-min_ks7xwb.jpg'
 
   // AP 6
 
-  const ap6Image1 = buildImageUrl(
-    'v1675801410/vilaRepublikaFoto/byt6/DSC08322-HDR_gd7djq.jpg',
-    {},
-  )
+  const ap6Image1 = 'images/apartmany/byt6/DSC08322-HDR_gd7djq.jpg'
 
-  const ap6Image2 = buildImageUrl(
-    'v1675801411/vilaRepublikaFoto/byt6/DSC08292-HDR-2_epxgyj.jpg',
-    {},
-  )
+  const ap6Image2 = '/images/apartmany/byt6/DSC08310-HDR_dccwul.jpg'
 
-  const ap6Image3 = buildImageUrl(
-    'v1675801405/vilaRepublikaFoto/byt6/DSC08316-HDR_jgxs2h.jpg',
-    {},
-  )
+  const ap6Image3 = '/images/apartmany/byt6/DSC08316-HDR_jgxs2h.jpg'
 
-  const ap6Image4 = buildImageUrl(
-    'v1675801405/vilaRepublikaFoto/byt6/DSC08310-HDR_dccwul.jpg',
-    {},
-  )
-
-  const ap6Image5 = buildImageUrl(
-    'v1675801404/vilaRepublikaFoto/byt6/DSC08301-HDR_mfiyhx.jpg',
-    {},
-  )
-
-  const ap6Image6 = buildImageUrl(
-    'v1675801404/vilaRepublikaFoto/byt6/DSC08307-HDR_wuz4e8.jpg',
-    {},
-  )
+  const ap6Image4 = '/images/apartmany/byt6/DSC08301-HDR_mfiyhx.jpg'
 
   // AP 7
 
-  const ap7Image1 = buildImageUrl(
-    'v1675799506/vilaRepublikaFoto/byt7/DSC08421-HDR_dfz6rg.jpg',
-    {},
-  )
+  const ap7Image1 = 'images/apartmany/byt7/DSC08460-HDR_cinhnp.jpg'
 
-  const ap7Image2 = buildImageUrl(
-    'v1675799512/vilaRepublikaFoto/byt7/DSC08460-HDR_cinhnp.jpg',
-    {},
-  )
+  const ap7Image2 = '/images/apartmany/byt7/DSC08421-HDR_dfz6rg.jpg'
 
-  const ap7Image3 = buildImageUrl(
-    'v1677920201/vilaRepublikaFoto/byt7/new/DSC09554-HDR_ggz5al.jpg',
-    {},
-  )
+  const ap7Image3 = '/images/apartmany/byt7/DSC08469-HDR_elf6fr.jpg'
 
-  const ap7Image4 = buildImageUrl(
-    'v1677920193/vilaRepublikaFoto/byt7/new/DSC09578-HDR_rnpozp.jpg',
-    {},
-  )
-
-  const ap7Image5 = buildImageUrl(
-    'v1677920193/vilaRepublikaFoto/byt7/new/DSC09581-HDR_cn91gs.jpg',
-    {},
-  )
-
-  const ap7Image6 = buildImageUrl(
-    'v1677920198/vilaRepublikaFoto/byt7/new/DSC09575-HDR_vfhyfx.jpg',
-    {},
-  )
-
-  const ap7Image6_1 = buildImageUrl(
-    'v1677920191/vilaRepublikaFoto/byt7/new/DSC09584-HDR_qrrqim.jpg',
-    {},
-  )
-
-  const ap7Image7 = buildImageUrl(
-    'v1677920189/vilaRepublikaFoto/byt7/new/DSC09634-HDR_xp99kv.jpg',
-    {},
-  )
-
-  const ap7Image8 = buildImageUrl(
-    'v1677920192/vilaRepublikaFoto/byt7/new/DSC09596-HDR_xm60we.jpg',
-    {},
-  )
-
-  const ap7Image9 = buildImageUrl(
-    'v1677920192/vilaRepublikaFoto/byt7/new/DSC09587-HDR_afux7f.jpg',
-    {},
-  )
-
-  const ap7Image10 = buildImageUrl(
-    'v1677920191/vilaRepublikaFoto/byt7/new/DSC09625-HDR_rerqnr.jpg',
-    {},
-  )
+  const ap7Image4 = '/images/apartmany/byt7/DSC09554-HDR_ggz5al.jpg'
 
   // AP 8
-  const ap8Image1 = buildImageUrl(
-    'v1732624209/vilaRepublikaFoto/zahradniDomek/LL408068-HDR_gcvuad.jpg',
-    {},
-  )
+  const ap8Image1 = '/images/apartmany/byt8/LL408092-HDR_n9fcib.jpg'
 
-  const ap8Image2 = buildImageUrl(
-    'v1728981009/vilaRepublikaFoto/zahradniDomek/LL406604-min_drw5dr.jpg',
-    {},
-  )
+  const ap8Image2 = '/images/apartmany/byt8/LL406604-min_drw5dr.jpg'
 
-  const ap8Image3 = buildImageUrl(
-    'v1732624207/vilaRepublikaFoto/zahradniDomek/LL408092-HDR_n9fcib.jpg',
-    {},
-  )
+  const ap8Image3 = '/images/apartmany/byt8/LL408068-HDR_gcvuad.jpg'
 
-  const ap8Image4 = buildImageUrl(
-    'v1732624205/vilaRepublikaFoto/zahradniDomek/LL408134-HDR_bidcdy.jpg',
-    {},
-  )
-
-  const ap8Image5 = buildImageUrl(
-    'v1732624210/vilaRepublikaFoto/zahradniDomek/LL408077-HDR_dndiui.jpg',
-    {},
-  )
-
-  const ap8Image6 = buildImageUrl(
-    'v1732624210/vilaRepublikaFoto/zahradniDomek/LL408080-HDR_aj5bar.jpg',
-    {},
-  )
-
-  const ap8Image7 = buildImageUrl(
-    'v1732624202/vilaRepublikaFoto/zahradniDomek/LL408101-HDR_rczxde.jpg',
-    {},
-  )
-
-  const ap8Image8 = buildImageUrl(
-    'v1732624207/vilaRepublikaFoto/zahradniDomek/LL408116-HDR_aytefo.jpg',
-    {},
-  )
-
-  const ap8Image9 = buildImageUrl(
-    'v1732624175/vilaRepublikaFoto/zahradniDomek/LL408119-HDR_l3dmyy.jpg',
-    {},
-  )
-
-  //koupelna
-  const ap8Image10 = buildImageUrl(
-    'v1728981007/vilaRepublikaFoto/zahradniDomek/LL406598-min_dtzfse.jpg',
-    {},
-  )
-
-  const ap8Image11 = buildImageUrl(
-    'v1728981006/vilaRepublikaFoto/zahradniDomek/LL406593-min_uj18m0.jpg',
-
-    {},
-  )
+  const ap8Image4 = '/images/apartmany/byt8/LL408128-HDR_faeoer.jpg'
 
   const apImages = [
     // ap 1
-    [ap1Image1, ap1Image2, ap1Image3, ap1Image4, ap1Image5, ap1Image6],
+    [],
     // ap 2
-    [
-      ap2Image1,
-      // ap2Image2,
-      ap2Image3,
-      // ap2Image4,
-      ap2Image5,
-      // ap2Image6,
-      ap2Image7,
-      // ap2Image8,
-      // ap2Image9,
-      // ap2Image10,
-    ],
+    [ap2Image1, ap2Image3, ap2Image5, ap2Image7],
     // ap 3
-    [
-      ap3Image1,
-      ap3Image2,
-      ap3Image3,
-      ap3Image4,
-      ap3Image5,
-      ap3Image6,
-      ap3Image7,
-      ap3Image8,
-      ap3Image9,
-      ap3Image10,
-      ap3Image11,
-      ap3Image12,
-      ap3Image13,
-    ],
-
+    [ap3Image1, ap3Image2, ap3Image3, ap3Image4],
     // ap 4
-    [ap4Image1, ap4Image2, ap4Image3, ap4Image4, ap4Image5, ap4Image6],
+    [ap4Image1, ap4Image2, ap4Image3, ap4Image4],
     // ap 5
-    [ap5Image1, ap5Image2, ap5Image3, ap5Image4, ap5Image5, ap5Image6],
+    [ap5Image1, ap5Image2, ap5Image3, ap5Image4],
     // ap 6
-    [ap6Image1, ap6Image2, ap6Image3, ap6Image4, ap6Image5, ap6Image6],
+    [ap6Image1, ap6Image2, ap6Image3, ap6Image4],
     // ap 7
-    [
-      ap7Image1,
-      ap7Image2,
-      ap7Image3,
-      ap7Image4,
-      ap7Image5,
-      ap7Image6,
-      ap7Image6_1,
-      ap7Image7,
-      ap7Image8,
-      ap7Image9,
-      ap7Image10,
-    ],
+    [ap7Image1, ap7Image2, ap7Image3, ap7Image4],
     // ap 8
-    [
-      ap8Image1,
-      ap8Image2,
-      ap8Image3,
-      ap8Image4,
-      ap8Image5,
-      ap8Image6,
-      ap8Image7,
-      ap8Image8,
-      ap8Image9,
-      ap8Image10,
-      ap8Image11,
-    ],
+    [ap8Image1, ap8Image2, ap8Image3, ap8Image4],
   ]
 
   const images = apImages[selectedGallery]
