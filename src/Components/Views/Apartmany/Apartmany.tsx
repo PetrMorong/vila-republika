@@ -599,7 +599,7 @@ const Apartmany: React.FC = () => {
           </div>
         </GridRow>
 
-        {/* AP 4 */}
+        {/* AP 4 
         <GridRow sm={1} cols={2} gap={`5px`} between margin={'0px 0px 120px'}>
           <div>
             <SlideWrapper
@@ -710,7 +710,7 @@ const Apartmany: React.FC = () => {
               </ButtonWrapper>
             </div>
           </FlexRow>
-        </GridRow>
+        </GridRow> */}
 
         {/* AP 7 */}
         <GridRow sm={1} cols={2} gap={`32px`} between margin={'0px 0px 120px'}>

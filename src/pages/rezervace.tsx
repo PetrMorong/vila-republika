@@ -35,6 +35,7 @@ const Reservation = () => {
                 name='previo-booking-iframe'
                 id='previo-booking-iframe'
                 allowTransparency='true'
+                hideCurrencies='EUR'
               ></iframe>
             </div>
           </Container>
