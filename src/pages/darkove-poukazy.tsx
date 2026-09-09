@@ -37,6 +37,7 @@ const DarkovePoukazy: React.FC = () => {
               name='previo-booking-iframe'
               id='previo-booking-iframe'
               allowTransparency={true}
+              hideCurrencies='EUR'
             ></iframe>
 
             <div style={{ marginTop: 40 }} />
